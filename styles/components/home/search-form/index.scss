@@ -1,0 +1,135 @@
+.search-wrapper {
+  position: relative;
+  box-shadow: var(--box-shadow);
+  background-color: var(--white-color);
+  padding: 30px;
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .search {
+    width: 100%;
+    height: 70px;
+    position: relative;
+    .form-control {
+        width: 100%;
+        height: 100%;
+        padding-left: 3.5rem;
+        border: 1px solid #eeeeee;
+        background-color: #F2F9FC;
+        font-size: 25px;
+        font-weight: 500;
+        &::placeholder {
+            font-size: 25px;
+            font-weight: 500;
+            color: gray;
+        }
+        &:focus {
+            border-color: var(--main-color);
+            background-color: white;
+        }
+    }
+    .search-icon {
+      position: absolute;
+      left: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 30px;
+      transition: var(--transition);
+      color: gray;
+    }
+  }
+
+  .search-results {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 1.8rem 3rem;
+    position: absolute;
+    top: 110%;
+    box-shadow: 0 0 20px rgba(0,0,0,.3);
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-15px);
+    transition: all .3s ease;
+    max-height: 500px;
+    overflow-y: auto;
+    
+    &.show {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .search-results-title {
+        font-weight: bold;
+        font-size: 32px;
+    }
+
+    .result-section {
+        .result-section-title {
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 1rem;
+        }
+        .results {
+            display: flex;
+            flex-direction: column;
+
+            .result {
+                border-bottom: solid 1px rgba(0,0,0,0.1);
+                padding: .5rem .5rem;
+                background-color: transparent;
+                transition: all .3s ease;
+                &:hover {
+                    background-color: #f1f1f1;
+                    border-color: transparent;
+                }
+                &:nth-last-child(1) {
+                    border-color: transparent;
+                }
+            }
+        }
+    }
+  }
+}
+
+@media screen and (max-width:575px) {
+    .general-search-area {
+        margin-top: -50px;
+      }
+
+      .search-wrapper {
+        padding: 10px;
+        .search {
+          height: 50px;
+          .form-control {
+              font-size: 18px;
+              padding-left: 2.7rem;
+              &::placeholder {
+                  font-size: 18px;
+              }
+          }
+          .search-icon {
+            left: 10px;
+            font-size: 25px;
+          }
+        }
+  
+        .search-results {
+          padding: 1rem 1.5rem;
+  
+          .search-results-title {
+              font-size: 25px;
+          }
+  
+          .result-section {
+              .result-section-title {
+                  font-size: 18px;
+                  margin-bottom: .5rem;
+              }
+          }
+        }
+      }
+}

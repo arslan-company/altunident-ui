@@ -1,0 +1,190 @@
+$body-font-family: "Lato", sans-serif;
+$heading-font-family: "Roboto", sans-serif;
+
+$main-color: #0cb8b6;
+$body-color: #525252;
+$heading-color: #001430;
+$white-color: #ffffff;
+$black-color: #000000;
+$box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+$transition: all 0.5s;
+$border-radius: 4px;
+
+.footer-area {
+    .footer-top-area {
+        position: relative;
+        background-color: $heading-color;
+        
+        .call-center-area {
+          margin-bottom: 1.2rem;
+          img {
+            width: 40px;
+            margin: 0;
+            margin-right: .5rem;
+          }
+          span {
+            margin: 0;
+          }
+        }
+    }
+
+    .single-widget {
+        margin-bottom: 30px;
+        
+        .button-area {
+            display: flex;
+            flex-direction: column;
+        }
+
+        img {
+            margin-bottom: 20px;
+        }
+        h3 {
+            font-size: 22px;
+            margin-bottom: 30px;
+            display: inline-block;
+            color: $main-color;
+
+            span {
+                font-size: 15px;
+            }            
+        }
+
+        p {
+            margin-bottom: 0;
+            color: $white-color;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            li {
+            color: #c0cade;
+            margin-bottom: 8px;
+            font-size: 15px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            span {
+                color: $white-color;
+            }
+            a {
+                color: #c0cade;
+                transition: $transition;
+                i {
+                display: inline-block;
+                margin-right: 2px;
+                font-size: 14px;
+                }
+                &:hover {
+                transform: translateX(2px);
+                }
+            }
+            }
+        }
+        .social-area {
+            margin-top: 20px;
+            ul {
+            line-height: 1;
+            li {
+                display: inline-block;
+                margin-right: 8px;
+                &:last-child {
+                margin-right: 0;
+                }
+                a {
+                width: 30px;
+                height: 30px;
+                line-height: 34px;
+                background-color: $white-color;
+                border-radius: 50%;
+                text-align: center;
+        
+                i {
+                    color: $main-color;
+                    transition: $transition;
+                    margin-right: 0;
+                    font-size: 18px;
+                }
+                &:hover {
+                    border-color: $main-color;
+                    background-color: $main-color;
+                    transform: translateY(-2px);
+                    i {
+                    color: $white-color;
+                    }
+                }
+                }
+            }
+            }
+        }
+        &.contact {
+            ul {
+            li {
+                position: relative;
+                padding-left: 30px;
+                a {
+                i {
+                    position: absolute;
+                    top: 4px;
+                    left: 0;
+                    color: $main-color;
+                    font-size: 20px;
+                }
+                span {
+                    display: block;
+                    font-weight: 600;
+                }
+                &:hover {
+                    transform: inherit;
+                }
+                }
+                i {
+                position: absolute;
+                left: 0;
+                top: 4px;
+                color: $main-color;
+                font-size: 20px;
+                }
+                span {
+                display: block;
+                font-weight: 600;
+                }
+            }
+            }
+        }
+        &.open-time {
+            li {
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid $main-color;
+            .right {
+                float: right;
+            }
+            &:last-child {
+                padding-bottom: 0;
+                border-bottom: none;
+            }
+            }
+        }
+    }
+ 
+    .footer-bottom-area {
+    background-color: #05224c;
+    padding: 20px 0;
+    .copy-right {
+        text-align: center;
+        p {
+        text-transform: capitalize;
+        margin-bottom: 0;
+        color: $white-color;
+        a {
+            color: $main-color;
+            &:hover {
+            text-decoration: underline;
+            }
+        }
+        }
+    }
+    }
+}

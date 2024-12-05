@@ -1,0 +1,13 @@
+.doctors-list-common .doctor-list-head {
+  margin-bottom: 0.5rem;
+}
+.doctors-list-common .doctor-list-head .title {
+  font-weight: bold;
+  font-size: 30px;
+  color: #0cb8b6;
+}
+.doctors-list-common .no-data-text {
+  font-weight: 500;
+  font-size: 17px;
+  color: #8a8a8a;
+}/*# sourceMappingURL=index.css.map */

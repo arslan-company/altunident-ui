@@ -1,0 +1,48 @@
+.corporate-details-area .corporate-img {
+  width: 100%;
+  height: 400px;
+}
+.corporate-details-area .corporate-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.corporate-details-area .corporate-card-items {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+.corporate-details-area .corporate-card-items .corporate-card-item {
+  display: block;
+}
+.corporate-details-area .corporate-card-items .corporate-card-item .corporate-card-head {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+.corporate-details-area .corporate-card-items .corporate-card-item .corporate-card-head img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.9;
+  transition: all 0.3s ease;
+}
+.corporate-details-area .corporate-card-items .corporate-card-item .corporate-card-body {
+  padding: 1rem 2rem;
+  background-color: #525252;
+  transition: all 0.3s ease;
+}
+.corporate-details-area .corporate-card-items .corporate-card-item .corporate-card-body .corporate-card-body-title {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+.corporate-details-area .corporate-card-items .corporate-card-item:hover .corporate-card-head img {
+  scale: 1.05;
+  opacity: 1;
+}
+.corporate-details-area .corporate-card-items .corporate-card-item:hover .corporate-card-body {
+  background-color: #0cb8b6;
+}/*# sourceMappingURL=index.css.map */

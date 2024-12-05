@@ -1,0 +1,44 @@
+.fixed-link-wrapper {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  z-index: 4;
+}
+.fixed-link-wrapper .fixed-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+.fixed-link-wrapper .fixed-link img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.fixed-link-wrapper .fixed-link-title {
+  background-color: #1BD741;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 0.2rem 0.5rem;
+  text-align: center;
+  position: absolute;
+  bottom: 140%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+.fixed-link-wrapper:hover .fixed-link-title {
+  bottom: 120%;
+  opacity: 1;
+  visibility: visible;
+}/*# sourceMappingURL=index.css.map */

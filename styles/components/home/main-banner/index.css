@@ -1,0 +1,108 @@
+.main-slider .main-slider-item {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.main-slider .main-slider-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #001430;
+  opacity: 0.6;
+  z-index: 0;
+}
+.main-slider .main-slider-item .video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main-slider .main-slider-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main-slider .main-slider-item .slider-content {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+}
+.main-slider .main-slider-item .slider-content .slider-text {
+  position: relative;
+  max-width: 690px;
+  overflow: hidden;
+  z-index: 1;
+}
+.main-slider .main-slider-item .slider-content .slider-text span {
+  color: #ffffff;
+  font-size: 15px;
+  display: block;
+  margin-bottom: 10px;
+}
+.main-slider .main-slider-item .slider-content .slider-text h1 {
+  font-size: 50px;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+.main-slider .main-slider-item .slider-content .slider-text p {
+  color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 35px;
+}
+.main-slider .swiper-button-next::after, .main-slider .swiper-button-prev::after {
+  color: #fff;
+  font-size: 35px;
+}
+.main-slider .swiper-button-next::after:hover, .main-slider .swiper-button-prev::after:hover {
+  color: #0cb8b6;
+}
+.main-slider .swiper-slide.swiper-slide-active .slider-text.overflow-hidden {
+  overflow: hidden;
+}
+.main-slider .swiper-slide.swiper-slide-active .slider-text.one span {
+  animation: 1s 0.1s fadeInUpBig both;
+}
+.main-slider .swiper-slide.swiper-slide-active .slider-text.one .video-btn-animat {
+  animation: 1s 0.1s fadeInUpBig both;
+}
+.main-slider .swiper-slide.swiper-slide-active .slider-text.one h1 {
+  animation: 2s 0.2s fadeInUpBig both;
+}
+.main-slider .swiper-slide.swiper-slide-active .slider-text.one p {
+  animation: 2s 0.2s fadeInUpBig both;
+}
+.main-slider .swiper-slide.swiper-slide-active .slider-text.one .slider-btn {
+  animation: 2s 0.2s fadeInUpBig both;
+}
+.main-slider .swiper-slide.swiper-slide-active .slider-text.two span {
+  animation: 2s 0.2s fadeInDownBig both;
+}
+.main-slider .swiper-slide.swiper-slide-active .slider-text.two .video-btn-animat {
+  animation: 2s 0.2s fadeInDownBig both;
+}
+.main-slider .swiper-slide.swiper-slide-active .slider-text.two h1 {
+  animation: 2s 0.2s fadeInLeft both;
+}
+.main-slider .swiper-slide.swiper-slide-active .slider-text.two p {
+  animation: 2s 0.2s fadeInRight both;
+}
+.main-slider .swiper-slide.swiper-slide-active .slider-text.two .slider-btn {
+  animation: 2s 0.2s fadeInUpBig both;
+}
+
+@media screen and (max-width: 450px) {
+  .main-slider .main-slider-item {
+    height: 700px;
+  }
+  .main-slider .main-slider-item .slider-content .slider-text h1 {
+    font-size: 30px;
+  }
+}/*# sourceMappingURL=index.css.map */

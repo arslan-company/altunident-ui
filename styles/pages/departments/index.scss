@@ -1,0 +1,62 @@
+$main-color: #0cb8b6;
+
+.departments-area {
+    .filter-area {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3rem;
+    
+        .search-filter {
+          display: flex;
+          align-items: center;
+          margin-bottom: 1rem;
+          
+          .filter-item {
+            margin-bottom: 0;
+          }
+  
+          button {
+            height: 100%;
+            margin: 0;
+            margin-left: .5rem;
+            padding: 0 .6rem;
+            background-color: #0cb8b6;
+            color: #ffffff;
+            border-radius: 5px;
+          }
+        }
+  
+        .filter-item {
+          width: 100%;
+          margin-bottom: 1rem;
+          
+          &:nth-last-child(1) {
+            margin-right: 0;
+          }
+        }
+      }
+}
+
+.departments-list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    transition: all .3s ease;
+    position: relative;
+    width: 100%;
+
+    .department-item {
+        background-color: #F2F9FC;
+        border: 1px solid #e8e8e8;
+        padding: .4rem .5rem;
+        font-size: 18px;
+        font-weight: 500;
+
+        &:hover {
+            background-color: #fff;
+            border-color: $main-color;
+            color: #0cb8b6;
+            transform: translateX(-10px);
+        }
+    }
+} 

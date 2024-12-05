@@ -1,0 +1,51 @@
+.departments-area .filter-area {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+.departments-area .filter-area .search-filter {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.departments-area .filter-area .search-filter .filter-item {
+  margin-bottom: 0;
+}
+.departments-area .filter-area .search-filter button {
+  height: 100%;
+  margin: 0;
+  margin-left: 0.5rem;
+  padding: 0 0.6rem;
+  background-color: #0cb8b6;
+  color: #ffffff;
+  border-radius: 5px;
+}
+.departments-area .filter-area .filter-item {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.departments-area .filter-area .filter-item:nth-last-child(1) {
+  margin-right: 0;
+}
+
+.departments-list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+  position: relative;
+  width: 100%;
+}
+.departments-list .department-item {
+  background-color: #F2F9FC;
+  border: 1px solid #e8e8e8;
+  padding: 0.4rem 0.5rem;
+  font-size: 18px;
+  font-weight: 500;
+}
+.departments-list .department-item:hover {
+  background-color: #fff;
+  border-color: #0cb8b6;
+  color: #0cb8b6;
+  transform: translateX(-10px);
+}/*# sourceMappingURL=index.css.map */

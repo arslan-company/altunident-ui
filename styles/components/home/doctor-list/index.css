@@ -1,0 +1,8 @@
+.doctor-list .doctor-list-slide .swiper-wrapper {
+  align-items: center;
+}
+.doctor-list .doctor-list-slide .swiper-button-prev::after,
+.doctor-list .doctor-list-slide .swiper-button-next::after {
+  color: #0cb8b6;
+  font-size: 30px;
+}/*# sourceMappingURL=index.css.map */

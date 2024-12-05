@@ -1,0 +1,38 @@
+$body-font-family: "Lato", sans-serif;
+$heading-font-family: "Roboto", sans-serif;
+
+$main-color: #0cb8b6;
+$body-color: #525252;
+$heading-color: #001430;
+$white-color: #ffffff;
+$black-color: #000000;
+$box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.10);
+$transition: all 0.5s;
+$border-radius: 4px;
+
+.carousel-area {
+    .swiper-wrapper {
+        align-items: center;
+      }
+
+      .swiper-button-prev,
+      .swiper-button-next {
+          &::after {
+              color: $main-color;
+              font-size: 30px;
+          }
+      }
+
+    .filter-area {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2rem;
+        .filter-area-item {
+            margin-right: 1rem;
+            &:nth-last-child(1) {
+                margin-right: 0;
+            }
+        }
+    }
+}

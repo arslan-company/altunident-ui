@@ -1,0 +1,281 @@
+$body-font-family: "Lato", sans-serif;
+$heading-font-family: "Roboto", sans-serif;
+
+$main-color: #0cb8b6;
+$body-color: #525252;
+$heading-color: #001430;
+$white-color: #ffffff;
+$black-color: #000000;
+$box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+$transition: all 0.5s;
+$border-radius: 4px;
+
+
+.doctor-card {
+    width: 100%;
+    text-align: center;
+    border: none;
+    outline: 0;
+    position: relative;
+    transition: $transition;
+    margin-bottom: 30px;
+    padding: 0;
+    z-index: 1;
+
+    .doctor-img {
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .background {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border: 5px solid $main-color;
+          border-bottom: none;
+          z-index: 1;
+        }
+
+        .doctor {
+          width: 100%;
+          object-fit: cover;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          z-index: 2;
+        }
+
+        .loading {
+            background-color: rgba(255,255,255, .6);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+        }
+
+        .doctors-detail {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-image: linear-gradient(to top, rgba(0,0,0,.9), rgba(0,0,0,.4));
+          display: flex;
+          align-items: flex-start;
+          justify-content: flex-end;
+          transition: all .5s ease;
+          opacity: 0;
+          padding: 2rem 2rem;
+          flex-direction: column;
+          z-index: 3;
+    
+          .doctors-detail-item {
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: .7rem;
+            text-align: left;
+    
+            .title {
+              font-weight: 600;
+              font-size: 22px;
+              color: $main-color;
+            }
+    
+            .value {
+              font-weight: 400;
+              font-size: 14px;
+            }
+    
+            .link {
+                a {
+                    padding: .8rem 1rem;
+                    font-size: 13px;
+                }
+            }
+          }
+        }
+        .doctors-link {
+          position: absolute;
+          padding: 0;
+          margin: 0;
+          left: 0;
+          right: 0;
+          bottom: 5%;
+          transition: $transition;
+          transform: scaleX(0);
+          li {
+            display: inline-block;
+            a {
+              width: 25px;
+              height: 25px;
+              line-height: 25px;
+              background-color: $white-color;
+              box-shadow: $box-shadow;
+              text-align: center;
+              border-radius: 50%;
+              margin: 0 5px;
+            }
+          }
+        }
+    }
+
+    .doctor-hospital {
+        width: 100%;
+        min-height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1;
+        background-color: $main-color;
+        color: #fff;
+        font-weight: bold;
+        font-size: 15px;
+        padding: .5rem .7rem;
+        position: relative;
+    }
+
+    .doctors-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: $white-color;
+        box-shadow: $box-shadow;
+        padding: 10px 15px;
+        min-height: 120px;
+
+        .doctor-name {
+            line-height: 1.3;
+        }
+
+        .doctor-department {
+            line-height: 1.4;
+            color: $main-color;
+        }
+    }
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.1);
+      .doctor-img {
+        .doctors-detail {
+          opacity: 1;
+        }
+        .doctors-link {
+          transform: scaleX(1);
+        }
+      }
+    }
+
+    &.small-size {
+        .doctor-img {
+            .doctors-detail {
+                display: none;
+            }
+        }
+
+        .doctor-hospital {
+            font-size: 10px;
+            min-height: 30px;
+        }
+
+        .doctors-content {
+            padding: .8rem .4rem;
+            .doctor-name {
+                font-size: 14px;
+            }
+
+            .doctor-department {
+                font-size: 10px;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1400px) {
+    .doctor-card {
+        .doctor-img {
+            .doctor {
+                height: 100%;
+            }
+        }
+
+        .doctor-hospital {
+            font-size: 13px;
+            min-height: 40px;
+        }
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .doctor-card {
+        .doctor-img {
+            .doctor {
+                height: 100%;
+            }
+        }
+
+        .doctor-hospital {
+            font-size: 10px;
+        }
+
+        &.small-size {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media screen and (max-width:767px) {
+    .doctor-card {
+        .doctor-img {
+            .doctors-detail {
+                display: none;
+            }
+        }
+
+        .doctors-content {
+            min-height: 100px;
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    .doctor-card {
+        .doctors-content {
+            padding: 15px;
+            .doctor-name {
+                font-size: 15px;
+                margin-bottom: .2rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:405px) {
+    .doctor-card {
+        .doctor-hospital {
+            font-size: 8px;
+            padding: .5rem .2rem; 
+            min-height: 33px;
+        }
+
+        .doctors-content {
+            padding: 5px 8px;
+            .doctor-name {
+                font-size: 13px;
+            }
+
+            .doctor-department {
+                font-size: 10px;
+            }
+        }
+    }
+}

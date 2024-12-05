@@ -1,0 +1,178 @@
+$body-font-family: "Lato", sans-serif;
+$heading-font-family: "Roboto", sans-serif;
+
+$main-color: #0cb8b6;
+$body-color: #525252;
+$heading-color: #001430;
+$white-color: #ffffff;
+$black-color: #000000;
+$box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+$transition: all 0.5s;
+$border-radius: 4px;
+
+.campaigns-popup-wrapper {
+    width: 300px;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0,0,0,.3);
+    border-left: solid 9px $main-color;
+    position: fixed;
+    left: 15px;
+    bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 4;
+    transition: all .3s ease;
+    
+    &.show {
+        opacity: 1;
+        visibility: visible;
+    }
+    &.close {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .campaigns-popup-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 1.4rem;
+        background-color: #ebebeb;
+
+        .title-area {
+            cursor: default;
+            .title {
+                display: flex;
+                align-items: center;
+                margin: 0;
+                .title-icon {
+                    margin-right: .3rem;
+                }
+            }
+            .sub-title {
+                font-weight: 600;
+                font-size: 13px;
+                color: $main-color;
+                margin: 0;
+            }
+        }
+    }
+
+    .campaigns-popup-body {
+        height: 300px;
+        overflow-y: scroll;
+        &::-webkit-scrollbar {
+            background-color: #fff;
+            width: 10px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: $main-color;
+            border-radius: 50px;
+        }
+        .items {
+            .item {
+                cursor: default;
+                border-bottom: solid 1px $main-color;
+                padding: .5rem 1rem;
+                transition: all .3s ease;
+
+                .item-title {
+                    color: $main-color;
+                    font-size: 20px;
+                    margin: 0;
+                    margin-bottom: .2rem;
+                }
+
+                .item-date {
+                    font-size: 12px;
+                    font-weight: 600;
+                    span {
+                        font-weight: 400;
+                    }
+                }
+
+                &:hover {
+                    background-color: #e6e6e6;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:990px) {
+    .campaigns-popup-wrapper {
+        width: 280px;
+    
+        .campaigns-popup-body {
+            height: 250px;
+        }
+    }
+}
+
+@media screen and (max-width:767px) {
+    .campaigns-popup-wrapper {
+        width: 240px;
+    
+        .campaigns-popup-head {
+            padding: .8rem .7rem;
+    
+            .title-area {
+                .title {
+                    font-size: 14px;
+                }
+                .sub-title {
+                    font-size: 11px;
+                }
+            }
+        }
+
+        .campaigns-popup-body {
+            height: 200px;
+            .items {
+                .item {
+                    .item-title {
+                        font-size: 14px;
+                    }
+    
+                    .item-date {
+                        font-size: 9px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:576px) {
+    .campaigns-popup-wrapper {
+        width: 200px;
+    
+        .campaigns-popup-head {
+            padding: .5rem .6rem;
+    
+            .title-area {
+                .title {
+                    font-size: 13px;
+                }
+                .sub-title {
+                    font-size: 10px;
+                }
+            }
+        }
+
+        .campaigns-popup-body {
+            height: 160px;
+            .items {
+                .item {
+                    .item-title {
+                        font-size: 13px;
+                    }
+    
+                    .item-date {
+                        font-size: 8px;
+                    }
+                }
+            }
+        }
+    }
+}

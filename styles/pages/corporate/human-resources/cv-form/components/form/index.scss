@@ -1,0 +1,86 @@
+$body-font-family: "Lato", sans-serif;
+$heading-font-family: "Roboto", sans-serif;
+
+$main-color: #0cb8b6;
+$body-color: #525252;
+$heading-color: #001430;
+$white-color: #ffffff;
+$black-color: #000000;
+$box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+$transition: all 0.5s;
+$border-radius: 4px;
+
+.cv-form {
+    width: 100%;
+    background-color: $white-color;
+    box-shadow: $box-shadow;
+    padding: 50px;
+    position: relative;
+    z-index: 1;
+    h2 {
+      font-size: 40px;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    span {
+      text-align: center;
+      display: block;
+    }
+    label {
+      font-weight: 600;
+      font-size: 15px;
+      margin-bottom: 5px;
+    }
+    .form-group {
+      position: relative;
+      margin-bottom: 20px;
+      i {
+        position: absolute;
+        top: 17px; 
+        left: 20px;
+        line-height: 1;
+        font-size: 18px;
+        color: $main-color;
+      }
+      .form-control {
+        padding: 12px 50px;
+      }
+    }
+    .react-datepicker-wrapper {
+      display: block;
+      width: 100%;
+    }
+    .default-btn {
+      display: block;
+      margin: 15px auto 0;
+    }
+    .nice-select {
+      height: 50px;
+      width: 100%;
+      line-height: 48px;
+      font-size: 15px;
+      margin-bottom: 30px;
+      padding-left: 50px;
+      background-color: #f2f9fc;
+      span {
+        text-align: left;
+      }
+      &::after {
+        height: 8px;
+        width: 8px;
+      }
+      &.open {
+        .list {
+          height: 250px;
+          overflow-y: scroll;
+        }
+      }
+    }
+    .shape {
+      position: absolute;
+      top: -35px;
+      right: -45px;
+      z-index: -1;
+      animation: moveBounce 5s linear infinite;
+    }
+  }

@@ -1,0 +1,20 @@
+.carousel-area .swiper-wrapper {
+  align-items: center;
+}
+.carousel-area .swiper-button-prev::after,
+.carousel-area .swiper-button-next::after {
+  color: #0cb8b6;
+  font-size: 30px;
+}
+.carousel-area .filter-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.carousel-area .filter-area .filter-area-item {
+  margin-right: 1rem;
+}
+.carousel-area .filter-area .filter-area-item:nth-last-child(1) {
+  margin-right: 0;
+}/*# sourceMappingURL=index.css.map */

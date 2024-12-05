@@ -1,0 +1,425 @@
+/*
+Nav Area Style
+======================================================*/
+.nav-area-2 .navbar-area {
+  position: relative;
+}
+.nav-area-2 .navbar-area::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, transparent, rgb(0, 0, 0));
+}
+.nav-area-2 .navbar-area .main-nav {
+  background-color: transparent;
+  box-shadow: none;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.nav-area-2 .navbar-area .main-nav nav {
+  padding: 12px 15px;
+}
+.nav-area-2 .navbar-area .main-nav nav .navbar-nav .nav-item a {
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+  transition: all 0.5s;
+  margin: 0 7px;
+  padding: 0;
+  position: relative;
+}
+.nav-area-2 .navbar-area .main-nav nav .navbar-nav .nav-item a i {
+  font-size: 15px;
+  line-height: 0;
+  position: relative;
+  top: 3px;
+}
+.nav-area-2 .navbar-area .main-nav nav .navbar-nav .nav-item a::before {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.nav-area-2 .navbar-area .main-nav nav .navbar-nav .nav-item a:hover {
+  color: #0cb8b6;
+}
+.nav-area-2 .navbar-area .main-nav nav .navbar-nav .nav-item a.active {
+  color: #0cb8b6;
+}
+.nav-area-2 .navbar-area .main-nav nav .navbar-nav .nav-item .dropdown-menu {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 0;
+  top: 100%;
+  left: 0;
+  padding: 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+}
+.nav-area-2 .navbar-area .main-nav nav .navbar-nav .nav-item .dropdown-menu li a {
+  font-size: 13px;
+  color: #001430;
+  position: relative;
+  padding: 10px 15px;
+  border-bottom: 1px dashed #eeeeee;
+  margin-left: 0;
+  margin-right: 0;
+}
+.nav-area-2 .navbar-area .main-nav nav .navbar-nav .nav-item .dropdown-menu li a i {
+  float: right;
+  top: 12px;
+  transition: all 0.5s;
+}
+.nav-area-2 .navbar-area .main-nav nav .navbar-nav .nav-item .dropdown-menu li a:hover {
+  color: #0cb8b6;
+  background-color: #f3f3f3;
+}
+.nav-area-2 .navbar-area .main-nav nav .navbar-nav .nav-item .dropdown-menu li a.active {
+  color: #0cb8b6;
+  background-color: #f3f3f3;
+}
+.nav-area-2 .navbar-area .main-nav nav .navbar-nav .nav-item .dropdown-menu li .dropdown-menu {
+  left: 100%;
+  transform: translateY(20px);
+}
+.nav-area-2 .navbar-area .main-nav nav .navbar-nav .nav-item .dropdown-menu li:last-child a {
+  border-bottom: none;
+}
+.nav-area-2 .navbar-area .main-nav nav .navbar-nav .nav-item .dropdown-menu li:hover .dropdown-menu {
+  top: 0px !important;
+  transform: translateY(0);
+  margin: 0;
+}
+.nav-area-2 .navbar-area .main-nav nav .navbar-nav .nav-item:hover ul {
+  opacity: 1;
+  visibility: visible;
+  top: 100%;
+  transform: translateY(0);
+}
+.nav-area-2 .navbar-area.is-sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 500;
+  background-color: #001430;
+  box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.4);
+  animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+  transition: all 0.5s;
+  width: 100% !important;
+}
+.nav-area-2 .navbar-area.is-sticky .main-nav nav .navbar-nav .nav-item a {
+  color: #ffffff;
+}
+.nav-area-2 .navbar-area.is-sticky .main-nav nav .navbar-nav .nav-item a:hover {
+  color: #0cb8b6;
+}
+.nav-area-2 .navbar-area.is-sticky .main-nav nav .navbar-nav .nav-item a.active {
+  color: #0cb8b6;
+}
+.nav-area-2 .navbar-area.no-transparent {
+  background-color: #001430;
+  box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.4);
+  animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+  transition: all 0.5s;
+  width: 100% !important;
+}
+.nav-area-2 .navbar-area.no-transparent .main-nav nav .navbar-nav .nav-item a {
+  color: #ffffff;
+}
+.nav-area-2 .navbar-area.no-transparent .main-nav nav .navbar-nav .nav-item a:hover {
+  color: #0cb8b6;
+}
+.nav-area-2 .navbar-area.no-transparent .main-nav nav .navbar-nav .nav-item a.active {
+  color: #0cb8b6;
+}
+.nav-area-2 .dropdown-toggle::after {
+  display: none;
+}
+.nav-area-2 .others-option {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-area-2 .others-option .make-an-appointment {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-right: 0.5rem;
+}
+.nav-area-2 .others-option .make-an-appointment .default-btn {
+  font-size: 16px;
+  padding: 10px 17px;
+}
+.nav-area-2 .others-option .languages .button {
+  padding: 0 0.2rem !important;
+}
+.nav-area-2 .others-option .sidebar-menu {
+  display: inline-block;
+  margin-left: 15px;
+}
+.nav-area-2 .others-option .sidebar-menu i {
+  font-size: 40px;
+  color: #0cb8b6;
+  position: relative;
+  top: -2px;
+}
+
+/* Navbar toggler */
+.navbar-toggler {
+  border: none;
+  border-radius: 0;
+  padding: 0;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar-toggler .icon-bar {
+  width: 22px;
+  transition: all 0.3s;
+  background: #ffffff;
+  height: 3px;
+  display: block;
+  border-radius: 3px;
+}
+.navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+  left: 4px;
+  position: relative;
+}
+.navbar-toggler .middle-bar {
+  opacity: 0;
+  margin: 5px 0;
+}
+.navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+  left: 4px;
+  position: relative;
+}
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+  left: 0;
+}
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+}
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+  left: 0;
+}
+
+.nav-area .navbar-area .main-nav nav .navbar-nav .nav-item .language-item {
+  left: 30px !important;
+}
+
+.navbar-light .navbar-brand .logo-wrapper, .navbar-light .navbar-light .logo-wrapper {
+  display: flex;
+}
+.navbar-light .navbar-brand .logo-wrapper .logo-icon, .navbar-light .navbar-light .logo-wrapper .logo-icon {
+  width: 25px;
+  margin-right: 0.3rem;
+}
+.navbar-light .navbar-brand .logo-wrapper .logo-text, .navbar-light .navbar-light .logo-wrapper .logo-text {
+  width: 125px;
+}
+
+.navbar-light .navbar-brand .logo-subtitle, .navbar-light .navbar-light .logo-subtitle {
+  font-size: 16px;
+  color: white;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1408px) {
+  .nav-area-2 .navbar-area .main-nav nav {
+    padding: 10px 0;
+  }
+  .nav-area-2 .navbar-area .main-nav nav .navbar-collapse {
+    border-top: 1px solid #eee;
+    margin-top: 15px;
+    padding-top: 8px;
+    overflow-y: auto;
+    max-height: 60vh;
+  }
+  .nav-area-2 .navbar-area .main-nav nav .navbar-collapse::-webkit-scrollbar {
+    width: 10px;
+  }
+  .nav-area-2 .navbar-area .main-nav nav .navbar-collapse::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  .nav-area-2 .navbar-area .main-nav nav .navbar-collapse::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  .nav-area-2 .navbar-area .main-nav nav .navbar-collapse::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  .nav-area-2 .navbar-area .main-nav nav .navbar-nav .nav-item {
+    padding: 6px 0;
+  }
+  .nav-area-2 .navbar-area .main-nav nav .navbar-nav .nav-item a {
+    font-size: 14px;
+    margin: 0 7px;
+  }
+  .nav-area-2 .navbar-area .main-nav nav .navbar-nav .nav-item a i {
+    font-size: 12px;
+    top: 2px;
+  }
+  .nav-area-2 .navbar-area .main-nav nav .navbar-nav .nav-item .dropdown-menu {
+    width: 220px;
+  }
+  .nav-area-2 .navbar-area .main-nav nav .navbar-nav .nav-item .dropdown-menu li {
+    padding: 0;
+  }
+  .nav-area-2 .navbar-area .others-option .make-an-appointment .default-btn {
+    padding: 10px 9px;
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .navbar-light .navbar-brand .logo-wrapper, .navbar-light .navbar-light .logo-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  .navbar-light .navbar-brand .logo-wrapper .logo-icon, .navbar-light .navbar-light .logo-wrapper .logo-icon {
+    display: none;
+  }
+  .navbar-light .navbar-brand .logo-wrapper .logo-text, .navbar-light .navbar-light .logo-wrapper .logo-text {
+    width: 90px;
+  }
+  .navbar-light .navbar-brand .logo-subtitle, .navbar-light .navbar-light .logo-subtitle {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .navbar-light .navbar-brand .logo-wrapper .logo-icon, .navbar-light .navbar-light .logo-wrapper .logo-icon {
+    display: block;
+  }
+}
+@media screen and (max-width: 445px) {
+  .navbar-light .navbar-brand .logo-wrapper {
+    display: flex;
+  }
+  .navbar-light .navbar-brand .logo-wrapper .logo-icon {
+    display: none;
+  }
+  .navbar-light .navbar-brand .logo-wrapper .logo-text {
+    width: 65px;
+  }
+  .navbar-light .navbar-brand .logo-subtitle, .navbar-light .navbar-light .logo-subtitle {
+    font-size: 10px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .nav-area-2 .navbar-area .main-nav {
+    background-color: transparent;
+    box-shadow: none;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .nav-area-2 .navbar-area .main-nav nav .navbar-nav .nav-item a {
+    font-size: 14px;
+    margin: 0 5px;
+  }
+  .nav-area-2 .navbar-area .main-nav nav .navbar-nav .nav-item a i {
+    font-size: 14px;
+  }
+  .nav-area-2 .navbar-area .others-option .make-an-appointment .default-btn {
+    padding: 10px 8px;
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .nav-area-2 .navbar-area .main-nav {
+    background-color: #25245e;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .nav-area-2 .navbar-area .main-nav {
+    background-color: #25245e;
+    padding: 10px 0;
+  }
+  .nav-area-2 .navbar-area .main-nav .container {
+    position: relative;
+  }
+  .nav-area-2 .navbar-area .main-nav nav {
+    padding: 0;
+  }
+  .nav-area-2 .navbar-area .main-nav nav .navbar-collapse {
+    border-top: 1px solid #eee;
+    margin-top: 15px;
+    padding-top: 8px;
+    overflow-y: auto;
+    max-height: 60vh;
+  }
+  .nav-area-2 .navbar-area .main-nav nav .navbar-collapse::-webkit-scrollbar {
+    width: 10px;
+  }
+  .nav-area-2 .navbar-area .main-nav nav .navbar-collapse::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  .nav-area-2 .navbar-area .main-nav nav .navbar-collapse::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  .nav-area-2 .navbar-area .main-nav nav .navbar-collapse::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  .nav-area-2 .navbar-area .main-nav nav .navbar-nav {
+    padding-right: 15px;
+  }
+  .nav-area-2 .navbar-area .main-nav nav .navbar-nav .nav-item {
+    padding: 5px 0;
+  }
+  .nav-area-2 .navbar-area .main-nav nav .navbar-nav .nav-item .dropdown-menu {
+    position: relative;
+    opacity: 1;
+    visibility: visible;
+    display: none;
+    transform: translateY(0);
+    width: 100%;
+    margin-top: 10px;
+    top: 0 !important;
+  }
+  .nav-area-2 .navbar-area .main-nav nav .navbar-nav .nav-item .dropdown-menu.open {
+    display: block;
+  }
+  .nav-area-2 .navbar-area .main-nav nav .navbar-nav .nav-item .dropdown-menu li {
+    padding: 0;
+  }
+  .nav-area-2 .navbar-area .main-nav nav .navbar-nav .nav-item .dropdown-menu li .dropdown-menu {
+    width: 90%;
+    left: 15px;
+    position: relative;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateY(0);
+    margin-top: 0;
+    top: 0 !important;
+  }
+  .nav-area-2 .others-option .make-an-appointment {
+    margin-right: 0.2rem;
+  }
+  .nav-area-2 .others-option .make-an-appointment .default-btn {
+    padding: 8px 4px;
+    font-size: 11px;
+  }
+  .nav-area-2 .others-option .languages .button {
+    font-size: 10px;
+  }
+  .nav-area-2 .others-option .languages .button img {
+    width: 13px;
+    margin-right: 0.2rem;
+  }
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,67 @@
+$body-font-family: "Lato", sans-serif;
+$heading-font-family: "Roboto", sans-serif;
+
+$main-color: #0cb8b6;
+$body-color: #525252;
+$heading-color: #001430;
+$white-color: #ffffff;
+$black-color: #000000;
+$box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+$transition: all 0.5s;
+$border-radius: 4px;
+
+
+.corporate-details-area {
+    .corporate-img {
+        width: 100%;
+        height: 400px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .corporate-card-items {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(4, 1fr);
+        .corporate-card-item {
+            display: block;
+            .corporate-card-head {
+                width: 100%;
+                height: 200px;
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    opacity: .9;
+                    transition: all .3s ease;
+                }
+            }
+            .corporate-card-body {
+                padding: 1rem 2rem;
+                background-color: $body-color;
+                transition: all .3s ease;
+
+                .corporate-card-body-title {
+                    color: white;
+                    font-weight: bold;
+                    font-size: 20px;
+                }
+            }
+
+            &:hover .corporate-card-head {
+                img {
+                    scale: 1.05;
+                    opacity: 1;
+                }
+            }
+
+            &:hover .corporate-card-body {
+                background-color: $main-color;
+            }
+        }
+      }
+}

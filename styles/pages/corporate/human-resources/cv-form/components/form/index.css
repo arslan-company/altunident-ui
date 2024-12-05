@@ -1,0 +1,72 @@
+.cv-form {
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  padding: 50px;
+  position: relative;
+  z-index: 1;
+}
+.cv-form h2 {
+  font-size: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.cv-form span {
+  text-align: center;
+  display: block;
+}
+.cv-form label {
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+.cv-form .form-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+.cv-form .form-group i {
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  line-height: 1;
+  font-size: 18px;
+  color: #0cb8b6;
+}
+.cv-form .form-group .form-control {
+  padding: 12px 50px;
+}
+.cv-form .react-datepicker-wrapper {
+  display: block;
+  width: 100%;
+}
+.cv-form .default-btn {
+  display: block;
+  margin: 15px auto 0;
+}
+.cv-form .nice-select {
+  height: 50px;
+  width: 100%;
+  line-height: 48px;
+  font-size: 15px;
+  margin-bottom: 30px;
+  padding-left: 50px;
+  background-color: #f2f9fc;
+}
+.cv-form .nice-select span {
+  text-align: left;
+}
+.cv-form .nice-select::after {
+  height: 8px;
+  width: 8px;
+}
+.cv-form .nice-select.open .list {
+  height: 250px;
+  overflow-y: scroll;
+}
+.cv-form .shape {
+  position: absolute;
+  top: -35px;
+  right: -45px;
+  z-index: -1;
+  animation: moveBounce 5s linear infinite;
+}/*# sourceMappingURL=index.css.map */

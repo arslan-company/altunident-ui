@@ -1,0 +1,145 @@
+$body-font-family: "Lato", sans-serif;
+$heading-font-family: "Roboto", sans-serif;
+
+$main-color: #0cb8b6;
+$body-color: #525252;
+$heading-color: #001430;
+$white-color: #ffffff;
+$black-color: #000000;
+$box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+$transition: all 0.5s;
+$border-radius: 4px;
+
+
+.main-slider {
+    .main-slider-item {
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 700px;
+      overflow: hidden;
+      position: relative;
+      z-index: 1;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $heading-color;
+        opacity: 0.6;
+        z-index: 0;
+      }
+
+      .video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+  
+      .slider-content {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        .slider-text {
+          position: relative;
+          max-width: 690px;
+          overflow: hidden;
+          z-index: 1;
+          span {
+            color: $white-color;
+            font-size: 15px;
+            display: block;
+            margin-bottom: 10px;
+          }
+          h1 {
+            font-size: 50px;
+            color: $white-color;
+            margin-bottom: 25px;
+          }
+          p {
+            color: $white-color;
+            font-size: 16px;
+            margin-bottom: 35px;
+          }
+        }
+      }
+    }
+  
+    .swiper-button-next, .swiper-button-prev {
+      &::after {
+        color: #fff;
+        font-size: 35px;
+  
+        &:hover {
+          color: $main-color;
+        }
+      }
+    }
+  
+    .swiper-slide {
+      &.swiper-slide-active {
+        .slider-text {
+          &.overflow-hidden {
+            overflow: hidden;
+          }
+          &.one {
+            span {
+              animation: 1s 0.1s fadeInUpBig both;
+            }
+            .video-btn-animat {
+              animation: 1s 0.1s fadeInUpBig both;
+            }
+            h1 {
+              animation: 2s 0.2s fadeInUpBig both;
+            }
+            p {
+              animation: 2s 0.2s fadeInUpBig both;
+            }
+            .slider-btn {
+              animation: 2s 0.2s fadeInUpBig both;
+            }
+          }
+          &.two {
+            span {
+              animation: 2s 0.2s fadeInDownBig both;
+            }
+            .video-btn-animat {
+              animation: 2s 0.2s fadeInDownBig both;
+            }
+            h1 {
+              animation: 2s 0.2s fadeInLeft both;
+            }
+            p {
+              animation: 2s 0.2s fadeInRight both;
+            }
+            .slider-btn {
+              animation: 2s 0.2s fadeInUpBig both;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width:450px) {
+    .main-slider {
+      .main-slider-item {
+        height: 700px;
+        .slider-content {
+          .slider-text {
+            h1 {
+              font-size: 30px;
+            }
+          }
+        }
+      }
+    }
+  
+  }

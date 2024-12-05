@@ -1,0 +1,41 @@
+.appointment-popup {
+  height: 250px;
+  overflow-y: scroll;
+}
+.appointment-popup::-webkit-scrollbar {
+  background-color: #fff;
+  width: 10px;
+}
+.appointment-popup::-webkit-scrollbar-thumb {
+  background-color: #0cb8b6;
+  border-radius: 50px;
+}
+.appointment-popup .item {
+  width: 100%;
+}
+.appointment-popup .item .item-link {
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  color: #0cb8b6;
+  padding: 0.4rem 1rem;
+  font-size: 17px;
+  font-weight: 600;
+}
+.appointment-popup .item .item-link:hover {
+  background-color: #ebebeb;
+}
+
+@media screen and (max-width: 550px) {
+  .appointment-popup-screen .appointment-popup-wrapper {
+    width: 280px;
+  }
+  .appointment-popup-screen .appointment-popup-wrapper .appointment-popup-head {
+    padding: 0.8rem 0.6rem;
+  }
+  .appointment-popup-screen .appointment-popup-wrapper .appointment-popup-head .title-area .title {
+    font-size: 22px;
+  }
+  .appointment-popup-screen .appointment-popup-wrapper .appointment-popup-body .item .item-link {
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=index.css.map */

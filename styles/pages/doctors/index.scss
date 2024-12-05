@@ -1,0 +1,48 @@
+$body-font-family: "Lato", sans-serif;
+$heading-font-family: "Roboto", sans-serif;
+
+$main-color: #0cb8b6;
+$body-color: #525252;
+$heading-color: #001430;
+$white-color: #ffffff;
+$black-color: #000000;
+$box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+$transition: all 0.5s;
+$border-radius: 4px;
+
+.doctors-area {
+    .filter-area {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 3rem;
+  
+      .search-filter {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+        
+        .filter-item {
+          margin-bottom: 0;
+        }
+
+        button {
+          height: 100%;
+          margin: 0;
+          margin-left: .5rem;
+          padding: 0 .6rem;
+          background-color: #0cb8b6;
+          color: #ffffff;
+          border-radius: 5px;
+        }
+      }
+
+      .filter-item {
+        width: 100%;
+        margin-bottom: 1rem;
+        
+        &:nth-last-child(1) {
+          margin-right: 0;
+        }
+      }
+    }
+}

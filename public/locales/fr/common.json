@@ -1,0 +1,504 @@
+{
+    "navbar": {
+        "nav_items": {
+            "home": "Hôpital Atakent",
+            "hospitals": "Hôpitaux",
+            "doctors": "Médecins",
+            "departments": "Départements",
+            "corporate": "Entreprise",
+            "corporate_pages": {
+                "organization_schema": "Organigramme",
+                "quality_studies": "Études de qualité",
+                "human_resources": "Ressources humaines"
+            },
+            "blog": "Blog",
+            "contact": "Contact"
+        },
+        "make_an_appointment": "Prendre rendez-vous"
+    },
+    "homepage": {
+        "search_form": {
+            "general_search_placeholder_text": "Recherche Générale (FR)",
+            "search_results-area": {
+                "title": "Résultats de la recherche",
+                "hospitals_title": "Hôpitaux",
+                "departments_title": "Départements",
+                "doctors_title": "Médecins",
+                "data-not-found-text": "Aucun résultat trouvé."
+            }
+        },
+        "hospitals": {
+            "general_promotion_button_text": "Promotion Générale",
+            "departments_button_text": "Départements",
+            "physician_staff_button_text": "Équipe Médicale"
+        },
+        "services": {
+            "top_title": "Services",
+            "title": "Nos Services Médicaux Spécialisés",
+            "description": "Bénéficiez de nos services médicaux spécialisés.",
+            "all_services": "Tous les Services",
+            "services_items": {
+                "item_1_title": "CENTRE DE CHIRURGIE DE L'OBÉSITÉ ET MÉTABOLIQUE",
+                "item_2_title": "CENTRE DE GYNÉCOLOGIE ET REPRODUCTION",
+                "item_3_title": "CENTRE DE CHIRURGIE PÉDIATRIQUE",
+                "item_4_title": "CENTRE DE CHIRURGIE AVANCÉE DE LA COLONNE VERTÉBRALE",
+                "item_5_title": "CHIRURGIE CARDIOVASCULAIRE ET CARDIOLOGIE INTERVENTIONNELLE",
+                "item_6_title": "CENTRE D'ONCOLOGIE"
+            }
+        },
+        "doctor_list": {
+            "title": "Médecins",
+            "description": "Nos médecins experts et expérimentés travaillent pour préserver votre santé et garantir votre satisfaction tout au long du processus de traitement. Nos médecins fournissent les meilleurs services de santé avec leur expertise et leurs connaissances continuellement mises à jour dans leurs domaines respectifs. Vous pouvez vous sentir en sécurité avec nos médecins qui proposent des solutions de santé personnalisées pour votre parcours de santé.",
+            "all_doctors": "Tous les Médecins",
+            "doctor_card_item": {
+                "doctor_languages_text": "Langues",
+                "doctor_education_text": "Éducation",
+                "doctor_specialization_training_text": "Formation Spécialisée"
+            }
+        },
+        "brand_statistics": {
+            "statistic_1_text": "Hôpital",
+            "statistic_2_text": "Centre Médical",
+            "statistic_3_text": "Ville",
+            "statistic_4_text": "Médecins",
+            "statistic_5_text": "Personnel"
+        },
+        "testimonial": {
+            "top_title": "Tous les Témoignages",
+            "title": "Témoignages",
+            "description": "Que disent les gens de nous ?",
+            "testimonial_items": {
+                "testimonial_item_1_job": "Chirurgien du Cerveau",
+                "testimonial_item_2_job": "Médecin de Famille",
+                "testimonial_item_3_job": "Ophtalmologiste"
+            }
+        },
+        "carousel": {
+            "top_title": "Articles de Blog Mis en Avant",
+            "title": "Blog Atakent",
+            "description": "Consultez les annonces, les actualités et d'autres articles.",
+            "all_blogs_button_text": "Tous les Articles",
+            "filter_button_items": {
+                "all_button_text": "Tous",
+                "news_button_text": "Actualités",
+                "announcements_button_text": "Annonces"
+            }
+        }
+    },
+    "footer": {
+        "section_1": {
+            "description": "Notre hôpital est audité par l'Organisation Internationale de Normalisation (ISO) et le Ministère de la Santé, représentant des normes de qualité internationales.",
+            "make_an_appointment_button_text": "Prendre rendez-vous",
+            "report_suggestion_button_text": "Soumettre un Avis et une Suggestion",
+            "rights_reserved": "Tous droits réservés."
+        },
+        "section_2": {
+            "title": "Menu Rapide",
+            "items": {
+                "item_1_text": "Hôpital Atakent",
+                "item_2_text": "Nos Médecins",
+                "item_3_text": "Nos Départements",
+                "item_4_text": "Entreprise",
+                "item_5_text": "Blog",
+                "item_6_text": "Contact"
+            }
+        },
+        "section_3": {
+            "title": "Guide du Patient",
+            "items": {
+                "item_1_text": "Politique de Qualité",
+                "item_2_text": "Unité de Gestion et Études de Qualité",
+                "item_3_text": "Politique d'Accompagnant",
+                "item_4_text": "Politique des Visiteurs",
+                "item_5_text": "Politique d'Avis, de Suggestions et de Réclamations",
+                "item_6_text": "Informations et Politique de Sécurité",
+                "item_7_text": "Politique de Santé et Sécurité au Travail",
+                "item_8_text": "À Propos de la Protection des Données Personnelles"
+            }
+        },
+        "section_4": {
+            "title": "Contact",
+            "general_center_title": "Siège Social",
+            "items": {
+                "support_line_title": "Centre d'appels",
+                "email_title": "E-mail",
+                "address_title": "Adresse",
+                "address_text": "Quartier Adnan Menderes, Ufuk St. No:7 Center/Yalova"
+            }
+        },
+        "last_update_date": "Date de la dernière mise à jour"
+    },
+    "services_page": {
+        "page_banner": {
+            "parent_page_text": "Services médicaux spécialisés",
+            "homepage_text": "Page d'accueil"
+        },
+        "no_content_text": "Il n'y a pas encore de contenu ici."
+    },
+    "doctors_page": {
+        "page_banner": {
+            "our_doctors_text": "Nos Médecins",
+            "all_our_doctors_text": "Tous Nos Médecins",
+            "go_homepage_link_text": "Accueil"
+        },
+        "top_title": "Tous Nos Médecins",
+        "title": "Nos Médecins",
+        "description": "Nos médecins les plus expérimentés sont là pour vous servir.",
+        "filter_area": {
+            "filter_by_hospital_option_text": "Filtrer par Hôpital (Tous)",
+            "filter_by_department_option_text": "Filtrer par Département (Tous)",
+            "search_input_placeholder_text": "Rechercher"
+        },
+        "doctor_card": {
+            "education_title": "Éducation",
+            "specialization_training_title": "Formation Spécialisée",
+            "languages_title": "Langues",
+            "make_an_appointment_title": "Prendre rendez-vous"
+        },
+        "no_data": "Aucune donnée disponible pour le moment."
+    },
+    "doctor_detail_page": {
+        "page_banner": {
+            "details_text": "Nos Médecins",
+            "go_homepage_link_text": "Accueil",
+            "parent_page_text": "Médecins"
+        },
+        "about_doctor_area": {
+            "languages_text": "Langues",
+            "education_text": "Éducation",
+            "specialization_training_text": "Formation Spécialisée",
+            "hospital_text": "Hôpital"
+        },
+        "make_an_appointment_area": {
+            "top_title": "Prendre un Rendez-vous",
+            "title": "Planifier un Rendez-vous Maintenant",
+            "form": {
+                "name_area_label_text": "Nom",
+                "name_area_placeholder_text": "Entrez Votre Nom",
+                "email_area_label_text": "E-mail",
+                "email_area_placeholder_text": "Entrez Votre Adresse E-mail",
+                "phone_area_label_text": "Téléphone",
+                "phone_area_placeholder_text": "Entrez Votre Numéro de Téléphone",
+                "service_label_text": "Service",
+                "service_area_option_text": "Sélectionner un Service",
+                "date_area_label_text": "Date",
+                "time_area_label_text": "Heure",
+                "time_area_option_text": "Sélectionner une Heure",
+                "message_area_label_text": "Message",
+                "message_area_placeholder_text": "Entrez Votre Message si Vous en Avez",
+                "submit_button_text": "Soumettre"
+            }
+        },
+        "available_times_area": {
+            "title": "Horaires Disponibles",
+            "not_available_text": "Indisponible",
+            "make_an_appointment_button_text": "Prendre un Rendez-vous"
+        },
+        "publications_area": {
+            "title": "Publications",
+            "no_data_text": "Il n'y a pas de données disponibles actuellement."
+        }
+    },
+    "departments_page": {
+        "page_banner": {
+            "our_departments_text": "Nos Départements",
+            "all_our_departments_text": "Tous Nos Départements",
+            "go_homepage_link_text": "Accueil"
+        },
+        "top_title": "Tous Nos Départements",
+        "title": "Nos Départements",
+        "filter_area": {
+            "filter_by_hospital_option_text": "Filtrer par Hôpital (Tous)",
+            "search_input_placeholder_text": "Rechercher"
+        }
+    },
+    "department_detail_page": {
+        "page_banner": {
+            "details_text": "Départements",
+            "go_homepage_link_text": "Accueil",
+            "parent_page_text": "Départements"
+        },
+        "no_content_text": "Aucun contenu disponible pour le moment.",
+        "doctor_list_title": "Médecins de ce Département"
+    },
+    "corporate_page": {
+        "page_banner": {
+            "corporate_text": "Entreprise",
+            "go_homepage_link_text": "Accueil"
+        },
+        "blog_area": {
+            "top_title": "Hôpital Atakent",
+            "title": "Entreprise",
+            "content": {
+                "paragraph_1": {
+                    "paragraph": "Le Groupe de Santé Atakent, qui a fait ses premiers pas avec l'acquisition de l'Hôpital Privé Atakent par le Groupe Akkurt dans une zone fermée de 20 000 m2, poursuit son voyage de croissance en reprenant l'Atakent Orhangazi Cerrahi Tıp Merkezi en 2018, l'Atakent Gemlik Tıp Merkezi en 2019 et l'Özel Atakent Cihan Hastanesi en 2021."
+                },
+                "paragraph_2": {
+                    "title": "TOURNÉS VERS L'AVENIR",
+                    "paragraph": "Nous avançons avec la vision de devenir l'institution de santé leader et référente de la région, fournissant des services internationaux dans toutes les branches privées et générales ; et nous portons la mission de fournir des services de santé fiables, de qualité, économiques, technologiques et contemporains, conformes aux normes nationales, respectant les droits des patients et en harmonie avec la structure sociale, à chaque point du service de santé que nous vous offrons."
+                },
+                "paragraph_3": {
+                    "title": "SERVICE DE SANTÉ DE QUALITÉ",
+                    "paragraph": "Avec notre structure axée sur la perfection, nous nous efforçons d'améliorer en permanence les normes de qualité. Nous certifions notre qualité de service avec les documents ISO que nous avons et les inspections du Ministère de la Santé, et nous continuons à ajouter de nouveaux certificats à notre collection."
+                }
+            }
+        },
+        "card_items_area": {
+            "card_item_1_title": "Ressources Humaines",
+            "card_item_2_title": "À propos de nous"
+        }
+    },
+    "corporate_events_page": {
+        "page_banner": {
+            "page_title": "Événements d'entreprise",
+            "homepage_text": "Page d'accueil"
+        },
+        "title": "Nouvelles de l'entreprise",
+        "description": "Vous pouvez accéder à l'actualité de l'entreprise Atakent Health Group à partir de cette section."
+    },
+    "corporate_events_blog_detail_page": {
+        "page_banner": {
+            "parent_page_text": "Événements d'entreprise",
+            "homepage_text": "Page d'accueil"
+        },
+        "date": "L'histoire"
+    },
+    "cv_form_page": {
+        "page_banner": {
+            "page_title": "Candidature",
+            "active_page_text": "Soumettre un CV",
+            "homepage_text": "Accueil",
+            "parent_page_text": "Ressources Humaines"
+        },
+        "cv_form": {
+            "top_title": "Demande d'emploi",
+            "title": "Formulaire de candidature",
+            "description": "Pour postuler, vous devez télécharger et remplir le formulaire de candidature à partir du lien ci-dessous. Après l'avoir rempli, vous devez télécharger le fichier dans la section « Sélectionner un fichier » ci-dessous et soumettre le formulaire.",
+            "download_form_button_title": "Télécharger le formulaire de candidature",
+            "form": {
+                "fullname_label_text": "Nom Complet",
+                "fullname_placeholder_text": "Entrez Votre Nom Complet",
+                "phone_label_text": "Téléphone",
+                "phone_placeholder_text": "Entrez votre numéro de téléphone",
+                "email_label_text": "Courriel",
+                "email_placeholder_text": "Saisissez votre adresse e-mail",
+                "date_of_birth_placeholder_text": "Date de Naissance",
+                "departments_placeholder_text": "Sélectionnez un Département",
+                "departments_default_option_text": "Pour quel département souhaitez-vous postuler ?",
+                "hospitals_placeholder_text": "Sélectionnez un hôpital",
+                "hospitals_default_option_text": "Pour quel hôpital souhaitez-vous poser votre candidature ?",
+                "upload_cv_label": "Télécharger le formulaire de candidature (.DOCX)",
+                "submit_button_text": "Soumettre"
+            },
+            "alerts": {
+                "success": "Votre CV a été soumis avec succès. Nous vous répondrons dès que possible.",
+                "upload_cv_file": "Veuillez télécharger votre fichier de CV et réessayer.",
+                "age_verification": "Vous devez avoir plus de 18 ans. Malheureusement, vous n'êtes pas éligible pour postuler.",
+                "select_department": "Veuillez sélectionner le service pour lequel vous souhaitez postuler.",
+                "send_cv_failed": "Échec de l'envoi du CV.",
+                "time_constraint": "Vous avez déjà envoyé un message récemment."
+            }
+        }
+    },
+    "service_detail_page": {
+        "page_banner": {
+            "go_homepage_link_text": "Accueil"
+        },
+        "blog_area": {
+            "top_title": "Hôpital Atakent",
+            "title": "Notre Service",
+            "content": {
+                "paragraph_1": {
+                    "paragraph": "Le Groupe de Santé Atakent, qui a fait ses premiers pas avec l'acquisition de l'Hôpital Privé Atakent par le Groupe Akkurt dans une zone fermée de 20 000 m2, poursuit son voyage de croissance en reprenant l'Atakent Orhangazi Cerrahi Tıp Merkezi en 2018, l'Atakent Gemlik Tıp Merkezi en 2019 et l'Özel Atakent Cihan Hastanesi en 2021."
+                },
+                "paragraph_2": {
+                    "title": "TOURNÉS VERS L'AVENIR",
+                    "paragraph": "Nous avançons avec la vision de devenir l'institution de santé leader et référente de la région, fournissant des services internationaux dans toutes les branches privées et générales ; et nous portons la mission de fournir des services de santé fiables, de qualité, économiques, technologiques et contemporains, conformes aux normes nationales, respectant les droits des patients et en harmonie avec la structure sociale, à chaque point du service de santé que nous vous offrons."
+                },
+                "paragraph_3": {
+                    "title": "SERVICE DE SANTÉ DE QUALITÉ",
+                    "paragraph": "Avec notre structure axée sur la perfection, nous nous efforçons d'améliorer en permanence les normes de qualité. Nous certifions notre qualité de service avec les documents ISO que nous avons et les inspections du Ministère de la Santé, et nous continuons à ajouter de nouveaux certificats à notre collection."
+                }
+            }
+        },
+        "no_data": "Aucune donnée enregistrée disponible."
+    },
+    "contact_page": {
+        "seo": {
+            "address": "adresse",
+            "phone": "téléphone",
+            "location": "emplacement",
+            "where": "où",
+            "default": "contact atakent, adresse atakent, téléphone atakent, emplacement atakent, où se trouve l'hôpital atakent",
+            "description": "Coordonnées de Contact - Détails de Contact du Groupe de Santé Atakent"
+        },
+        "page_banner": {
+            "contact_text": "Contact",
+            "go_homepage_link_text": "Accueil"
+        },
+        "contact_info_area": {
+            "title": "Contact",
+            "title_2": "Siège Social",
+            "img_alt": "Siège Social de l'Hôpital Atakent",
+            "card": {
+                "card_country": "Turquie",
+                "card_email_title": "E-mail",
+                "card_phone_title": "Téléphone",
+                "address": "Quartier Adnan Menderes, Rue Ufuk"
+            }
+        },
+        "contact_hospital_list": {
+            "card_item": {
+                "address_title": "ADRESSE",
+                "email_title": "E-MAIL",
+                "location_button": "Localisation"
+            }
+        }
+    },
+    "blog_page": {
+        "page_banner": {
+            "blog_text": "Blog",
+            "go_homepage_link_text": "Accueil"
+        },
+        "blog_card": {
+            "read_more_button_text": "Lire la Suite"
+        },
+        "blog_sidebar": {
+            "widget_search": {
+                "title": "Recherche",
+                "search_form_input_placeholder_text": "Recherche... (Appuyez sur Entrée)"
+            },
+            "widget_latest_posts": {
+                "title": "Derniers Articles"
+            },
+            "widget_archive": {
+                "title": "Archives"
+            },
+            "widget_categories": {
+                "title": "Catégories"
+            },
+            "widget_tags": {
+                "title": "Tags"
+            }
+        }
+    },
+    "blog_detail_page": {
+        "page_banner": {
+            "blog_detail_text": "Détails du Blog",
+            "go_blogpage_link_text": "Blog"
+        },
+        "article_content_area": {
+            "entry_meta": {
+                "date_title": "Date",
+                "author_title": "Auteur"
+            }
+        },
+        "article_footer_area": {
+            "share_post_button_text": "Partager"
+        },
+        "post_navigation_area": {
+            "prev_post_button_text": "Article Précédent",
+            "next_post_button_text": "Article Suivant"
+        },
+        "comments_area": {
+            "comment_count_title": "Commentaires",
+            "comment_list_item": {
+                "reply_button_text": "Répondre"
+            },
+            "comment_respond": {
+                "comment_reply_title": "Laisser un Commentaire",
+                "form": {
+                    "comment_notes_text": "Votre adresse e-mail ne sera pas publiée.",
+                    "name_input_label_text": "Nom",
+                    "email_input_label_text": "E-mail",
+                    "website_input_label_text": "Site Web",
+                    "comment_input_label_text": "Votre Commentaire",
+                    "submit_button_text": "Soumettre le Commentaire"
+                }
+            }
+        }
+    },
+    "common_doctors_component": {
+        "no_doctor_data_text": "Il n'y a actuellement aucune donnée à afficher ici."
+    },
+    "common_loading_component": {
+        "loading_text": "Chargement..."
+    },
+    "campaign": {
+        "title": "Campagnes",
+        "sub_title": "Opportunités à Durée Limitée",
+        "end_date": "Date de Fin : "
+    },
+    "appointment_popup": {
+        "title": "Sélectionner un Hôpital"
+    },
+    "contact_form": {
+        "top_title": "Contactez-nous",
+        "title": "Nous sommes là pour vous",
+        "form": {
+            "name_area_placeholder_text": "Votre Nom",
+            "email_area_placeholder_text": "Votre E-mail",
+            "phone_area_placeholder_text": "Votre Téléphone",
+            "department_area_placeholder_text": "Sélectionnez un Département",
+            "time_area_placeholder_text": "Sélectionnez l'Heure",
+            "message_area_placeholder_text": "Votre Message",
+            "hospital_area_placeholder_text": "Sélectionnez l'hôpital que vous souhaitez contacter",
+            "submit_button_text": "Envoyer",
+            "success_alert": "Votre message a été envoyé avec succès.",
+            "error_alert": "Un problème est survenu lors de l'envoi du message. Veuillez vérifier les informations que vous avez saisies et réessayer.",
+            "message_too_short_error": "Le message est trop court",
+            "time_constraint_error": "Vous avez déjà envoyé un message récemment. Veuillez réessayer plus tard."
+        }
+    },
+    "seo": {
+        "homepage": {
+            "title": "Hôpital Atakent",
+            "description": "Votre Sourire de Santé | Hôpital Atakent ~ Groupe de Santé Atakent ~ Hôpital Cihan Atakent de Kocaeli ~ Centre Médical Atakent de Gemlik ~ Centre Médical Chirurgical Atakent d'Orhangazi ~ Hôpital Atakent de Yalova",
+            "keywords": "atakent, hôpital atakent, groupe de santé atakent"
+        },
+        "blog": {
+            "title": "Blog",
+            "description": "Nos Articles de Blog | Blog Atakent ~ Guide de Santé Atakent ~ Protégez Votre Santé",
+            "keywords": "blog, blog atakent, guide de santé atakent"
+        },
+        "cv_form": {
+            "title": "Formulaire CV des Ressources Humaines",
+            "description": "Candidature à l'Emploi Atakent - Ressources Humaines | Parcourez les postes ouverts à l'hôpital Atakent et postulez pour un emploi.",
+            "keywords": "ressources humaines atakent"
+        },
+        "department": {
+            "title": "Départements",
+            "description": "Nos Départements | Départements et Unités du Groupe de Santé Atakent",
+            "keywords": "départements, unités, services, départements atakent"
+        },
+        "department_detail": {
+            "title": "- Nos Départements",
+            "description": "Notre Département | Obtenez des Informations Détaillées sur les Départements de Santé de l'Hôpital Atakent...",
+            "units": "unité",
+            "department": "département"
+        },
+        "doctors": {
+            "title": "Nos Médecins",
+            "description": "Nos Médecins | Équipe Médicale et de Médecins du Groupe de Santé Atakent",
+            "keywords": "médecin atakent, médecins atakent, équipe médicale atakent, équipe de médecins atakent"
+        },
+        "doctor_detail": {
+            "title": "- Nos Médecins",
+            "description": "Nos Médecins",
+            "keywords1": "médecins atakent",
+            "keywords2": "qui est"
+        },
+        "hospital_detail": {
+            "title": "À Propos ~ Introduction Générale",
+            "description1": "Introduction Générale",
+            "description2": "En Savoir Plus Sur",
+            "keywords1": "à propos de",
+            "keywords2": "où se trouve"
+        },
+        "services_detail": {
+            "title": "Nos Services",
+            "description": "Le Groupe de Santé Atakent, qui fournit des services dans une zone fermée de 20 000 m2, a fait ses premiers pas avec l'acquisition de l'Hôpital Privé Atakent par le Groupe Akkurt...",
+            "keywords": "services atakent, services hospitaliers atakent, services du groupe de santé atakent"
+        }
+    }
+}

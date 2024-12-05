@@ -1,0 +1,29 @@
+.doctors-area .filter-area {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+.doctors-area .filter-area .search-filter {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.doctors-area .filter-area .search-filter .filter-item {
+  margin-bottom: 0;
+}
+.doctors-area .filter-area .search-filter button {
+  height: 100%;
+  margin: 0;
+  margin-left: 0.5rem;
+  padding: 0 0.6rem;
+  background-color: #0cb8b6;
+  color: #ffffff;
+  border-radius: 5px;
+}
+.doctors-area .filter-area .filter-item {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.doctors-area .filter-area .filter-item:nth-last-child(1) {
+  margin-right: 0;
+}/*# sourceMappingURL=index.css.map */

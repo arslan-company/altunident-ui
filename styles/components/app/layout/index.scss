@@ -1,0 +1,10 @@
+.layout {
+    .fixed-link-area {
+        position: fixed;
+        right: 30px;
+        bottom: 20px;
+        display: flex;
+        gap: 1rem;
+        z-index: 4;
+    }
+}

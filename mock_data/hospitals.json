@@ -1,0 +1,66 @@
+[
+    {
+        "name": "Yalova Atakent Hastanesi",
+        "short_name": "Yalova",
+        "slug": "yalova-atakent-hastanesi",
+        "id": 6,
+        "image": "/img/hospitals/atakent-yalova.webp",
+        "general_promotion": {
+            "description": "Dönemin en büyük bölge yatırımı, memnun hastalar ve mutlu çalışanlarla daha da büyüyor! Kuruluş sürecine 2005 yılında geçen Yalova Özel Atakent Hastanesi, 2008 yılında Yalova şehir merkezinde hizmet sunmaya başladı. 2017 yılında, uluslararası standartlarda, çağdaş, erişilebilir, iyileştiren ve yatay hastane konseptiyle inşa edilmiş yeni binasına taşındı. Özel Atakent Hastanesi, toplamda 20.000 m2’ye yakın kapalı alanda hasta ve hasta yakınlarının konforu düşünülerek dizayn edilmiş bekleme alanı ve poliklinikleri, geniş ve konforlu hasta odaları, hijyen odaklı güçlü otelcilik ve destek hizmeti ile sağlık hizmeti sunumuna devam ediyor. 2018 yılında Akkurt Grup tarafından satın alınarak büyüme yolculuğunda daha hızlı ilerleyen Özel Atakent Hastanesi, açık kalp ameliyatlarının yapıldığı Kardiyovasküler Cerrahi ve Anjiyo Ünitesi, 12 Yataklı Yenidoğan Yoğun Bakım Ünitesi, 33 Yataklı Yoğun Bakım Ünitesi, 5 Yataklı Koroner Yoğun Bakım Ünitesi, 5 Donanımlı Ameliyathanesi, 2 Doğumhanesi, geniş, ferah ve teknolojik alt yapı ile donatılmış olan Fizik Tedavi ve Rehabilitasyon Ünitesi ile bölgenin sağlık ihtiyacı için profesyonel çözümler sunuyor.",
+            "image": "/img/hospitals/gallery/yalova-atakent-hastanesi.webp"
+        },
+        "contact": {
+            "address": "Adnan Menderes Mahallesi Ufuk Sk. No: 7 Merkez/YALOVA",
+            "email": "yalova@atakent.com",
+            "google_maps_pb_key": "!1m14!1m8!1m3!1d24219.371706561502!2d29.258112!3d40.64263900000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cafac1264a8989%3A0xd880d50f61e467ac!2s%C3%96zel%20Atakent%20Hastanesi!5e0!3m2!1str!2sus!4v1685539692835!5m2!1str!2sus"
+        }
+    },
+    {
+        "name": "Kocaeli Atakent Cihan Hastanesi",
+        "short_name": "Kocaeli Cihan",
+        "slug": "kocaeli-atakent-cihan-hastanesi",
+        "id": 3,
+        "image": "/img/hospitals/atakent-cihan.webp",
+        "general_promotion": {
+            "description": "Cihan Hastanesi, 2013 yılında, Kocaeli’nin Merkez İlçesi’nde 9.000 m2 kapalı alan üzerine kuruldu. 2021 yılında Atakent Sağlık Grubu’na devredilen hastane, Özel Atakent Cihan Hastanesi ismi ile sağlık hizmeti sunumuna devam etmeye başladı. Özel Atakent Cihan Hastanesi, hasta ve hasta yakınlarının konforu düşünülerek dizayn edilmiş bekleme alanı ve poliklinikleri, hijyen odaklı güçlü otelcilik ve destek hizmeti, özellikli tıbbi branşları, teknolojik alt yapı ile donatılmış Fizik Tedavi ve Rehabilitasyon Ünitesi, 22 Yataklı Yenidoğan Yoğun Bakım Ünitesi, 20 Yataklı Yoğun Bakım Ünitesi, 4 Yataklı Koroner Yoğun Bakım Ünitesi, 4 Donanımlı Ameliyathanesi, 2 Doğumhanesi, gelişmiş Görüntüleme ve Laboratuvar Üniteleri, Endoskopi Ünitesi ve Uyku Laboratuvarı ile profesyonel sağlık hizmeti sunmaya devam ediyor.",
+            "image": "/img/hospitals/gallery/kocaeli-atakent-cihan-hastanesi.webp"
+        },
+        "contact": {
+            "address": "Yenişehir Mahallesi Özden Sk. No: 33 İzmit/KOCAELİ",
+            "email": "kocaeli@atakent.com",
+            "google_maps_pb_key": "!1m14!1m8!1m3!1d24173.013064169292!2d29.961068!3d40.770236!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cb502e20680869%3A0xf6f256cf4982b013!2sAtakent%20Cihan%20Hastanesi!5e0!3m2!1str!2sus!4v1685539861746!5m2!1str!2sus"
+        }
+    },
+    {
+        "name": "Orhangazi Atakent Cerrahi Tıp Merkezi",
+        "short_name": "Orhangazi",
+        "slug": "orhangazi-atakent-cerrahi-tip-merkezi",
+        "id": 5,
+        "image": "/img/hospitals/atakent-orhangazi.webp",
+        "general_promotion": {
+            "description": "Özel Atakent Orhangazi Tıp Merkezi, Orhangazi’de büyük bir ihtiyaca cevap vermek üzere 2007 yılında Zeytin Tıp Merkezi ismi ile kuruluş sürecine başladı. 2018 yılında Atakent Sağlık Grubu tarafından satın alınan A tipi Tıp Merkezi, kendi alanında uzman hekim kadrosu, güler yüzlü sağlık çalışanı, profesyonel idari personeliyle hizmet sunmaya devam ediyor. 4600 m2 kapalı alanda 8 gözlem ünitesi, 2 ameliyathanesi ve 1 doğumhanesi ile hastalarının yanında olan Tıp Merkezi 7/24 acil sağlık hizmeti sunan bir sağlık kuruluşudur.",
+            "image": "/img/hospitals/gallery/orhangazi-atakent-hastanesi.webp"
+        },
+        "contact": {
+            "address": "Muradiye Mahallesi Turist Yolu Cd. No: 104 Orhangazi/BURSA",
+            "email": "orhangazi@atakent.com",
+            "google_maps_pb_key": "!1m14!1m8!1m3!1d24273.966168880666!2d29.311749!3d40.491948!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ca3de2d4d59fd9%3A0x1dfa817a9c8d542e!2s%C3%96zel%20Atakent%20Cerrahi%20Tip%20Merkezi!5e0!3m2!1str!2sus!4v1685539917700!5m2!1str!2sus"
+        }
+    },
+    {
+        "name": "Gemlik Atakent Tıp Merkezi",
+        "short_name": "Gemlik",
+        "slug": "gemlik-atakent-tip-merkezi",
+        "id": 4,
+        "image": "/img/hospitals/atakent-gemlik.webp",
+        "general_promotion": {
+            "description": "Bursa’nın en büyük liman ilçesinde bulunan Gemlik Tıp Merkezi, 2011 yılında Acıbadem Sağlık Grubu tarafından hizmete açıldı. 2019 yılında, Doğu Marmara Bölgesi ağırlıklı olmak üzere sağlık yatırımlarını sürdüren Atakent Sağlık Grubu tarafından satın alındı. Özel Atakent Gemlik Tıp Merkezi ismi ile hizmet sunmaya devam eden Tıp Merkezi’nde poliklinik hizmetlerine ek olarak laboratuvar ve radyolojik incelemeler (ultrasonografi, röntgen, mamografi) gerçekleştirilmektedir. 4 gözlem odası ve 6 adet gözlem yatağı bulunan Tıp Merkezi’nde hizmet verilen branşlar arasında “Kardiyoloji”, “Göz Sağlığı ve Hastalıkları”, “İç Hastalıkları”, “Çocuk Sağlığı ve Hastalıkları”, “Genel Cerrahi”, “Kadın Hastalıkları ve Doğum”, “Kulak Burun Boğaz”, “Ortopedi ve Travmatoloji”, “Dermatoloji” ile “Fizik Tedavi ve Rehabilitasyon” bölümleri bulunmaktadır.",
+            "image": "/img/hospitals/gallery/gemlik-atakent-tip-merkezi.webp"
+        },
+        "contact": {
+            "address": "Dr. Ziya Kaya Mahallesi Hürriyet Cd. No: 45 Gemlik/BURSA",
+            "email": "gemlik@atakent.com",
+            "google_maps_pb_key": "!1m14!1m8!1m3!1d24297.64988222414!2d29.161524!3d40.426432!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ca5b6045e8dcb7%3A0xebbedf421b09fdc4!2s%C3%96zel%20Atakent%20Gemlik%20t%C4%B1p%20merkezi!5e0!3m2!1str!2sus!4v1685539964892!5m2!1str!2sus"
+        }
+    }
+]

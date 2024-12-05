@@ -1,0 +1,87 @@
+.brand-statistics-area {
+  position: relative;
+  overflow: hidden;
+}
+.brand-statistics-area .shape-1 {
+  position: absolute;
+  left: -260px;
+  top: 0;
+  z-index: -1;
+  animation: FocuS 1s linear 1s infinite;
+}
+.brand-statistics-area .shape-2 {
+  position: absolute;
+  right: -260px;
+  bottom: 0;
+  z-index: -1;
+  animation: FocuSTwo 1s linear 1s infinite;
+}
+.brand-statistics-area .brand-statistics-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: all 0.5s;
+  margin-bottom: 30px;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  padding: 30px;
+  position: relative;
+}
+.brand-statistics-area .brand-statistics-card i {
+  background-color: #f5f5f5;
+  color: #0cb8b6;
+  font-size: 30px;
+  line-height: 1;
+  display: block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  margin: 0 auto 30px;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+.brand-statistics-area .brand-statistics-card p {
+  color: #0cb8b6;
+  line-height: 1;
+  margin-bottom: 0;
+  font-size: 17px;
+}
+.brand-statistics-area .brand-statistics-card h2 {
+  color: #001430;
+  line-height: 1;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.brand-statistics-area .brand-statistics-card:hover {
+  transform: translateY(-5px);
+}
+.brand-statistics-area .brand-statistics-card:hover i {
+  background-color: #0cb8b6;
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  color: #ffffff;
+}
+@keyframes FocuS {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes FocuSTwo {
+  0% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,68 @@
+$body-font-family: "Lato", sans-serif;
+$heading-font-family: "Roboto", sans-serif;
+
+$main-color: #0cb8b6;
+$body-color: #525252;
+$heading-color: #001430;
+$white-color: #ffffff;
+$black-color: #000000;
+$box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+$transition: all 0.5s;
+$border-radius: 4px;
+
+.appointment-popup {
+    height: 250px;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+        background-color: #fff;
+        width: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: $main-color;
+        border-radius: 50px;
+    }
+
+    .item {
+        width: 100%;
+
+        .item-link {
+            width: 100%;
+            border-bottom: 1px solid rgba(0,0,0,.1);
+            color: $main-color;
+            padding: .4rem 1rem;
+            font-size: 17px;
+            font-weight: 600;
+
+            &:hover {
+                background-color: #ebebeb;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:550px) {
+    .appointment-popup-screen {
+        .appointment-popup-wrapper {
+            width: 280px;
+    
+            .appointment-popup-head {
+                padding: .8rem .6rem;
+    
+                .title-area {
+                    .title {
+                        font-size: 22px;
+                    }
+                }
+            }
+        
+            .appointment-popup-body {
+                .item {
+                    .item-link {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

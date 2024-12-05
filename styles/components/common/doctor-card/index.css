@@ -1,0 +1,219 @@
+.doctor-card {
+  width: 100%;
+  text-align: center;
+  border: none;
+  outline: 0;
+  position: relative;
+  transition: all 0.5s;
+  margin-bottom: 30px;
+  padding: 0;
+  z-index: 1;
+}
+.doctor-card .doctor-img {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.doctor-card .doctor-img .background {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 5px solid #0cb8b6;
+  border-bottom: none;
+  z-index: 1;
+}
+.doctor-card .doctor-img .doctor {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+.doctor-card .doctor-img .loading {
+  background-color: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.doctor-card .doctor-img .doctors-detail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4));
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  transition: all 0.5s ease;
+  opacity: 0;
+  padding: 2rem 2rem;
+  flex-direction: column;
+  z-index: 3;
+}
+.doctor-card .doctor-img .doctors-detail .doctors-detail-item {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 0.7rem;
+  text-align: left;
+}
+.doctor-card .doctor-img .doctors-detail .doctors-detail-item .title {
+  font-weight: 600;
+  font-size: 22px;
+  color: #0cb8b6;
+}
+.doctor-card .doctor-img .doctors-detail .doctors-detail-item .value {
+  font-weight: 400;
+  font-size: 14px;
+}
+.doctor-card .doctor-img .doctors-detail .doctors-detail-item .link a {
+  padding: 0.8rem 1rem;
+  font-size: 13px;
+}
+.doctor-card .doctor-img .doctors-link {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  left: 0;
+  right: 0;
+  bottom: 5%;
+  transition: all 0.5s;
+  transform: scaleX(0);
+}
+.doctor-card .doctor-img .doctors-link li {
+  display: inline-block;
+}
+.doctor-card .doctor-img .doctors-link li a {
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+.doctor-card .doctor-hospital {
+  width: 100%;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  background-color: #0cb8b6;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 0.5rem 0.7rem;
+  position: relative;
+}
+.doctor-card .doctors-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  padding: 10px 15px;
+  min-height: 120px;
+}
+.doctor-card .doctors-content .doctor-name {
+  line-height: 1.3;
+}
+.doctor-card .doctors-content .doctor-department {
+  line-height: 1.4;
+  color: #0cb8b6;
+}
+.doctor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.1);
+}
+.doctor-card:hover .doctor-img .doctors-detail {
+  opacity: 1;
+}
+.doctor-card:hover .doctor-img .doctors-link {
+  transform: scaleX(1);
+}
+.doctor-card.small-size .doctor-img .doctors-detail {
+  display: none;
+}
+.doctor-card.small-size .doctor-hospital {
+  font-size: 10px;
+  min-height: 30px;
+}
+.doctor-card.small-size .doctors-content {
+  padding: 0.8rem 0.4rem;
+}
+.doctor-card.small-size .doctors-content .doctor-name {
+  font-size: 14px;
+}
+.doctor-card.small-size .doctors-content .doctor-department {
+  font-size: 10px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1400px) {
+  .doctor-card .doctor-img .doctor {
+    height: 100%;
+  }
+  .doctor-card .doctor-hospital {
+    font-size: 13px;
+    min-height: 40px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .doctor-card .doctor-img .doctor {
+    height: 100%;
+  }
+  .doctor-card .doctor-hospital {
+    font-size: 10px;
+  }
+  .doctor-card.small-size {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .doctor-card .doctor-img .doctors-detail {
+    display: none;
+  }
+  .doctor-card .doctors-content {
+    min-height: 100px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .doctor-card .doctors-content {
+    padding: 15px;
+  }
+  .doctor-card .doctors-content .doctor-name {
+    font-size: 15px;
+    margin-bottom: 0.2rem;
+  }
+}
+@media screen and (max-width: 405px) {
+  .doctor-card .doctor-hospital {
+    font-size: 8px;
+    padding: 0.5rem 0.2rem;
+    min-height: 33px;
+  }
+  .doctor-card .doctors-content {
+    padding: 5px 8px;
+  }
+  .doctor-card .doctors-content .doctor-name {
+    font-size: 13px;
+  }
+  .doctor-card .doctors-content .doctor-department {
+    font-size: 10px;
+  }
+}/*# sourceMappingURL=index.css.map */
