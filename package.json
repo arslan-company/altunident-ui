@@ -1,7 +1,7 @@
 {
-  "name": "corf",
-  "version": "1.6.0",
-  "description": "Atakent Hastanesi",
+  "name": "altunident-ui",
+  "version": "1.0.0-beta.1",
+  "description": "Altunident",
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
@@ -9,7 +9,7 @@
     "start": "next start",
     "lint": "eslint ./ --ext js,jsx,ts,tsx"
   },
-  "author": "EnvyTheme.com",
+  "author": "Arslan Software",
   "license": "ISC",
   "dependencies": {
     "@sentry/nextjs": "^7.64.0",
