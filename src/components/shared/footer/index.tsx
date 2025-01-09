@@ -2,21 +2,21 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 
 import { Button } from '@/components/base/button';
-import Dialog from '@/components/base/dialog';
 
 import dateHelper from '@/utils/dateHelper';
 
 import { HospitalAppointmentDialog, useHospital } from '@/features/hospitals';
+
 import socialMediaLinks from '@/constants/social-media-links';
 import generalInfo from '@/constants/general-info';
 
+import Logo from '../logo';
+
 function Footer() {
-  const { currentHospital, withBasePath } = useHospital();
-  const [suggestionDialogOpen, setSuggestionDialogOpen] = useState(false);
+  const { currentHospital } = useHospital();
   const [appointmentDialogOpen, setAppointmentDialogOpen] = useState(false);
 
   const t = useTranslations();
@@ -42,49 +42,44 @@ function Footer() {
 
   const quickMenuItems = [
     {
-      id: 1,
-      title: t('footer.section_2.items.item_1_text'),
-      href: '/',
-    },
-    {
       id: 2,
-      title: t('footer.section_2.items.item_2_text'),
+      title: t('common.our_doctors'),
       href: '/doctors/',
     },
     {
       id: 3,
-      title: t('footer.section_2.items.item_3_text'),
+      title: t('common.our_departments'),
       href: '/departments/',
     },
     {
       id: 4,
-      title: t('footer.section_2.items.item_4_text'),
-      href: '/corporate/',
+      title: t('common.our_services'),
+      href: '/services/',
     },
     {
       id: 5,
-      title: t('footer.section_2.items.item_5_text'),
-      href: '/blog/',
+      title: t('common.corporate'),
+      href: '/corporate/',
     },
     {
       id: 6,
-      title: t('footer.section_2.items.item_6_text'),
-      href: '/contact/',
+      title: t('common.blog'),
+      href: '/blog/',
     },
     {
       id: 7,
+      title: t('common.contact'),
+      href: '/contact/',
+    },
+    {
+      id: 8,
       title: 'KVKK',
       href: '/kvkk-aydinlatma-metni/',
     },
     {
-      id: 8,
+      id: 9,
       title: 'Çerez Politikası',
       href: '/cookie-policy-page/',
-    },
-    {
-      id: 9,
-      title: 'Bu Test Nerede Yapılıyor?',
-      href: 'https://ckysweb.saglik.gov.tr/labtestlerapp/testlabara.aspx',
     },
   ];
 
@@ -94,64 +89,25 @@ function Footer() {
         isOpen={appointmentDialogOpen}
         onClose={() => setAppointmentDialogOpen(false)}
       />
-      <Dialog
-        isOpen={suggestionDialogOpen}
-        onClose={() => setSuggestionDialogOpen(false)}
-        title="Görüş ve Öneri Bildir"
-        maxWidth="tw-max-w-2xl"
-      >
-        <div className="tw-p-4">
-          <div className="tw-mb-8">
-            Hasta İlişkileri Bölümü olarak; hastanelerimizden arzu ettiğiniz hizmeti almak ve
-            sizlerin memnuniyetini sağlamak için; hastanemizden hizmet alan tüm hasta ve
-            yakınlarının hastanemiz ile ilgili görüş ve düşüncelerini alır. Bildirilen tüm görüşleri
-            ilgili departman yöneticileri ile değerlendirir ve sizlerin talepleri doğrultusunda
-            hizmet kalitemizi artırmak için çalışır, değerlendirme sonrası alınan kararlar ve
-            sonuçlar hakkında bölüme bildirimi yapan hastamıza geri dönüş yaparız.
-          </div>
 
-          <Link href={withBasePath('/contact/#contact-form')}>
-            <Button>İletişime Geç</Button>
-          </Link>
-        </div>
-      </Dialog>
-
-      <div className="tw-bg-[#001430]">
-        <footer className="container tw-mx-auto tw-py-16 tw-px-4 lg:tw-px-8">
+      <div className="tw-bg-darker-700">
+        <footer className="container tw-mx-auto tw-py-16 !tw-px-12 lg:!tw-px-8">
           <div className="tw-grid tw-grid-cols-1 md:tw-grid-cols-3 tw-gap-12">
-            {/* Logo ve İletişim Bölümü */}
+            {/* Logo and Contact Section */}
             <div className="tw-space-y-8">
               <Link href="/" className="tw-block">
-                <Image
-                  src="/img/logo-atakent.svg"
-                  alt="atakent hastanesi logo"
-                  width={180}
-                  height={100}
-                  quality={70}
-                  className="tw-w-48 tw-h-auto"
-                />
+                <Logo variant="white" className="!tw-h-20" />
               </Link>
 
-              <div className="tw-flex tw-items-center tw-gap-4 tw-bg-[#05224c] tw-p-4 tw-rounded-lg">
-                <Image
-                  src="/icons/call-center-icon.png"
-                  alt="call-center"
-                  width={60}
-                  height={60}
-                  quality={70}
-                  className="tw-w-12 tw-h-12"
-                />
+              <div className="tw-flex tw-items-center tw-gap-4 tw-bg-darker-400 tw-p-4 tw-rounded-lg">
+                <i className="bx bx-phone-call tw-text-3xl tw-text-white" />
                 <div className="tw-flex tw-flex-col">
-                  <span className="tw-text-gray-300 tw-text-sm">Çağrı Merkezi</span>
+                  <span className="tw-text-gray-300 tw-text-sm">{t('common.contact_us')}</span>
                   <span className="tw-text-white tw-text-2xl tw-font-bold">
                     {generalInfo.phoneNumber}
                   </span>
                 </div>
               </div>
-
-              <p className="tw-text-gray-300 tw-leading-relaxed">
-                {t('footer.section_1.description')}
-              </p>
 
               <div className="tw-flex tw-gap-4">
                 {socialMediaLinks.map((social) => (
@@ -160,7 +116,7 @@ function Footer() {
                     href={social.href}
                     target="_blank"
                     rel="noreferrer"
-                    className="tw-bg-[#05224c] tw-p-2.5 tw-rounded-lg tw-text-white hover:tw-bg-[#0a3572] hover:tw-text-white tw-transition-colors tw-flex tw-items-center tw-justify-center"
+                    className="tw-bg-darker-400 tw-p-2.5 tw-rounded-lg tw-text-white hover:tw-bg-darker-300 hover:tw-text-white tw-transition-colors tw-flex tw-items-center tw-justify-center"
                   >
                     <i className={`bx ${social.icon} tw-text-xl`} />
                   </a>
@@ -171,31 +127,23 @@ function Footer() {
                 <Button
                   onClick={handleAppointmentClick}
                   size="sm"
-                  className="tw-w-full tw-bg-[#05224c] hover:tw-bg-[#0a3572] tw-text-white tw-py-3"
+                  className="tw-w-full tw-text-white tw-py-3 !tw-bg-darker-400 hover:!tw-bg-darker-300"
                 >
-                  {t('footer.section_1.make_an_appointment_button_text')}
-                </Button>
-
-                <Button
-                  onClick={() => setSuggestionDialogOpen(true)}
-                  size="sm"
-                  className="tw-w-full tw-bg-transparent tw-border tw-border-[#05224c] hover:tw-bg-[#05224c] tw-text-white tw-py-3"
-                >
-                  {t('footer.section_1.report_suggestion_button_text')}
+                  {t('common.make_an_appointment')}
                 </Button>
               </div>
             </div>
 
             <div className="tw-space-y-6">
-              <h3 className="tw-text-white tw-text-xl tw-text-center tw-font-semibold tw-pb-2 tw-border-b tw-border-[#05224c]">
-                {t('footer.section_2.title')}
+              <h3 className="tw-text-white tw-text-xl md:tw-text-center tw-font-semibold tw-pb-2">
+                {t('common.quick_menu')}
               </h3>
-              <div className="tw-grid tw-grid-cols-1 tw-gap-3 tw-text-center">
+              <div className="tw-grid tw-grid-cols-1 tw-gap-3 md:tw-text-center">
                 {quickMenuItems.map((item) => (
                   <Link
                     key={item.id}
                     href={item.href}
-                    className="tw-text-gray-300 hover:tw-text-white tw-transition-colors tw-flex tw-items-center tw-gap-2 tw-justify-center"
+                    className="tw-text-gray-300 hover:tw-text-white tw-transition-colors tw-flex tw-items-center tw-gap-2 md:tw-justify-center"
                   >
                     {item.title}
                   </Link>
@@ -204,26 +152,22 @@ function Footer() {
             </div>
 
             <div className="tw-space-y-6">
-              <h3 className="tw-text-white tw-text-xl tw-font-semibold tw-pb-2 tw-border-b tw-border-[#05224c]">
-                {t('footer.section_4.title')}{' '}
+              <h3 className="tw-text-white tw-text-xl tw-font-semibold tw-pb-2 tw-border-b tw-border-darker-400">
+                {t('common.contact')}{' '}
                 <span className="tw-text-gray-300 tw-text-base tw-font-normal">
-                  {currentHospital?.name
-                    ? `/ ${currentHospital?.name}`
-                    : `/ ${t('footer.section_4.general_center_title')}`}
+                  {!!currentHospital?.name && `/ ${currentHospital?.name}`}
                 </span>
               </h3>
               <div className="tw-space-y-6">
                 <a
-                  href={`tel:+90${generalInfo.phoneNumber.replace(/\s+/g, '')}`}
+                  href={`tel:${generalInfo.phoneNumber.replace(/\s+/g, '')}`}
                   className="tw-flex tw-items-center tw-gap-4 tw-text-gray-300 hover:tw-text-white tw-transition-colors"
                 >
-                  <div className="tw-bg-[#05224c] tw-p-2.5 tw-rounded-lg">
+                  <div className="tw-bg-darker-400 tw-p-2.5 tw-rounded-lg">
                     <i className="bx bx-phone-call tw-text-xl" />
                   </div>
                   <div className="tw-flex tw-flex-col">
-                    <span className="tw-text-sm">
-                      {t('footer.section_4.items.support_line_title')}
-                    </span>
+                    <span className="tw-text-sm">{t('common.phone')}</span>
                     <span className="tw-text-white tw-font-medium">{generalInfo.phoneNumber}</span>
                   </div>
                 </a>
@@ -235,22 +179,22 @@ function Footer() {
                   }
                   className="tw-flex tw-items-center tw-gap-4 tw-text-gray-300 hover:tw-text-white tw-transition-colors"
                 >
-                  <div className="tw-bg-[#05224c] tw-p-2.5 tw-rounded-lg">
+                  <div className="tw-bg-darker-400 tw-p-2.5 tw-rounded-lg">
                     <i className="bx bx-envelope tw-text-xl" />
                   </div>
                   <div className="tw-flex tw-flex-col">
-                    <span className="tw-text-sm">{t('footer.section_4.items.email_title')}</span>
+                    <span className="tw-text-sm">{t('common.email')}</span>
                     <span className="tw-text-white tw-font-medium">
                       {currentHospital?.contact_email || generalInfo.email}
                     </span>
                   </div>
                 </a>
                 <div className="tw-flex tw-items-start tw-gap-4 tw-text-gray-300">
-                  <div className="tw-bg-[#05224c] tw-p-2.5 tw-rounded-lg">
+                  <div className="tw-bg-darker-400 tw-p-2.5 tw-rounded-lg">
                     <i className="bx bx-location-plus tw-text-xl" />
                   </div>
                   <div className="tw-flex tw-flex-col">
-                    <span className="tw-text-sm">{t('footer.section_4.items.address_title')}</span>
+                    <span className="tw-text-sm">{t('common.address')}</span>
                     <span className="tw-text-white tw-font-medium">
                       {currentHospital?.contact_address || generalInfo.address}
                     </span>
@@ -260,12 +204,12 @@ function Footer() {
             </div>
           </div>
 
-          <div className="tw-mt-12 tw-pt-8 tw-border-t tw-border-[#05224c] tw-text-gray-400 tw-text-sm">
+          <div className="tw-mt-12 tw-pt-8 tw-border-t tw-border-darker-400 tw-text-gray-400 tw-text-sm">
             {t('footer.last_update_date')}: {lastUpdateDate}
           </div>
         </footer>
 
-        <div className="tw-border-t tw-border-[#05224c] tw-bg-[#001022]">
+        <div className="tw-border-t tw-border-darker-400 tw-bg-darker-900">
           <div className="tw-container tw-mx-auto tw-py-6 tw-px-4 lg:tw-px-8">
             <p className="tw-text-gray-400 tw-text-center tw-text-sm">
               Copyright &copy; 2008 - {currentYear} | Powered by{' '}

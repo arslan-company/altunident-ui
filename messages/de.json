@@ -1,6 +1,6 @@
 {
     "site": {
-        "name": "Atakent Krankenhaus"
+        "name": "Altunident"
     },
     "meta": {
         "common": {
@@ -153,6 +153,48 @@
             "twitter_title": "Gesundheitskarriere bei {hospital_name}",
             "twitter_description": "Bewerben Sie sich online für eine Stelle bei {hospital_name}. Entdecken Sie Karrieremöglichkeiten im Gesundheitswesen."
         }
+    },
+    "common": {
+        "appointment": "Termin",
+        "services": "Dienstleistungen",
+        "doctors": "Ärzte",
+        "departments": "Abteilungen", 
+        "corporate": "Unternehmen",
+        "blog": "Blog",
+        "contact": "Kontakt",
+        "hospitals": "Krankenhäuser",
+        "our_hospitals": "Unsere Krankenhäuser",
+        "our_departments": "Unsere Abteilungen",
+        "our_doctors": "Unsere Ärzte",
+        "our_services": "Unsere Dienstleistungen",
+        "all_our_services": "Alle unsere Dienstleistungen",
+        "all_our_doctors": "Alle unsere Ärzte",
+        "all_posts": "Alle Beiträge",
+        "contact_us": "Kontaktieren Sie uns",
+        "we_are_here_for_you": "Wir sind für Sie da",
+        "general_search": "Allgemeine Suche",
+        "web_page": "Webseite",
+        "physician_staff": "Ärztliches Personal",
+        "make_an_appointment": "Termin vereinbaren",
+        "name": "Name",
+        "email": "E-Mail",
+        "phone": "Telefon",
+        "message": "Nachricht",
+        "send": "Senden",
+        "collaborating_institutions": "Zusammenarbeitende Institutionen",
+        "select_hospital": "Krankenhaus auswählen",
+        "search": "Suchen",
+        "quick_menu": "Schnellmenü",
+        "address": "Adresse",
+        "read_more": "Weiterlesen",
+        "page_not_found": "Seite nicht gefunden",
+        "page_not_found_description": "Wir entschuldigen uns für die Enttäuschung, aber wir können die Seite, die Sie suchen, nicht finden. Sie wurde entfernt, umbenannt oder möglicherweise vorübergehend nicht verfügbar.",
+        "back_to_home": "Startseite",
+        "do_you_need_help": "Brauchen Sie Hilfe?",
+        "get_in_touch_with_us": "Kontaktieren Sie uns",
+        "about_us": "Über das Krankenhaus",
+        "about_us_title": "<name>{hospital_name}</name> in Ihrem Lächeln",
+        "about_us_description": "<p>Wir sind stolz darauf, Ihr Lächeln mit Gesundheit zu verbinden. Mit unserem erfahrenen und spezialisierten Team streben wir danach, jedem Patienten eine individuelle und personalisierte Behandlung anzubieten. Mit moderner Technologie bieten wir Service auf höchstem Niveau und glauben daran, dass ein gesundes Lächeln ein Recht für jeden ist. <br /><br /> Wir bieten ein umfassendes Leistungsspektrum, um all Ihre zahnmedizinischen Bedürfnisse zu erfüllen. Wir sind Experten in Bereichen wie professioneller Zahnreinigung, ästhetischer Zahnmedizin, Implantologie und Zahnaufhellung. Bei jedem Behandlungsprozess stehen die Zufriedenheit und der Komfort des Patienten im Vordergrund, und wir bieten unsere Dienstleistungen in einer freundlichen und herzlichen Atmosphäre an.</p>"
     },
     "navbar": {
         "nav_items": {

@@ -96,7 +96,7 @@ export function BlogCard({ data, variant = 'grid', href }: BlogCardProps) {
           href={`${href}`}
           className="tw-inline-flex tw-items-center tw-gap-1 tw-text-sm tw-font-medium tw-text-primary hover:tw-text-primary-700"
         >
-          {t('blog_page.blog_card.read_more_button_text')}
+          {t('common.read_more')}
           <svg
             className="tw-h-4 tw-w-4 tw-transition-transform group-hover:tw-translate-x-0.5"
             viewBox="0 0 24 24"

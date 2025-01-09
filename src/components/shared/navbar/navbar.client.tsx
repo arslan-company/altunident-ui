@@ -8,7 +8,6 @@ import { useParams } from 'next/navigation';
 
 import { HospitalAppointmentDialog, useHospital } from '@/features/hospitals';
 import { useGeneralSearchStore } from '@/features/general-search';
-import { Media } from '@/features/files';
 import { corporateEndpoints } from '@/features/corporate/api';
 
 import { SwitchLanguage } from '@/components/shared/switch-language';
@@ -17,6 +16,7 @@ import { Button } from '@/components/base/button';
 
 import TopHeader from './top-header';
 import { MobileNavLink, NavLink } from './nav-link';
+import Logo from '../logo';
 
 interface NavbarClientProps {
   serverData: {
@@ -51,18 +51,6 @@ export default function NavbarClient({ serverData }: NavbarClientProps) {
     {
       href: '/corporate/news',
       label: 'Kurumsal Haberler',
-    },
-    {
-      href: '/corporate/human-resources',
-      label: 'İnsan Kaynakları',
-    },
-    {
-      href: '/corporate/quality-studies',
-      label: 'Kalite Çalışmaları',
-    },
-    {
-      href: '/corporate/organization-schema',
-      label: 'Organizasyon Şeması',
     },
   ];
 
@@ -121,27 +109,16 @@ export default function NavbarClient({ serverData }: NavbarClientProps) {
             isScrolled ? 'tw-shadow-xl' : 'tw-border-b tw-border-gray-100'
           }`}
         >
-          <div className="tw-max-w-7xl tw-mx-auto tw-px-4 sm:tw-px-6 lg:tw-px-8">
-            <div className="tw-flex tw-justify-between tw-h-16">
+          <div className="tw-container tw-mx-auto">
+            <div className="tw-flex tw-justify-between tw-h-20">
               {/* Logo */}
               <div className="tw-flex-shrink-0 tw-flex tw-items-center">
-                <Link href={withBasePath('/')}>
-                  <div className="tw-flex tw-items-center tw-space-x-2">
-                    <Media
-                      src="/img/logo/atakent-icon-primary.svg"
-                      element="image"
-                      imageProps={{ alt: 'atakent hastanesi logo', width: 32, height: 32 }}
-                      className="tw-w-auto tw-h-6"
-                    />
-                    <Media
-                      src="/img/logo/atakent-text-logo-primary.svg"
-                      element="image"
-                      imageProps={{ alt: 'atakent hastanesi logo', width: 120, height: 24 }}
-                      className="tw-w-auto tw-h-5"
-                    />
-                  </div>
+                <Link className="tw-flex tw-items-center tw-gap-2" href={withBasePath('/')}>
+                  <Logo className="!tw-h-10 md:!tw-h-14" />
                   {currentHospital && (
-                    <span className="tw-text-primary">{currentHospital.short_name}</span>
+                    <span className="tw-text-primary tw-font-semibold">
+                      {currentHospital.short_name}
+                    </span>
                   )}
                 </Link>
               </div>
@@ -149,7 +126,7 @@ export default function NavbarClient({ serverData }: NavbarClientProps) {
               {/* Nav Items - Desktop Menu */}
               <div className="tw-hidden xl:tw-flex tw-items-center tw-justify-center tw-flex-1 tw-pl-8">
                 <div className="tw-flex tw-space-x-1">
-                  {!!hospitalSlug && <NavLink href="/">{t('navbar.nav_items.home')}</NavLink>}
+                  {!!hospitalSlug && <NavLink href="/">{t('site.name')}</NavLink>}
                   {hospitalDropdownItems.length > 0 && (
                     <NavLink
                       href="/hospitals"
@@ -157,20 +134,26 @@ export default function NavbarClient({ serverData }: NavbarClientProps) {
                         items: hospitalDropdownItems,
                       }}
                     >
-                      {t('navbar.nav_items.hospitals')}
+                      {t('common.our_hospitals')}
                     </NavLink>
                   )}
                   <NavLink
                     href={withBasePath('/doctors')}
                     active={pathnameWithoutHospitalSlug.startsWith('/doctors')}
                   >
-                    {t('navbar.nav_items.doctors')}
+                    {t('common.our_doctors')}
+                  </NavLink>
+                  <NavLink
+                    href={withBasePath('/services')}
+                    active={pathnameWithoutHospitalSlug.startsWith('/services')}
+                  >
+                    {t('common.our_services')}
                   </NavLink>
                   <NavLink
                     href={withBasePath('/departments')}
                     active={pathnameWithoutHospitalSlug.startsWith('/departments')}
                   >
-                    {t('navbar.nav_items.departments')}
+                    {t('common.our_departments')}
                   </NavLink>
                   {!hospitalSlug ? (
                     <>
@@ -181,14 +164,14 @@ export default function NavbarClient({ serverData }: NavbarClientProps) {
                             items: corporateDropdownItems,
                           }}
                         >
-                          {t('navbar.nav_items.corporate')}
+                          {t('common.corporate')}
                         </NavLink>
                       )}
                       <NavLink
                         href="/blog"
                         active={pathnameWithoutHospitalSlug.startsWith('/blog')}
                       >
-                        {t('navbar.nav_items.blog')}
+                        {t('common.blog')}
                       </NavLink>
                     </>
                   ) : null}
@@ -196,7 +179,7 @@ export default function NavbarClient({ serverData }: NavbarClientProps) {
                     href={withBasePath('/contact')}
                     active={pathnameWithoutHospitalSlug.startsWith('/contact')}
                   >
-                    {t('navbar.nav_items.contact')}
+                    {t('common.contact')}
                   </NavLink>
                 </div>
               </div>
@@ -209,7 +192,7 @@ export default function NavbarClient({ serverData }: NavbarClientProps) {
                   onClick={handleAppointmentClick}
                   className="tw-bg-primary hover:tw-bg-primary/90 tw-text-white tw-px-4 tw-py-2 tw-text-sm"
                 >
-                  {t('navbar.make_an_appointment')}
+                  {t('common.make_an_appointment')}
                 </Button>
                 <Button
                   size="iconOnly"
@@ -267,12 +250,12 @@ export default function NavbarClient({ serverData }: NavbarClientProps) {
                   className="tw-flex tw-w-full tw-items-center tw-px-3 tw-py-2 tw-text-base tw-text-gray-600 hover:tw-bg-gray-50 tw-rounded-md tw-transition-colors"
                 >
                   <i className="bx bx-search tw-mr-3 tw-text-xl" />
-                  Search
+                  {t('common.search')}
                 </button>
 
                 {!!hospitalSlug && (
                   <MobileNavLink href="/" active={pathnameWithoutHospitalSlug === '/'}>
-                    {t('navbar.nav_items.home')}
+                    {t('site.name')}
                   </MobileNavLink>
                 )}
                 {hospitalDropdownItems.length > 0 && (
@@ -283,20 +266,20 @@ export default function NavbarClient({ serverData }: NavbarClientProps) {
                       items: hospitalDropdownItems,
                     }}
                   >
-                    {t('navbar.nav_items.hospitals')}
+                    {t('common.our_hospitals')}
                   </MobileNavLink>
                 )}
                 <MobileNavLink
                   href={withBasePath('/doctors')}
                   active={pathnameWithoutHospitalSlug.startsWith('/doctors')}
                 >
-                  {t('navbar.nav_items.doctors')}
+                  {t('common.our_doctors')}
                 </MobileNavLink>
                 <MobileNavLink
                   href={withBasePath('/departments')}
                   active={pathnameWithoutHospitalSlug.startsWith('/departments')}
                 >
-                  {t('navbar.nav_items.departments')}
+                  {t('common.our_departments')}
                 </MobileNavLink>
                 {!hospitalSlug ? (
                   <>
@@ -308,14 +291,14 @@ export default function NavbarClient({ serverData }: NavbarClientProps) {
                         }}
                         active={pathnameWithoutHospitalSlug.startsWith('/corporate')}
                       >
-                        {t('navbar.nav_items.corporate')}
+                        {t('common.corporate')}
                       </MobileNavLink>
                     )}
                     <MobileNavLink
                       href="/blog"
                       active={pathnameWithoutHospitalSlug.startsWith('/blog')}
                     >
-                      {t('navbar.nav_items.blog')}
+                      {t('common.blog')}
                     </MobileNavLink>
                   </>
                 ) : null}
@@ -323,7 +306,7 @@ export default function NavbarClient({ serverData }: NavbarClientProps) {
                   href={withBasePath('/contact')}
                   active={pathnameWithoutHospitalSlug.startsWith('/contact')}
                 >
-                  {t('navbar.nav_items.contact')}
+                  {t('common.contact')}
                 </MobileNavLink>
               </div>
               <div className="tw-px-4 tw-py-3 tw-border-t tw-border-gray-100">
@@ -331,7 +314,7 @@ export default function NavbarClient({ serverData }: NavbarClientProps) {
                   className="tw-w-full tw-justify-center tw-bg-primary hover:tw-bg-primary/90"
                   onClick={handleAppointmentClick}
                 >
-                  {t('navbar.make_an_appointment')}
+                  {t('common.make_an_appointment')}
                 </Button>
               </div>
             </div>

@@ -1,6 +1,6 @@
 {
     "site": {
-        "name": "Atakent Hospital"
+        "name": "Altunident"
     },
     "meta": {
         "common": {
@@ -153,6 +153,48 @@
             "twitter_title": "Healthcare Career Opportunities at {hospital_name}",
             "twitter_description": "Apply online to work at {hospital_name}. Discover career opportunities in the healthcare sector."
         }
+    },
+    "common": {
+        "appointment": "Appointment",
+        "services": "Services", 
+        "doctors": "Doctors",
+        "departments": "Departments",
+        "corporate": "Corporate",
+        "blog": "Blog",
+        "contact": "Contact",
+        "hospitals": "Hospitals",
+        "our_hospitals": "Our Hospitals",
+        "our_departments": "Our Departments", 
+        "our_doctors": "Our Doctors",
+        "our_services": "Our Services",
+        "all_our_services": "All Our Services",
+        "all_our_doctors": "All Our Doctors",
+        "all_posts": "All Posts",
+        "contact_us": "Contact Us",
+        "we_are_here_for_you": "We Are Here For You",
+        "general_search": "General Search",
+        "web_page": "Web Page",
+        "physician_staff": "Physician Staff",
+        "make_an_appointment": "Make an Appointment",
+        "name": "Name",
+        "email": "Email",
+        "phone": "Phone",
+        "message": "Message",
+        "send": "Send",
+        "collaborating_institutions": "Collaborating Institutions",
+        "select_hospital": "Select Hospital",
+        "search": "Search",
+        "quick_menu": "Quick Menu",
+        "address": "Address",
+        "read_more": "Read More",
+        "page_not_found": "Page Not Found",
+        "page_not_found_description": "We apologize for the disappointment, but we cannot find the page you are looking for. It may have been removed, renamed, or temporarily unavailable.",
+        "back_to_home": "Return to Homepage",
+        "do_you_need_help": "Need Help?",
+        "get_in_touch_with_us": "Contact Us",
+        "about_us": "About Us",
+        "about_us_title": "<name>{hospital_name}</name> in Your Smile",
+        "about_us_description": "<p>We take pride in connecting your smile with health. Together with our experienced and expert team, we aim to provide personalized and customized treatment for each of our patients. Using modern technology, we provide service at the highest level and believe that a healthy smile is everyone's right. <br /><br /> We offer a comprehensive range of services to meet all your dental health needs. We specialize in areas such as professional dental cleaning, aesthetic dentistry, implants and teeth whitening. We prioritize patient satisfaction and comfort in every treatment process and provide service in a friendly and warm environment.</p>"
     },
     "navbar": {
         "nav_items": {

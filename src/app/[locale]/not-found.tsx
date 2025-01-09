@@ -26,23 +26,25 @@ export default async function NotFound() {
             {/* Mesaj */}
             <div className="tw-space-y-4 tw-max-w-2xl tw-mx-auto">
               <h1 className="tw-text-2xl md:tw-text-3xl tw-font-bold tw-text-gray-800">
-                {t('error.not_found.title')}
+                {t('common.page_not_found')}
               </h1>
-              <p className="tw-text-gray-600 tw-text-lg">{t('error.not_found.description')}</p>
+              <p className="tw-text-gray-600 tw-text-lg">
+                {t('common.page_not_found_description')}
+              </p>
             </div>
 
             {/* Butonlar */}
             <div className="tw-flex tw-flex-col sm:tw-flex-row tw-gap-4 tw-justify-center tw-items-center tw-mt-8">
               <Link href="/">
-                <Button>{t('error.not_found.back_to_home')}</Button>
+                <Button>{t('common.back_to_home')}</Button>
               </Link>
             </div>
 
             {/* İletişim Linki */}
             <p className="tw-text-gray-500 tw-mt-8">
-              {t('error.not_found.need_help')}{' '}
-              <Link href="/contact" className="tw-text-primary-600 hover:tw-underline">
-                {t('error.not_found.contact_us')}
+              {t('common.do_you_need_help')}{' '}
+              <Link href="/contact" className="tw-text-primary hover:tw-underline">
+                {t('common.get_in_touch_with_us')}
               </Link>
             </p>
           </div>

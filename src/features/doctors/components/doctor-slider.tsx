@@ -74,7 +74,7 @@ export function DoctorSlider({ departments, doctors }: DoctorListProps) {
       </Swiper>
 
       <Link href="/doctors" className="tw-mt-10">
-        <Button>{t('homepage.doctor_list.all_doctors')}</Button>
+        <Button>{t('common.all_our_doctors')}</Button>
       </Link>
     </div>
   );

@@ -51,7 +51,7 @@ export function HospitalCard({
             href={`/${slug}`}
           >
             <span className="tw-font-medium tw-text-gray-700 group-hover/btn:tw-text-primary">
-              Web Sayfası
+              {t('common.web_page')}
             </span>
             <ChevronRight className="tw-w-5 tw-h-5 tw-text-gray-400" />
           </Link>
@@ -60,7 +60,7 @@ export function HospitalCard({
             href={`/${slug}/departments/`}
           >
             <span className="tw-font-medium tw-text-gray-700 group-hover/btn:tw-text-primary">
-              {t('homepage.hospitals.departments_button_text')}
+              {t('common.departments')}
             </span>
             <ChevronRight className="tw-w-5 tw-h-5 tw-text-gray-400" />
           </Link>
@@ -70,7 +70,7 @@ export function HospitalCard({
             href={`/${slug}/doctors/`}
           >
             <span className="tw-font-medium tw-text-gray-700 group-hover/btn:tw-text-primary">
-              {t('homepage.hospitals.physician_staff_button_text')}
+              {t('common.physician_staff')}
             </span>
             <ChevronRight className="tw-w-5 tw-h-5 tw-text-gray-400" />
           </Link>
@@ -78,7 +78,7 @@ export function HospitalCard({
           {!!appointmentLink && (
             <Link href={appointmentLink} target="_blank" className="tw-w-full">
               <Button variant="softPrimary" size="sm" fullWidth rounded="lg">
-                Randevu Al
+                {t('common.make_an_appointment')}
               </Button>
             </Link>
           )}

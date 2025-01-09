@@ -93,7 +93,7 @@ export function GeneralSearch() {
           <input
             type="text"
             className="tw-w-full tw-px-12 tw-pr-10 tw-py-5 tw-text-xl tw-text-gray-700 tw-border-solid tw-bg-white tw-border tw-border-gray-200 tw-rounded-lg focus:tw-outline-none focus:tw-border-primary focus:tw-ring-1 tw-ring-primary tw-transition-colors"
-            placeholder={t('homepage.search_form.general_search_placeholder_text')}
+            placeholder={t('common.general_search')}
             value={searchText}
             onChange={handleSearchInput}
             onFocus={handleFocus}

@@ -3,8 +3,10 @@
 import { forwardRef, useState, useCallback } from 'react';
 import { Check, ChevronDown, Search } from 'lucide-react';
 import { cva, type VariantProps } from 'class-variance-authority';
+import { useTranslations } from 'next-intl';
 
 import { cn } from '@/lib/cn';
+
 import { Button } from './button';
 import { Input } from './input';
 
@@ -80,7 +82,7 @@ export const Select = forwardRef<HTMLSelectElement, SelectProps>(
       placeholder,
       error,
       className,
-      searchPlaceholder = 'Ara...',
+      searchPlaceholder,
       value,
       onChange = () => {},
       size,
@@ -88,6 +90,8 @@ export const Select = forwardRef<HTMLSelectElement, SelectProps>(
     },
     ref,
   ) => {
+    const t = useTranslations();
+
     const [isOpen, setIsOpen] = useState(false);
     const [search, setSearch] = useState('');
 
@@ -128,7 +132,7 @@ export const Select = forwardRef<HTMLSelectElement, SelectProps>(
             <div className="tw-absolute tw-z-50 tw-mt-1 tw-max-h-60 tw-w-full tw-overflow-auto tw-rounded-lg tw-border tw-border-gray-200 tw-bg-white tw-py-1 tw-shadow-lg">
               <div className="tw-sticky tw-top-0 tw-z-10 tw-bg-white tw-px-2 tw-pb-2">
                 <Input
-                  placeholder={searchPlaceholder}
+                  placeholder={searchPlaceholder || t('common.search')}
                   value={search}
                   onChange={(e) => setSearch(e.target.value)}
                   startIcon={<Search />}

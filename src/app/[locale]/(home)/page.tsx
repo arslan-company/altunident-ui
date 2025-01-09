@@ -6,7 +6,7 @@ import { notFound } from 'next/navigation';
 import Navbar from '@/components/shared/navbar';
 import Footer from '@/components/shared/footer';
 import Section from '@/components/shared/section';
-import BrandStatistics from '@/components/shared/statistics/brand-statistics';
+import References from '@/components/shared/references';
 
 import { servicesApi, ServicesCardList } from '@/features/services';
 import { doctorsApi, DoctorSlider } from '@/features/doctors';
@@ -16,6 +16,7 @@ import { Slider, slidersApi } from '@/features/slider';
 import { GeneralSearch } from '@/features/general-search';
 import { hospitalApi, HospitalsList } from '@/features/hospitals';
 import { ContactForm } from '@/features/email-service';
+import { Media } from '@/features/files';
 
 import generateMeta from '@/utils/generate-meta';
 
@@ -101,9 +102,46 @@ export default async function HomePage() {
           </Section>
         )}
 
+        <Section container data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200">
+          <div className="tw-grid tw-grid-cols-1 lg:tw-grid-cols-2 tw-gap-8">
+            <div className="tw-w-full">
+              <Media
+                src="/img/gallery/altunident.jpg"
+                element="image"
+                imageProps={{
+                  alt: t('site.name'),
+                }}
+                className="tw-w-full tw-object-cover tw-rounded-lg"
+              />
+            </div>
+            <div className="tw-w-full">
+              <div className="tw-space-y-6">
+                <div>
+                  <span className="tw-text-primary tw-text-base tw-font-medium">
+                    {t('common.about_us')}
+                  </span>
+                  <h2 className="tw-text-3xl tw-font-bold tw-mt-2">
+                    {t.rich('common.about_us_title', {
+                      name: (chunks) => <span className="tw-text-primary">{chunks}</span>,
+                      hospital_name: t('site.name'),
+                    })}
+                  </h2>
+                </div>
+                <div>
+                  <div
+                    dangerouslySetInnerHTML={{
+                      __html: t.raw('common.about_us_description'),
+                    }}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </Section>
+
         {servicesData.length > 0 && (
           <Section
-            title={t('homepage.services.title')}
+            title={t('common.our_services')}
             description={t('homepage.services.description')}
             container
             data-aos="fade-up"
@@ -116,7 +154,7 @@ export default async function HomePage() {
 
         {doctorsData.length > 0 && (
           <Section
-            title={t('homepage.doctor_list.title')}
+            title={t('common.our_doctors')}
             description={t('homepage.doctor_list.description')}
             container
             data-aos="fade-up"
@@ -128,16 +166,23 @@ export default async function HomePage() {
         )}
 
         <Section data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200">
-          <BrandStatistics doctors={doctors} />
+          <ContactForm />
         </Section>
 
-        <Section data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200">
-          <ContactForm />
+        <Section
+          title={t('common.collaborating_institutions')}
+          container
+          data-aos="fade-up"
+          data-aos-delay="100"
+          data-aos-duration="1200"
+          variant="darker"
+        >
+          <References />
         </Section>
 
         {blogsData.length > 0 && (
           <Section
-            title={t('homepage.carousel.title')}
+            title={t('common.blog')}
             description={t('homepage.carousel.description')}
             container
             data-aos="fade-up"

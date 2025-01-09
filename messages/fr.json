@@ -1,6 +1,6 @@
 {
     "site": {
-        "name": "Hôpital Atakent"
+        "name": "Altunident"
     },
     "meta": {
         "common": {
@@ -153,6 +153,48 @@
             "twitter_title": "Opportunités d'Emploi {hospital_name} pour Votre Carrière en Santé",
             "twitter_description": "Postulez en ligne pour travailler chez {hospital_name}. Découvrez les opportunités de carrière dans le secteur de la santé."
         }
+    },
+    "common": {
+        "appointment": "Rendez-vous",
+        "services": "Services",
+        "doctors": "Médecins",
+        "departments": "Départements",
+        "corporate": "Entreprise",
+        "blog": "Blog", 
+        "contact": "Contact",
+        "hospitals": "Hôpitaux",
+        "our_hospitals": "Nos Hôpitaux",
+        "our_departments": "Nos Départements",
+        "our_doctors": "Nos Médecins",
+        "our_services": "Nos Services",
+        "all_our_services": "Tous Nos Services",
+        "all_our_doctors": "Tous Nos Médecins",
+        "all_posts": "Tous les Articles",
+        "contact_us": "Contactez-nous",
+        "we_are_here_for_you": "Nous Sommes Là Pour Vous",
+        "general_search": "Recherche Générale",
+        "web_page": "Page Web",
+        "physician_staff": "Personnel Médical",
+        "make_an_appointment": "Prendre Rendez-vous",
+        "name": "Nom",
+        "email": "Email",
+        "phone": "Téléphone",
+        "message": "Message",
+        "send": "Envoyer",
+        "collaborating_institutions": "Institutions Collaboratrices",
+        "select_hospital": "Sélectionner un Hôpital",
+        "search": "Recherche",
+        "quick_menu": "Menu Rapide",
+        "address": "Adresse",
+        "read_more": "Lire la suite",
+        "page_not_found": "Page non trouvée",
+        "page_not_found_description": "Nous nous excusons pour le désappointement, mais nous ne pouvons trouver la page que vous cherchez. Elle a peut-être été supprimée, renommée ou temporairement indisponible.",
+        "back_to_home": "Page d'accueil",
+        "do_you_need_help": "Besoin d'aide ?",
+        "get_in_touch_with_us": "Contactez-nous",
+        "about_us": "À propos de nous",
+        "about_us_title": "<name>{hospital_name}</name> dans votre sourire",
+        "about_us_description": "<p>Nous sommes fiers d'allier votre sourire à la santé. Avec notre équipe expérimentée et experte, nous visons à offrir un traitement personnalisé et sur mesure à chacun de nos patients. En utilisant une technologie moderne, nous fournissons un service de haut niveau et croyons qu'un sourire sain est un droit pour tous. <br /><br /> Nous proposons une gamme complète de services pour répondre à tous vos besoins en santé dentaire. Nous sommes spécialisés dans des domaines tels que le nettoyage dentaire professionnel, la dentisterie esthétique, les implants et le blanchiment des dents. Dans chaque processus de traitement, nous privilégions la satisfaction et le confort du patient, et nous fournissons nos services dans une atmosphère chaleureuse et conviviale.</p>"
     },
     "navbar": {
         "nav_items": {
