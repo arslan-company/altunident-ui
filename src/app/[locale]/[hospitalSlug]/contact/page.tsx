@@ -5,15 +5,12 @@ import { notFound } from 'next/navigation';
 import Footer from '@/components/shared/footer';
 import Navbar from '@/components/shared/navbar';
 import Breadcrumb from '@/components/shared/breadcrumb';
-import HTMLContent from '@/components/shared/html-content';
 
 import { filenameToUrl } from '@/features/files';
-import { hospitalApi, HospitalBanner, HospitalContactInformation } from '@/features/hospitals';
+import { hospitalApi, HospitalContactInformation } from '@/features/hospitals';
 import { ContactForm } from '@/features/email-service';
 
 import generateMeta from '@/utils/generate-meta';
-
-import generalInfo from '@/constants/general-info';
 
 interface ContactPageParams {
   hospitalSlug: string;

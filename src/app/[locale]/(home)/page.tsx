@@ -78,6 +78,8 @@ export default async function HomePage() {
   const blogsData = blogs?.items || [];
   const slidersData = sliders?.items || [];
 
+  const renderAboutUsTitle = (chunks: string) => <span className="tw-text-primary">{chunks}</span>;
+
   return (
     <>
       <Navbar />
@@ -122,7 +124,7 @@ export default async function HomePage() {
                   </span>
                   <h2 className="tw-text-3xl tw-font-bold tw-mt-2">
                     {t.rich('common.about_us_title', {
-                      name: (chunks) => <span className="tw-text-primary">{chunks}</span>,
+                      name: (chunks) => renderAboutUsTitle(chunks as any),
                       hospital_name: t('site.name'),
                     })}
                   </h2>
