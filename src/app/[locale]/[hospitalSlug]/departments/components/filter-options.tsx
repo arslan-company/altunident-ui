@@ -48,13 +48,14 @@ export default function FilterOptions() {
           e.preventDefault();
           handleFiltersChange({ search: searchQuery });
         }}
-        className="tw-relative tw-w-full tw-flex-1"
+        className="tw-w-full tw-flex-1 tw-space-y-2"
       >
+        <span className="tw-inline-block">{t('common.search')}:</span>
         <Input
           size="sm"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
-          placeholder={`${t('doctors_page.filter_area.search_input_placeholder_text')}...`}
+          placeholder={`${t('common.search')}...`}
           className="tw-w-full"
           endIcon={
             <div className="tw-flex tw-gap-1 tw-absolute tw-right-0 tw-px-1">

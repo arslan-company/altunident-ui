@@ -65,7 +65,7 @@ export default async function ServiceDetailPage({
         title={service?.name || ''}
         items={[
           { label: t('site.name'), href: '/' },
-          { label: t('services_page.page_banner.parent_page_text'), href: '/services' },
+          { label: t('common.our_services'), href: '/services' },
           { label: service?.name || '' },
         ]}
       />

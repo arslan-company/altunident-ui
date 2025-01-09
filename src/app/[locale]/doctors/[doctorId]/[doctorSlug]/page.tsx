@@ -118,7 +118,7 @@ export default async function DoctorDetail({
         title={doctor?.name || ''}
         items={[
           { label: t('site.name'), href: '/' },
-          { label: t('doctors_page.title'), href: '/doctors' },
+          { label: t('common.our_doctors'), href: '/doctors' },
           { label: doctor?.name || '' },
         ]}
       />

@@ -66,7 +66,8 @@ export default function FilterOptions({ departments }: FilterOptionsProps) {
 
   return (
     <div className="tw-flex tw-flex-col tw-gap-4 lg:tw-flex-row sm:tw-items-center">
-      <div className="tw-flex-1 tw-w-full">
+      <div className="tw-flex-1 tw-w-full tw-space-y-2">
+        <span className="tw-inline-block">{t('common.filter_by_department')}:</span>
         <Select
           size="sm"
           value={selectedDepartment}
@@ -74,11 +75,11 @@ export default function FilterOptions({ departments }: FilterOptionsProps) {
           options={[
             {
               value: -1,
-              label: t('doctors_page.filter_area.filter_by_department_option_text'),
+              label: t('common.all'),
             },
             ...departmentOptions,
           ]}
-          placeholder={t('doctors_page.filter_area.filter_by_department_option_text')}
+          placeholder={t('common.filter_by_department')}
           className="tw-w-full"
         />
       </div>
@@ -88,13 +89,14 @@ export default function FilterOptions({ departments }: FilterOptionsProps) {
           e.preventDefault();
           handleFiltersChange({ search: searchQuery });
         }}
-        className="tw-relative tw-w-full tw-flex-1"
+        className="tw-w-full tw-flex-1 tw-space-y-2"
       >
+        <span className="tw-inline-block">{t('common.search')}:</span>
         <Input
           size="sm"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
-          placeholder={`${t('doctors_page.filter_area.search_input_placeholder_text')}...`}
+          placeholder={`${t('common.search')}...`}
           className="tw-w-full"
           endIcon={
             <div className="tw-flex tw-gap-1 tw-absolute tw-right-0 tw-px-1">

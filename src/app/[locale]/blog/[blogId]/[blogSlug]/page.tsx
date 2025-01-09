@@ -75,7 +75,7 @@ export default async function BlogPage({
         title={blog?.title || ''}
         items={[
           { label: t('site.name'), href: '/' },
-          { label: t('blog_page.page_banner.blog_text'), href: '/blog' },
+          { label: t('common.blog'), href: '/blog' },
           { label: blog?.title || '' },
         ]}
       />

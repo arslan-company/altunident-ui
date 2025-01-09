@@ -194,24 +194,13 @@
         "get_in_touch_with_us": "Bizimle iletişime geçin",
         "about_us": "Hakkımızda",
         "about_us_title": "Gülümsemenizdeki <name>{hospital_name}</name>",
-        "about_us_description": "<p>Gülümsemenizi sağlıkla buluşturmanın gururunu yaşıyoruz. Deneyimli ve uzman ekibimizle birlikte, her hastamıza özel ve kişiye özel bir tedavi sunmayı amaçlıyoruz. Modern teknolojiyi kullanarak en üst düzeyde hizmet sunuyor, sağlıklı bir gülümsemenin herkesin hakkı olduğuna inanıyoruz. <br /><br /> Diş sağlığı konusundaki her ihtiyacınızı karşılamak için kapsamlı bir hizmet yelpazesi sunuyoruz. Profesyonel diş temizliği, estetik diş hekimliği, implant ve diş beyazlatma gibi alanlarda uzmanız. Her bir tedavi sürecinde hasta memnuniyetini ve konforunu ön planda tutuyor, güler yüzlü ve samimi bir ortamda hizmet veriyoruz.</p>"
-    },
-    "navbar": {
-        "nav_items": {
-            "home": "Atakent Hastanesi",
-            "hospitals": "Hastanelerimiz",
-            "doctors": "Doktorlarımız",
-            "departments": "Birimlerimiz",
-            "corporate": "Kurumsal",
-            "corporate_pages": {
-                "organization_schema": "Organizasyon Şeması",
-                "quality_studies": "Kalite Çalışmaları",
-                "human_resources": "İnsan Kaynakları"
-            },
-            "blog": "Blog",
-            "contact": "İletişim"
-        },
-        "make_an_appointment": "Randevu & E-Sonuç"
+        "about_us_description": "<p>Gülümsemenizi sağlıkla buluşturmanın gururunu yaşıyoruz. Deneyimli ve uzman ekibimizle birlikte, her hastamıza özel ve kişiye özel bir tedavi sunmayı amaçlıyoruz. Modern teknolojiyi kullanarak en üst düzeyde hizmet sunuyor, sağlıklı bir gülümsemenin herkesin hakkı olduğuna inanıyoruz. <br /><br /> Diş sağlığı konusundaki her ihtiyacınızı karşılamak için kapsamlı bir hizmet yelpazesi sunuyoruz. Profesyonel diş temizliği, estetik diş hekimliği, implant ve diş beyazlatma gibi alanlarda uzmanız. Her bir tedavi sürecinde hasta memnuniyetini ve konforunu ön planda tutuyor, güler yüzlü ve samimi bir ortamda hizmet veriyoruz.</p>",
+        "search_blogs": "Blog Arayın",
+        "recent_posts": "Son Gönderiler",
+        "filter_by_hospital": "Hastaneye Göre Filtrele",
+        "filter_by_department": "Bölüme Göre Filtrele",
+        "all": "Hepsi",
+        "location": "Yol Tarifi"
     },
     "homepage": {
         "search_form": {

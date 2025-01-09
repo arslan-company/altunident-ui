@@ -131,7 +131,7 @@ export default async function DepartmentDetail({
         title={department?.name || ''}
         items={[
           { label: currentHospital?.name, href: `/${hospitalSlug}` },
-          { label: t('departments_page.title'), href: `/${hospitalSlug}/departments` },
+          { label: t('common.our_departments'), href: `/${hospitalSlug}/departments` },
           { label: department?.name || '' },
         ]}
       />

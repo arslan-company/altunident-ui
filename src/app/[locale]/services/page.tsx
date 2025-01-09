@@ -84,11 +84,8 @@ export default async function ServicesPage({
     <>
       <Navbar />
       <Breadcrumb
-        title={t('services_page.page_banner.parent_page_text')}
-        items={[
-          { label: t('site.name'), href: '/' },
-          { label: t('services_page.page_banner.parent_page_text') },
-        ]}
+        title={t('common.our_services')}
+        items={[{ label: t('site.name'), href: '/' }, { label: t('common.our_services') }]}
       />
       <main className="tw-min-h-screen tw-bg-gray-50 tw-py-12">
         <div className="container tw-mx-auto tw-px-4">

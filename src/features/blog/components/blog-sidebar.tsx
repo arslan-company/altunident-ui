@@ -59,11 +59,11 @@ export function BlogSidebar({ recentBlogs, hideSearch = false }: BlogSidebarProp
           }}
           className="tw-mb-8 tw-px-6 tw-py-4 tw-bg-white tw-rounded-md tw-shadow-md"
         >
-          <h3 className="tw-text-xl tw-font-semibold tw-mb-4">Arama Yapın</h3>
+          <h3 className="tw-text-xl tw-font-semibold tw-mb-4">{t('common.search_blogs')}</h3>
           <div className="tw-relative">
             <Input
               type="text"
-              placeholder="Ara..."
+              placeholder={`${t('common.search')}...`}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               endIcon={
@@ -98,9 +98,7 @@ export function BlogSidebar({ recentBlogs, hideSearch = false }: BlogSidebarProp
       )}
 
       <div className="tw-mb-8">
-        <h3 className="tw-text-xl tw-font-semibold tw-mb-4">
-          {t('blog_page.blog_sidebar.widget_latest_posts.title')}
-        </h3>
+        <h3 className="tw-text-xl tw-font-semibold tw-mb-4">{t('common.recent_posts')}</h3>
         <div className="tw-space-y-4">
           {recentBlogs.map((blog) => (
             <Link
@@ -115,7 +113,7 @@ export function BlogSidebar({ recentBlogs, hideSearch = false }: BlogSidebarProp
                 />
               </div>
               <div>
-                <h4 className="tw-font-medium tw-text-sm group-hover:tw-text-primary">
+                <h4 className="tw-font-medium tw-text-sm group-hover:tw-text-primary tw-line-clamp-1 tw-max-w-[200px] tw-w-full">
                   {blog?.title}
                 </h4>
                 <p className="tw-text-gray-500 tw-text-xs">

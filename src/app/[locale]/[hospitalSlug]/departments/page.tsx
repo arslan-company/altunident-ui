@@ -109,10 +109,10 @@ export default async function DepartmentsPage({
     <>
       <Navbar />
       <Breadcrumb
-        title={t('departments_page.title')}
+        title={t('common.our_departments')}
         items={[
           { label: currentHospital?.name, href: `/${hospitalSlug}` },
-          { label: t('departments_page.title') },
+          { label: t('common.our_departments') },
         ]}
       />
       <main className="tw-min-h-screen tw-bg-gray-50 tw-py-12">

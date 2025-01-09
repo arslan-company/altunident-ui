@@ -97,7 +97,7 @@ export default async function DepartmentDetail({
         title={department?.name || ''}
         items={[
           { label: t('site.name'), href: '/' },
-          { label: t('departments_page.title'), href: '/departments' },
+          { label: t('common.our_departments'), href: '/departments' },
           { label: department?.name || '' },
         ]}
       />

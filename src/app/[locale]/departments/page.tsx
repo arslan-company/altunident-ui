@@ -77,8 +77,8 @@ export default async function DepartmentsPage({
     <>
       <Navbar />
       <Breadcrumb
-        title={t('departments_page.title')}
-        items={[{ label: t('site.name'), href: '/' }, { label: t('departments_page.title') }]}
+        title={t('common.our_departments')}
+        items={[{ label: t('site.name'), href: '/' }, { label: t('common.our_departments') }]}
       />
       <main className="tw-min-h-screen tw-bg-gray-50 tw-py-12">
         <div className="container tw-mx-auto tw-px-4">

@@ -66,10 +66,10 @@ export default async function ContactPage({
     <>
       <Navbar />
       <Breadcrumb
-        title={t('contact_page.contact_info_area.title')}
+        title={t('common.contact')}
         items={[
           { label: hospital?.name || '', href: `/${hospital?.slug}` },
-          { label: t('contact_page.contact_info_area.title') },
+          { label: t('common.contact') },
         ]}
       />
       <main className="tw-min-h-screen tw-py-16">
@@ -138,9 +138,7 @@ export default async function ContactPage({
                       </svg>
                     </div>
                     <div>
-                      <p className="tw-text-sm tw-text-gray-500 tw-mb-0">
-                        {t('contact_page.contact_info_area.card.card_email_title')}
-                      </p>
+                      <p className="tw-text-sm tw-text-gray-500 tw-mb-0">{t('common.email')}</p>
                       <p className="tw-text-gray-800 tw-font-medium">{hospital?.contact_email}</p>
                     </div>
                   </div>
@@ -162,9 +160,7 @@ export default async function ContactPage({
                       </svg>
                     </div>
                     <div>
-                      <p className="tw-text-sm tw-text-gray-500 tw-mb-0">
-                        {t('contact_page.contact_info_area.card.card_phone_title')}
-                      </p>
+                      <p className="tw-text-sm tw-text-gray-500 tw-mb-0">{t('common.phone')}</p>
                       <p className="tw-text-gray-800 tw-font-medium">{generalInfo.phoneNumber}</p>
                     </div>
                   </div>

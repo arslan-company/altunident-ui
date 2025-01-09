@@ -194,24 +194,13 @@
         "get_in_touch_with_us": "Contactez-nous",
         "about_us": "À propos de nous",
         "about_us_title": "<name>{hospital_name}</name> dans votre sourire",
-        "about_us_description": "<p>Nous sommes fiers d'allier votre sourire à la santé. Avec notre équipe expérimentée et experte, nous visons à offrir un traitement personnalisé et sur mesure à chacun de nos patients. En utilisant une technologie moderne, nous fournissons un service de haut niveau et croyons qu'un sourire sain est un droit pour tous. <br /><br /> Nous proposons une gamme complète de services pour répondre à tous vos besoins en santé dentaire. Nous sommes spécialisés dans des domaines tels que le nettoyage dentaire professionnel, la dentisterie esthétique, les implants et le blanchiment des dents. Dans chaque processus de traitement, nous privilégions la satisfaction et le confort du patient, et nous fournissons nos services dans une atmosphère chaleureuse et conviviale.</p>"
-    },
-    "navbar": {
-        "nav_items": {
-            "home": "Hôpital Atakent",
-            "hospitals": "Hôpitaux",
-            "doctors": "Médecins",
-            "departments": "Départements",
-            "corporate": "Entreprise",
-            "corporate_pages": {
-                "organization_schema": "Organigramme",
-                "quality_studies": "Études de qualité",
-                "human_resources": "Ressources humaines"
-            },
-            "blog": "Blog",
-            "contact": "Contact"
-        },
-        "make_an_appointment": "Prendre rendez-vous"
+        "about_us_description": "<p>Nous sommes fiers d'allier votre sourire à la santé. Avec notre équipe expérimentée et experte, nous visons à offrir un traitement personnalisé et sur mesure à chacun de nos patients. En utilisant une technologie moderne, nous fournissons un service de haut niveau et croyons qu'un sourire sain est un droit pour tous. <br /><br /> Nous proposons une gamme complète de services pour répondre à tous vos besoins en santé dentaire. Nous sommes spécialisés dans des domaines tels que le nettoyage dentaire professionnel, la dentisterie esthétique, les implants et le blanchiment des dents. Dans chaque processus de traitement, nous privilégions la satisfaction et le confort du patient, et nous fournissons nos services dans une atmosphère chaleureuse et conviviale.</p>",
+        "search_blogs": "Rechercher dans le blog",
+        "recent_posts": "Articles récents",
+        "filter_by_hospital": "Filtrer par Hôpital",
+        "filter_by_department": "Filtrer par Département",
+        "all": "Tous",
+        "location": "Emplacement"
     },
     "homepage": {
         "search_form": {

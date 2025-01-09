@@ -36,7 +36,7 @@ export default function AppointmentAction({ doctorHospitals }: AppointmentAction
         className="tw-flex-1"
       >
         <ClipboardPlus className="tw-w-4 tw-h-4 tw-mr-2" />
-        {t('doctors_page.doctor_card.make_an_appointment_title')}
+        {t('common.make_an_appointment')}
       </Button>
     </>
   );

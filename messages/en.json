@@ -194,24 +194,13 @@
         "get_in_touch_with_us": "Contact Us",
         "about_us": "About Us",
         "about_us_title": "<name>{hospital_name}</name> in Your Smile",
-        "about_us_description": "<p>We take pride in connecting your smile with health. Together with our experienced and expert team, we aim to provide personalized and customized treatment for each of our patients. Using modern technology, we provide service at the highest level and believe that a healthy smile is everyone's right. <br /><br /> We offer a comprehensive range of services to meet all your dental health needs. We specialize in areas such as professional dental cleaning, aesthetic dentistry, implants and teeth whitening. We prioritize patient satisfaction and comfort in every treatment process and provide service in a friendly and warm environment.</p>"
-    },
-    "navbar": {
-        "nav_items": {
-            "home": "Atakent Hospital",
-            "hospitals": "Hospitals",
-            "doctors": "Doctors",
-            "departments": "Departments",
-            "corporate": "Corporate",
-            "corporate_pages": {
-                "organization_schema": "Organization Schema",
-                "quality_studies": "Quality Studies",
-                "human_resources": "Human Resources"
-            },
-            "blog": "Blog",
-            "contact": "Contact"
-        },
-        "make_an_appointment": "Appointments & E-Results"
+        "about_us_description": "<p>We take pride in connecting your smile with health. Together with our experienced and expert team, we aim to provide personalized and customized treatment for each of our patients. Using modern technology, we provide service at the highest level and believe that a healthy smile is everyone's right. <br /><br /> We offer a comprehensive range of services to meet all your dental health needs. We specialize in areas such as professional dental cleaning, aesthetic dentistry, implants and teeth whitening. We prioritize patient satisfaction and comfort in every treatment process and provide service in a friendly and warm environment.</p>",
+        "search_blogs": "Search Blogs",
+        "recent_posts": "Recent Posts",
+        "filter_by_hospital": "Filter by Hospital",
+        "filter_by_department": "Filter by Department",
+        "all": "All",
+        "location": "Location"
     },
     "homepage": {
         "search_form": {

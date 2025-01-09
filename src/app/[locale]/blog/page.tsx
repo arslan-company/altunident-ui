@@ -78,11 +78,8 @@ export default async function BlogPage({
     <>
       <Navbar />
       <Breadcrumb
-        title={t('blog_page.page_banner.blog_text')}
-        items={[
-          { label: t('site.name'), href: '/' },
-          { label: t('blog_page.page_banner.blog_text') },
-        ]}
+        title={t('common.blog')}
+        items={[{ label: t('site.name'), href: '/' }, { label: t('common.blog') }]}
       />
       <main className="tw-min-h-screen tw-py-12">
         <div className="container tw-mx-auto tw-px-4">

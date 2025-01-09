@@ -50,11 +50,8 @@ export default async function ContactPage() {
     <>
       <Navbar />
       <Breadcrumb
-        title={t('contact_page.contact_info_area.title')}
-        items={[
-          { label: t('site.name'), href: '/' },
-          { label: t('contact_page.contact_info_area.title') },
-        ]}
+        title={t('common.contact')}
+        items={[{ label: t('site.name'), href: '/' }, { label: t('common.contact') }]}
       />
       <main className="tw-min-h-screen tw-py-12">
         <div className="container tw-mx-auto tw-px-4">
@@ -74,20 +71,20 @@ export default async function ContactPage() {
                 <div className="tw-my-5">
                   <div className="tw-mb-3">
                     <p className="tw-text-sm tw-text-gray-500 tw-m-0 tw-font-semibold">
-                      {t('contact_page.contact_hospital_list.card_item.address_title')}
+                      {t('common.address').toUpperCase()}
                     </p>
                     <p className="tw-font-bold">{hospital?.contact_address}</p>
                   </div>
                   <div>
                     <p className="tw-text-sm tw-text-gray-500 tw-m-0 tw-font-semibold">
-                      {t('contact_page.contact_hospital_list.card_item.email_title')}
+                      {t('common.email').toUpperCase()}
                     </p>
                     <p className="tw-font-bold">{hospital?.contact_email}</p>
                   </div>
                 </div>
                 <Link href={`/${hospital?.slug}/contact`} className="tw-block tw-w-full">
                   <Button size="sm" fullWidth>
-                    {t('contact_page.contact_hospital_list.card_item.location_button')}
+                    {t('common.location')}
                   </Button>
                 </Link>
               </div>

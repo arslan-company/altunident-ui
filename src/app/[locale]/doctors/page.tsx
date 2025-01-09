@@ -83,8 +83,8 @@ export default async function DoctorsPage({
     <>
       <Navbar />
       <Breadcrumb
-        title={t('doctors_page.title')}
-        items={[{ label: t('site.name'), href: '/' }, { label: t('doctors_page.title') }]}
+        title={t('common.our_doctors')}
+        items={[{ label: t('site.name'), href: '/' }, { label: t('common.our_doctors') }]}
       />
       <main className="tw-min-h-screen tw-bg-gray-50 tw-py-12">
         <div className="container tw-mx-auto tw-px-4">

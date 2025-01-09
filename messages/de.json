@@ -194,24 +194,13 @@
         "get_in_touch_with_us": "Kontaktieren Sie uns",
         "about_us": "Über das Krankenhaus",
         "about_us_title": "<name>{hospital_name}</name> in Ihrem Lächeln",
-        "about_us_description": "<p>Wir sind stolz darauf, Ihr Lächeln mit Gesundheit zu verbinden. Mit unserem erfahrenen und spezialisierten Team streben wir danach, jedem Patienten eine individuelle und personalisierte Behandlung anzubieten. Mit moderner Technologie bieten wir Service auf höchstem Niveau und glauben daran, dass ein gesundes Lächeln ein Recht für jeden ist. <br /><br /> Wir bieten ein umfassendes Leistungsspektrum, um all Ihre zahnmedizinischen Bedürfnisse zu erfüllen. Wir sind Experten in Bereichen wie professioneller Zahnreinigung, ästhetischer Zahnmedizin, Implantologie und Zahnaufhellung. Bei jedem Behandlungsprozess stehen die Zufriedenheit und der Komfort des Patienten im Vordergrund, und wir bieten unsere Dienstleistungen in einer freundlichen und herzlichen Atmosphäre an.</p>"
-    },
-    "navbar": {
-        "nav_items": {
-            "home": "Atakent Krankenhaus",
-            "hospitals": "Krankenhäuser",
-            "doctors": "Ärzte",
-            "departments": "Abteilungen",
-            "corporate": "Unternehmen",
-            "corporate_pages": {
-                "organization_schema": "Organigramm",
-                "quality_studies": "Studien zur Qualität",
-                "human_resources": "Personalwesen"
-            },
-            "blog": "Blog",
-            "contact": "Kontakt"
-        },
-        "make_an_appointment": "Termine & E-Ergebnisse"
+        "about_us_description": "<p>Wir sind stolz darauf, Ihr Lächeln mit Gesundheit zu verbinden. Mit unserem erfahrenen und spezialisierten Team streben wir danach, jedem Patienten eine individuelle und personalisierte Behandlung anzubieten. Mit moderner Technologie bieten wir Service auf höchstem Niveau und glauben daran, dass ein gesundes Lächeln ein Recht für jeden ist. <br /><br /> Wir bieten ein umfassendes Leistungsspektrum, um all Ihre zahnmedizinischen Bedürfnisse zu erfüllen. Wir sind Experten in Bereichen wie professioneller Zahnreinigung, ästhetischer Zahnmedizin, Implantologie und Zahnaufhellung. Bei jedem Behandlungsprozess stehen die Zufriedenheit und der Komfort des Patienten im Vordergrund, und wir bieten unsere Dienstleistungen in einer freundlichen und herzlichen Atmosphäre an.</p>",
+        "search_blogs": "Blog suchen",
+        "recent_posts": "Neueste Beiträge",
+        "filter_by_hospital": "Krankenhaus filtern",
+        "filter_by_department": "Abteilung filtern",
+        "all": "Alle",
+        "location": "Wegbeschreibung"
     },
     "homepage": {
         "search_form": {
