@@ -94,22 +94,26 @@ export default async function ServicesPage({
           </div>
 
           <div className="tw-space-y-12">
-            {sortedGroups.map((letter) => (
-              <div key={letter} className="tw-space-y-4">
-                <h2 className="tw-text-2xl tw-font-bold tw-text-primary">{letter}</h2>
-                <div className="tw-h-[1px] tw-w-full tw-bg-gray-200" />
-                <div className="tw-grid tw-grid-cols-1 md:tw-grid-cols-3 tw-gap-3">
-                  {groupedServices[letter].map((service: any) => (
-                    <Link
-                      href={`${hospitalSlug ? `/${hospitalSlug}` : ''}/services/${service?.id}/${slugify(service?.name)}`}
-                      key={service?.id}
-                    >
-                      <ServiceCard title={service?.name} />
-                    </Link>
-                  ))}
+            {sortedGroups.length > 0 ? (
+              sortedGroups.map((letter) => (
+                <div key={letter} className="tw-space-y-4">
+                  <h2 className="tw-text-2xl tw-font-bold tw-text-primary">{letter}</h2>
+                  <div className="tw-h-[1px] tw-w-full tw-bg-gray-200" />
+                  <div className="tw-grid tw-grid-cols-1 md:tw-grid-cols-3 tw-gap-3">
+                    {groupedServices[letter].map((service: any) => (
+                      <Link
+                        href={`${hospitalSlug ? `/${hospitalSlug}` : ''}/services/${service?.id}/${slugify(service?.name)}`}
+                        key={service?.id}
+                      >
+                        <ServiceCard title={service?.name} />
+                      </Link>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))
+            ) : (
+              <span className="tw-text-gray-500">{t('common.data_not_found')}...</span>
+            )}
           </div>
         </div>
       </main>

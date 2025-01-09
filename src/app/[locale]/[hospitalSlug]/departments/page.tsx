@@ -123,24 +123,28 @@ export default async function DepartmentsPage({
 
           {/* Department list */}
           <div className="tw-space-y-12">
-            {sortedGroups.map((letter) => (
-              <div key={letter} className="tw-space-y-4">
-                <h2 className="tw-text-2xl tw-font-bold tw-text-primary">{letter}</h2>
-                <div className="tw-h-[1px] tw-w-full tw-bg-gray-200" />
-                <div className="tw-grid tw-grid-cols-1 md:tw-grid-cols-3 tw-gap-3">
-                  {groupedDepartments[letter].map((department: any) => (
-                    <Link
-                      key={department.id}
-                      href={`/${hospitalSlug}/departments/${department?.id}/${slugify(department?.name)}`}
-                      className="tw-font-semibold tw-flex tw-items-center tw-gap-2 tw-text-gray-700 tw-text-base hover:tw-text-primary tw-transition-colors"
-                    >
-                      <div className="tw-h-1.5 tw-w-1.5 tw-rounded-full tw-bg-primary" />
-                      {department.name}
-                    </Link>
-                  ))}
+            {sortedGroups.length > 0 ? (
+              sortedGroups.map((letter) => (
+                <div key={letter} className="tw-space-y-4">
+                  <h2 className="tw-text-2xl tw-font-bold tw-text-primary">{letter}</h2>
+                  <div className="tw-h-[1px] tw-w-full tw-bg-gray-200" />
+                  <div className="tw-grid tw-grid-cols-1 md:tw-grid-cols-3 tw-gap-3">
+                    {groupedDepartments[letter].map((department: any) => (
+                      <Link
+                        key={department.id}
+                        href={`/${hospitalSlug}/departments/${department?.id}/${slugify(department?.name)}`}
+                        className="tw-font-semibold tw-flex tw-items-center tw-gap-2 tw-text-gray-700 tw-text-base hover:tw-text-primary tw-transition-colors"
+                      >
+                        <div className="tw-h-1.5 tw-w-1.5 tw-rounded-full tw-bg-primary" />
+                        {department.name}
+                      </Link>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))
+            ) : (
+              <span className="tw-text-gray-500">{t('common.data_not_found')}...</span>
+            )}
           </div>
         </div>
       </main>

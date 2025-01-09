@@ -100,32 +100,36 @@ export function BlogSidebar({ recentBlogs, hideSearch = false }: BlogSidebarProp
       <div className="tw-mb-8">
         <h3 className="tw-text-xl tw-font-semibold tw-mb-4">{t('common.recent_posts')}</h3>
         <div className="tw-space-y-4">
-          {recentBlogs.map((blog) => (
-            <Link
-              href={`/blog/${blog?.id}/${blog?.slug}`}
-              className="tw-flex tw-items-center tw-gap-4 tw-group"
-              key={blog?.id}
-            >
-              <div className="tw-w-20 tw-h-20 tw-flex tw-items-center tw-justify-center tw-rounded-md tw-overflow-hidden">
-                <Media
-                  src={filenameToUrl(blog?.cover_image_url) || '/img/blog/no-image.jpg'}
-                  className="tw-object-cover tw-w-full tw-h-full"
-                />
-              </div>
-              <div>
-                <h4 className="tw-font-medium tw-text-sm group-hover:tw-text-primary tw-line-clamp-1 tw-max-w-[200px] tw-w-full">
-                  {blog?.title}
-                </h4>
-                <p className="tw-text-gray-500 tw-text-xs">
-                  {formatDate(blog?.date, undefined, {
-                    day: 'numeric',
-                    month: 'long',
-                    year: 'numeric',
-                  })}
-                </p>
-              </div>
-            </Link>
-          ))}
+          {recentBlogs.length > 0 ? (
+            recentBlogs.map((blog) => (
+              <Link
+                href={`/blog/${blog?.id}/${blog?.slug}`}
+                className="tw-flex tw-items-center tw-gap-4 tw-group"
+                key={blog?.id}
+              >
+                <div className="tw-w-20 tw-h-20 tw-flex tw-items-center tw-justify-center tw-rounded-md tw-overflow-hidden">
+                  <Media
+                    src={filenameToUrl(blog?.cover_image_url) || '/img/blog/no-image.jpg'}
+                    className="tw-object-cover tw-w-full tw-h-full"
+                  />
+                </div>
+                <div>
+                  <h4 className="tw-font-medium tw-text-sm group-hover:tw-text-primary tw-line-clamp-1 tw-max-w-[200px] tw-w-full">
+                    {blog?.title}
+                  </h4>
+                  <p className="tw-text-gray-500 tw-text-xs">
+                    {formatDate(blog?.date, undefined, {
+                      day: 'numeric',
+                      month: 'long',
+                      year: 'numeric',
+                    })}
+                  </p>
+                </div>
+              </Link>
+            ))
+          ) : (
+            <span className="tw-text-gray-500">{t('common.data_not_found')}...</span>
+          )}
         </div>
       </div>
     </div>

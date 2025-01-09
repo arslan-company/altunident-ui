@@ -92,7 +92,11 @@ export default async function DoctorsPage({
             <FilterOptions departments={departments} />
           </div>
 
-          <DoctorList doctors={doctors} departments={departments} hospitals={hospitals} />
+          {doctors.length > 0 ? (
+            <DoctorList doctors={doctors} departments={departments} hospitals={hospitals} />
+          ) : (
+            <span className="tw-text-gray-500">{t('common.data_not_found')}...</span>
+          )}
 
           {doctorsData?.pages && doctorsData?.pages > 1 ? (
             <div className="tw-mt-16">

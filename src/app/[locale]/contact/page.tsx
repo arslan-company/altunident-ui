@@ -9,10 +9,11 @@ import Breadcrumb from '@/components/shared/breadcrumb';
 import { Button } from '@/components/base/button';
 
 import { filenameToUrl } from '@/features/files';
-import { hospitalApi, HospitalBanner } from '@/features/hospitals';
+import { hospitalApi, HospitalBanner, HospitalContactInformation } from '@/features/hospitals';
 import { ContactForm } from '@/features/email-service';
 
 import generateMeta from '@/utils/generate-meta';
+import generalInfo from '@/constants/general-info';
 
 const fetchData = async () => {
   try {
@@ -55,6 +56,15 @@ export default async function ContactPage() {
       />
       <main className="tw-min-h-screen tw-py-12">
         <div className="container tw-mx-auto tw-px-4">
+          <HospitalContactInformation
+            iframe={generalInfo.googleMapsIframe}
+            imageSrc={generalInfo.hospitalImageUrl}
+            name={t('site.name')}
+            address={generalInfo.address}
+            email={generalInfo.email}
+            phone={generalInfo.phoneNumber}
+          />
+
           <div className="tw-grid tw-gap-4 tw-grid-cols-1 sm:tw-grid-cols-2 xl:tw-grid-cols-4">
             {hospitals.map((hospital) => (
               <div

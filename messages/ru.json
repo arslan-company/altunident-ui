@@ -200,7 +200,8 @@
         "filter_by_hospital": "Фильтр по больнице",
         "filter_by_department": "Фильтр по отделению",
         "all": "Все",
-        "location": "Местоположение"
+        "location": "Местоположение",
+        "data_not_found": "Результаты не найдены."
     },
     "homepage": {
         "search_form": {

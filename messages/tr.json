@@ -200,7 +200,8 @@
         "filter_by_hospital": "Hastaneye Göre Filtrele",
         "filter_by_department": "Bölüme Göre Filtrele",
         "all": "Hepsi",
-        "location": "Yol Tarifi"
+        "location": "Yol Tarifi",
+        "data_not_found": "Veri bulunamadı"
     },
     "homepage": {
         "search_form": {

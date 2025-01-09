@@ -200,7 +200,8 @@
         "filter_by_hospital": "Filter by Hospital",
         "filter_by_department": "Filter by Department",
         "all": "All",
-        "location": "Location"
+        "location": "Location",
+        "data_not_found": "No Results Found."
     },
     "homepage": {
         "search_form": {

@@ -200,7 +200,8 @@
         "filter_by_hospital": "Krankenhaus filtern",
         "filter_by_department": "Abteilung filtern",
         "all": "Alle",
-        "location": "Wegbeschreibung"
+        "location": "Wegbeschreibung",
+        "data_not_found": "Keine Ergebnisse gefunden."
     },
     "homepage": {
         "search_form": {

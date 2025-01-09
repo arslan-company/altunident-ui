@@ -105,20 +105,24 @@ export default async function BlogPage({
               <div
                 className={`tw-grid tw-grid-cols-1 tw-gap-4 ${layout === 'grid' ? 'md:tw-grid-cols-2' : ''}`}
               >
-                {blogs.map((blog) => (
-                  <BlogCard
-                    key={blog?.id}
-                    variant={layout || 'grid'}
-                    href={`/blog/${blog?.id}/${blog?.slug}`}
-                    data={{
-                      id: blog?.id,
-                      title: blog?.title,
-                      createdAt: blog?.date,
-                      imageSrc: filenameToUrl(blog?.cover_image_url),
-                      slug: blog?.slug,
-                    }}
-                  />
-                ))}
+                {blogs.length > 0 ? (
+                  blogs.map((blog) => (
+                    <BlogCard
+                      key={blog?.id}
+                      variant={layout || 'grid'}
+                      href={`/blog/${blog?.id}/${blog?.slug}`}
+                      data={{
+                        id: blog?.id,
+                        title: blog?.title,
+                        createdAt: blog?.date,
+                        imageSrc: filenameToUrl(blog?.cover_image_url),
+                        slug: blog?.slug,
+                      }}
+                    />
+                  ))
+                ) : (
+                  <span className="tw-text-gray-500">{t('common.data_not_found')}...</span>
+                )}
               </div>
 
               {blogsData?.pages && blogsData?.pages > 1 ? (
