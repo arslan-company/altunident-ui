@@ -1,0 +1,650 @@
+{
+    "site": {
+        "name": "Altunident"
+    },
+    "meta": {
+        "common": {
+            "title": "{hospital_name} - Sağlık Hizmetleri ve Uzman Doktorlar",
+            "description": "{hospital_name} uzman doktor kadromuz ve tıbbi teknolojilerimizle kaliteli sağlık hizmeti sunuyoruz.",
+            "keywords": "{hospital_name}, özel hastane, sağlık, doktor, tıbbi hizmetler, klinik, tedavi, muayene",
+            "og_title": "{hospital_name} - Sağlık Hizmetleri",
+            "og_description": "{hospital_name} modern tıbbi teknolojileri ve uzman hekim kadrosu",
+            "og_image_alt": "{hospital_name} sağlığınızın gülümseyen yüzü",
+            "twitter_title": "{hospital_name} - Sağlık Hizmetleri",
+            "twitter_description": "{hospital_name} modern tıbbi teknolojileri ve uzman hekim kadrosu"
+        },
+        "doctors": {
+            "title": "Doktor Kadrosu - {hospital_name}",
+            "description": "{hospital_name} uzman doktor kadrosu ve tıbbi teknolojiler ile kaliteli sağlık hizmeti",
+            "keywords": "{hospital_name} doktorlar, doktor muayene, doktor hastane, uzman doktor, hekim kadrosu",
+            "og_title": "Uzman Doktorlar - {hospital_name}",
+            "og_description": "{hospital_name} uzman doktorlarımızla kendinizi güvende hissedebilirsiniz.",
+            "og_image_alt": "{hospital_name} Uzman Doktorlar",
+            "twitter_title": "Uzman Doktorlar - {hospital_name}",
+            "twitter_description": "{hospital_name} uzman doktorlarımızla kendinizi güvende hissedebilirsiniz."
+        },
+        "doctor_detail": {
+            "title": "{doctor_name} - {hospital_name}",
+            "description": "{hospital_name} {doctor_department_name} uzmanı {doctor_name} hakkında detaylı bilgi ve randevu.",
+            "keywords": "{doctor_name}, {hospital_name}, {doctor_department_name}, uzman doktor",
+            "og_title": "{doctor_name} - {hospital_name}",
+            "og_description": "{hospital_name} {doctor_department_name} uzmanı {doctor_name}",
+            "og_image_alt": "{hospital_name} {doctor_name}",
+            "twitter_title": "{doctor_name} - {hospital_name}",
+            "twitter_description": "{hospital_name} {doctor_department_name} uzmanı {doctor_name}"
+        },
+        "departments": {
+            "title": "Tıbbi Birimler / Bölümler - {hospital_name}",
+            "description": "{hospital_name} tüm tıbbi birimlerimiz / bölümlerimiz ve sağlık hizmetlerimiz hakkında bilgi alın.",
+            "keywords": "{hospital_name} birimler, hastane bölümleri, tıbbi servisler, sağlık birimleri",
+            "og_title": "Tıbbi Birimler / Bölümler - {hospital_name}",
+            "og_description": "{hospital_name} tüm tıbbi birimlerimiz / bölümlerimiz ve uzman kadromuz",
+            "og_image_alt": "{hospital_name} Tıbbi Birimler / Bölümler",
+            "twitter_title": "Tıbbi Birimler / Bölümler - {hospital_name}",
+            "twitter_description": "{hospital_name} tüm tıbbi birimlerimiz / bölümlerimiz ve uzman kadromuz"
+        },
+        "department_detail": {
+            "title": "{department_name} - {hospital_name}",
+            "description": "{hospital_name} {department_name} birimi / bölümü hakkında detaylı bilgi ve hizmetlerimiz.",
+            "keywords": "{hospital_name}, {department_name}, tıbbi hizmetler, tedavi",
+            "og_title": "{department_name} Birimi / Bölümü - {hospital_name}",
+            "og_description": "{hospital_name} {department_name} birimi / bölümü hizmetleri ve uzman kadrosu",
+            "og_image_alt": "{hospital_name} {department_name} Birimi / Bölümü",
+            "twitter_title": "{department_name} Birimi / Bölümü - {hospital_name}",
+            "twitter_description": "{hospital_name} {department_name} birimi / bölümü hizmetleri ve uzman kadrosu"
+        },
+        "contact": {
+            "title": "İletişim - {hospital_name}",
+            "description": "{hospital_name} iletişim bilgileri, adres ve telefon numaraları.",
+            "keywords": "{hospital_name} iletişim, hastane adres, telefon, konum",
+            "og_title": "İletişim Bilgileri - {hospital_name}",
+            "og_description": "{hospital_name} iletişim bilgileri ve lokasyon",
+            "og_image_alt": "{hospital_name} İletişim",
+            "twitter_title": "İletişim Bilgileri - {hospital_name}",
+            "twitter_description": "{hospital_name} iletişim bilgileri ve lokasyon"
+        },
+        "corporate": {
+            "title": "Kurumsal - {hospital_name}",
+            "description": "{hospital_name} kurumsal bilgiler, vizyon ve misyonumuz.",
+            "keywords": "{hospital_name} kurumsal, hastane hakkında, vizyon, misyon",
+            "og_title": "Kurumsal Bilgiler - {hospital_name}",
+            "og_description": "{hospital_name} kurumsal yapı ve değerlerimiz",
+            "og_image_alt": "{hospital_name} Kurumsal",
+            "twitter_title": "Kurumsal Bilgiler - {hospital_name}",
+            "twitter_description": "{hospital_name} kurumsal yapı ve değerlerimiz"
+        },
+        "blog": {
+            "title": "Blog - {hospital_name}",
+            "description": "{hospital_name} sağlık rehberi, haberler ve bilgilendirici içerikler.",
+            "keywords": "{hospital_name} blog, sağlık blog, hastane haberleri",
+            "og_title": "Sağlık Blogu - {hospital_name}",
+            "og_description": "{hospital_name} sağlık rehberi ve güncel içerikler",
+            "og_image_alt": "{hospital_name} Blog",
+            "twitter_title": "Sağlık Blogu - {hospital_name}",
+            "twitter_description": "{hospital_name} sağlık rehberi ve güncel içerikler"
+        },
+        "blog_detail": {
+            "title": "{blog_title} - {hospital_name}",
+            "description": "{hospital_name} {blog_title} - {blog_excerpt}",
+            "keywords": "{hospital_name}, {blog_keywords}, sağlık blog",
+            "og_title": "{blog_title} - {hospital_name}",
+            "og_description": "{blog_excerpt}",
+            "og_image_alt": "{blog_title} - {hospital_name}",
+            "twitter_title": "{blog_title} - {hospital_name}",
+            "twitter_description": "{blog_excerpt}"
+        },
+        "services": {
+            "title": "Sağlık Hizmetlerimiz - {hospital_name}",
+            "description": "{hospital_name} özellikli tıbbi hizmetler ve tedavi seçenekleri.",
+            "keywords": "{hospital_name} hizmetler, tıbbi hizmetler, sağlık hizmetleri",
+            "og_title": "{hospital_name} - Tıbbi Hizmetlerimiz",
+            "og_description": "{hospital_name} özellikli tıbbi hizmetler ve tedaviler",
+            "og_image_alt": "{hospital_name} Sağlık Hizmetleri",
+            "twitter_title": "{hospital_name} - Tıbbi Hizmetlerimiz",
+            "twitter_description": "{hospital_name} özellikli tıbbi hizmetler ve tedaviler"
+        },
+        "service_detail": {
+            "title": "{service_name} - {hospital_name}",
+            "description": "{hospital_name} {service_name} hizmeti hakkında detaylı bilgi.",
+            "keywords": "{hospital_name}, {service_name}, sağlık hizmeti",
+            "og_title": "{service_name} - {hospital_name}",
+            "og_description": "{hospital_name} {service_name} hizmeti ve detayları",
+            "og_image_alt": "{hospital_name} {service_name}",
+            "twitter_title": "{hospital_name} - {service_name}",
+            "twitter_description": "{hospital_name} {service_name} hizmeti ve detayları"
+        },
+        "hospital_detail": {
+            "title": "{hospital_name} - Sağlık Hizmetleri ve Tıbbi Birimler",
+            "description": "{hospital_name} modern tıbbi teknolojileri, uzman hekim kadrosu ve kaliteli sağlık hizmetleri hakkında detaylı bilgi.",
+            "keywords": "{hospital_name}, hastane, sağlık hizmetleri, tıbbi birimler, doktorlar, tedavi",
+            "og_title": "{hospital_name} - Sağlık Hizmetleri",
+            "og_description": "{hospital_name} modern tıbbi teknolojileri ve uzman hekim kadrosu ile hizmetinizdeyiz",
+            "og_image_alt": "{hospital_name} Hastanesi",
+            "twitter_title": "{hospital_name} - Sağlık Hizmetleri",
+            "twitter_description": "{hospital_name} modern tıbbi teknolojileri ve uzman hekim kadrosu ile hizmetinizdeyiz"
+        },
+        "corporate_detail": {
+            "title": "{corporate_title} - {hospital_name}",
+            "description": "{hospital_name} {corporate_title} hakkında detaylı bilgi ve kurumsal değerlerimiz.",
+            "keywords": "{hospital_name}, {corporate_title}, kurumsal, hastane",
+            "og_title": "{corporate_title} - {hospital_name}",
+            "og_description": "{hospital_name} {corporate_title} hakkında detaylı bilgi",
+            "og_image_alt": "{hospital_name} {corporate_title}",
+            "twitter_title": "{corporate_title} - {hospital_name}",
+            "twitter_description": "{hospital_name} {corporate_title} hakkında detaylı bilgi"
+        },
+        "human_resources": {
+            "title": "Kariyer Fırsatları ve İş Başvurusu - {hospital_name} İnsan Kaynakları",
+            "description": "{hospital_name}'de Kariyer Yapın - Sağlık Sektöründe İş Fırsatları ve Online İş Başvurusu",
+            "keywords": "{hospital_name}, sağlık sektörü iş ilanları, hastane iş başvurusu, sağlık personeli alımı, kariyer fırsatları, insan kaynakları, iş başvuru formu",
+            "og_title": "Sağlık Sektöründe Kariyer - {hospital_name} İş Başvurusu",
+            "og_description": "{hospital_name} bünyesinde kariyer fırsatları. Deneyimli ve yeni mezun sağlık personeli iş başvuruları için tıklayın.",
+            "og_image_alt": "{hospital_name} Kariyer ve İş Başvuru Sayfası",
+            "twitter_title": "Sağlık Kariyeriniz İçin {hospital_name} İş Fırsatları",
+            "twitter_description": "{hospital_name}'de çalışmak için online iş başvurusu yapın. Sağlık sektöründe kariyer fırsatlarını keşfedin."
+        },
+        "corporate_news": {
+            "title": "Kurumsal Haberler - {hospital_name}",
+            "description": "{hospital_name} kurumsal haberler, duyurular ve güncel gelişmeler.",
+            "keywords": "{hospital_name}, kurumsal haberler, duyurular, etkinlikler, hastane haberleri",
+            "og_title": "Kurumsal Haberler - {hospital_name}",
+            "og_description": "{hospital_name} kurumsal haberler ve güncel duyurular",
+            "og_image_alt": "{hospital_name} Kurumsal Haberler",
+            "twitter_title": "Kurumsal Haberler - {hospital_name}",
+            "twitter_description": "{hospital_name} kurumsal haberler ve güncel duyurular"
+        }
+    },
+    "common": {
+        "appointment": "Randevu",
+        "services": "Hizmetler",
+        "doctors": "Doktorlar",
+        "departments": "Birimler",
+        "corporate": "Kurumsal",
+        "blog": "Blog",
+        "contact": "İletişim",
+        "hospitals": "Hastaneler",
+        "our_hospitals": "Hastanelerimiz",
+        "our_departments": "Birimlerimiz",
+        "our_doctors": "Doktorlarımız",
+        "our_services": "Hizmetlerimiz",
+        "all_our_services": "Tüm Hizmetlerimiz",
+        "all_our_doctors": "Tüm Doktorlarımız",
+        "all_posts": "Tüm Yazılar",
+        "contact_us": "Bize Ulaşın",
+        "we_are_here_for_you": "Sizin İçin Buradayız",
+        "general_search": "Genel Arama",
+        "web_page": "Web Sayfası",
+        "physician_staff": "Hekim Kadrosu",
+        "make_an_appointment": "Randevu Al",
+        "name": "İsim",
+        "email": "E-Posta",
+        "phone": "Telefon",
+        "message": "Mesaj",
+        "send": "Gönder",
+        "collaborating_institutions": "Anlaşmalı Kurumlar",
+        "select_hospital": "Hastane Seçiniz",
+        "search": "Ara",
+        "quick_menu": "Hızlı Menü",
+        "address": "Adres",
+        "read_more": "Devamını Oku",
+        "page_not_found": "Aradığınız sayfa bulunamadı",
+        "page_not_found_description": "Üzgünüz, aradığınız sayfaya ulaşılamıyor. Sayfa kaldırılmış, adı değiştirilmiş veya geçici olarak kullanım dışı olabilir.",
+        "back_to_home": "Ana Sayfaya Dön",
+        "do_you_need_help": "Yardıma mı ihtiyacınız var?",
+        "get_in_touch_with_us": "Bizimle iletişime geçin",
+        "about_us": "Hakkımızda",
+        "about_us_title": "Gülümsemenizdeki <name>{hospital_name}</name>",
+        "about_us_description": "<p>Gülümsemenizi sağlıkla buluşturmanın gururunu yaşıyoruz. Deneyimli ve uzman ekibimizle birlikte, her hastamıza özel ve kişiye özel bir tedavi sunmayı amaçlıyoruz. Modern teknolojiyi kullanarak en üst düzeyde hizmet sunuyor, sağlıklı bir gülümsemenin herkesin hakkı olduğuna inanıyoruz. <br /><br /> Diş sağlığı konusundaki her ihtiyacınızı karşılamak için kapsamlı bir hizmet yelpazesi sunuyoruz. Profesyonel diş temizliği, estetik diş hekimliği, implant ve diş beyazlatma gibi alanlarda uzmanız. Her bir tedavi sürecinde hasta memnuniyetini ve konforunu ön planda tutuyor, güler yüzlü ve samimi bir ortamda hizmet veriyoruz.</p>",
+        "search_blogs": "Blog Arayın",
+        "recent_posts": "Son Gönderiler",
+        "filter_by_hospital": "Hastaneye Göre Filtrele",
+        "filter_by_department": "Bölüme Göre Filtrele",
+        "all": "Hepsi",
+        "location": "Yol Tarifi",
+        "data_not_found": "Veri bulunamadı"
+    },
+    "homepage": {
+        "search_form": {
+            "general_search_placeholder_text": "Genel Arama (TR)",
+            "search_results-area": {
+                "title": "Arama Sonuçları",
+                "hospitals_title": "Hastaneler",
+                "departments_title": "Bölümler",
+                "doctors_title": "Doktorlar",
+                "data-not-found-text": "Sonuç Bulunamadı."
+            }
+        },
+        "hospitals": {
+            "general_promotion_button_text": "Genel Tanıtım",
+            "departments_button_text": "Birimlerimiz",
+            "physician_staff_button_text": "Hekim Kadrosu"
+        },
+        "services": {
+            "top_title": "Hizmetler",
+            "title": "Özellikli Tıbbi Hizmetlerimiz",
+            "description": "Özelliklİ tıbbi hizmetlerimizden sizde yararlanın.",
+            "all_services": "Bütün Hizmetlerimiz",
+            "services_items": {
+                "item_1_title": "OBEZİTE VE METABOLİK CERRAHİ MERKEZİ",
+                "item_2_title": "KADIN HASTALIKLARI VE ÜREME SAĞLIĞI MERKEZİ",
+                "item_3_title": "ÇOCUK CERRAHİSİ MERKEZİ",
+                "item_4_title": "İLERİ OMURGA CERRAHİSİ MERKEZİ",
+                "item_5_title": "KARDİYOVASKÜLER CERRAHİ VE GİRİŞİMSEL KARDİYOLOJİ",
+                "item_6_title": "ONKOLOJİ MERKEZİ"
+            }
+        },
+        "doctor_list": {
+            "title": "Doktorlarımız",
+            "description": "Hastanemizde uzman ve deneyimli doktorlarımız, hastalarımızın sağlığını en iyi şekilde korumak ve tedavi süreçlerinde memnuniyeti sağlamak için çalışmaktadır. Doktorlarımız, alanlarında uzmanlaşmış ve sürekli güncellenen bilgi birikimleriyle size en iyi sağlık hizmetini sunar. Size özel sağlık çözümleri sunan doktorlarımızla sağlık yolculuğunuzda güvende hissedebilirsiniz.",
+            "all_doctors": "Bütün Doktorlarımız",
+            "doctor_card_item": {
+                "doctor_languages_text": "Yabancı Dil",
+                "doctor_education_text": "Eğitimi",
+                "doctor_specialization_training_text": "Uzmanlık Eğitimi"
+            }
+        },
+        "brand_statistics": {
+            "statistic_1_text": "Hastaneler",
+            "statistic_2_text": "Tıp Merkezi",
+            "statistic_3_text": "Şehir",
+            "statistic_4_text": "Hekimler",
+            "statistic_5_text": "Personeller"
+        },
+        "testimonial": {
+            "top_title": "Tüm Referanslarımız",
+            "title": "Referanslarımız",
+            "description": "Bizim hakkımızda neler söyleniyor?",
+            "testimonial_items": {
+                "testimonial_item_1_job": "Beyin Cerrahı",
+                "testimonial_item_2_job": "Aile Hekimi",
+                "testimonial_item_3_job": "Göz Doktoru"
+            }
+        },
+        "carousel": {
+            "top_title": "Öne Çıkan Blog Yazılarımız",
+            "title": "Atakent Blog",
+            "description": "Duyurular, Haberler ve diğer yazılarımıza göz atın.",
+            "all_blogs_button_text": "Tüm Paylaşımlar",
+            "filter_button_items": {
+                "all_button_text": "Hepsi",
+                "news_button_text": "Haberler",
+                "announcements_button_text": "Duyurular"
+            }
+        }
+    },
+    "footer": {
+        "section_1": {
+            "description": "Hastanemiz, Uluslararası kalite standartlarını temsil eden International Organization for Standardization (İSO) ve Sağlık bakanlığı tarafından denetlenmektedir.",
+            "make_an_appointment_button_text": "Randevu & E-Sonuç",
+            "report_suggestion_button_text": "Görüş Ve Öneri Bildir",
+            "rights_reserved": "Tüm Hakları Saklıdır."
+        },
+        "section_2": {
+            "title": "Hızlı Menü",
+            "items": {
+                "item_1_text": "Atakent Hastanesi",
+                "item_2_text": "Doktorlarımız",
+                "item_3_text": "Birimlerimiz",
+                "item_4_text": "Kurumsal",
+                "item_5_text": "Blog",
+                "item_6_text": "İletişim"
+            }
+        },
+        "section_3": {
+            "title": "Hasta Rehberi",
+            "items": {
+                "item_1_text": "Kalite Politikası",
+                "item_2_text": "Kalite Yönetim Birimi ve Çalışmaları",
+                "item_3_text": "Refakatçi Politikası",
+                "item_4_text": "Ziyaretçi Politikası",
+                "item_5_text": "Görüş, Öneri ve Şikayet Politikası",
+                "item_6_text": "Güvenlik Bilgisi ve Politikası",
+                "item_7_text": "İş Sağlığı ve Güvenliği Politikası",
+                "item_8_text": "Kişisel Verilerin Korunması Hakkında"
+            }
+        },
+        "section_4": {
+            "title": "İletişim",
+            "general_center_title": "Genel Müdürlük",
+            "items": {
+                "support_line_title": "İletişim / Çağrı Merkezi",
+                "email_title": "E-Posta",
+                "address_title": "Adres",
+                "address_text": "Adnan Menderes, Mahallesi, Ufuk Sk. No:7 Merkez/Yalova"
+            }
+        },
+        "last_update_date": "Son güncelleme tarihi"
+    },
+    "services_page": {
+        "page_banner": {
+            "parent_page_text": "Özellikli Tıbbi Hizmetler",
+            "homepage_text": "Ana Sayfa"
+        },
+        "no_content_text": "Burada henüz bir içerik bulunmamaktadır."
+    },
+    "doctors_page": {
+        "page_banner": {
+            "our_doctors_text": "Doktorlarımız",
+            "all_our_doctors_text": "Tüm Doktorlarımız",
+            "go_homepage_link_text": "Ana Sayfa"
+        },
+        "top_title": "Tüm Doktorlarımız",
+        "title": "Doktorlarımız",
+        "description": "Bizi temsil eden en deneyimli doktorlarımız sizlere hizmet vermek üzere burada.",
+        "filter_area": {
+            "filter_by_hospital_option_text": "Hastaneye Göre Filtrele (Hepsi)",
+            "filter_by_department_option_text": "Bölüme Göre Filtrele (Hepsi)",
+            "search_input_placeholder_text": "Ara"
+        },
+        "doctor_card": {
+            "education_title": "Eğitim",
+            "specialization_training_title": "Uzmanlık Eğitimi",
+            "languages_title": "Yabancı Dil",
+            "make_an_appointment_title": "Randevu Al"
+        },
+        "no_data": "Kayıtlı veri bulunmamaktadır."
+    },
+    "doctor_detail_page": {
+        "page_banner": {
+            "details_text": "Doktorlarımız",
+            "go_homepage_link_text": "Ana Sayfa",
+            "parent_page_text": "Doktorlar"
+        },
+        "about_doctor_area": {
+            "languages_text": "Yabancı Diller",
+            "education_text": "Eğitim",
+            "specialization_training_text": "Uzmanlık Eğitimi",
+            "hospital_text": "Görevli Olduğu Hastane"
+        },
+        "make_an_appointment_area": {
+            "top_title": "Randevu Al",
+            "title": "Şimdi Randevu Al",
+            "form": {
+                "name_area_label_text": "İsim",
+                "name_area_placeholder_text": "İsminizi Giriniz",
+                "email_area_label_text": "E-posta",
+                "email_area_placeholder_text": "E-posta Adresinizi Giriniz",
+                "phone_area_label_text": "Telefon",
+                "phone_area_placeholder_text": "Telefon Numaranızı Giriniz",
+                "service_label_text": "Hizmet",
+                "service_area_option_text": "Hizmet Seçiniz",
+                "date_area_label_text": "Tarih",
+                "time_area_label_text": "Zaman",
+                "time_area_option_text": "Zaman Seçiniz",
+                "message_area_label_text": "Mesaj",
+                "message_area_placeholder_text": "Varsa Mesajınızı Giriniz",
+                "submit_button_text": "Gönder"
+            }
+        },
+        "available_times_area": {
+            "title": "Müsait Vakitler",
+            "not_available_text": "Müsait Değil",
+            "make_an_appointment_button_text": "Randevu Al"
+        },
+        "publications_area": {
+            "title": "Bilgilendirme",
+            "no_data_text": "Burada şu anlık veri bulunmuyor."
+        }
+    },
+    "departments_page": {
+        "page_banner": {
+            "our_departments_text": "Birimlerimiz",
+            "all_our_departments_text": "Tüm Birimlerimiz",
+            "go_homepage_link_text": "Ana Sayfa"
+        },
+        "top_title": "Tüm Birimlerimiz",
+        "title": "Birimlerimiz",
+        "filter_area": {
+            "filter_by_hospital_option_text": "Hastaneye Göre Filtrele (Hepsi)",
+            "search_input_placeholder_text": "Ara"
+        }
+    },
+    "department_detail_page": {
+        "page_banner": {
+            "details_text": "Bölümler",
+            "go_homepage_link_text": "Ana Sayfa",
+            "parent_page_text": "Bölümler"
+        },
+        "no_content_text": "Burada henüz bir içerik bulunmamaktadır.",
+        "doctor_list_title": "Bu Bölümden Doktorlar"
+    },
+    "corporate_page": {
+        "page_banner": {
+            "corporate_text": "Kurumsal",
+            "go_homepage_link_text": "Ana Sayfa"
+        },
+        "blog_area": {
+            "top_title": "Atakent Hastanesi",
+            "title": "Kurumsal",
+            "content": {
+                "paragraph_1": {
+                    "paragraph": "20.000 m2 kapalı alanda hizmet sunan Özel Atakent Hastanesi'nin Akkurt Grup tarafından alınmasıyla ilk adımları atılan Atakent Sağlık Grubu, 2018 yılında Atakent Orhangazi Cerrahi Tıp Merkezi, 2019 yılında Atakent Gemlik Tıp Merkezi ve 2021 yılında Özel Atakent Cihan Hastanesi'ni devralarak büyüme serüvenine devam ediyor."
+                },
+                "paragraph_2": {
+                    "title": "GELECEĞE DÖNÜK",
+                    "paragraph": "Tüm özel ve genel branşların bulunduğu, uluslararası hizmet verebilen, bölgenin öncü ve refere sağlık kuruluşu olma vizyonu ile hareket ediyor; ulusal standartlara uygun, hasta haklarına saygılı, sosyal doku ile uyumlu, güvenilir, kaliteli ekonomik, teknolojik ve çağdaş sağlık hizmeti verme misyonunu sunduğumuz sağlık hizmetinin her noktasına sizler için taşıyoruz."
+                },
+                "paragraph_3": {
+                    "title": "KALİTELİ SAĞLIK HİZMETİ",
+                    "paragraph": "Kusursuzluğu hedefleyen yapımızla kalite standartlarını daima ileriye taşıma gayretinde bulunuyoruz. Sahip olduğumuz ISO belgeleri ve Sağlık Bakanlığı denetimleri ile hizmet kalitemizi tescil ediyor, sertifikalarımıza yenilerini eklemeye devam ediyoruz."
+                }
+            }
+        },
+        "card_items_area": {
+            "card_item_1_title": "İnsan Kaynakları",
+            "card_item_2_title": "Hakkımızda"
+        }
+    },
+    "corporate_events_page": {
+        "page_banner": {
+            "page_title": "Kurumsal Etkinlikler",
+            "homepage_text": "Ana Sayfa"
+        },
+        "title": "Kurumsal Haberler",
+        "description": "Atakent Sağlık Grubu kurumsal haberlerine bu bölümden ulaşabilirsiniz."
+    },
+    "corporate_events_blog_detail_page": {
+        "page_banner": {
+            "parent_page_text": "Kurumsal Etkinlikler",
+            "homepage_text": "Ana Sayfa"
+        },
+        "date": "Tarih"
+    },
+    "cv_form_page": {
+        "page_banner": {
+            "page_title": "İş Başvurusu",
+            "active_page_text": "İş Başvurusu Formu",
+            "homepage_text": "Ana Sayfa",
+            "parent_page_text": "Kurumsal"
+        },
+        "cv_form": {
+            "top_title": "İş Başvurusu",
+            "title": "İş Başvurusu Formu",
+            "description": "Başvuru için aşağıdaki bağlantıdan başvuru formu dosyasını indirip doldurmanız gerekmektedir. Doldurduktan sonra dosyayı aşağıdaki 'Dosya Seç' bölümüne yüklemeli ve formu göndermelisiniz.",
+            "download_form_button_title": "Başvuru Formunu İndir",
+            "form": {
+                "fullname_label_text": "İsim-Soyisim",
+                "fullname_placeholder_text": "İsim ve Soyisminizi Giriniz",
+                "phone_label_text": "Telefon",
+                "phone_placeholder_text": "Telefon Numaranızı Giriniz",
+                "email_label_text": "E-posta",
+                "email_placeholder_text": "E-posta Adresinizi Giriniz",
+                "date_of_birth_placeholder_text": "Doğum Tarihi",
+                "departments_placeholder_text": "Birim Seçiniz",
+                "departments_default_option_text": "Hangi bölüm için başvuru yapmak istiyorsunuz?",
+                "hospitals_placeholder_text": "Hastane Seçiniz",
+                "hospitals_default_option_text": "Hangi hastane için başvuru yapmak istiyorsunuz?",
+                "upload_cv_label": "Başvuru Formunu Yükleyiniz (.DOCX)",
+                "submit_button_text": "Gönder"
+            },
+            "alerts": {
+                "success": "CV'niz başarılı bir şekilde gönderilmiştir. En kısa sürede size geri dönüş yapılacaktır.",
+                "upload_cv_file": "Lütfen CV dosyanızı yükleyin ve tekrar deneyin.",
+                "age_verification": "Yaşınız 18'den büyük olmalıdır. Maalesef başvuru için uygun değilsiniz.",
+                "select_department": "Lütfen başvuru yapmak istediğiniz birimi seçiniz.",
+                "send_cv_failed": "CV gönderme işlemi başarısız oldu.",
+                "time_constraint": "Yakın zamanda zaten bir mesaj gönderdiniz."
+            }
+        }
+    },
+    "service_detail_page": {
+        "page_banner": {
+            "go_homepage_link_text": "Ana Sayfa"
+        },
+        "blog_area": {
+            "top_title": "Atakent Hastanesi",
+            "title": "Hizmetimiz",
+            "content": {
+                "paragraph_1": {
+                    "paragraph": "20.000 m2 kapalı alanda hizmet sunan Özel Atakent Hastanesi'nin Akkurt Grup tarafından alınmasıyla ilk adımları atılan Atakent Sağlık Grubu, 2018 yılında Atakent Orhangazi Cerrahi Tıp Merkezi, 2019 yılında Atakent Gemlik Tıp Merkezi ve 2021 yılında Özel Atakent Cihan Hastanesi'ni devralarak büyüme serüvenine devam ediyor."
+                },
+                "paragraph_2": {
+                    "title": "GELECEĞE DÖNÜK",
+                    "paragraph": "Tüm özel ve genel branşların bulunduğu, uluslararası hizmet verebilen, bölgenin öncü ve refere sağlık kuruluşu olma vizyonu ile hareket ediyor; ulusal standartlara uygun, hasta haklarına saygılı, sosyal doku ile uyumlu, güvenilir, kaliteli ekonomik, teknolojik ve çağdaş sağlık hizmeti verme misyonunu sunduğumuz sağlık hizmetinin her noktasına sizler için taşıyoruz."
+                },
+                "paragraph_3": {
+                    "title": "KALİTELİ SAĞLIK HİZMETİ",
+                    "paragraph": "Kusursuzluğu hedefleyen yapımızla kalite standartlarını daima ileriye taşıma gayretinde bulunuyoruz. Sahip olduğumuz ISO belgeleri ve Sağlık Bakanlığı denetimleri ile hizmet kalitemizi tescil ediyor, sertifikalarımıza yenilerini eklemeye devam ediyoruz."
+                }
+            }
+        },
+        "no_data": "Kayıtlı veri bulunmamaktadır."
+    },
+    "contact_page": {
+        "seo": {
+            "address": "adres",
+            "phone": "telefon",
+            "location": "konum",
+            "where": "nerede",
+            "default": "atakent iletişim, atakent adres, atakent telefon, atakent konum, atakent hastanesi nerede",
+            "description": "İletişim Bilgilerimiz - Atakent Sağlık Grubu İletişim Bilgileri"
+        },
+        "page_banner": {
+            "contact_text": "İletişim",
+            "go_homepage_link_text": "Ana Sayfa"
+        },
+        "contact_info_area": {
+            "title": "İletişim",
+            "title_2": "Genel Merkez",
+            "img_alt": "Atakent Hastanesi Genel Merkez",
+            "card": {
+                "card_country": "Türkiye",
+                "card_email_title": "E-posta",
+                "card_phone_title": "Telefon",
+                "address": "Adnan Menderes Mahallesi Ufuk Sk."
+            }
+        },
+        "contact_hospital_list": {
+            "card_item": {
+                "address_title": "ADRES",
+                "email_title": "E-POSTA",
+                "location_button": "Yol Tarifi"
+            }
+        }
+    },
+    "blog_page": {
+        "page_banner": {
+            "blog_text": "Blog",
+            "go_homepage_link_text": "Ana Sayfa"
+        },
+        "blog_card": {
+            "read_more_button_text": "Devamını Oku"
+        },
+        "blog_sidebar": {
+            "widget_search": {
+                "title": "Ara",
+                "search_form_input_placeholder_text": "Ara... (Enter'a Basın)"
+            },
+            "widget_latest_posts": {
+                "title": "Son Gönderiler"
+            },
+            "widget_archive": {
+                "title": "Arşiv"
+            },
+            "widget_categories": {
+                "title": "Kategoriler"
+            },
+            "widget_tags": {
+                "title": "Etiketler"
+            }
+        }
+    },
+    "blog_detail_page": {
+        "page_banner": {
+            "blog_detail_text": "Blog Detay",
+            "go_blogpage_link_text": "Blog"
+        },
+        "article_content_area": {
+            "entry_meta": {
+                "date_title": "Tarih",
+                "author_title": "Yazar"
+            }
+        },
+        "article_footer_area": {
+            "share_post_button_text": "Paylaş"
+        },
+        "post_navigation_area": {
+            "prev_post_button_text": "Önceki Post",
+            "next_post_button_text": "Sonraki Post"
+        },
+        "comments_area": {
+            "comment_count_title": "Yorum",
+            "comment_list_item": {
+                "reply_button_text": "Yanıtla"
+            },
+            "comment_respond": {
+                "comment_reply_title": "Cevap Bırakın",
+                "form": {
+                    "comment_notes_text": "E-posta adresiniz yayınlanmayacaktır.",
+                    "name_input_label_text": "İsim",
+                    "email_input_label_text": "E-posta",
+                    "website_input_label_text": "Website",
+                    "comment_input_label_text": "Yorumunuz",
+                    "submit_button_text": "Yorumu Gönder"
+                }
+            }
+        }
+    },
+    "common_doctors_component": {
+        "no_doctor_data_text": "Burada şu anlık görülecek bir veri yok."
+    },
+    "common_loading_component": {
+        "loading_text": "Yükleniyor..."
+    },
+    "campaign": {
+        "title": "Kampanyalar",
+        "sub_title": "Kısa Süreli Fırsatlar",
+        "end_date": "Son Tarih: "
+    },
+    "appointment_popup": {
+        "title": "Hastane Seçiniz"
+    },
+    "contact_form": {
+        "top_title": "Bize Ulaşın",
+        "title": "Sizin İçin Buradayız",
+        "form": {
+            "name_area_placeholder_text": "İsminiz",
+            "email_area_placeholder_text": "E-posta",
+            "phone_area_placeholder_text": "Telefon",
+            "department_area_placeholder_text": "Bölüm Seç",
+            "time_area_placeholder_text": "Zamanı Seç",
+            "message_area_placeholder_text": "Mesajınız",
+            "hospital_area_placeholder_text": "İletişime Geçmek İstediğiniz Hastaneyi Seçiniz",
+            "submit_button_text": "Gönder",
+            "success_alert": "Mesajınız başarılı bir şekilde gönderilmiştir.",
+            "error_alert": "Mesaj gönderilirken bir sorun oluştu. Lütfen girdiğiniz bilgileri kontrol edip tekrar deneyin.",
+            "message_too_short_error": "Mesajınız çok kısa.",
+            "time_constraint_error": "Yakın zamanda bir mesaj gönderdiniz. Lütfen daha sonra tekrar deneyin."
+        }
+    },
+    "error": {
+        "not_found": {
+          "title": "Aradığınız Sayfa Bulunamadı",
+          "description": "Üzgünüz, aradığınız sayfaya ulaşılamıyor. Sayfa kaldırılmış, adı değiştirilmiş veya geçici olarak kullanım dışı olabilir.",
+          "back_to_home": "Ana Sayfaya Dön",
+          "go_back": "Geri Git",
+          "need_help": "Yardıma mı ihtiyacınız var?",
+          "contact_us": "Bizimle iletişime geçin"
+        }
+      }
+}

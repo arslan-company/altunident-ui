@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: 20 90% 55%;
+    --primary-light: 184 70% 96%;
+    --darker-100: 222 64% 24%;
+    --darker-200: 222 64% 22%;
+    --darker-300: 222 64% 20%;
+    --darker-400: 222 64% 18%;
+    --darker-500: 222 64% 16%;
+    --darker-600: 222 64% 14%;
+    --darker-700: 222 64% 12%;
+    --darker-800: 222 64% 10%;
+    --darker-900: 222 64% 8%;
+  }
+}
+
+@layer utilities {
+  .iframe {
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .navbar-fix {
+    @apply tw-mt-[var(--navbar-height)];
+  }
+}

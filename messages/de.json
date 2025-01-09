@@ -1,0 +1,650 @@
+{
+    "site": {
+        "name": "Altunident"
+    },
+    "meta": {
+        "common": {
+            "title": "{hospital_name} - Gesundheitsdienstleistungen und Fachärzte",
+            "description": "Wir bieten qualitativ hochwertige Gesundheitsversorgung mit unserem Expertenteam und medizinischer Technologie bei {hospital_name}.",
+            "keywords": "{hospital_name}, Privatklinik, Gesundheit, Arzt, medizinische Dienste, Klinik, Behandlung, Untersuchung",
+            "og_title": "{hospital_name} - Gesundheitsdienstleistungen",
+            "og_description": "{hospital_name} moderne medizinische Technologien und Fachärzte",
+            "og_image_alt": "{hospital_name} das lächelnde Gesicht Ihrer Gesundheit",
+            "twitter_title": "{hospital_name} - Gesundheitsdienstleistungen",
+            "twitter_description": "{hospital_name} moderne medizinische Technologien und Fachärzte"
+        },
+        "doctors": {
+            "title": "{hospital_name} - Ärzteteam",
+            "description": "Qualitativ hochwertige Gesundheitsversorgung mit {hospital_name} Fachärzten und medizinischer Technologie",
+            "keywords": "{hospital_name} Ärzte, Arztuntersuchung, Krankenhausarzt, Facharzt, Ärzteteam",
+            "og_title": "{hospital_name} - Fachärzte",
+            "og_description": "Fühlen Sie sich sicher mit unseren Fachärzten bei {hospital_name}",
+            "og_image_alt": "{hospital_name} Fachärzte",
+            "twitter_title": "{hospital_name} - Fachärzte",
+            "twitter_description": "Fühlen Sie sich sicher mit unseren Fachärzten bei {hospital_name}"
+        },
+        "doctor_detail": {
+            "title": "{hospital_name} - {doctor_name}",
+            "description": "Ausführliche Informationen und Termine für {doctor_name}, {doctor_department_name} Spezialist bei {hospital_name}.",
+            "keywords": "{doctor_name}, {hospital_name}, {doctor_department_name}, Facharzt",
+            "og_title": "{hospital_name} - {doctor_name}",
+            "og_description": "{doctor_name}, {doctor_department_name} Spezialist bei {hospital_name}",
+            "og_image_alt": "{hospital_name} {doctor_name}",
+            "twitter_title": "{hospital_name} - {doctor_name}",
+            "twitter_description": "{doctor_name}, {doctor_department_name} Spezialist bei {hospital_name}"
+        },
+        "departments": {
+            "title": "{hospital_name} - Medizinische Abteilungen",
+            "description": "Erfahren Sie mehr über unsere medizinischen Abteilungen und Gesundheitsdienstleistungen bei {hospital_name}.",
+            "keywords": "{hospital_name} Abteilungen, Krankenhauseinheiten, medizinische Dienste, Gesundheitseinheiten",
+            "og_title": "{hospital_name} - Unsere Medizinischen Abteilungen",
+            "og_description": "{hospital_name} alle medizinischen Abteilungen und Fachpersonal",
+            "og_image_alt": "{hospital_name} Medizinische Abteilungen",
+            "twitter_title": "{hospital_name} - Unsere Medizinischen Abteilungen",
+            "twitter_description": "{hospital_name} alle medizinischen Abteilungen und Fachpersonal"
+        },
+        "department_detail": {
+            "title": "{hospital_name} - {department_name}",
+            "description": "{hospital_name} {department_name} Abteilung detaillierte Informationen und Dienstleistungen.",
+            "keywords": "{hospital_name}, {department_name}, medizinische Dienste, Behandlung",
+            "og_title": "{hospital_name} - {department_name} Abteilung",
+            "og_description": "{hospital_name} {department_name} Abteilungsdienste und Fachpersonal",
+            "og_image_alt": "{hospital_name} {department_name} Abteilung",
+            "twitter_title": "{hospital_name} - {department_name} Abteilung",
+            "twitter_description": "{hospital_name} {department_name} Abteilungsdienste und Fachpersonal"
+        },
+        "contact": {
+            "title": "{hospital_name} - Kontakt",
+            "description": "{hospital_name} Kontaktinformationen, Adresse und Telefonnummern.",
+            "keywords": "{hospital_name} Kontakt, Krankenhausadresse, Telefon, Standort",
+            "og_title": "{hospital_name} - Kontaktinformationen",
+            "og_description": "{hospital_name} Kontaktinformationen und Standort",
+            "og_image_alt": "{hospital_name} Kontakt",
+            "twitter_title": "{hospital_name} - Kontaktinformationen",
+            "twitter_description": "{hospital_name} Kontaktinformationen und Standort"
+        },
+        "corporate": {
+            "title": "{hospital_name} - Unternehmen",
+            "description": "{hospital_name} Unternehmensinformationen, Vision und Mission.",
+            "keywords": "{hospital_name} Unternehmen, über Krankenhaus, Vision, Mission",
+            "og_title": "{hospital_name} - Unternehmensinformationen",
+            "og_description": "{hospital_name} Unternehmensstruktur und Werte",
+            "og_image_alt": "{hospital_name} Unternehmen",
+            "twitter_title": "{hospital_name} - Unternehmensinformationen",
+            "twitter_description": "{hospital_name} Unternehmensstruktur und Werte"
+        },
+        "blog": {
+            "title": "{hospital_name} - Blog",
+            "description": "{hospital_name} Gesundheitsratgeber, Nachrichten und informative Inhalte.",
+            "keywords": "{hospital_name} Blog, Gesundheitsblog, Krankenhaus-News",
+            "og_title": "{hospital_name} - Gesundheitsblog",
+            "og_description": "{hospital_name} Gesundheitsratgeber und aktuelle Inhalte",
+            "og_image_alt": "{hospital_name} Blog",
+            "twitter_title": "{hospital_name} - Gesundheitsblog",
+            "twitter_description": "{hospital_name} Gesundheitsratgeber und aktuelle Inhalte"
+        },
+        "blog_detail": {
+            "title": "{hospital_name} - {blog_title}",
+            "description": "{hospital_name} {blog_title} - {blog_excerpt}",
+            "keywords": "{hospital_name}, {blog_keywords}, Gesundheitsblog",
+            "og_title": "{hospital_name} - {blog_title}",
+            "og_description": "{blog_excerpt}",
+            "og_image_alt": "{hospital_name} - {blog_title}",
+            "twitter_title": "{hospital_name} - {blog_title}",
+            "twitter_description": "{blog_excerpt}"
+        },
+        "services": {
+            "title": "{hospital_name} - Gesundheitsdienstleistungen",
+            "description": "{hospital_name} spezialisierte medizinische Dienste und Behandlungsoptionen.",
+            "keywords": "{hospital_name} Dienste, medizinische Dienste, Gesundheitsdienstleistungen",
+            "og_title": "{hospital_name} - Medizinische Dienste",
+            "og_description": "{hospital_name} spezialisierte medizinische Dienste und Behandlungen",
+            "og_image_alt": "{hospital_name} Gesundheitsdienstleistungen",
+            "twitter_title": "{hospital_name} - Medizinische Dienste",
+            "twitter_description": "{hospital_name} spezialisierte medizinische Dienste und Behandlungen"
+        },
+        "service_detail": {
+            "title": "{hospital_name} - {service_name}",
+            "description": "Ausführliche Informationen über den {service_name}-Service bei {hospital_name}.",
+            "keywords": "{hospital_name}, {service_name}, Gesundheitsdienstleistung",
+            "og_title": "{hospital_name} - {service_name}",
+            "og_description": "{hospital_name} {service_name}-Service und Details",
+            "og_image_alt": "{hospital_name} {service_name}",
+            "twitter_title": "{hospital_name} - {service_name}",
+            "twitter_description": "{hospital_name} {service_name}-Service und Details"
+        },
+        "hospital_detail": {
+            "title": "{hospital_name} - Gesundheitsdienstleistungen und medizinische Einheiten",
+            "description": "Detaillierte Informationen über moderne medizinische Technologien, Fachärzte und qualitativ hochwertige Gesundheitsdienstleistungen von {hospital_name}.",
+            "keywords": "{hospital_name}, Krankenhaus, Gesundheitsdienstleistungen, medizinische Einheiten, Ärzte, Behandlung",
+            "og_title": "{hospital_name} - Gesundheitsdienstleistungen",
+            "og_description": "{hospital_name} zu Ihren Diensten mit modernen medizinischen Technologien und Fachärzten",
+            "og_image_alt": "{hospital_name} Krankenhaus",
+            "twitter_title": "{hospital_name} - Gesundheitsdienstleistungen",
+            "twitter_description": "{hospital_name} zu Ihren Diensten mit modernen medizinischen Technologien und Fachärzten"
+        },
+        "corporate_detail": {
+            "title": "{corporate_title} - {hospital_name}",
+            "description": "Ausführliche Informationen über {corporate_title} und unsere Unternehmenswerte bei {hospital_name}.",
+            "keywords": "{hospital_name}, {corporate_title}, Unternehmen, Krankenhaus",
+            "og_title": "{corporate_title} - {hospital_name}",
+            "og_description": "Ausführliche Informationen über {corporate_title} bei {hospital_name}",
+            "og_image_alt": "{hospital_name} {corporate_title}",
+            "twitter_title": "{corporate_title} - {hospital_name}",
+            "twitter_description": "Ausführliche Informationen über {corporate_title} bei {hospital_name}"
+        },
+        "corporate_news": {
+            "title": "Unternehmensnachrichten - {hospital_name}",
+            "description": "{hospital_name} Unternehmensnachrichten, Ankündigungen und aktuelle Entwicklungen.",
+            "keywords": "{hospital_name}, Unternehmensnachrichten, Ankündigungen, Veranstaltungen, Krankenhaus-News",
+            "og_title": "Unternehmensnachrichten - {hospital_name}",
+            "og_description": "{hospital_name} Unternehmensnachrichten und aktuelle Ankündigungen",
+            "og_image_alt": "{hospital_name} Unternehmensnachrichten",
+            "twitter_title": "Unternehmensnachrichten - {hospital_name}",
+            "twitter_description": "{hospital_name} Unternehmensnachrichten und aktuelle Ankündigungen"
+        },
+        "human_resources": {
+            "title": "Karrieremöglichkeiten und Stellenangebote - {hospital_name} Personalwesen",
+            "description": "Bauen Sie Ihre Karriere bei {hospital_name} auf - Stellenangebote im Gesundheitswesen und Online-Bewerbung",
+            "keywords": "{hospital_name}, Jobs im Gesundheitswesen, Krankenhaus Stellenangebote, medizinisches Personal Einstellung, Karrieremöglichkeiten, Personalwesen, Bewerbungsformular",
+            "og_title": "Karriere im Gesundheitswesen - {hospital_name} Stellenangebote",
+            "og_description": "Karrieremöglichkeiten bei {hospital_name}. Klicken Sie hier für Ihre Bewerbung - Für erfahrene und frisch ausgebildete Gesundheitsfachkräfte.",
+            "og_image_alt": "{hospital_name} Karriere- und Bewerbungsseite",
+            "twitter_title": "Gesundheitskarriere bei {hospital_name}",
+            "twitter_description": "Bewerben Sie sich online für eine Stelle bei {hospital_name}. Entdecken Sie Karrieremöglichkeiten im Gesundheitswesen."
+        }
+    },
+    "common": {
+        "appointment": "Termin",
+        "services": "Dienstleistungen",
+        "doctors": "Ärzte",
+        "departments": "Abteilungen", 
+        "corporate": "Unternehmen",
+        "blog": "Blog",
+        "contact": "Kontakt",
+        "hospitals": "Krankenhäuser",
+        "our_hospitals": "Unsere Krankenhäuser",
+        "our_departments": "Unsere Abteilungen",
+        "our_doctors": "Unsere Ärzte",
+        "our_services": "Unsere Dienstleistungen",
+        "all_our_services": "Alle unsere Dienstleistungen",
+        "all_our_doctors": "Alle unsere Ärzte",
+        "all_posts": "Alle Beiträge",
+        "contact_us": "Kontaktieren Sie uns",
+        "we_are_here_for_you": "Wir sind für Sie da",
+        "general_search": "Allgemeine Suche",
+        "web_page": "Webseite",
+        "physician_staff": "Ärztliches Personal",
+        "make_an_appointment": "Termin vereinbaren",
+        "name": "Name",
+        "email": "E-Mail",
+        "phone": "Telefon",
+        "message": "Nachricht",
+        "send": "Senden",
+        "collaborating_institutions": "Zusammenarbeitende Institutionen",
+        "select_hospital": "Krankenhaus auswählen",
+        "search": "Suchen",
+        "quick_menu": "Schnellmenü",
+        "address": "Adresse",
+        "read_more": "Weiterlesen",
+        "page_not_found": "Seite nicht gefunden",
+        "page_not_found_description": "Wir entschuldigen uns für die Enttäuschung, aber wir können die Seite, die Sie suchen, nicht finden. Sie wurde entfernt, umbenannt oder möglicherweise vorübergehend nicht verfügbar.",
+        "back_to_home": "Startseite",
+        "do_you_need_help": "Brauchen Sie Hilfe?",
+        "get_in_touch_with_us": "Kontaktieren Sie uns",
+        "about_us": "Über das Krankenhaus",
+        "about_us_title": "<name>{hospital_name}</name> in Ihrem Lächeln",
+        "about_us_description": "<p>Wir sind stolz darauf, Ihr Lächeln mit Gesundheit zu verbinden. Mit unserem erfahrenen und spezialisierten Team streben wir danach, jedem Patienten eine individuelle und personalisierte Behandlung anzubieten. Mit moderner Technologie bieten wir Service auf höchstem Niveau und glauben daran, dass ein gesundes Lächeln ein Recht für jeden ist. <br /><br /> Wir bieten ein umfassendes Leistungsspektrum, um all Ihre zahnmedizinischen Bedürfnisse zu erfüllen. Wir sind Experten in Bereichen wie professioneller Zahnreinigung, ästhetischer Zahnmedizin, Implantologie und Zahnaufhellung. Bei jedem Behandlungsprozess stehen die Zufriedenheit und der Komfort des Patienten im Vordergrund, und wir bieten unsere Dienstleistungen in einer freundlichen und herzlichen Atmosphäre an.</p>",
+        "search_blogs": "Blog suchen",
+        "recent_posts": "Neueste Beiträge",
+        "filter_by_hospital": "Krankenhaus filtern",
+        "filter_by_department": "Abteilung filtern",
+        "all": "Alle",
+        "location": "Wegbeschreibung",
+        "data_not_found": "Keine Ergebnisse gefunden."
+    },
+    "homepage": {
+        "search_form": {
+            "general_search_placeholder_text": "Allgemeine Suche (DE)",
+            "search_results-area": {
+                "title": "Suchergebnisse",
+                "hospitals_title": "Krankenhäuser",
+                "departments_title": "Abteilungen",
+                "doctors_title": "Ärzte",
+                "data-not-found-text": "Keine Ergebnisse gefunden."
+            }
+        },
+        "hospitals": {
+            "general_promotion_button_text": "Allgemeine Werbung",
+            "departments_button_text": "Abteilungen",
+            "physician_staff_button_text": "Ärztliches Personal"
+        },
+        "services": {
+            "top_title": "Dienstleistungen",
+            "title": "Unsere spezialisierten medizinischen Dienstleistungen",
+            "description": "Nutzen Sie unsere spezialisierten medizinischen Dienstleistungen.",
+            "all_services": "Alle Dienstleistungen",
+            "services_items": {
+                "item_1_title": "ZENTRUM FÜR ADIPOSITAS UND METABOLISCHE CHIRURGIE",
+                "item_2_title": "GYNEKOLOGIE UND REPRODUKTION",
+                "item_3_title": "ZENTRUM FÜR KINDERCHIRURGIE",
+                "item_4_title": "ZENTRUM FÜR ADVANCED SPINE SURGERY",
+                "item_5_title": "HERZCHIRURGIE UND INTERVENTIONELLE KARDIOLOGIE",
+                "item_6_title": "ONKOLOGIEZENTRUM"
+            }
+        },
+        "doctor_list": {
+            "title": "Ärzte",
+            "description": "Unsere erfahrenen Ärzte arbeiten daran, Ihre Gesundheit zu schützen und Zufriedenheit während des Behandlungsprozesses zu gewährleisten. Unsere Ärzte bieten die besten Gesundheitsdienstleistungen mit ihrer Fachkompetenz und ständig aktualisiertem Wissen in ihren Fachbereichen. Sie können sich bei unseren Ärzten sicher fühlen, die personalisierte Gesundheitslösungen auf Ihrer Gesundheitsreise anbieten.",
+            "all_doctors": "Alle Ärzte",
+            "doctor_card_item": {
+                "doctor_languages_text": "Sprachen",
+                "doctor_education_text": "Ausbildung",
+                "doctor_specialization_training_text": "Fachausbildung"
+            }
+        },
+        "brand_statistics": {
+            "statistic_1_text": "Krankenhaus",
+            "statistic_2_text": "Medizinisches Zentrum",
+            "statistic_3_text": "Stadt",
+            "statistic_4_text": "Ärzte",
+            "statistic_5_text": "Personal"
+        },
+        "testimonial": {
+            "top_title": "Alle Testimonials",
+            "title": "Testimonials",
+            "description": "Was sagen die Leute über uns?",
+            "testimonial_items": {
+                "testimonial_item_1_job": "Gehirnchirurg",
+                "testimonial_item_2_job": "Familienarzt",
+                "testimonial_item_3_job": "Augenarzt"
+            }
+        },
+        "carousel": {
+            "top_title": "Ausgewählte Blog-Beiträge",
+            "title": "Atakent Blog",
+            "description": "Schauen Sie sich Ankündigungen, Nachrichten und andere Artikel an.",
+            "all_blogs_button_text": "Alle Beiträge",
+            "filter_button_items": {
+                "all_button_text": "Alle",
+                "news_button_text": "Nachrichten",
+                "announcements_button_text": "Ankündigungen"
+            }
+        }
+    },
+    "footer": {
+        "section_1": {
+            "description": "Unser Krankenhaus wird von der Internationalen Organisation für Normung (ISO) und dem Gesundheitsministerium geprüft und entspricht internationalen Qualitätsstandards.",
+            "make_an_appointment_button_text": "Termine & E-Ergebnisse",
+            "report_suggestion_button_text": "Meinung und Vorschlag einreichen",
+            "rights_reserved": "Alle Rechte vorbehalten."
+        },
+        "section_2": {
+            "title": "Schnellmenü",
+            "items": {
+                "item_1_text": "Atakent Krankenhaus",
+                "item_2_text": "Unsere Ärzte",
+                "item_3_text": "Unsere Abteilungen",
+                "item_4_text": "Unternehmen",
+                "item_5_text": "Blog",
+                "item_6_text": "Kontakt"
+            }
+        },
+        "section_3": {
+            "title": "Patientenleitfaden",
+            "items": {
+                "item_1_text": "Qualitätspolitik",
+                "item_2_text": "Qualitätsmanagement und -studien",
+                "item_3_text": "Begleitpersonenpolitik",
+                "item_4_text": "Besucherpolitik",
+                "item_5_text": "Meinungen, Vorschläge und Beschwerden Politik",
+                "item_6_text": "Sicherheitsinformationen und -richtlinien",
+                "item_7_text": "Politik für Arbeitsschutz und Gesundheitsschutz",
+                "item_8_text": "Informationen zum Datenschutz"
+            }
+        },
+        "section_4": {
+            "title": "Kontakt",
+            "general_center_title": "Allgemeine Zentrale",
+            "items": {
+                "support_line_title": "Anrufzentrum",
+                "email_title": "E-Mail",
+                "address_title": "Adresse",
+                "address_text": "Stadtteil Adnan Menderes, Ufuk St. Nr. 7 Zentrum/Yalova"
+            }
+        },
+        "last_update_date": "Datum der letzten Aktualisierung"
+    },
+    "services_page": {
+        "page_banner": {
+            "parent_page_text": "Spezialisierte medizinische Dienste",
+            "homepage_text": "Homepage"
+        },
+        "no_content_text": "Derzeit ist kein Inhalt verfügbar."
+    },
+    "doctors_page": {
+        "page_banner": {
+            "our_doctors_text": "Unsere Ärzte",
+            "all_our_doctors_text": "Alle unsere Ärzte",
+            "go_homepage_link_text": "Startseite"
+        },
+        "top_title": "Alle unsere Ärzte",
+        "title": "Unsere Ärzte",
+        "description": "Unsere erfahrensten Ärzte stehen Ihnen zur Verfügung.",
+        "filter_area": {
+            "filter_by_hospital_option_text": "Nach Krankenhaus filtern (Alle)",
+            "filter_by_department_option_text": "Nach Abteilung filtern (Alle)",
+            "search_input_placeholder_text": "Suche"
+        },
+        "doctor_card": {
+            "education_title": "Ausbildung",
+            "specialization_training_title": "Fachausbildung",
+            "languages_title": "Sprachen",
+            "make_an_appointment_title": "Einen Termin vereinbaren"
+        },
+        "no_data": "Aktuell sind keine Daten verfügbar."
+    },
+    "doctor_detail_page": {
+        "page_banner": {
+            "details_text": "Unsere Ärzte",
+            "go_homepage_link_text": "Startseite",
+            "parent_page_text": "Ärzte"
+        },
+        "about_doctor_area": {
+            "languages_text": "Sprachen",
+            "education_text": "Ausbildung",
+            "specialization_training_text": "Fachausbildung",
+            "hospital_text": "Krankenhaus"
+        },
+        "make_an_appointment_area": {
+            "top_title": "Terminvereinbarung",
+            "title": "Jetzt einen Termin vereinbaren",
+            "form": {
+                "name_area_label_text": "Name",
+                "name_area_placeholder_text": "Geben Sie Ihren Namen ein",
+                "email_area_label_text": "E-Mail",
+                "email_area_placeholder_text": "Geben Sie Ihre E-Mail-Adresse ein",
+                "phone_area_label_text": "Telefon",
+                "phone_area_placeholder_text": "Geben Sie Ihre Telefonnummer ein",
+                "service_label_text": "Dienstleistung",
+                "service_area_option_text": "Dienstleistung auswählen",
+                "date_area_label_text": "Datum",
+                "time_area_label_text": "Uhrzeit",
+                "time_area_option_text": "Uhrzeit auswählen",
+                "message_area_label_text": "Nachricht",
+                "message_area_placeholder_text": "Geben Sie hier ggf. Ihre Nachricht ein",
+                "submit_button_text": "Absenden"
+            }
+        },
+        "available_times_area": {
+            "title": "Verfügbare Zeiten",
+            "not_available_text": "Nicht verfügbar",
+            "make_an_appointment_button_text": "Termin vereinbaren"
+        },
+        "publications_area": {
+            "title": "Veröffentlichungen",
+            "no_data_text": "Derzeit sind keine Daten verfügbar."
+        }
+    },
+    "departments_page": {
+        "page_banner": {
+            "our_departments_text": "Unsere Abteilungen",
+            "all_our_departments_text": "Alle unsere Abteilungen",
+            "go_homepage_link_text": "Startseite"
+        },
+        "top_title": "Alle unsere Abteilungen",
+        "title": "Unsere Abteilungen",
+        "filter_area": {
+            "filter_by_hospital_option_text": "Nach Krankenhaus filtern (Alle)",
+            "search_input_placeholder_text": "Suche"
+        }
+    },
+    "department_detail_page": {
+        "page_banner": {
+            "details_text": "Abteilungen",
+            "go_homepage_link_text": "Startseite",
+            "parent_page_text": "Abteilungen"
+        },
+        "no_content_text": "Derzeit ist kein Inhalt verfügbar.",
+        "doctor_list_title": "Ärzte aus dieser Abteilung"
+    },
+    "corporate_page": {
+        "page_banner": {
+            "corporate_text": "Unternehmen",
+            "go_homepage_link_text": "Startseite"
+        },
+        "blog_area": {
+            "top_title": "Atakent Krankenhaus",
+            "title": "Unternehmen",
+            "content": {
+                "paragraph_1": {
+                    "paragraph": "Die Atakent Healthcare Group, die ihre ersten Schritte mit der Übernahme des Özel Atakent Krankenhauses durch die Akkurt Group in einer 20.000 m2 großen geschlossenen Fläche unternommen hat, setzt ihre Wachstumsreise fort, indem sie 2018 das Atakent Orhangazi Cerrahi Tıp Merkezi, 2019 das Atakent Gemlik Tıp Merkezi und 2021 das Özel Atakent Cihan Hastanesi übernimmt."
+                },
+                "paragraph_2": {
+                    "title": "BLICK IN DIE ZUKUNFT",
+                    "paragraph": "Wir gehen mit der Vision voran, die führende und anerkannte Gesundheitseinrichtung in der Region zu sein, die internationale Dienstleistungen in allen privaten und allgemeinen Fachbereichen anbietet. Unsere Mission ist es, zuverlässige, qualitativ hochwertige, wirtschaftliche, technologische und zeitgemäße Gesundheitsdienstleistungen in Übereinstimmung mit nationalen Standards, unter Wahrung der Patientenrechte und in Harmonie mit der sozialen Struktur an jedem Punkt der von uns angebotenen Gesundheitsdienste bereitzustellen."
+                },
+                "paragraph_3": {
+                    "title": "QUALITÄTS-GESUNDHEITSDIENSTLEISTUNG",
+                    "paragraph": "Mit unserer qualitätsorientierten Struktur streben wir ständig eine Verbesserung der Qualitätsstandards an. Wir zertifizieren unsere Servicequalität mit den ISO-Dokumenten, die wir haben, und den Inspektionen des Gesundheitsministeriums und fügen unserer Sammlung weiterhin neue Zertifikate hinzu."
+                }
+            }
+        },
+        "card_items_area": {
+            "card_item_1_title": "Humanressourcen",
+            "card_item_2_title": "Über uns"
+        }
+    },
+    "corporate_events_page": {
+        "page_banner": {
+            "page_title": "Firmenveranstaltungen",
+            "homepage_text": "Homepage"
+        },
+        "title": "Unternehmensnachrichten",
+        "description": "In diesem Bereich können Sie auf die Unternehmensnachrichten der Atakent Health Group zugreifen."
+    },
+    "corporate_events_blog_detail_page": {
+        "page_banner": {
+            "parent_page_text": "Firmenveranstaltungen",
+            "homepage_text": "Homepage"
+        },
+        "date": "Geschichte"
+    },
+    "cv_form_page": {
+        "page_banner": {
+            "page_title": "Bewerbung",
+            "active_page_text": "Lebenslauf abschicken",
+            "homepage_text": "Startseite",
+            "parent_page_text": "Humanressourcen"
+        },
+        "cv_form": {
+            "top_title": "Stellenbewerbung",
+            "title": "Bewerbungsformular",
+            "description": "Um sich zu bewerben, müssen Sie die Datei des Bewerbungsformulars über den unten stehenden Link herunterladen und ausfüllen. Nachdem Sie es ausgefüllt haben, müssen Sie die Datei in den unten stehenden Abschnitt „Datei auswählen“ hochladen und das Formular abschicken.",
+            "download_form_button_title": "Bewerbungsformular herunterladen",
+            "form": {
+                "fullname_label_text": "Vollständiger Name",
+                "fullname_placeholder_text": "Geben Sie Ihren vollständigen Namen ein",
+                "phone_label_text": "Telefon",
+                "phone_placeholder_text": "Geben Sie Ihre Telefonnummer ein",
+                "email_label_text": "E-mail",
+                "email_placeholder_text": "Geben Sie Ihre E-Mail Adresse ein",
+                "date_of_birth_placeholder_text": "Geburtsdatum",
+                "departments_placeholder_text": "Abteilung auswählen",
+                "departments_default_option_text": "Für welche Abteilung möchten Sie sich bewerben?",
+                "hospitals_placeholder_text": "Krankenhaus auswählen",
+                "hospitals_default_option_text": "Für welches Krankenhaus möchten Sie sich bewerben?",
+                "upload_cv_label": "Bewerbungsformular hochladen (.DOCX)",
+                "submit_button_text": "Absenden"
+            },
+            "alerts": {
+                "success": "Ihr Lebenslauf wurde erfolgreich übermittelt. Wir werden uns so schnell wie möglich bei Ihnen melden.",
+                "upload_cv_file": "Bitte laden Sie Ihre Lebenslaufdatei hoch und versuchen Sie es erneut.",
+                "age_verification": "Sie müssen über 18 Jahre alt sein. Leider sind Sie nicht berechtigt, sich zu bewerben.",
+                "select_department": "Bitte wählen Sie die Abteilung aus, für die Sie sich bewerben möchten.",
+                "send_cv_failed": "Das Senden des Lebenslaufs ist fehlgeschlagen.",
+                "time_constraint": "Sie haben bereits kürzlich eine Nachricht gesendet. Bitte versuche es später erneut."
+            }
+        }
+    },
+    "service_detail_page": {
+        "page_banner": {
+            "go_homepage_link_text": "Startseite"
+        },
+        "blog_area": {
+            "top_title": "Atakent Krankenhaus",
+            "title": "Unsere Dienstleistungen",
+            "content": {
+                "paragraph_1": {
+                    "paragraph": "Die Atakent Healthcare Group, die ihre ersten Schritte mit der Übernahme des Özel Atakent Krankenhauses durch die Akkurt Group in einer 20.000 m2 großen geschlossenen Fläche unternommen hat, setzt ihre Wachstumsreise fort, indem sie 2018 das Atakent Orhangazi Cerrahi Tıp Merkezi, 2019 das Atakent Gemlik Tıp Merkezi und 2021 das Özel Atakent Cihan Hastanesi übernimmt."
+                },
+                "paragraph_2": {
+                    "title": "BLICK IN DIE ZUKUNFT",
+                    "paragraph": "Wir gehen mit der Vision voran, die führende und anerkannte Gesundheitseinrichtung in der Region zu sein, die internationale Dienstleistungen in allen privaten und allgemeinen Fachbereichen anbietet. Unsere Mission ist es, zuverlässige, qualitativ hochwertige, wirtschaftliche, technologische und zeitgemäße Gesundheitsdienstleistungen in Übereinstimmung mit nationalen Standards, unter Wahrung der Patientenrechte und in Harmonie mit der sozialen Struktur an jedem Punkt der von uns angebotenen Gesundheitsdienste bereitzustellen."
+                },
+                "paragraph_3": {
+                    "title": "QUALITÄTS-GESUNDHEITSDIENSTLEISTUNG",
+                    "paragraph": "Mit unserer qualitätsorientierten Struktur streben wir ständig eine Verbesserung der Qualitätsstandards an. Wir zertifizieren unsere Servicequalität mit den ISO-Dokumenten, die wir haben, und den Inspektionen des Gesundheitsministeriums und fügen unserer Sammlung weiterhin neue Zertifikate hinzu."
+                }
+            }
+        },
+        "no_data": "Keine aufgezeichneten Daten verfügbar."
+    },
+    "contact_page": {
+        "seo": {
+            "address": "Adresse",
+            "phone": "Telefon",
+            "location": "Standort",
+            "where": "wo",
+            "default": "atakent kontakt, atakent adresse, atakent telefon, atakent standort, wo ist das atakent krankenhaus",
+            "description": "Kontaktinformationen - Atakent Health Group Kontaktinformationen"
+        },
+        "page_banner": {
+            "contact_text": "Kontakt",
+            "go_homepage_link_text": "Startseite"
+        },
+        "contact_info_area": {
+            "title": "Kontakt",
+            "title_2": "Hauptsitz",
+            "img_alt": "Atakent Krankenhaus Hauptsitz",
+            "card": {
+                "card_country": "Türkei",
+                "card_email_title": "E-Mail",
+                "card_phone_title": "Telefon",
+                "address": "Stadtteil Adnan Menderes, Ufuk-Straße"
+            }
+        },
+        "contact_hospital_list": {
+            "card_item": {
+                "address_title": "ADRESSE",
+                "email_title": "E-MAIL",
+                "location_button": "Standort"
+            }
+        }
+    },
+    "blog_page": {
+        "page_banner": {
+            "blog_text": "Blog",
+            "go_homepage_link_text": "Startseite"
+        },
+        "blog_card": {
+            "read_more_button_text": "Mehr lesen"
+        },
+        "blog_sidebar": {
+            "widget_search": {
+                "title": "Suche",
+                "search_form_input_placeholder_text": "Suche... (Eingabetaste drücken)"
+            },
+            "widget_latest_posts": {
+                "title": "Neueste Beiträge"
+            },
+            "widget_archive": {
+                "title": "Archiv"
+            },
+            "widget_categories": {
+                "title": "Kategorien"
+            },
+            "widget_tags": {
+                "title": "Tags"
+            }
+        }
+    },
+    "blog_detail_page": {
+        "page_banner": {
+            "blog_detail_text": "Beitragsdetail",
+            "go_blogpage_link_text": "Blog"
+        },
+        "article_content_area": {
+            "entry_meta": {
+                "date_title": "Datum",
+                "author_title": "Autor"
+            }
+        },
+        "article_footer_area": {
+            "share_post_button_text": "Teilen"
+        },
+        "post_navigation_area": {
+            "prev_post_button_text": "Vorheriger Beitrag",
+            "next_post_button_text": "Nächster Beitrag"
+        },
+        "comments_area": {
+            "comment_count_title": "Kommentare",
+            "comment_list_item": {
+                "reply_button_text": "Antworten"
+            },
+            "comment_respond": {
+                "comment_reply_title": "Antworten hinterlassen",
+                "form": {
+                    "comment_notes_text": "Ihre E-Mail-Adresse wird nicht veröffentlicht.",
+                    "name_input_label_text": "Name",
+                    "email_input_label_text": "E-Mail",
+                    "website_input_label_text": "Website",
+                    "comment_input_label_text": "Ihr Kommentar",
+                    "submit_button_text": "Kommentar abschicken"
+                }
+            }
+        }
+    },
+    "common_doctors_component": {
+        "no_doctor_data_text": "Derzeit sind keine Daten vorhanden, die hier angezeigt werden können."
+    },
+    "common_loading_component": {
+        "loading_text": "Wird geladen..."
+    },
+    "campaign": {
+        "title": "Aktionen",
+        "sub_title": "Begrenzte Zeitangebote",
+        "end_date": "Enddatum: "
+    },
+    "appointment_popup": {
+        "title": "Krankenhaus auswählen"
+    },
+    "contact_form": {
+        "top_title": "Kontaktiere uns",
+        "title": "Wir sind für Sie da",
+        "form": {
+            "name_area_placeholder_text": "Dein Name",
+            "email_area_placeholder_text": "Deine E-Mail",
+            "phone_area_placeholder_text": "Deine Telefonnummer",
+            "department_area_placeholder_text": "Abteilung auswählen",
+            "time_area_placeholder_text": "Zeit auswählen",
+            "message_area_placeholder_text": "Deine Nachricht",
+            "hospital_area_placeholder_text": "Wählen Sie das Krankenhaus, das Sie kontaktieren möchten",
+            "submit_button_text": "Absenden",
+            "success_alert": "Deine Nachricht wurde erfolgreich gesendet.",
+            "error_alert": "Beim Senden der Nachricht ist ein Problem aufgetreten. Bitte überprüfe die eingegebenen Informationen und versuche es erneut.",
+            "message_too_short_error": "Die Nachricht ist zu kurz",
+            "time_constraint_error": "Du hast kürzlich bereits eine Nachricht gesendet. Bitte versuche es später erneut."
+        }
+    },
+    "error": {
+        "not_found": {
+            "title": "Seite nicht gefunden",
+            "description": "Entschuldigung, wir konnten die gesuchte Seite nicht finden. Die Seite wurde möglicherweise entfernt, umbenannt oder ist vorübergehend nicht verfügbar.",
+            "back_to_home": "Zur Startseite",
+            "go_back": "Zurück",
+            "need_help": "Brauchen Sie Hilfe?",
+            "contact_us": "Kontaktieren Sie uns"
+        }
+    }
+}

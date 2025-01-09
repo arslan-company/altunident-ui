@@ -1,0 +1,650 @@
+{
+    "site": {
+        "name": "Altunident"
+    },
+    "meta": {
+        "common": {
+            "title": "{hospital_name} - الخدمات الصحية والأطباء المتخصصون",
+            "description": "نقدم رعاية صحية عالية الجودة مع فريقنا الطبي المتخصص والتقنيات الطبية في {hospital_name}.",
+            "keywords": "{hospital_name}, مستشفى خاص, صحة, طبيب, خدمات طبية, عيادة, علاج, فحص",
+            "og_title": "{hospital_name} - الخدمات الصحية",
+            "og_description": "{hospital_name} التقنيات الطبية الحديثة والفريق الطبي المتخصص",
+            "og_image_alt": "{hospital_name} الوجه المبتسم لصحتك",
+            "twitter_title": "{hospital_name} - الخدمات الصحية",
+            "twitter_description": "{hospital_name} التقنيات الطبية الحديثة والفريق الطبي المتخصص"
+        },
+        "doctors": {
+            "title": "{hospital_name} - الفريق الطبي",
+            "description": "رعاية صحية عالية الجودة مع الفريق الطبي المتخصص والتقنيات الطبية في {hospital_name}",
+            "keywords": "{hospital_name} أطباء, فحص طبي, طبيب مستشفى, طبيب متخصص, فريق طبي",
+            "og_title": "{hospital_name} - الأطباء المتخصصون",
+            "og_description": "اشعر بالأمان مع أطبائنا المتخصصين في {hospital_name}",
+            "og_image_alt": "{hospital_name} الأطباء المتخصصون",
+            "twitter_title": "{hospital_name} - الأطباء المتخصصون",
+            "twitter_description": "اشعر بالأمان مع أطبائنا المتخصصين في {hospital_name}"
+        },
+        "doctor_detail": {
+            "title": "{hospital_name} - {doctor_name}",
+            "description": "معلومات تفصيلية ومواعيد للدكتور {doctor_name}، متخصص {doctor_department_name} في {hospital_name}.",
+            "keywords": "{doctor_name}, {hospital_name}, {doctor_department_name}, طبيب متخصص",
+            "og_title": "{hospital_name} - {doctor_name}",
+            "og_description": "{doctor_name}، متخصص {doctor_department_name} في {hospital_name}",
+            "og_image_alt": "{hospital_name} {doctor_name}",
+            "twitter_title": "{hospital_name} - {doctor_name}",
+            "twitter_description": "{doctor_name}، متخصص {doctor_department_name} في {hospital_name}"
+        },
+        "departments": {
+            "title": "{hospital_name} - الأقسام الطبية",
+            "description": "تعرف على جميع أقسامنا الطبية وخدمات الرعاية الصحية في {hospital_name}.",
+            "keywords": "أقسام {hospital_name}، وحدات المستشفى، الخدمات الطبية، وحدات الرعاية الصحية",
+            "og_title": "{hospital_name} - أقسامنا الطبية",
+            "og_description": "{hospital_name} جميع الأقسام الطبية والطاقم المتخصص",
+            "og_image_alt": "{hospital_name} الأقسام الطبية",
+            "twitter_title": "{hospital_name} - أقسامنا الطبية",
+            "twitter_description": "{hospital_name} جميع الأقسام الطبية والطاقم المتخصص"
+        },
+        "department_detail": {
+            "title": "{hospital_name} - {department_name}",
+            "description": "{hospital_name} {department_name} معلومات تفصيلية وخدمات القسم.",
+            "keywords": "{hospital_name}، {department_name}، خدمات طبية، علاج",
+            "og_title": "{hospital_name} - قسم {department_name}",
+            "og_description": "{hospital_name} خدمات وطاقم متخصص في قسم {department_name}",
+            "og_image_alt": "{hospital_name} قسم {department_name}",
+            "twitter_title": "{hospital_name} - قسم {department_name}",
+            "twitter_description": "{hospital_name} خدمات وطاقم متخصص في قسم {department_name}"
+        },
+        "contact": {
+            "title": "{hospital_name} - اتصل بنا",
+            "description": "{hospital_name} معلومات الاتصال، العنوان وأرقام الهاتف.",
+            "keywords": "اتصال {hospital_name}، عنوان المستشفى، هاتف، موقع",
+            "og_title": "{hospital_name} - معلومات الاتصال",
+            "og_description": "{hospital_name} معلومات الاتصال والموقع",
+            "og_image_alt": "{hospital_name} اتصل بنا",
+            "twitter_title": "{hospital_name} - معلومات الاتصال",
+            "twitter_description": "{hospital_name} معلومات الاتصال والموقع"
+        },
+        "corporate": {
+            "title": "{hospital_name} - الشركة",
+            "description": "{hospital_name} معلومات الشركة، الرؤية والرسالة.",
+            "keywords": "شركة {hospital_name}، عن المستشفى، الرؤية، الرسالة",
+            "og_title": "{hospital_name} - معلومات الشركة",
+            "og_description": "{hospital_name} هيكل وقيم الشركة",
+            "og_image_alt": "{hospital_name} الشركة",
+            "twitter_title": "{hospital_name} - معلومات الشركة",
+            "twitter_description": "{hospital_name} هيكل وقيم الشركة"
+        },
+        "blog": {
+            "title": "{hospital_name} - المدونة",
+            "description": "{hospital_name} دليل الصحة، الأخبار والمحتوى المعلوماتي.",
+            "keywords": "مدونة {hospital_name}، مدونة صحية، أخبار المستشفى",
+            "og_title": "{hospital_name} - المدونة الصحية",
+            "og_description": "{hospital_name} دليل الصحة والمحتوى الحالي",
+            "og_image_alt": "{hospital_name} المدونة",
+            "twitter_title": "{hospital_name} - المدونة الصحية",
+            "twitter_description": "{hospital_name} دليل الصحة والمحتوى الحالي"
+        },
+        "blog_detail": {
+            "title": "{hospital_name} - {blog_title}",
+            "description": "{hospital_name} {blog_title} - {blog_excerpt}",
+            "keywords": "{hospital_name}، {blog_keywords}، مدونة صحية",
+            "og_title": "{hospital_name} - {blog_title}",
+            "og_description": "{blog_excerpt}",
+            "og_image_alt": "{hospital_name} - {blog_title}",
+            "twitter_title": "{hospital_name} - {blog_title}",
+            "twitter_description": "{blog_excerpt}"
+        },
+        "services": {
+            "title": "{hospital_name} - الخدمات الصحية",
+            "description": "{hospital_name} الخدمات الطبية المتخصصة وخيارات العلاج.",
+            "keywords": "خدمات {hospital_name}، خدمات طبية، خدمات صحية",
+            "og_title": "{hospital_name} - الخدمات الطبية",
+            "og_description": "{hospital_name} الخدمات الطبية المتخصصة والعلاجات",
+            "og_image_alt": "{hospital_name} الخدمات الصحية",
+            "twitter_title": "{hospital_name} - الخدمات الطبية",
+            "twitter_description": "{hospital_name} الخدمات الطبية المتخصصة والعلاجات"
+        },
+        "service_detail": {
+            "title": "{hospital_name} - {service_name}",
+            "description": "معلومات تفصيلية عن خدمة {service_name} في {hospital_name}.",
+            "keywords": "{hospital_name}، {service_name}، خدمة صحية",
+            "og_title": "{hospital_name} - {service_name}",
+            "og_description": "{hospital_name} خدمة {service_name} والتفاصيل",
+            "og_image_alt": "{hospital_name} {service_name}",
+            "twitter_title": "{hospital_name} - {service_name}",
+            "twitter_description": "{hospital_name} خدمة {service_name} والتفاصيل"
+        },
+        "hospital_detail": {
+            "title": "{hospital_name} - الخدمات الصحية والوحدات الطبية",
+            "description": "معلومات مفصلة عن التقنيات الطبية الحديثة والكادر الطبي المتخصص وخدمات الرعاية الصحية عالية الجودة في {hospital_name}",
+            "keywords": "{hospital_name}, مستشفى, خدمات صحية, وحدات طبية, أطباء, علاج",
+            "og_title": "{hospital_name} - الخدمات الصحية",
+            "og_description": "{hospital_name} في خدمتكم مع التقنيات الطبية الحديثة والكادر الطبي المتخصص",
+            "og_image_alt": "مستشفى {hospital_name}",
+            "twitter_title": "{hospital_name} - الخدمات الصحية",
+            "twitter_description": "{hospital_name} في خدمتكم مع التقنيات الطبية الحديثة والكادر الطبي المتخصص"
+        },
+        "corporate_detail": {
+            "title": "{corporate_title} - {hospital_name}",
+            "description": "معلومات مفصلة عن {corporate_title} وقيمنا المؤسسية في {hospital_name}",
+            "keywords": "{hospital_name}, {corporate_title}, مؤسسي, مستشفى",
+            "og_title": "{corporate_title} - {hospital_name}",
+            "og_description": "معلومات مفصلة عن {corporate_title} في {hospital_name}",
+            "og_image_alt": "{hospital_name} {corporate_title}",
+            "twitter_title": "{corporate_title} - {hospital_name}",
+            "twitter_description": "معلومات مفصلة عن {corporate_title} في {hospital_name}"
+        },
+        "corporate_news": {
+            "title": "أخبار الشركة - {hospital_name}",
+            "description": "{hospital_name} أخبار الشركة والإعلانات والتطورات الحالية.",
+            "keywords": "{hospital_name}, أخبار الشركة, إعلانات, فعاليات, أخبار المستشفى",
+            "og_title": "أخبار الشركة - {hospital_name}",
+            "og_description": "{hospital_name} أخبار الشركة والإعلانات الحالية",
+            "og_image_alt": "{hospital_name} أخبار الشركة",
+            "twitter_title": "أخبار الشركة - {hospital_name}",
+            "twitter_description": "{hospital_name} أخبار الشركة والإعلانات الحالية"
+        },
+        "human_resources": {
+            "title": "الفرص الوظيفية وطلبات التوظيف - الموارد البشرية {hospital_name}",
+            "description": "ابنِ مستقبلك المهني في {hospital_name} - فرص العمل في القطاع الصحي وتقديم الطلبات عبر الإنترنت",
+            "keywords": "{hospital_name}, وظائف القطاع الصحي, التقدم لوظائف المستشفى, توظيف الكوادر الطبية, الفرص المهنية, الموارد البشرية, نموذج طلب التوظيف",
+            "og_title": "وظائف القطاع الصحي - التقدم للوظائف في {hospital_name}",
+            "og_description": "فرص مهنية في {hospital_name}. انقر هنا للتقديم - للمتخصصين ذوي الخبرة وحديثي التخرج في المجال الصحي.",
+            "og_image_alt": "{hospital_name} صفحة الوظائف والتقديم",
+            "twitter_title": "فرص مهنية في مجال الرعاية الصحية في {hospital_name}",
+            "twitter_description": "قدم طلبك عبر الإنترنت للعمل في {hospital_name}. اكتشف الفرص المهنية في القطاع الصحي."
+        }
+    },
+    "common": {
+        "appointment": "موعد",
+        "services": "الخدمات",
+        "doctors": "الأطباء",
+        "departments": "الأقسام",
+        "corporate": "الشركة",
+        "blog": "المدونة",
+        "contact": "اتصل بنا",
+        "hospitals": "المستشفيات",
+        "our_hospitals": "مستشفياتنا",
+        "our_departments": "أقسامنا",
+        "our_doctors": "أطباؤنا",
+        "our_services": "خدماتنا",
+        "all_our_services": "جميع خدماتنا",
+        "all_our_doctors": "جميع أطبائنا",
+        "all_posts": "جميع المقالات",
+        "contact_us": "اتصل بنا",
+        "we_are_here_for_you": "نحن هنا من أجلك",
+        "general_search": "البحث العام",
+        "web_page": "الصفحة الإلكترونية",
+        "physician_staff": "الطاقم الطبي",
+        "make_an_appointment": "احجز موعداً",
+        "name": "الاسم",
+        "email": "البريد الإلكتروني",
+        "phone": "الهاتف",
+        "message": "الرسالة",
+        "send": "إرسال",
+        "collaborating_institutions": "المؤسسات المشتركة",
+        "select_hospital": "اختر المستشفى",
+        "search": "البحث",
+        "quick_menu": "قائمة التصفح السريعة",
+        "address": "العنوان",
+        "read_more": "المزيد",
+        "page_not_found": "الصفحة غير موجودة",
+        "page_not_found_description": "نحن نعتذر عن الإحباط، لا يمكننا الوصول إلى الصفحة التي تبحث عنها. قد تكون الصفحة محذوفة، أو تم تغيير الاسم، أو مؤقتًا غير متاحة.",
+        "back_to_home": "الصفحة الرئيسية",
+        "do_you_need_help": "هل تحتاج إلى المساعدة؟",
+        "get_in_touch_with_us": "اتصل بنا",
+        "about_us": "عن المستشفى",
+        "about_us_title": "<name>{hospital_name}</name> في ابتسامتك",
+        "about_us_description": "<p>نفتخر بأن نجمع بين ابتسامتك وصحتك. نهدف مع فريقنا المتخصص وذوي الخبرة إلى تقديم علاج مخصص وشخصي لكل مريض. نقدم أعلى مستوى من الخدمة باستخدام التكنولوجيا الحديثة، ونؤمن بأن الابتسامة الصحية حق للجميع. <br /><br /> نقدم مجموعة شاملة من الخدمات لتلبية جميع احتياجاتك في مجال صحة الأسنان. نحن متخصصون في مجالات مثل تنظيف الأسنان المهني، وطب الأسنان التجميلي، وزراعة الأسنان، وتبييض الأسنان. نضع رضا المريض وراحته في المقدمة خلال كل عملية علاجية، ونقدم خدماتنا في بيئة ودية ودافئة.</p>",
+        "search_blogs": "البحث في المدونة",
+        "recent_posts": "المقالات الأخيرة",
+        "filter_by_hospital": "البحث بالمستشفى",
+        "filter_by_department": "البحث بالقسم",
+        "all": "الكل",
+        "location": "الموقع",
+        "data_not_found": "لم يتم العثور على نتائج."
+    },
+    "homepage": {
+        "search_form": {
+            "general_search_placeholder_text": "البحث العام (AR)",
+            "search_results-area": {
+                "title": "نتائج البحث",
+                "hospitals_title": "المستشفيات",
+                "departments_title": "الأقسام",
+                "doctors_title": "الأطباء",
+                "data-not-found-text": "لم يتم العثور على نتائج."
+            }
+        },
+        "hospitals": {
+            "general_promotion_button_text": "الترويج العام",
+            "departments_button_text": "الأقسام",
+            "physician_staff_button_text": "طاقم الأطباء"
+        },
+        "services": {
+            "top_title": "الخدمات",
+            "title": "خدماتنا الطبية المتخصصة",
+            "description": "استفد من خدماتنا الطبية المتخصصة.",
+            "all_services": "جميع الخدمات",
+            "services_items": {
+                "item_1_title": "مركز جراحة السمنة والأيض",
+                "item_2_title": "مركز أمراض النساء والتناسل",
+                "item_3_title": "مركز جراحة الأطفال",
+                "item_4_title": "مركز جراحة العمود الفقري المتقدمة",
+                "item_5_title": "جراحة القلب والقسطرة التدخلية",
+                "item_6_title": "مركز الأورام"
+            }
+        },
+        "doctor_list": {
+            "title": "الأطباء",
+            "description": "يعمل أطباؤنا الخبراء وذوو الخبرة لحماية صحتك وضمان الرضا خلال عملية العلاج. يقدم أطباؤنا أفضل خدمات الرعاية الصحية بخبرتهم ومعرفتهم المستمرة في مجالاتهم. يمكنك الشعور بالأمان مع أطبائنا الذين يقدمون حلاً صحيًا مُخصصًا في رحلتك الصحية.",
+            "all_doctors": "جميع الأطباء",
+            "doctor_card_item": {
+                "doctor_languages_text": "اللغات",
+                "doctor_education_text": "التعليم",
+                "doctor_specialization_training_text": "التخصص والتدريب"
+            }
+        },
+        "brand_statistics": {
+            "statistic_1_text": "المستشفى",
+            "statistic_2_text": "المركز الطبي",
+            "statistic_3_text": "المدينة",
+            "statistic_4_text": "الأطباء",
+            "statistic_5_text": "الموظفين"
+        },
+        "testimonial": {
+            "top_title": "جميع الشهادات",
+            "title": "الشهادات",
+            "description": "ماذا يقول الناس عنّا؟",
+            "testimonial_items": {
+                "testimonial_item_1_job": "جراح الدماغ",
+                "testimonial_item_2_job": "طبيب عائلي",
+                "testimonial_item_3_job": "طبيب عيون"
+            }
+        },
+        "carousel": {
+            "top_title": "مقالات المدوّنة المميزة",
+            "title": "مدوّنة أتاكنت",
+            "description": "تحقق من الإعلانات والأخبار والمقالات الأخرى.",
+            "all_blogs_button_text": "جميع المقالات",
+            "filter_button_items": {
+                "all_button_text": "الكل",
+                "news_button_text": "الأخبار",
+                "announcements_button_text": "الإعلانات"
+            }
+        }
+    },
+    "footer": {
+        "section_1": {
+            "description": "يتم مراجعة مستشفانا من قبل المنظمة الدولية للتوحيد (ISO) ووزارة الصحة، ممثلة للمعايير الدولية للجودة.",
+            "make_an_appointment_button_text": "الحجز والنتائج الإلكترونية",
+            "report_suggestion_button_text": "تقديم الآراء والاقتراحات",
+            "rights_reserved": "جميع الحقوق محفوظة."
+        },
+        "section_2": {
+            "title": "القائمة السريعة",
+            "items": {
+                "item_1_text": "مستشفى أتاكنت",
+                "item_2_text": "أطباؤنا",
+                "item_3_text": "الأقسام الخاصة بنا",
+                "item_4_text": "الشركات",
+                "item_5_text": "المدوّنة",
+                "item_6_text": "اتصل بنا"
+            }
+        },
+        "section_3": {
+            "title": "دليل المريض",
+            "items": {
+                "item_1_text": "سياسة الجودة",
+                "item_2_text": "وحدة إدارة الجودة والدراسات",
+                "item_3_text": "سياسة المرافق",
+                "item_4_text": "سياسة الزائرين",
+                "item_5_text": "سياسة الآراء والاقتراحات والشكاوى",
+                "item_6_text": "معلومات وسياسة الأمان",
+                "item_7_text": "سياسة الصحة المهنية والسلامة",
+                "item_8_text": "حماية البيانات الشخصية"
+            }
+        },
+        "section_4": {
+            "title": "اتصل بنا",
+            "general_center_title": "المقر العام",
+            "items": {
+                "support_line_title": "مركز الاتصال",
+                "email_title": "البريد الإلكتروني",
+                "address_title": "العنوان",
+                "address_text": "حي عدنان مندريس، شارع أوفق رقم 7، سنتر/يالوفا"
+            }
+        },
+        "last_update_date": "تاريخ آخر تحديث"
+    },
+    "services_page": {
+        "page_banner": {
+            "parent_page_text": "الخدمات الطبية المتخصصة",
+            "homepage_text": "الصفحة الرئيسية"
+        },
+        "no_content_text": "لا يوجد محتوى هنا حتى الآن."
+    },
+    "doctors_page": {
+        "page_banner": {
+            "our_doctors_text": "أطباؤنا",
+            "all_our_doctors_text": "جميع أطباؤنا",
+            "go_homepage_link_text": "الصفحة الرئيسية"
+        },
+        "top_title": "جميع أطباؤنا",
+        "title": "أطباؤنا",
+        "description": "أطباؤنا ذوو الخبرة الكبيرة والذين يمثلونا هم هنا لخدمتك.",
+        "filter_area": {
+            "filter_by_hospital_option_text": "تصفية حسب المستشفى (الكل)",
+            "filter_by_department_option_text": "تصفية حسب القسم (الكل)",
+            "search_input_placeholder_text": "البحث"
+        },
+        "doctor_card": {
+            "education_title": "التعليم",
+            "specialization_training_title": "التخصص والتدريب",
+            "languages_title": "اللغات",
+            "make_an_appointment_title": "حدّد موعدًا"
+        },
+        "no_data": "لا توجد بيانات متاحة في الوقت الحالي."
+    },
+    "doctor_detail_page": {
+        "page_banner": {
+            "details_text": "أطباؤنا",
+            "go_homepage_link_text": "الصفحة الرئيسية",
+            "parent_page_text": "أطباؤنا"
+        },
+        "about_doctor_area": {
+            "languages_text": "اللغات",
+            "education_text": "التعليم",
+            "specialization_training_text": "التخصص والتدريب",
+            "hospital_text": "المستشفى"
+        },
+        "make_an_appointment_area": {
+            "top_title": "حجز موعد",
+            "title": "حدد موعدًا الآن",
+            "form": {
+                "name_area_label_text": "الاسم",
+                "name_area_placeholder_text": "أدخل اسمك",
+                "email_area_label_text": "البريد الإلكتروني",
+                "email_area_placeholder_text": "أدخل عنوان بريدك الإلكتروني",
+                "phone_area_label_text": "رقم الهاتف",
+                "phone_area_placeholder_text": "أدخل رقم هاتفك",
+                "service_label_text": "الخدمة",
+                "service_area_option_text": "اختر الخدمة",
+                "date_area_label_text": "التاريخ",
+                "time_area_label_text": "الوقت",
+                "time_area_option_text": "اختر الوقت",
+                "message_area_label_text": "رسالة",
+                "message_area_placeholder_text": "أدخل رسالتك إن وجدت",
+                "submit_button_text": "إرسال"
+            }
+        },
+        "available_times_area": {
+            "title": "الأوقات المتاحة",
+            "not_available_text": "غير متاح",
+            "make_an_appointment_button_text": "حجز موعد"
+        },
+        "publications_area": {
+            "title": "المنشورات",
+            "no_data_text": "لا توجد بيانات حالية هنا."
+        }
+    },
+    "departments_page": {
+        "page_banner": {
+            "our_departments_text": "أقسامنا",
+            "all_our_departments_text": "كل أقسامنا",
+            "go_homepage_link_text": "الصفحة الرئيسية"
+        },
+        "top_title": "كل أقسامنا",
+        "title": "أقسامنا",
+        "filter_area": {
+            "filter_by_hospital_option_text": "تصفية حسب المستشفى (الكل)",
+            "search_input_placeholder_text": "البحث"
+        }
+    },
+    "department_detail_page": {
+        "page_banner": {
+            "details_text": "الأقسام",
+            "go_homepage_link_text": "الصفحة الرئيسية",
+            "parent_page_text": "الأقسام"
+        },
+        "no_content_text": "لا توجد محتوى متاح حاليًا.",
+        "doctor_list_title": "الأطباء من هذا القسم"
+    },
+    "corporate_page": {
+        "page_banner": {
+            "corporate_text": "الشركات",
+            "go_homepage_link_text": "الصفحة الرئيسية"
+        },
+        "blog_area": {
+            "top_title": "مستشفى أتاكنت",
+            "title": "الشركات",
+            "content": {
+                "paragraph_1": {
+                    "paragraph": "مجموعة مراكز أتاكنت الصحية، التي خطت أول خطواتها من خلال استحواذ مجموعة أكورت على مستشفى أتاكنت الخاص في مساحة مغلقة تبلغ 20،000 متر مربع، تواصل رحلتها في النمو من خلال تولي مركز أتاكنت أورهانغازي الجراحي الطبي في عام 2018، ومركز أتاكنت جمليق الطبي في عام 2019، ومستشفى أتاكنت جيهان الخاص في عام 2021."
+                },
+                "paragraph_2": {
+                    "title": "نتطلع إلى المستقبل",
+                    "paragraph": "نتقدم برؤية تكون مؤسسة الرعاية الصحية الرائدة والمرجعية في المنطقة، وتقديم خدمة دولية في جميع الفروع الخاصة والعامة؛ ونحمل مهمة تقديم خدمات صحية موثوقة وذات جودة واقتصادية وتكنولوجية ومعاصرة تتوافق مع المعايير الوطنية، واحترام حقوق المرضى، وتتناغم مع الهيكل الاجتماعي لكل نقطة من خدمة الرعاية الصحية التي نقدمها لك."
+                },
+                "paragraph_3": {
+                    "title": "خدمة رعاية صحية عالية الجودة",
+                    "paragraph": "بهيكلنا الهادف إلى الكمال، نسعى للتقدم بمعايير الجودة في كل وقت. نعتمد جودة خدماتنا بوثائق ISO التي نمتلكها والفحوصات من قبل وزارة الصحة، ونستمر في إضافة شهادات جديدة إلى مجموعتنا."
+                }
+            }
+        },
+        "card_items_area": {
+            "card_item_1_title": "الموارد البشرية",
+            "card_item_2_title": "نبذة عنا"
+        }
+    },
+    "corporate_events_page": {
+        "page_banner": {
+            "page_title": "فعاليات الشركات",
+            "homepage_text": "الصفحة الرئيسية"
+        },
+        "title": "أخبار الشركات",
+        "description": "يمكنك الوصول إلى أخبار شركة Atakent Health Group من هذا القسم."
+    },
+    "corporate_events_blog_detail_page": {
+        "page_banner": {
+            "parent_page_text": "فعاليات الشركات",
+            "homepage_text": "الصفحة الرئيسية"
+        },
+        "date": "التاريخ"
+    },
+    "cv_form_page": {
+        "page_banner": {
+            "page_title": "طلب وظيفة",
+            "active_page_text": "تقديم السيرة الذاتية",
+            "homepage_text": "الصفحة الرئيسية",
+            "parent_page_text": "الموارد البشرية"
+        },
+        "cv_form": {
+            "top_title": "طلب التقديم للوظيفة",
+            "title": "نموذج طلب التوظيف",
+            "description": "بالنسبة للتقديم، تحتاج إلى تنزيل وتعبئة ملف استمارة الطلب من الرابط أدناه. بعد تعبئته، يجب عليك تحميل الملف إلى قسم ”تحديد ملف“ أدناه وإرسال النموذج.",
+            "download_form_button_title": "تنزيل نموذج الطلب",
+            "form": {
+                "fullname_label_text": "الاسم الكامل",
+                "fullname_placeholder_text": "أدخل الاسم الكامل",
+                "phone_label_text": "الهاتف",
+                "phone_placeholder_text": "أدخل رقم هاتفك",
+                "email_label_text": "البريد الإلكتروني",
+                "email_placeholder_text": "أدخل عنوان بريدك الإلكتروني",
+                "date_of_birth_placeholder_text": "تاريخ الميلاد",
+                "departments_placeholder_text": "اختر القسم",
+                "departments_default_option_text": "أي قسم ترغب في التقدم له؟",
+                "hospitals_placeholder_text": "اختر مستشفى",
+                "hospitals_default_option_text": "أي مستشفى تريد التقدم إليها؟",
+                "upload_cv_label": "تحميل نموذج الطلب (.DOCX)",
+                "submit_button_text": "تقديم"
+            },
+            "alerts": {
+                "success": "تم إرسال سيرتك الذاتية بنجاح. سنعود إليك في أقرب وقت ممكن.",
+                "upload_cv_file": "يرجى تحميل ملف السيرة الذاتية الخاص بك والمحاولة مرة أخرى.",
+                "age_verification": "يجب أن تكون عمرك أكثر من 18 عامًا. للأسف، أنت غير مؤهل لتقديم طلب.",
+                "select_department": "يرجى اختيار القسم الذي ترغب في التقديم له.",
+                "send_cv_failed": "فشل إرسال السيرة الذاتية.",
+                "time_constraint": "لقد قمت بإرسال رسالة مؤخرًا بالفعل."
+            }
+        }
+    },
+    "service_detail_page": {
+        "page_banner": {
+            "go_homepage_link_text": "الصفحة الرئيسية"
+        },
+        "blog_area": {
+            "top_title": "مستشفى أتاكنت",
+            "title": "خدمتنا",
+            "content": {
+                "paragraph_1": {
+                    "paragraph": "مجموعة مراكز أتاكنت الصحية، التي خطت أول خطواتها من خلال استحواذ مجموعة أكورت على مستشفى أتاكنت الخاص في مساحة مغلقة تبلغ 20،000 متر مربع، تواصل رحلتها في النمو من خلال تولي مركز أتاكنت أورهانغازي الجراحي الطبي في عام 2018، ومركز أتاكنت جمليق الطبي في عام 2019، ومستشفى أتاكنت جيهان الخاص في عام 2021."
+                },
+                "paragraph_2": {
+                    "title": "نتطلع إلى المستقبل",
+                    "paragraph": "نتقدم برؤية تكون مؤسسة الرعاية الصحية الرائدة والمرجعية في المنطقة، وتقديم خدمة دولية في جميع الفروع الخاصة والعامة؛ ونحمل مهمة تقديم خدمات صحية موثوقة وذات جودة واقتصادية وتكنولوجية ومعاصرة تتوافق مع المعايير الوطنية، واحترام حقوق المرضى، وتتناغم مع الهيكل الاجتماعي لكل نقطة من خدمة الرعاية الصحية التي نقدمها لك."
+                },
+                "paragraph_3": {
+                    "title": "خدمة رعاية صحية عالية الجودة",
+                    "paragraph": "بهيكلنا الهادف إلى الكمال، نسعى للتقدم بمعايير الجودة في كل وقت. نعتمد جودة خدماتنا بوثائق ISO التي نمتلكها والفحوصات من قبل وزارة الصحة، ونستمر في إضافة شهادات جديدة إلى مجموعتنا."
+                }
+            }
+        },
+        "no_data": "لا توجد بيانات مسجلة متاحة."
+    },
+    "contact_page": {
+        "seo": {
+            "address": "العنوان",
+            "phone": "الهاتف",
+            "location": "الموقع",
+            "where": "أين",
+            "default": "اتصل بـ أتاكنت، عنوان أتاكنت، هاتف أتاكنت، موقع أتاكنت، أين مستشفى أتاكنت",
+            "description": "معلومات الاتصال - تفاصيل الاتصال بمجموعة أتاكنت الصحية"
+        },
+        "page_banner": {
+            "contact_text": "اتصل بنا",
+            "go_homepage_link_text": "الصفحة الرئيسية"
+        },
+        "contact_info_area": {
+            "title": "اتصل بنا",
+            "title_2": "المقر الرئيسي",
+            "img_alt": "مقر مستشفى أتاكنت",
+            "card": {
+                "card_country": "تركيا",
+                "card_email_title": "البريد الإلكتروني",
+                "card_phone_title": "الهاتف",
+                "address": "حي عدنان مندرس شارع أفوق"
+            }
+        },
+        "contact_hospital_list": {
+            "card_item": {
+                "address_title": "العنوان",
+                "email_title": "البريد الإلكتروني",
+                "location_button": "الموقع"
+            }
+        }
+    },
+    "blog_page": {
+        "page_banner": {
+            "blog_text": "المدونة",
+            "go_homepage_link_text": "الصفحة الرئيسية"
+        },
+        "blog_card": {
+            "read_more_button_text": "اقرأ المزيد"
+        },
+        "blog_sidebar": {
+            "widget_search": {
+                "title": "البحث",
+                "search_form_input_placeholder_text": "ابحث... (اضغط على Enter)"
+            },
+            "widget_latest_posts": {
+                "title": "أحدث المقالات"
+            },
+            "widget_archive": {
+                "title": "الأرشيف"
+            },
+            "widget_categories": {
+                "title": "التصنيفات"
+            },
+            "widget_tags": {
+                "title": "الوسوم"
+            }
+        }
+    },
+    "blog_detail_page": {
+        "page_banner": {
+            "blog_detail_text": "تفاصيل المدونة",
+            "go_blogpage_link_text": "المدونة"
+        },
+        "article_content_area": {
+            "entry_meta": {
+                "date_title": "التاريخ",
+                "author_title": "الكاتب"
+            }
+        },
+        "article_footer_area": {
+            "share_post_button_text": "مشاركة"
+        },
+        "post_navigation_area": {
+            "prev_post_button_text": "المقالة السابقة",
+            "next_post_button_text": "المقالة التالية"
+        },
+        "comments_area": {
+            "comment_count_title": "التعليقات",
+            "comment_list_item": {
+                "reply_button_text": "رد"
+            },
+            "comment_respond": {
+                "comment_reply_title": "اترك تعليقًا",
+                "form": {
+                    "comment_notes_text": "لن يتم نشر عنوان بريدك الإلكتروني.",
+                    "name_input_label_text": "الاسم",
+                    "email_input_label_text": "البريد الإلكتروني",
+                    "website_input_label_text": "الموقع",
+                    "comment_input_label_text": "تعليقك",
+                    "submit_button_text": "إرسال التعليق"
+                }
+            }
+        }
+    },
+    "common_doctors_component": {
+        "no_doctor_data_text": "لا توجد بيانات حاليًا لعرضها هنا."
+    },
+    "common_loading_component": {
+        "loading_text": "جار التحميل..."
+    },
+    "campaign": {
+        "title": "الحملات",
+        "sub_title": "فرص محدودة في الوقت الحالي",
+        "end_date": "تاريخ الانتهاء: "
+    },
+    "appointment_popup": {
+        "title": "اختر المستشفى"
+    },
+    "contact_form": {
+        "top_title": "اتصل بنا",
+        "title": "نحن هنا من أجلك",
+        "form": {
+            "name_area_placeholder_text": "اسمك",
+            "email_area_placeholder_text": "بريدك الإلكتروني",
+            "phone_area_placeholder_text": "هاتفك",
+            "department_area_placeholder_text": "اختر القسم",
+            "time_area_placeholder_text": "اختر الوقت",
+            "message_area_placeholder_text": "رسالتك",
+            "hospital_area_placeholder_text": "اختر المستشفى الذي تريد الاتصال به",
+            "submit_button_text": "إرسال",
+            "success_alert": "تم إرسال رسالتك بنجاح.",
+            "error_alert": "حدثت مشكلة أثناء إرسال الرسالة. يرجى التحقق من المعلومات التي أدخلتها والمحاولة مرة أخرى.",
+            "message_too_short_error": "الرسالة قصيرة جدًا",
+            "time_constraint_error": "لقد قمت بإرسال رسالة مؤخرًا. يرجى المحاولة مرة أخرى لاحقًا."
+        }
+    },
+    "error": {
+        "not_found": {
+            "title": "الصفحة غير موجودة",
+            "description": "عذراً، لم نتمكن من العثور على الصفحة التي تبحث عنها. ربما تمت إزالة الصفحة أو تغيير اسمها أو أنها غير متاحة مؤقتاً.",
+            "back_to_home": "العودة إلى الصفحة الرئيسية",
+            "go_back": "رجوع",
+            "need_help": "هل تحتاج إلى مساعدة؟",
+            "contact_us": "اتصل بنا"
+        }
+    }
+}
