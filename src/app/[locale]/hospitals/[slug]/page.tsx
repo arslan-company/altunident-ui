@@ -16,8 +16,9 @@ import slugify from '@/utils/slugify';
 
 import { hospitalApi, HospitalBanner } from '@/features/hospitals';
 import { doctorsApi, DoctorCard } from '@/features/doctors';
-import { departmentsApi, DepartmentCard } from '@/features/departments';
+import { departmentsApi } from '@/features/departments';
 import { filenameToUrl } from '@/features/files';
+import { ServiceCard } from '@/features/services';
 
 import { Button } from '@/components/base/button';
 
@@ -93,9 +94,9 @@ export default async function HospitalsPage({
     <>
       <Navbar />
       <main className="tw-min-h-screen navbar-fix">
-        <section className="tw-bg-darker tw-py-16 tw-relative">
+        <section className="tw-bg-darker-600 tw-py-16 tw-relative">
           <div className="tw-absolute tw-top-0 tw-left-0 tw-z-0 tw-h-full">
-            <div className="tw-absolute tw-inset-0 tw-bg-gradient-to-l tw-from-darker tw-to-transparent tw-z-20" />
+            <div className="tw-absolute tw-inset-0 tw-bg-gradient-to-l tw-from-darker-600 tw-to-transparent tw-z-20" />
             <Image
               src={filenameToUrl(hospital?.image_url) || ''}
               width={500}
@@ -170,7 +171,7 @@ export default async function HospitalsPage({
                 href={`/${hospital?.slug}/departments/${department?.id}/${slugify(department?.name)}`}
                 key={department?.id}
               >
-                <DepartmentCard title={department?.name} />
+                <ServiceCard title={department?.name} />
               </Link>
             ))}
           </div>

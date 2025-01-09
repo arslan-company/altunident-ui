@@ -1,7 +1,7 @@
 const generalInfo = {
-  phoneNumber: '444 16 77',
-  email: 'info@atakent.com',
-  address: 'Adnan Menderes, Mahallesi, Ufuk Sk. No:7 Merkez/Yalova',
+  phoneNumber: '+90 539 215 59 44',
+  email: 'kurumsal@altunident.com',
+  address: 'Altunizade, Mahir İz Cd. No:43, Üsküdar/İstanbul',
 };
 
 export default generalInfo;

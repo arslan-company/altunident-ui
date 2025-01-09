@@ -94,7 +94,7 @@ export function ContactForm({ hideImage = false }: ContactFormProps) {
           {!hideImage && (
             <div className="tw-relative tw-h-[400px] lg:tw-h-full">
               <Image
-                src="/img/appointment-bg4.jpg"
+                src="/img/gallery/1397_1.jpg"
                 alt="Atakent Communication"
                 quality={60}
                 fill
@@ -106,9 +106,11 @@ export function ContactForm({ hideImage = false }: ContactFormProps) {
             <div className="tw-space-y-6">
               <div>
                 <span className="tw-text-primary-600 tw-text-sm tw-font-medium">
-                  {t('contact_form.top_title')}
+                  {t('common.contact_us')}
                 </span>
-                <h2 className="tw-text-3xl tw-font-bold tw-mt-2">{t('contact_form.title')}</h2>
+                <h2 className="tw-text-3xl tw-font-bold tw-mt-2">
+                  {t('common.we_are_here_for_you')}
+                </h2>
               </div>
 
               <form onSubmit={handleSubmit(onSubmit)} className="tw-space-y-4">
@@ -117,7 +119,7 @@ export function ContactForm({ hideImage = false }: ContactFormProps) {
                     <Input
                       type="text"
                       className="tw-w-full"
-                      placeholder={t('contact_form.form.name_area_placeholder_text')}
+                      placeholder={t('common.name')}
                       {...register('name')}
                     />
                     {errors.name && (
@@ -130,7 +132,7 @@ export function ContactForm({ hideImage = false }: ContactFormProps) {
                       <Input
                         type="email"
                         className="tw-w-full"
-                        placeholder={t('contact_form.form.email_area_placeholder_text')}
+                        placeholder={t('common.email')}
                         {...register('email')}
                       />
                       {errors.email && (
@@ -142,7 +144,7 @@ export function ContactForm({ hideImage = false }: ContactFormProps) {
                       <Input
                         type="tel"
                         className="tw-w-full"
-                        placeholder={`${t('contact_form.form.phone_area_placeholder_text')} (5554443322)`}
+                        placeholder={`${t('common.phone')} (5554443322)`}
                         {...register('phone')}
                       />
                       {errors.phone && (
@@ -157,14 +159,14 @@ export function ContactForm({ hideImage = false }: ContactFormProps) {
                         options={[
                           {
                             value: '',
-                            label: t('contact_form.form.hospital_area_placeholder_text'),
+                            label: t('common.select_hospital'),
                           },
                           ...(hospitals?.map((hospital) => ({
                             label: hospital?.name || '',
                             value: hospital?.contact_email || '',
                           })) || []),
                         ]}
-                        placeholder={t('contact_form.form.hospital_area_placeholder_text')}
+                        placeholder={t('common.select_hospital')}
                         value={watch('hospitalEmail')}
                         onChange={(value) => setValue('hospitalEmail', value)}
                       />
@@ -180,7 +182,7 @@ export function ContactForm({ hideImage = false }: ContactFormProps) {
                     <Textarea
                       className="tw-w-full"
                       rows={5}
-                      placeholder={t('contact_form.form.message_area_placeholder_text')}
+                      placeholder={t('common.message')}
                       {...register('message')}
                     />
                     {errors.message && (
@@ -191,7 +193,7 @@ export function ContactForm({ hideImage = false }: ContactFormProps) {
 
                 <div>
                   <Button type="submit" disabled={isSending} className="tw-w-full md:tw-w-auto">
-                    {t('contact_form.form.submit_button_text')}
+                    {t('common.send')}
                   </Button>
                 </div>
               </form>

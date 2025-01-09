@@ -89,7 +89,6 @@ a {
   display: inline-block;
   transition: all 0.5s;
   text-decoration: none;
-  color: #0cb8b6;
 }
 a:hover {
   text-decoration: none;

@@ -161,7 +161,7 @@ export default async function DepartmentDetail({
           <div className="tw-flex tw-items-center tw-gap-5 tw-mb-8">
             <h2 className="tw-text-primary">{t('department_detail_page.doctor_list_title')}</h2>
             <Link
-              className="tw-inline-block"
+              className="tw-inline-block tw-text-primary tw-font-semibold"
               href={`/${hospitalSlug}/doctors?department=${department?.id}`}
             >
               Tümünü Gör

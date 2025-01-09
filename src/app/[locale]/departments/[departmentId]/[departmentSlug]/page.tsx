@@ -126,7 +126,10 @@ export default async function DepartmentDetail({
         <div className="tw-mt-16">
           <div className="tw-flex tw-items-center tw-gap-5 tw-mb-8">
             <h2 className="tw-text-primary">{t('department_detail_page.doctor_list_title')}</h2>
-            <Link className="tw-inline-block" href={`/doctors?department=${department?.id}`}>
+            <Link
+              className="tw-inline-block tw-text-primary tw-font-semibold"
+              href={`/doctors?department=${department?.id}`}
+            >
               Tümünü Gör
               <ChevronRight className="tw-w-4 tw-h-4 tw-ml-1" />
             </Link>

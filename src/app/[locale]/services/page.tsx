@@ -9,7 +9,7 @@ import Footer from '@/components/shared/footer';
 import Navbar from '@/components/shared/navbar';
 import Breadcrumb from '@/components/shared/breadcrumb';
 
-import { servicesApi } from '@/features/services';
+import { ServiceCard, servicesApi } from '@/features/services';
 
 import FilterOptions from './components/filter-options';
 
@@ -56,6 +56,8 @@ export default async function ServicesPage({
   const searchParams = await promiseSearchParams;
   const params = await promiseParams;
 
+  const { hospitalSlug } = params;
+
   // --- SERVER DATA --- //
   const { services: servicesData } = await fetchData(searchParams);
 
@@ -94,7 +96,6 @@ export default async function ServicesPage({
             <FilterOptions />
           </div>
 
-          {/* Department list */}
           <div className="tw-space-y-12">
             {sortedGroups.map((letter) => (
               <div key={letter} className="tw-space-y-4">
@@ -103,12 +104,10 @@ export default async function ServicesPage({
                 <div className="tw-grid tw-grid-cols-1 md:tw-grid-cols-3 tw-gap-3">
                   {groupedServices[letter].map((service: any) => (
                     <Link
-                      key={service.id}
-                      href={`${params?.hospitalSlug ? `/${params?.hospitalSlug}/services` : '/services'}/${service?.id}/${slugify(service?.name)}`}
-                      className="tw-flex tw-items-center tw-gap-2 tw-text-gray-700 tw-text-base hover:tw-text-primary tw-transition-colors"
+                      href={`${hospitalSlug ? `/${hospitalSlug}` : ''}/services/${service?.id}/${slugify(service?.name)}`}
+                      key={service?.id}
                     >
-                      <div className="tw-h-1.5 tw-w-1.5 tw-rounded-full tw-bg-primary" />
-                      {service.name}
+                      <ServiceCard title={service?.name} />
                     </Link>
                   ))}
                 </div>

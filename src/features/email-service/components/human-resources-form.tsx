@@ -141,7 +141,7 @@ export function HumanResourcesForm({ hideImage = false }: HumanResourcesFormProp
           {!hideImage && (
             <div className="tw-relative tw-h-[400px] lg:tw-h-full">
               <Image
-                src="/img/appointment-bg4.jpg"
+                src="/img/gallery/altunident.jpg"
                 alt="İK Başvuru"
                 quality={60}
                 fill
