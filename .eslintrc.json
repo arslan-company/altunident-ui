@@ -11,6 +11,27 @@
   },
   "plugins": ["react"],
   "rules": {
+    "react/jsx-curly-newline": "off",
+    "no-plusplus": "off",
+    "react/jsx-wrap-multilines": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "arrow-body-style": "off",
+    "react/function-component-definition": "off",
+    "react/button-has-type": "off",
+    "react/require-default-props": "off",
+    "no-return-await": "off",
+    "operator-linebreak": "off",
+    "import/prefer-default-export": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "class-methods-use-this": "off",
+    "lines-between-class-members": "off",
+    "no-useless-constructor": "off",
+    "function-paren-newline": "off",
+    "implicit-arrow-linebreak": "off",
+    "object-curly-newline": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "import/no-extraneous-dependencies": "off",
+    "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
     "jsx-a11y/anchor-is-valid": 0,
     "linebreak-style": 0,
     "jsx-a11y/click-events-have-key-events": 0,
@@ -22,6 +43,7 @@
     "react/react-in-jsx-scope": 0,
     "jsx-a11y/no-noninteractive-element-interactions": 0,
     "jsx-a11y/control-has-associated-label": "off",
-    "import/extensions": "off"
-  },
+    "import/extensions": "off",
+    "semi": "off"
+  }
 }

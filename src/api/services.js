@@ -2,7 +2,7 @@
 
 import axios from 'axios';
 
-const baseUrl = `${process.env.API_URL}/services/`;
+const baseUrl = `${process.env.NEXT_PUBLIC_API_URL}/services/`;
 
 /**
  * @typedef {{
@@ -13,11 +13,11 @@ const baseUrl = `${process.env.API_URL}/services/`;
  * page?: number | string;
  * size?: number | string;
  * }} GetServicesParams
-*/
+ */
 
 /**
  * @param {GetServicesParams} params
-*/
+ */
 export const getServices = (params) => {
   const path = baseUrl;
 
@@ -36,12 +36,12 @@ export const getServices = (params) => {
  * @typedef {{
  * language?: string;
  * }} GetServiceParams
-*/
+ */
 
 /**
  * @param {number | string} serviceId
  * @param {GetServiceParams} params
-*/
+ */
 export const getService = (serviceId, params) => {
   const path = `${baseUrl}${serviceId}`;
 
@@ -57,4 +57,4 @@ export const getService = (serviceId, params) => {
 };
 
 // JSDOC type exports
-export { };
+export {};

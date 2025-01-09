@@ -1,20 +1,20 @@
-import createMiddleware from 'next-intl/middleware'
+import { NextRequest } from 'next/server';
 
-import { routing } from '@/i18n/routing'
+import websiteConfig from '@/config/website.config';
 
-export default createMiddleware(routing)
+export async function middleware(request: NextRequest) {
+  return await websiteConfig.handleMiddleware(request);
+}
 
 export const config = {
   matcher: [
     // Enable a redirect to a matching locale at the root
     '/',
 
-    // Set a cookie to remember the previous locale for
-    // all requests that have a locale prefix
-    `/(tr|en)/:path*`,
+    // All locale combinations
+    '/(ar|de|en|fr|ru|tr)/:path*',
 
     // Enable redirects that add missing locales
-    // (e.g. `/pathnames` -> `/en/pathnames`)
     '/((?!_next|_vercel|.*\\..*).*)',
   ],
-}
+};

@@ -1,4 +1,159 @@
 {
+    "site": {
+        "name": "Atakent Hospital"
+    },
+    "meta": {
+        "common": {
+            "title": "Healthcare Services and Expert Doctors - {hospital_name}",
+            "description": "We provide quality healthcare with our expert medical staff and medical technologies at {hospital_name}.",
+            "keywords": "{hospital_name}, private hospital, healthcare, doctor, medical services, clinic, treatment, examination",
+            "og_title": "Healthcare Services - {hospital_name}",
+            "og_description": "{hospital_name} modern medical technologies and expert medical staff",
+            "og_image_alt": "{hospital_name} the smiling face of your health",
+            "twitter_title": "{hospital_name} - Healthcare Services",
+            "twitter_description": "{hospital_name} modern medical technologies and expert medical staff"
+        },
+        "doctors": {
+            "title": "Medical Staff - {hospital_name}",
+            "description": "Quality healthcare with {hospital_name} expert medical staff and medical technologies",
+            "keywords": "{hospital_name} doctors, doctor examination, hospital doctor, specialist doctor, medical staff",
+            "og_title": "Expert Doctors - {hospital_name}",
+            "og_description": "Feel safe with our expert doctors at {hospital_name}",
+            "og_image_alt": "{hospital_name} Expert Doctors",
+            "twitter_title": "{hospital_name} - Expert Doctors",
+            "twitter_description": "Feel safe with our expert doctors at {hospital_name}"
+        },
+        "doctor_detail": {
+            "title": "{doctor_name} - {hospital_name}",
+            "description": "Detailed information and appointments for {doctor_name}, {doctor_department_name} specialist at {hospital_name}.",
+            "keywords": "{doctor_name}, {hospital_name}, {doctor_department_name}, specialist doctor",
+            "og_title": "{doctor_name} - {hospital_name}",
+            "og_description": "{doctor_name}, {doctor_department_name} specialist at {hospital_name}",
+            "og_image_alt": "{hospital_name} {doctor_name}",
+            "twitter_title": "{hospital_name} - {doctor_name}",
+            "twitter_description": "{doctor_name}, {doctor_department_name} specialist at {hospital_name}"
+        },
+        "departments": {
+            "title": "Medical Departments - {hospital_name}",
+            "description": "Learn about all our medical departments and healthcare services at {hospital_name}.",
+            "keywords": "{hospital_name} departments, hospital units, medical services, healthcare units",
+            "og_title": "Our Medical Departments - {hospital_name}",
+            "og_description": "{hospital_name} all medical departments and expert staff",
+            "og_image_alt": "{hospital_name} Medical Departments",
+            "twitter_title": "Our Medical Departments - {hospital_name}",
+            "twitter_description": "{hospital_name} all medical departments and expert staff"
+        },
+        "department_detail": {
+            "title": "{department_name} Department - {hospital_name}",
+            "description": "{hospital_name} {department_name} department detailed information and services.",
+            "keywords": "{hospital_name}, {department_name}, medical services, treatment",
+            "og_title": "{department_name} Department - {hospital_name}",
+            "og_description": "{hospital_name} {department_name} department services and expert staff",
+            "og_image_alt": "{hospital_name} {department_name} Department",
+            "twitter_title": "{department_name} Department - {hospital_name}",
+            "twitter_description": "{hospital_name} {department_name} department services and expert staff"
+        },
+        "contact": {
+            "title": "{hospital_name} - Contact",
+            "description": "{hospital_name} contact information, address and phone numbers.",
+            "keywords": "{hospital_name} contact, hospital address, phone, location",
+            "og_title": "Contact Information - {hospital_name}",
+            "og_description": "{hospital_name} contact information and location",
+            "og_image_alt": "{hospital_name} Contact",
+            "twitter_title": "Contact Information - {hospital_name}",
+            "twitter_description": "{hospital_name} contact information and location"
+        },
+        "corporate": {
+            "title": "Corporate - {hospital_name}",
+            "description": "{hospital_name} corporate information, vision and mission.",
+            "keywords": "{hospital_name} corporate, about hospital, vision, mission",
+            "og_title": "Corporate Information - {hospital_name}",
+            "og_description": "{hospital_name} corporate structure and values",
+            "og_image_alt": "{hospital_name} Corporate",
+            "twitter_title": "Corporate Information - {hospital_name}",
+            "twitter_description": "{hospital_name} corporate structure and values"
+        },
+        "blog": {
+            "title": "Blog - {hospital_name}",
+            "description": "{hospital_name} health guide, news and informative content.",
+            "keywords": "{hospital_name} blog, health blog, hospital news",
+            "og_title": "Health Blog - {hospital_name}",
+            "og_description": "{hospital_name} health guide and current content",
+            "og_image_alt": "{hospital_name} Blog",
+            "twitter_title": "Health Blog - {hospital_name}",
+            "twitter_description": "{hospital_name} health guide and current content"
+        },
+        "blog_detail": {
+            "title": "{blog_title} - {hospital_name}",
+            "description": "{hospital_name} {blog_title} - {blog_excerpt}",
+            "keywords": "{hospital_name}, {blog_keywords}, health blog",
+            "og_title": "{blog_title} - {hospital_name}",
+            "og_description": "{blog_excerpt}",
+            "og_image_alt": "{hospital_name} - {blog_title}",
+            "twitter_title": "{blog_title} - {hospital_name}",
+            "twitter_description": "{blog_excerpt}"
+        },
+        "services": {
+            "title": "Healthcare Services - {hospital_name}",
+            "description": "{hospital_name} specialized medical services and treatment options.",
+            "keywords": "{hospital_name} services, medical services, healthcare services",
+            "og_title": "Medical Services - {hospital_name}",
+            "og_description": "{hospital_name} specialized medical services and treatments",
+            "og_image_alt": "{hospital_name} Healthcare Services",
+            "twitter_title": "Medical Services - {hospital_name}",
+            "twitter_description": "{hospital_name} specialized medical services and treatments"
+        },
+        "service_detail": {
+            "title": "{service_name} - {hospital_name}",
+            "description": "Detailed information about {service_name} service at {hospital_name}.",
+            "keywords": "{hospital_name}, {service_name}, healthcare service",
+            "og_title": "{service_name} - {hospital_name}",
+            "og_description": "{hospital_name} {service_name} service and details",
+            "og_image_alt": "{hospital_name} {service_name}",
+            "twitter_title": "{service_name} - {hospital_name}",
+            "twitter_description": "{hospital_name} {service_name} service and details"
+        },
+        "hospital_detail": {
+            "title": "{hospital_name} - Healthcare Services and Medical Units",
+            "description": "Detailed information about {hospital_name}'s modern medical technologies, expert medical staff and quality healthcare services.",
+            "keywords": "{hospital_name}, hospital, healthcare services, medical units, doctors, treatment",
+            "og_title": "{hospital_name} - Healthcare Services",
+            "og_description": "{hospital_name} at your service with modern medical technologies and expert medical staff",
+            "og_image_alt": "{hospital_name} Hospital",
+            "twitter_title": "{hospital_name} - Healthcare Services",
+            "twitter_description": "{hospital_name} at your service with modern medical technologies and expert medical staff"
+        },
+        "corporate_detail": {
+            "title": "{corporate_title} - {hospital_name}",
+            "description": "Detailed information about {corporate_title} and our corporate values at {hospital_name}.",
+            "keywords": "{hospital_name}, {corporate_title}, corporate, hospital",
+            "og_title": "{corporate_title} - {hospital_name}",
+            "og_description": "Detailed information about {corporate_title} at {hospital_name}",
+            "og_image_alt": "{hospital_name} {corporate_title}",
+            "twitter_title": "{corporate_title} - {hospital_name}",
+            "twitter_description": "Detailed information about {corporate_title} at {hospital_name}"
+        },
+        "corporate_news": {
+            "title": "Corporate News - {hospital_name}",
+            "description": "{hospital_name} corporate news, announcements and current developments.",
+            "keywords": "{hospital_name}, corporate news, announcements, events, hospital news",
+            "og_title": "Corporate News - {hospital_name}",
+            "og_description": "{hospital_name} corporate news and current announcements",
+            "og_image_alt": "{hospital_name} Corporate News",
+            "twitter_title": "Corporate News - {hospital_name}",
+            "twitter_description": "{hospital_name} corporate news and current announcements"
+        },
+        "human_resources": {
+            "title": "Career Opportunities and Job Application - {hospital_name} Human Resources",
+            "description": "Build Your Career at {hospital_name} - Healthcare Sector Job Opportunities and Online Application",
+            "keywords": "{hospital_name}, healthcare sector jobs, hospital job application, medical staff recruitment, career opportunities, human resources, job application form",
+            "og_title": "Healthcare Sector Careers - {hospital_name} Job Applications",
+            "og_description": "Career opportunities at {hospital_name}. Click here to apply - Experienced and newly graduated healthcare professionals.",
+            "og_image_alt": "{hospital_name} Careers and Job Application Page",
+            "twitter_title": "Healthcare Career Opportunities at {hospital_name}",
+            "twitter_description": "Apply online to work at {hospital_name}. Discover career opportunities in the healthcare sector."
+        }
+    },
     "navbar": {
         "nav_items": {
             "home": "Atakent Hospital",
@@ -450,55 +605,14 @@
             "time_constraint_error": "You have already sent a message recently. Please try again later."
         }
     },
-    "seo": {
-        "homepage": {
-            "title": "Atakent Hospital",
-            "description": "Your Smiling Face of Health | Atakent Hospital ~ Atakent Health Group ~ Kocaeli Atakent Cihan Hospital ~ Gemlik Atakent Medical Center ~ Orhangazi Atakent Surgical Medical Center ~ Yalova Atakent Hospital",
-            "keywords": "atakent, atakent hospital, atakent health group"
-        },
-        "blog": {
-            "title": "Blog",
-            "description": "Our Blog Posts | Atakent Blog ~ Atakent Health Guide ~ Protect Your Health",
-            "keywords": "blog, atakent blog, atakent health guide"
-        },
-        "cv_form": {
-            "title": "Human Resources CV Form",
-            "description": "Atakent Job Application - Human Resources | Browse open positions at Atakent hospital and apply for a job.",
-            "keywords": "atakent human resources"
-        },
-        "department": {
-            "title": "Departments",
-            "description": "Our Departments | Atakent Health Group Departments & Units",
-            "keywords": "departments, units, services, atakent departments"
-        },
-        "department_detail": {
-            "title": "- Our Departments",
-            "description": "Our Department | Get Detailed Information About Atakent Hospital Health Departments...",
-            "units": "unit",
-            "department": "department"
-        },
-        "doctors": {
-            "title": "Our Doctors",
-            "description": "Our Doctors | Atakent Health Group Doctor & Physician Team",
-            "keywords": "atakent doctor, atakent doctors, atakent doctor team, atakent physician team"
-        },
-        "doctor_detail": {
-            "title": "- Our Doctors",
-            "description": "Our Doctors",
-            "keywords1": "atakent doctors",
-            "keywords2": "who is"
-        },
-        "hospital_detail": {
-            "title": "About ~ General Introduction",
-            "description1": "General Introduction",
-            "description2": "Learn About",
-            "keywords1": "about",
-            "keywords2": "where is"
-        },
-        "services_detail": {
-            "title": "Our Services",
-            "description": "Atakent Health Group, which provides services in 20,000 m2 closed area, took its first steps with the acquisition of Private Atakent Hospital by Akkurt Group...",
-            "keywords": "atakent services, atakent hospital services, atakent health group services"
+    "error": {
+        "not_found": {
+            "title": "Page Not Found",
+            "description": "Sorry, we couldn't find the page you're looking for. The page might have been removed, renamed, or is temporarily unavailable.",
+            "back_to_home": "Back to Homepage",
+            "go_back": "Go Back",
+            "need_help": "Need help?",
+            "contact_us": "Contact us"
         }
     }
 }

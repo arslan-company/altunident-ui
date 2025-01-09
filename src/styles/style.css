@@ -56,14 +56,14 @@ This files table contents are outlined below >>>>>
 /*
 Default Style
 ============================*/
-@font-face {
+/* @font-face {
   font-family: "Roboto";
   src: url("/fonts/roboto/Roboto-Bold.ttf") format("truetype"), url("/fonts/roboto/Roboto-Medium.ttf") format("truetype"), url("/fonts/roboto/Roboto-Regular.ttf") format("truetype"), url("/fonts/roboto/Roboto-Light.ttf") format("truetype");
 }
 @font-face {
   font-family: "Roboto2";
   src: url("/fonts/roboto/Roboto-Bold.ttf") format("truetype"), url("/fonts/roboto/Roboto-Medium.ttf") format("truetype"), url("/fonts/roboto/Roboto-Regular.ttf") format("truetype"), url("/fonts/roboto/Roboto-Light.ttf") format("truetype");
-}
+} */
 :root {
   --main-color: #0cb8b6;
   --body-color: #525252;
@@ -82,7 +82,6 @@ body {
   margin: 0;
   font-size: 14px;
   line-height: 1.8;
-  font-family: "Roboto2", sans-serif;
   color: #525252;
 }
 
@@ -123,7 +122,6 @@ h5,
 h6 {
   color: #001430;
   font-weight: 700;
-  font-family: "Roboto", sans-serif;
 }
 
 h3 {
@@ -832,7 +830,6 @@ Banner Area Style
   margin-bottom: 20px;
   display: inline-block;
   font-weight: 600;
-  font-family: "Roboto", sans-serif;
   color: #0cb8b6;
 }
 .main-banner-area .banner-text h1 {
@@ -1357,7 +1354,6 @@ Search Area Style
 .search-area .join-our-team span {
   font-weight: 700;
   font-size: 18px;
-  font-family: "Roboto", sans-serif;
   color: #ffffff;
   margin-bottom: 0;
   margin-top: -10px;

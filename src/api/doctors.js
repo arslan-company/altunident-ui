@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseUrl = `${process.env.API_URL}/doctor`;
+const baseUrl = `${process.env.NEXT_PUBLIC_API_URL}/doctor`;
 
 export function getDoctors(
   hospitalIds,

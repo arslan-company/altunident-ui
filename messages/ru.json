@@ -1,0 +1,618 @@
+{
+    "site": {
+        "name": "Больница Атакент"
+    },
+    "meta": {
+        "common": {
+            "title": "Медицинские услуги и врачи-специалисты - {hospital_name}",
+            "description": "Мы предоставляем качественное медицинское обслуживание с нашим экспертным медицинским персоналом и медицинскими технологиями в {hospital_name}.",
+            "keywords": "{hospital_name}, частная больница, здравоохранение, врач, медицинские услуги, клиника, лечение, обследование",
+            "og_title": "Медицинские услуги - {hospital_name}",
+            "og_description": "{hospital_name} современные медицинские технологии и экспертный медицинский персонал",
+            "og_image_alt": "{hospital_name} улыбающееся лицо вашего здоровья",
+            "twitter_title": "Медицинские услуги - {hospital_name}",
+            "twitter_description": "{hospital_name} современные медицинские технологии и экспертный медицинский персонал"
+        },
+        "doctors": {
+            "title": "Медицинский персонал - {hospital_name}",
+            "description": "Качественное медицинское обслуживание с экспертным медицинским персоналом и медицинскими технологиями {hospital_name}",
+            "keywords": "{hospital_name} врачи, врачебный осмотр, больничный врач, врач-специалист, медицинский персонал",
+            "og_title": "Врачи-специалисты - {hospital_name}",
+            "og_description": "Чувствуйте себя в безопасности с нашими врачами-специалистами в {hospital_name}",
+            "og_image_alt": "{hospital_name} Врачи-специалисты",
+            "twitter_title": "Врачи-специалисты - {hospital_name}",
+            "twitter_description": "Чувствуйте себя в безопасности с нашими врачами-специалистами в {hospital_name}"
+        },
+        "doctor_detail": {
+            "title": "{doctor_name} - {hospital_name}",
+            "description": "Подробная информация и запись на прием к {doctor_name}, специалисту {doctor_department_name} в {hospital_name}.",
+            "keywords": "{doctor_name}, {hospital_name}, {doctor_department_name}, врач-специалист",
+            "og_title": "{doctor_name} - {hospital_name}",
+            "og_description": "{doctor_name}, специалист {doctor_department_name} в {hospital_name}",
+            "og_image_alt": "{hospital_name} {doctor_name}",
+            "twitter_title": "{doctor_name} - {hospital_name}",
+            "twitter_description": "{doctor_name}, специалист {doctor_department_name} в {hospital_name}"
+        },
+        "departments": {
+            "title": "Медицинские отделения - {hospital_name}",
+            "description": "Узнайте о всех наших медицинских отделениях и услугах здравоохранения в {hospital_name}.",
+            "keywords": "отделения {hospital_name}, больничные отделения, медицинские услуги, отделения здравоохранения",
+            "og_title": "Наши медицинские отделения - {hospital_name}",
+            "og_description": "{hospital_name} все медицинские отделения и экспертный персонал",
+            "og_image_alt": "{hospital_name} Медицинские отделения",
+            "twitter_title": "Наши медицинские отделения - {hospital_name}",
+            "twitter_description": "{hospital_name} все медицинские отделения и экспертный персонал"
+        },
+        "department_detail": {
+            "title": "{department_name} - {hospital_name}",
+            "description": "{hospital_name} {department_name} подробная информация и услуги отделения.",
+            "keywords": "{hospital_name}, {department_name}, медицинские услуги, лечение",
+            "og_title": "Отделение {department_name} - {hospital_name}",
+            "og_description": "{hospital_name} услуги и экспертный персонал отделения {department_name}",
+            "og_image_alt": "{hospital_name} Отделение {department_name}",
+            "twitter_title": "Отделение {department_name} - {hospital_name}",
+            "twitter_description": "{hospital_name} услуги и экспертный персонал отделения {department_name}"
+        },
+        "contact": {
+            "title": "Контакты - {hospital_name}",
+            "description": "{hospital_name} контактная информация, адрес и телефоны.",
+            "keywords": "контакты {hospital_name}, адрес больницы, телефон, местоположение",
+            "og_title": "Контактная информация - {hospital_name}",
+            "og_description": "{hospital_name} контактная информация и местоположение",
+            "og_image_alt": "{hospital_name} Контакты",
+            "twitter_title": "Контактная информация - {hospital_name}",
+            "twitter_description": "{hospital_name} контактная информация и местоположение"
+        },
+        "corporate": {
+            "title": "Корпоративная информация - {hospital_name}",
+            "description": "{hospital_name} корпоративная информация, видение и миссия.",
+            "keywords": "корпоративная информация {hospital_name}, о больнице, видение, миссия",
+            "og_title": "Корпоративная информация - {hospital_name}",
+            "og_description": "{hospital_name} корпоративная структура и ценности",
+            "og_image_alt": "{hospital_name} Корпоративная информация",
+            "twitter_title": "Корпоративная информация - {hospital_name}",
+            "twitter_description": "{hospital_name} корпоративная структура и ценности"
+        },
+        "blog": {
+            "title": "Блог - {hospital_name}",
+            "description": "{hospital_name} руководство по здоровью, новости и информативный контент.",
+            "keywords": "блог {hospital_name}, блог о здоровье, новости больницы",
+            "og_title": "Блог о здоровье - {hospital_name}",
+            "og_description": "{hospital_name} руководство по здоровью и актуальный контент",
+            "og_image_alt": "{hospital_name} Блог",
+            "twitter_title": "Блог о здоровье - {hospital_name}",
+            "twitter_description": "{hospital_name} руководство по здоровью и актуальный контент"
+        },
+        "blog_detail": {
+            "title": "{blog_title} - {hospital_name}",
+            "description": "{hospital_name} {blog_title} - {blog_excerpt}",
+            "keywords": "{hospital_name}, {blog_keywords}, блог о здоровье",
+            "og_title": "{blog_title} - {hospital_name}",
+            "og_description": "{blog_excerpt}",
+            "og_image_alt": "{blog_title} - {hospital_name}",
+            "twitter_title": "{blog_title} - {hospital_name}",
+            "twitter_description": "{blog_excerpt}"
+        },
+        "services": {
+            "title": "Медицинские услуги - {hospital_name}",
+            "description": "{hospital_name} специализированные медицинские услуги и варианты лечения.",
+            "keywords": "услуги {hospital_name}, медицинские услуги, услуги здравоохранения",
+            "og_title": "Медицинские услуги - {hospital_name}",
+            "og_description": "{hospital_name} специализированные медицинские услуги и лечение",
+            "og_image_alt": "{hospital_name} Медицинские услуги",
+            "twitter_title": "Медицинские услуги - {hospital_name}",
+            "twitter_description": "{hospital_name} специализированные медицинские услуги и лечение"
+        },
+        "service_detail": {
+            "title": "{service_name} - {hospital_name}",
+            "description": "Подробная информация об услуге {service_name} в {hospital_name}.",
+            "keywords": "{hospital_name}, {service_name}, медицинская услуга",
+            "og_title": "{service_name} - {hospital_name}",
+            "og_description": "{hospital_name} услуга {service_name} и подробности",
+            "og_image_alt": "{hospital_name} {service_name}",
+            "twitter_title": "{service_name} - {hospital_name}",
+            "twitter_description": "{hospital_name} услуга {service_name} и подробности"
+        },
+        "hospital_detail": {
+            "title": "{hospital_name} - Медицинские услуги и отделения",
+            "description": "Подробная информация о современных медицинских технологиях, экспертном медицинском персонале и качественных медицинских услугах {hospital_name}.",
+            "keywords": "{hospital_name}, больница, медицинские услуги, медицинские отделения, врачи, лечение",
+            "og_title": "{hospital_name} - Медицинские услуги",
+            "og_description": "{hospital_name} к вашим услугам с современными медицинскими технологиями и экспертным медицинским персоналом",
+            "og_image_alt": "Больница {hospital_name}",
+            "twitter_title": "{hospital_name} - Медицинские услуги",
+            "twitter_description": "{hospital_name} к вашим услугам с современными медицинскими технологиями и экспертным медицинским персоналом"
+        },
+        "corporate_detail": {
+            "title": "{corporate_title} - {hospital_name}",
+            "description": "Подробная информация о {corporate_title} и наших корпоративных ценностях в {hospital_name}.",
+            "keywords": "{hospital_name}, {corporate_title}, корпоративный, больница",
+            "og_title": "{corporate_title} - {hospital_name}",
+            "og_description": "Подробная информация о {corporate_title} в {hospital_name}",
+            "og_image_alt": "{hospital_name} {corporate_title}",
+            "twitter_title": "{corporate_title} - {hospital_name}",
+            "twitter_description": "Подробная информация о {corporate_title} в {hospital_name}"
+        },
+        "corporate_news": {
+            "title": "Корпоративные новости - {hospital_name}",
+            "description": "{hospital_name} корпоративные новости, объявления и текущие события.",
+            "keywords": "{hospital_name}, корпоративные новости, объявления, мероприятия, новости больницы",
+            "og_title": "Корпоративные новости - {hospital_name}",
+            "og_description": "{hospital_name} корпоративные новости и текущие объявления",
+            "og_image_alt": "{hospital_name} Корпоративные новости",
+            "twitter_title": "Корпоративные новости - {hospital_name}",
+            "twitter_description": "{hospital_name} корпоративные новости и текущие объявления"
+        },
+        "human_resources": {
+            "title": "Карьерные возможности и вакансии - Отдел кадров {hospital_name}",
+            "description": "Построй свою карьеру в {hospital_name} - Вакансии в сфере здравоохранения и онлайн-подача заявлений",
+            "keywords": "{hospital_name}, вакансии в медицине, работа в больнице, набор медицинского персонала, карьерные возможности, отдел кадров, форма заявления",
+            "og_title": "Карьера в сфере здравоохранения - Вакансии {hospital_name}",
+            "og_description": "Карьерные возможности в {hospital_name}. Нажмите здесь, чтобы подать заявление - для опытных специалистов и выпускников медицинских вузов.",
+            "og_image_alt": "{hospital_name} Страница карьеры и вакансий",
+            "twitter_title": "Возможности для карьеры в {hospital_name}",
+            "twitter_description": "Подайте заявление онлайн для работы в {hospital_name}. Откройте для себя карьерные возможности в сфере здравоохранения."
+        }
+    },
+    "navbar": {
+        "nav_items": {
+            "home": "Больница Атакент",
+            "hospitals": "Больницы",
+            "doctors": "Доктора",
+            "departments": "Отделения",
+            "corporate": "Корпоратив",
+            "corporate_pages": {
+                "organization_schema": "Организационная схема",
+                "quality_studies": "Исследования качества",
+                "human_resources": "Отдел кадров"
+            },
+            "blog": "Блог",
+            "contact": "Контакт"
+        },
+        "make_an_appointment": "Записаться на прием & Электронные результаты"
+    },
+    "homepage": {
+        "search_form": {
+            "general_search_placeholder_text": "Общий поиск (RU)",
+            "search_results-area": {
+                "title": "Результаты поиска",
+                "hospitals_title": "Больницы",
+                "departments_title": "Отделения",
+                "doctors_title": "Доктора",
+                "data-not-found-text": "Результаты не найдены."
+            }
+        },
+        "hospitals": {
+            "general_promotion_button_text": "Общее продвижение",
+            "departments_button_text": "Отделения",
+            "physician_staff_button_text": "Медицинский персонал"
+        },
+        "services": {
+            "top_title": "Услуги",
+            "title": "Наши специализированные медицинские услуги",
+            "description": "Воспользуйтесь нашими специализированными медицинскими услугами.",
+            "all_services": "Все услуги",
+            "services_items": {
+                "item_1_title": "ЦЕНТР  ЛЕЧЕНИЯ ОЖИРЕНИЯ И МЕТАБОЛИЧЕСКОЙ ХИРУРГИИ",
+                "item_2_title": "ЦЕНТР ГИНЕКОЛОГИИ И РЕПРОДУКЦИИ",
+                "item_3_title": "ЦЕНТР ДЕТСКОЙ ХИРУРГИИ",
+                "item_4_title": "ЦЕНТР ИННОВАЦИОННОЙ ХИРУРГИИ ПОЗВОНОЧНИКА",
+                "item_5_title": "ЦЕНТР КАРДИОХИРУРГИИ И ИНТЕРВЕНЦИОННОЙ КАРДИОЛОГИИ",
+                "item_6_title": "ОНКОЛОГИЧЕСКИЙ ЦЕНТР"
+            }
+        },
+        "doctor_list": {
+            "title": "Доктора",
+            "description": "Профессиональные и опытные врачи  нашей клиники работают, что бы защитить ваше здоровья и обеспечеть удовлетворенность в процессе лечения. Наши доктора предоставляют лучшие медицинские услуги. Их опыт  постоянно обновляется пополнением знаний в своих областях.  Доктора предлагают индивидуальные решения для вашего выздоровления.  Вы можете чувствовать себя в безопасности с нашими докторами.",
+            "all_doctors": "Все доктора",
+            "doctor_card_item": {
+                "doctor_languages_text": "Языки",
+                "doctor_education_text": "Образование",
+                "doctor_specialization_training_text": "Специализация и обучение"
+            }
+        },
+        "brand_statistics": {
+            "statistic_1_text": "Больница",
+            "statistic_2_text": "Медицинский центр",
+            "statistic_3_text": "Город",
+            "statistic_4_text": "Врачи",
+            "statistic_5_text": "Персонал"
+        },
+        "testimonial": {
+            "top_title": "Все отзывы",
+            "title": "Отзывы",
+            "description": "Что говорят о нас люди?",
+            "testimonial_items": {
+                "testimonial_item_1_job": "Нейрохирург",
+                "testimonial_item_2_job": "Семейный врач",
+                "testimonial_item_3_job": "Офтальмолог"
+            }
+        },
+        "carousel": {
+            "top_title": "Избранные статьи блога",
+            "title": "Блог Атакент",
+            "description": "Ознакомьтесь с объявлениями, новостями и другими статьями.",
+            "all_blogs_button_text": "Все статьи",
+            "filter_button_items": {
+                "all_button_text": "Все",
+                "news_button_text": "Новости",
+                "announcements_button_text": "Объявления"
+            }
+        }
+    },
+    "footer": {
+        "section_1": {
+            "description": "Представляя международные стандарты качества, наша больница контролируется Министерством здравоохранени и Международной организацией по стандартизации (ISO).",
+            "make_an_appointment_button_text": "Записаться на прием и получить результаты онлайн",
+            "report_suggestion_button_text": "Отправить мнение и предложение",
+            "rights_reserved": "Все права защищены."
+        },
+        "section_2": {
+            "title": "Быстрое меню",
+            "items": {
+                "item_1_text": "Больница Атакент",
+                "item_2_text": "Наши доктора",
+                "item_3_text": "Наши отделения",
+                "item_4_text": "Корпоратив",
+                "item_5_text": "Блог",
+                "item_6_text": "Контакт"
+            }
+        },
+        "section_3": {
+            "title": "Руководство для пациентов",
+            "items": {
+                "item_1_text": "Политика качества",
+                "item_2_text": "Управление качеством и исследования",
+                "item_3_text": "Политика посещений",
+                "item_4_text": "Политика посетителей",
+                "item_5_text": "Политика мнений, предложений и жалоб",
+                "item_6_text": "Информация и политика безопасности",
+                "item_7_text": "Политика охраны труда и безопасности",
+                "item_8_text": "О защите персональных данных"
+            }
+        },
+        "section_4": {
+            "title": "Контакты",
+            "general_center_title": "Главный офис",
+            "items": {
+                "support_line_title": "Телефон поддержки",
+                "email_title": "Электронная почта",
+                "address_title": "Адрес",
+                "address_text": "Микрорайон Аднан Мендерес, улица Уфук, дом 7, Центр/Ялова"
+            }
+        },
+        "last_update_date": "Дата последнего обновления"
+    },
+    "services_page": {
+        "page_banner": {
+            "parent_page_text": "Специализированные медицинские услуги",
+            "homepage_text": "Домашняя страница"
+        },
+        "no_content_text": "Здесь пока нет никакого содержимого."
+    },
+    "doctors_page": {
+        "page_banner": {
+            "our_doctors_text": "Наши доктора",
+            "all_our_doctors_text": "Все наши доктора",
+            "go_homepage_link_text": "На главную"
+        },
+        "top_title": "Все наши доктора",
+        "title": "Наши доктора",
+        "description": "Обслуживающие  вас Доктора, которые представляют нас являются наиболее опытными.",
+        "filter_area": {
+            "filter_by_hospital_option_text": "Фильтровать по больнице (Все)",
+            "filter_by_department_option_text": "Фильтровать по отделению (Все)",
+            "search_input_placeholder_text": "Поиск"
+        },
+        "doctor_card": {
+            "education_title": "Образование",
+            "specialization_training_title": "Специализация и обучение",
+            "languages_title": "Языки",
+            "make_an_appointment_title": "Записаться на прием & Электронные результаты"
+        },
+        "no_data": "Нет данных на данный момент."
+    },
+    "doctor_detail_page": {
+        "page_banner": {
+            "details_text": "Наши доктора",
+            "go_homepage_link_text": "На главную",
+            "parent_page_text": "Доктора"
+        },
+        "about_doctor_area": {
+            "languages_text": "Языки",
+            "education_text": "Образование",
+            "specialization_training_text": "Специализация и обучение",
+            "hospital_text": "Больница"
+        },
+        "make_an_appointment_area": {
+            "top_title": "Записаться на прием",
+            "title": "Запишитесь на прием сейчас",
+            "form": {
+                "name_area_label_text": "Имя",
+                "name_area_placeholder_text": "Введите ваше имя",
+                "email_area_label_text": "Электронная почта",
+                "email_area_placeholder_text": "Введите адрес  вашей электронной почты",
+                "phone_area_label_text": "Телефон",
+                "phone_area_placeholder_text": "Введите ваш номер телефона",
+                "service_label_text": "Услуга",
+                "service_area_option_text": "Выберите услугу",
+                "date_area_label_text": "Дата",
+                "time_area_label_text": "Время",
+                "time_area_option_text": "Выберите время",
+                "message_area_label_text": "Сообщение",
+                "message_area_placeholder_text": "Если есть, введите ваше сообщение",
+                "submit_button_text": "Отправить"
+            }
+        },
+        "available_times_area": {
+            "title": "Доступное время",
+            "not_available_text": "Недоступно",
+            "make_an_appointment_button_text": "Записаться на прием"
+        },
+        "publications_area": {
+            "title": "Публикации",
+            "no_data_text": "На данный момент здесь нет актуальных данных."
+        }
+    },
+    "departments_page": {
+        "page_banner": {
+            "our_departments_text": "Наши отделения",
+            "all_our_departments_text": "Все наши отделения",
+            "go_homepage_link_text": "На главную"
+        },
+        "top_title": "Все наши отделения",
+        "title": "Наши отделения",
+        "filter_area": {
+            "filter_by_hospital_option_text": "Фильтровать по больнице (Все)",
+            "search_input_placeholder_text": "Поиск"
+        }
+    },
+    "department_detail_page": {
+        "page_banner": {
+            "details_text": "Отделения",
+            "go_homepage_link_text": "На главную",
+            "parent_page_text": "Отделения"
+        },
+        "no_content_text": "На данный момент нет доступного контента.",
+        "doctor_list_title": "Доктора данного отделения"
+    },
+    "corporate_page": {
+        "page_banner": {
+            "corporate_text": "Корпоратив",
+            "go_homepage_link_text": "На главную"
+        },
+        "blog_area": {
+            "top_title": "Больница Атакент",
+            "title": "Корпоратив",
+            "content": {
+                "paragraph_1": {
+                    "paragraph": " Медицинская группа Атакент,  сделала свои первые шаги основав на  закрытой площади 20 000 м2 частную больницу Озел Атакент Аккурт Групп. Она продолжает свой путь роста открыв отделение хирургии Атакент Орангази Джеррахи Тып Меркези в 2018 году,  после открыв Отделение хирургии Атакент Гемлик Тып Меркези в 2019 году , а так же  частную больницу Озел Атакент Джихан Хастанеси в 2021 году."
+                },
+                "paragraph_2": {
+                    "title": "ВЗГЛЯД В БУДУЩЕЕ",
+                    "paragraph": " Мы движемся вперед с целью быть ведущим и рекомендованным медицинским учреждением в регионе, предоставляя международные услуги во всех частных и общих отраслях; а так же мы несем миссию предоставления надежных, качественных, экономических, технологичных и современных медицинских услуг в соответствии с международными стандартами, уважая права пациентов и гармонируя с социальной структурой в каждой точке медицинской сферы."
+                },
+                "paragraph_3": {
+                    "title": "КАЧЕСТВЕННАЯ МЕДИЦИНСКАЯ СЛУЖБА",
+                    "paragraph": "Ориентируясь на совершенствование структуры,  мы всегда стремимся повышать наши стандарты и качество. Подтверждением качества наших услуг, является документ ISO. Инспекция Министерства здравоохранения подтверждает это. А так же мы продолжаем добавлять новые сертификаты в нашу коллекцию."
+                }
+            }
+        },
+        "card_items_area": {
+            "card_item_1_title": "Кадровые ресурсы",
+            "card_item_2_title": "О нас"
+        }
+    },
+    "corporate_events_page": {
+        "page_banner": {
+            "page_title": "Корпоративные мероприятия",
+            "homepage_text": "AГлавная страница"
+        },
+        "title": "Корпоративные новости",
+        "description": "В этом разделе вы можете ознакомиться с корпоративными новостями Atakent Health Group."
+    },
+    "corporate_events_blog_detail_page": {
+        "page_banner": {
+            "parent_page_text": "Корпоративные мероприятия",
+            "homepage_text": "Главная страница"
+        },
+        "date": "История"
+    },
+    "cv_form_page": {
+        "page_banner": {
+            "page_title": "Подача заявки на работу",
+            "active_page_text": "Отправить резюме",
+            "homepage_text": "На главную",
+            "parent_page_text": "Кадровые ресурсы"
+        },
+        "cv_form": {
+            "top_title": "Заявление о приеме на работу",
+            "title": "Форма заявления на работу",
+            "description": "Для подачи заявки необходимо скачать и заполнить файл формы заявки по ссылке ниже. После заполнения необходимо загрузить файл в раздел «Выберите файл» ниже и отправить форму.",
+            "download_form_button_title": "Скачать форму заявления",
+            "form": {
+                "fullname_label_text": "Фамилия и имя",
+                "fullname_placeholder_text": "Введите ваше полное имя",
+                "phone_label_text": "Телефон",
+                "phone_placeholder_text": "Введите ваш номер телефона",
+                "email_label_text": "Электронная почта",
+                "email_placeholder_text": "Введите адрес электронной почты",
+                "date_of_birth_placeholder_text": "Дата рождения",
+                "departments_placeholder_text": "Выберите отделение",
+                "departments_default_option_text": "В какое отделение вы хотите подать заявку?",
+                "hospitals_placeholder_text": "Выберите больницу",
+                "hospitals_default_option_text": "В какую больницу вы хотите подать заявление?",
+                "upload_cv_label": "Загрузить анкету (.DOCX)",
+                "submit_button_text": "Отправить"
+            },
+            "alerts": {
+                "success": "Ваше резюме успешно отправлено. Мы свяжемся с вами как можно скорее.",
+                "upload_cv_file": "Пожалуйста, загрузите файл своего резюме и повторите попытку.",
+                "age_verification": "Вам должно быть больше 18 лет. К сожалению, вы не имеете права подать заявку.",
+                "select_department": "Пожалуйста, выберите отдел, на который хотите подать заявку.",
+                "send_cv_failed": "Не удалось отправить резюме.",
+                "time_constraint": "Вы уже отправили сообщение недавно."
+            }
+        }
+    },
+    "service_detail_page": {
+        "page_banner": {
+            "go_homepage_link_text": "На главную"
+        },
+        "blog_area": {
+            "top_title": "Больница Атакент",
+            "title": "Наши услуги",
+            "content": {
+                "paragraph_1": {
+                    "paragraph": " Мы движемся вперед с целью быть ведущим и рекомендованным медицинским учреждением в регионе, предоставляя международные услуги во всех частных и общих отраслях; а так же мы несем миссию предоставления надежных, качественных, экономических, технологичных и современных медицинских услуг в соответствии с международными стандартами, уважая права пациентов и гармонируя с социальной структурой в каждой точке медицинской сферы."
+                },
+                "paragraph_2": {
+                    "title": "ВЗГЛЯД В БУДУЩЕЕ",
+                    "paragraph": " Мы движемся вперед с целью быть ведущим и рекомендованным медицинским учреждением в регионе, предоставляя международные услуги во всех частных и общих отраслях; а так же мы несем миссию предоставления надежных, качественных, экономических, технологичных и современных медицинских услуг в соответствии с международными стандартами, уважая права пациентов и гармонируя с социальной структурой в каждой точке медицинской сферы."
+                },
+                "paragraph_3": {
+                    "title": "КАЧЕСТВЕННАЯ МЕДИЦИНСКАЯ СЛУЖБА",
+                    "paragraph": "Ориентируясь на совершенствование структуры,  мы всегда стремимся повышать наши стандарты и качество. Подтверждением качества наших услуг, является документ ISO. Инспекция Министерства здравоохранения подтверждает это. А так же мы продолжаем добавлять новые сертификаты в нашу коллекцию."
+                }
+            }
+        },
+        "no_data": "Нет доступных записей данных."
+    },
+    "contact_page": {
+        "seo": {
+            "address": "адрес",
+            "phone": "телефон",
+            "location": "местоположение",
+            "where": "где",
+            "default": "контакты Атакент, адрес Атакент, телефон Атакент, местоположение Атакент, где находится больница Атакент",
+            "description": "Контактная информация - Контакты медицинской группы Атакент"
+        },
+        "page_banner": {
+            "contact_text": "Контакты",
+            "go_homepage_link_text": "На главную"
+        },
+        "contact_info_area": {
+            "title": "Контакты",
+            "title_2": "Главный офис",
+            "img_alt": "Главный офис больницы Атакент",
+            "card": {
+                "card_country": "Турция",
+                "card_email_title": "Электронная почта",
+                "card_phone_title": "Телефон",
+                "address": "Микрорайон Аднан Мендерес, улица Уфук"
+            }
+        },
+        "contact_hospital_list": {
+            "card_item": {
+                "address_title": "АДРЕС",
+                "email_title": "ЭЛЕКТРОННАЯ ПОЧТА",
+                "location_button": "Расположение"
+            }
+        }
+    },
+    "blog_page": {
+        "page_banner": {
+            "blog_text": "Блог",
+            "go_homepage_link_text": "На главную"
+        },
+        "blog_card": {
+            "read_more_button_text": "Читать дальше"
+        },
+        "blog_sidebar": {
+            "widget_search": {
+                "title": "Поиск",
+                "search_form_input_placeholder_text": "Поиск... (Нажмите Enter)"
+            },
+            "widget_latest_posts": {
+                "title": "Последние записи"
+            },
+            "widget_archive": {
+                "title": "Архив"
+            },
+            "widget_categories": {
+                "title": "Категории"
+            },
+            "widget_tags": {
+                "title": "Закладки"
+            }
+        }
+    },
+    "blog_detail_page": {
+        "page_banner": {
+            "blog_detail_text": "Подробности блога",
+            "go_blogpage_link_text": "Блог"
+        },
+        "article_content_area": {
+            "entry_meta": {
+                "date_title": "Дата",
+                "author_title": "Автор"
+            }
+        },
+        "article_footer_area": {
+            "share_post_button_text": "Поделиться"
+        },
+        "post_navigation_area": {
+            "prev_post_button_text": "Предыдущая запись",
+            "next_post_button_text": "Следующая запись"
+        },
+        "comments_area": {
+            "comment_count_title": "Комментарии",
+            "comment_list_item": {
+                "reply_button_text": "Ответить"
+            },
+            "comment_respond": {
+                "comment_reply_title": "Оставьте комментарий",
+                "form": {
+                    "comment_notes_text": "Ваш адрес электронной почты не будет опубликован.",
+                    "name_input_label_text": "Имя",
+                    "email_input_label_text": "Электронная почта",
+                    "website_input_label_text": "Веб-сайт",
+                    "comment_input_label_text": "Ваш комментарий",
+                    "submit_button_text": "Отправить комментарий"
+                }
+            }
+        }
+    },
+    "common_doctors_component": {
+        "no_doctor_data_text": "В настоящее время нет данных для отображения."
+    },
+    "common_loading_component": {
+        "loading_text": "Загрузка..."
+    },
+    "campaign": {
+        "title": "Акции",
+        "sub_title": "Ограниченные возможности на ограниченное время",
+        "end_date": "Дата окончания: "
+    },
+    "appointment_popup": {
+        "title": "Выберите больницу"
+    },
+    "contact_form": {
+        "top_title": "Свяжитесь с нами",
+        "title": "Мы здесь для вас",
+        "form": {
+            "name_area_placeholder_text": "Ваше имя",
+            "email_area_placeholder_text": "Ваша электронная почта",
+            "phone_area_placeholder_text": "Ваш номер телефона",
+            "department_area_placeholder_text": "Выберите отделение",
+            "time_area_placeholder_text": "Выберите время",
+            "message_area_placeholder_text": "Ваше сообщение",
+            "hospital_area_placeholder_text": "Выберите больницу, с которой вы хотите связаться",
+            "submit_button_text": "Отправить",
+            "success_alert": "Ваше сообщение успешно отправлено.",
+            "error_alert": "При отправке сообщения возникла ошибка. Пожалуйста, проверьте введенную информацию и повторите попытку.",
+            "message_too_short_error": "Сообщение слишком короткое",
+            "time_constraint_error": "Вы недавно уже отправили сообщение. Пожалуйста, попробуйте позже."
+        }
+    },
+    "error": {
+        "not_found": {
+            "title": "Страница не найдена",
+            "description": "Извините, мы не можем найти страницу, которую вы ищете. Возможно, страница была удалена, переименована или временно недоступна.",
+            "back_to_home": "На главную",
+            "go_back": "Назад",
+            "need_help": "Нужна помощь?",
+            "contact_us": "Свяжитесь с нами"
+        }
+    }
+}

@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseUrl = `${process.env.API_URL}/hospital`;
+const baseUrl = `${process.env.NEXT_PUBLIC_API_URL}/hospital`;
 
 export function getHospitals(searchText, size = 12, language = undefined) {
   const path = `${baseUrl}/`;

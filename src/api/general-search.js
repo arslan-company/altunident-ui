@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseUrl = `${process.env.API_URL}/search`;
+const baseUrl = `${process.env.NEXT_PUBLIC_API_URL}/search`;
 
 // eslint-disable-next-line import/prefer-default-export
 export const generalSearch = (params) => {

@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseUrl = `${process.env.API_URL}/slider`;
+const baseUrl = `${process.env.NEXT_PUBLIC_API_URL}/slider`;
 
 export const getSliders = (hospitalId, language) => {
   const path = `${baseUrl}/`;
