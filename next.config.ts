@@ -39,7 +39,6 @@ const nextConfig: NextConfig = {
       {
         protocol: 'https',
         hostname: 'api.altunident.com',
-        port: '8443',
         pathname: '/files/**',
       },
     ],
