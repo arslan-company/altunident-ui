@@ -25,10 +25,10 @@ export default async function CookiePolicyPage() {
             <section>
               <h3 className="tw-text-2xl tw-font-bold tw-mb-4">Çerez Politikası</h3>
               <p className="tw-text-gray-600">
-                Bu çerez politikası, Altunident Diş Kliniği web sitesi ("sitemiz") üzerinden
-                toplanan çerezlerle ilgili bilgi sağlamak amacıyla hazırlanmıştır. Bu politika,
-                çerezlerin nasıl kullanıldığını, hangi tür çerezlerin kullanıldığını ve çerezleri
-                nasıl kontrol edebileceğinizi açıklamaktadır.
+                Bu çerez politikası, Altunident Diş Kliniği web sitesi (&quot;sitemiz&quot;)
+                üzerinden toplanan çerezlerle ilgili bilgi sağlamak amacıyla hazırlanmıştır. Bu
+                politika, çerezlerin nasıl kullanıldığını, hangi tür çerezlerin kullanıldığını ve
+                çerezleri nasıl kontrol edebileceğinizi açıklamaktadır.
               </p>
             </section>
 

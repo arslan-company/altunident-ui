@@ -115,8 +115,8 @@ export default async function KVKKPage() {
               <h4 className="tw-text-xl tw-font-semibold tw-mb-4">6. Başvuru Yöntemi</h4>
               <p>
                 KVKK kapsamında veri sahipleri yukarıdaki haklarını kullanmak için Altunident Diş
-                Kliniği ile iletişime geçebilirler. Başvurularınızı, yazılı olarak veya KVKK'nın
-                belirlediği diğer yöntemlerle yapabilirsiniz.
+                Kliniği ile iletişime geçebilirler. Başvurularınızı, yazılı olarak veya
+                KVKK&apos;nın belirlediği diğer yöntemlerle yapabilirsiniz.
               </p>
             </section>
           </div>
