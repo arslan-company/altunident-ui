@@ -21,56 +21,92 @@ export default async function CookiePolicyPage() {
         <div className="container tw-mx-auto tw-px-4 tw-space-y-6">
           <h2>Çerez Politikası</h2>
           <p>Son güncellenme: 15/05/2024</p>
-          <p>
-            Biz Atakent Grup olarak, güvenliğinize önem veriyor ve bu Çerez Politikası ile siz
-            sevgili ziyaretçilerimize web sitemizdeki çerez kullanımı hakkında bilgi vermeyi
-            amaçlıyoruz.
-          </p>
-          <h3>Çerez Nedir?</h3>
-          <p>
-            Çerezler, kullanıcıların web sitelerini daha verimli bir şekilde kullanabilmeleri adına,
-            cihazlarına kaydedilen küçük dosyacıklardır. Çerezler vasıtasıyla kullanıcıların
-            bilgilerinin işleniyor olması sebebiyle, 6698 sayılı Kişisel Verilerin Korunması Kanunu
-            gereğince, kullanıcıların bilgilendirilmeleri ve onaylarının alınması gerekmektedir.
-            Bizler de siz sevgili ziyaretçilerimizin, web sitemizden en verimli şekilde
-            yararlanabilmelerini ve siz sevgili ziyaretçilerimizin kullanıcı deneyimlerinin
-            geliştirilebilmesini sağlamak adına, çeşitli çerezler kullanmaktayız.
-            <br />
-            <br />
-            <b>1. Zorunlu Çerezler</b>
-            <br />
-            Zorunlu çerezler, web sitesine ilişkin temel işlevleri etkinleştirerek web sitesinin
-            kullanılabilir hale gelmesini sağlayan çerezlerdir. Web sitesi bu çerezler olmadan
-            düzgün çalışmaz.
-            <br />
-            <br />
-            <b>2. Performans Çerezleri</b>
-            <br />
-            Performans çerezleri, ziyaretçilerin web sitesine ilişkin kullanım bilgilerini ve
-            tercihlerini anonim olarak toplayan ve bu sayede web sitesinin performansının
-            geliştirilmesine olanak sağlayan çerezlerdir.
-            <br />
-            <br />
-            <b>3. Fonksiyonel Çerezler</b>
-            <br />
-            Fonksiyonel çerezler, kullanıcıların web sitesine ilişkin geçmiş kullanımlarından yola
-            çıkılarak gelecekteki ziyaretlerinde tanınmalarını ve hatırlanmalarını sağlayan ve bu
-            sayede web sitelerinin kullanıcılara dil, bölge vb. gibi kişiselleştirilmiş bir hizmet
-            sunmasına olanak tanıyan çerezlerdir.
-            <br />
-            <br />
-            <b>4. Reklam Çerezleri</b>
-            <br />
-            Reklam çerezleri, üçüncü taraflara ait çerezlerdir ve web sitelerinde ziyaretçilerin
-            davranışlarını izlemek için kullanılırlar. Bu çerezlerin amaçları, ziyaretçilerin
-            ihtiyaçlarına yönelik ilgilerini çekecek reklamların gösterilmesine yardımcı olmaktır ve
-            sorumluluğu çerez sahibi üçüncü taraflara aittir.
-          </p>
-          <h3>Web Sitemizde Şu Anda Çerez Kullanıyor Muyuz?</h3>
-          Şu anda web sitemizde, üstte belirtilen çerez türlerinin hiçbiri kullanılmamaktadır. Bu
-          yüzden de web sitemizin herhangi bir yerinde çerez kullanımı için kullanıcılarımızdan bir
-          onay almaya gerek duymamaktayız. Ancak ilerleyen aşamalarda web sitemizdeki
-          ziyaretçilerimizin deneyimlerini arttırmak için bazı çerezler kullanma gereği duyabiliriz.
+          <div className="tw-space-y-8">
+            <section>
+              <h3 className="tw-text-2xl tw-font-bold tw-mb-4">Çerez Politikası</h3>
+              <p className="tw-text-gray-600">
+                Bu çerez politikası, Altunident Diş Kliniği web sitesi (&quot;sitemiz&quot;)
+                üzerinden toplanan çerezlerle ilgili bilgi sağlamak amacıyla hazırlanmıştır. Bu
+                politika, çerezlerin nasıl kullanıldığını, hangi tür çerezlerin kullanıldığını ve
+                çerezleri nasıl kontrol edebileceğinizi açıklamaktadır.
+              </p>
+            </section>
+
+            <section>
+              <h4 className="tw-text-xl tw-font-semibold tw-mb-4">1. Çerez Nedir?</h4>
+              <p className="tw-text-gray-600">
+                Çerezler, web sitesini ziyaret eden cihazda (bilgisayar, akıllı telefon, tablet vb.)
+                saklanan küçük metin dosyalarıdır. Bu dosyalar, web sitesinin kullanımı sırasında
+                bilgisayarınıza veya cihazınıza indirilir ve daha sonra web sitesi tarafından
+                okunabilir. Çerezler, web sitesinin verimli çalışmasını sağlamak, kullanıcı
+                deneyimini iyileştirmek ve web sitesinin sahiplerine belirli bilgiler sağlamak için
+                kullanılır.
+              </p>
+            </section>
+
+            <section>
+              <h4 className="tw-text-xl tw-font-semibold tw-mb-4">
+                2. Hangi Tür Çerezler Kullanıyoruz?
+              </h4>
+              <p className="tw-text-gray-600">
+                Sitemizde aşağıdaki türde çerezler kullanılmaktadır:
+              </p>
+              <ul className="tw-list-disc tw-pl-6 tw-mt-4 tw-space-y-3">
+                <li className="tw-text-gray-600">
+                  <span className="tw-font-semibold">Zorunlu Çerezler:</span> Web sitesinin temel
+                  işlevselliğini sağlamak için gereklidir. Bu çerezler, siteye giriş yapmanızı ve
+                  güvenli alanlara erişmenizi sağlar.
+                </li>
+                <li className="tw-text-gray-600">
+                  <span className="tw-font-semibold">Analitik ve Performans Çerezleri:</span> Siteyi
+                  nasıl kullandığınızı anlamamıza yardımcı olmak için kullanılır. Bu çerezler, site
+                  trafiğini izlememize, hangi sayfaların en çok ziyaret edildiğini ve hangi
+                  bağlantıların en çok tıklandığını görmemize olanak tanır.
+                </li>
+                <li className="tw-text-gray-600">
+                  <span className="tw-font-semibold">İşlevsellik Çerezleri:</span> Siteyi
+                  ziyaretiniz sırasında tercihlerinizi hatırlamamıza olanak tanır. Örneğin, dil veya
+                  bölge tercihlerinizi hatırlayabiliriz.
+                </li>
+              </ul>
+            </section>
+
+            <section>
+              <h4 className="tw-text-xl tw-font-semibold tw-mb-4">
+                3. Çerezleri Nasıl Kontrol Edebilirsiniz?
+              </h4>
+              <p className="tw-text-gray-600">
+                Çoğu web tarayıcısı, çerezleri kabul etmek için bir seçenek sunar veya çerezleri
+                reddetmek için bildirimde bulunur. Tarayıcınızın ayarlarını kullanarak çerezleri
+                kontrol edebilir veya silebilirsiniz. Ancak, çerezleri devre dışı bırakmanın bazı
+                web sitelerinin işlevselliğini etkileyebileceğini unutmayın.
+              </p>
+            </section>
+
+            <section>
+              <h4 className="tw-text-xl tw-font-semibold tw-mb-4">4. Değişiklikler</h4>
+              <p className="tw-text-gray-600">
+                Bu çerez politikası düzenli olarak gözden geçirilir ve güncellenir. Politikadaki
+                değişiklikler burada yayınlanır ve değişiklikler yürürlüğe girdiği tarihte geçerli
+                olur.
+              </p>
+            </section>
+
+            <section>
+              <h4 className="tw-text-xl tw-font-semibold tw-mb-4">5. İletişim</h4>
+              <p className="tw-text-gray-600 tw-mb-4">
+                Bu çerez politikası ile ilgili herhangi bir sorunuz veya endişeniz varsa, lütfen
+                bize ulaşın:
+              </p>
+              <div className="tw-space-y-2">
+                <p className="tw-text-gray-600">
+                  Adres: Altunizade, Mahir İz Cd. No:43, Üsküdar/İstanbul
+                </p>
+                <p className="tw-text-gray-600">Telefon: 444 8 000</p>
+                <p className="tw-text-gray-600">E-posta: info@altunident.com</p>
+              </div>
+            </section>
+          </div>
         </div>
       </main>
       <Footer />

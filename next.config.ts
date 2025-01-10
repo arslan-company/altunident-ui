@@ -34,12 +34,11 @@ const nextConfig: NextConfig = {
     includePaths: [path.join(__dirname, 'styles')],
   },
   images: {
-    domains: ['api.atakent.com'],
+    domains: ['api.altunident.com'],
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'api.atakent.com',
-        port: '8443',
+        hostname: 'api.altunident.com',
         pathname: '/files/**',
       },
     ],

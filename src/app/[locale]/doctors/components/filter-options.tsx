@@ -91,23 +91,25 @@ export default function FilterOptions({ departments }: FilterOptionsProps) {
 
   return (
     <div className="tw-flex tw-flex-col tw-gap-4 lg:tw-flex-row sm:tw-items-center">
-      <div className="tw-flex-1 tw-w-full tw-space-y-2">
-        <span className="tw-inline-block">{t('common.filter_by_hospital')}:</span>
-        <Select
-          size="sm"
-          value={selectedHospital}
-          onChange={(value) => handleFiltersChange({ hospitals: value })}
-          options={[
-            {
-              value: -1,
-              label: t('common.all'),
-            },
-            ...hospitalOptions,
-          ]}
-          placeholder={t('common.filter_by_hospital')}
-          className="tw-w-full"
-        />
-      </div>
+      {hospitalOptions.length > 0 ? (
+        <div className="tw-flex-1 tw-w-full tw-space-y-2">
+          <span className="tw-inline-block">{t('common.filter_by_hospital')}:</span>
+          <Select
+            size="sm"
+            value={selectedHospital}
+            onChange={(value) => handleFiltersChange({ hospitals: value })}
+            options={[
+              {
+                value: -1,
+                label: t('common.all'),
+              },
+              ...hospitalOptions,
+            ]}
+            placeholder={t('common.filter_by_hospital')}
+            className="tw-w-full"
+          />
+        </div>
+      ) : null}
 
       <div className="tw-flex-1 tw-w-full tw-space-y-2">
         <span className="tw-inline-block">{t('common.filter_by_department')}:</span>
