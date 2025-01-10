@@ -17,6 +17,7 @@ import { Select } from '@/components/base/select';
 import { Textarea } from '@/components/base/textarea';
 
 import { contactFormSchema, type ContactFormData } from '../schemas/contact-form.schema';
+import generalInfo from '@/constants/general-info';
 
 interface ContactFormProps {
   readonly hideImage?: boolean;
@@ -39,12 +40,18 @@ export function ContactForm({ hideImage = false }: ContactFormProps) {
     resolver: zodResolver(contactFormSchema),
     defaultValues: {
       email: '',
-      hospitalEmail: currentHospital?.contact_email || '',
+      hospitalEmail: currentHospital?.contact_email || generalInfo.contactEmail || '',
       message: '',
       name: '',
       phone: '',
     },
   });
+
+  const hospitalOptions =
+    hospitals?.map((hospital) => ({
+      label: hospital?.name || '',
+      value: hospital?.contact_email || '',
+    })) || [];
 
   const onSubmit = async (data: ContactFormData) => {
     sendEmail(
@@ -153,7 +160,7 @@ export function ContactForm({ hideImage = false }: ContactFormProps) {
                     </div>
                   </div>
 
-                  {!hospitalSlug && (
+                  {!hospitalSlug && !generalInfo.contactEmail && (
                     <div>
                       <Select
                         options={[
@@ -161,10 +168,7 @@ export function ContactForm({ hideImage = false }: ContactFormProps) {
                             value: '',
                             label: t('common.select_hospital'),
                           },
-                          ...(hospitals?.map((hospital) => ({
-                            label: hospital?.name || '',
-                            value: hospital?.contact_email || '',
-                          })) || []),
+                          ...hospitalOptions,
                         ]}
                         placeholder={t('common.select_hospital')}
                         value={watch('hospitalEmail')}
