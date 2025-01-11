@@ -112,12 +112,17 @@ export function ContactForm({ hideImage = false }: ContactFormProps) {
           <div className="tw-w-full">
             <div className="tw-space-y-6">
               <div>
-                <span className="tw-text-primary-600 tw-text-sm tw-font-medium">
+                <h1 className="tw-text-primary-600 tw-text-[20px] tw-font-medium">
                   {t('common.contact_us')}
-                </span>
-                <h2 className="tw-text-3xl tw-font-bold tw-mt-2">
-                  {t('common.we_are_here_for_you')}
-                </h2>
+                </h1>
+                <div className="tw-flex tw-items-center tw-gap-4 tw-mt-2">
+                  <span className="tw-w-16 tw-h-16 tw-rounded-full tw-bg-primary/10 tw-flex tw-items-center tw-justify-center">
+                    <i className="bi bi-envelope tw-text-primary tw-text-xl" />
+                  </span>
+                  <h2 className="tw-text-3xl tw-font-bold">
+                    {t('common.we_are_here_for_you')}
+                  </h2>
+                </div>
               </div>
 
               <form onSubmit={handleSubmit(onSubmit)} className="tw-space-y-4">

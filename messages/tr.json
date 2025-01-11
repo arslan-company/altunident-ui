@@ -221,8 +221,8 @@
         },
         "services": {
             "top_title": "Hizmetler",
-            "title": "Özellikli Tıbbi Hizmetlerimiz",
-            "description": "Özelliklİ tıbbi hizmetlerimizden sizde yararlanın.",
+            "title": "Gülüşünüz bizim işimiz, SAĞLIK sizin hakkınız.",
+            "description": "Diş kliniğimizde, her bir gülüşü sağlıkla buluşturmak için uzman ekibimizle birlikte çalışıyoruz. Her hastamızın bireysel ihtiyaçlarına özen gösteriyor, en son teknolojiyi kullanarak kaliteli ve kişiye özel hizmet sunuyoruz. Sağlıklı bir gülüşe adım atmak için bize katılın ve güvenilir ellere kendinizi teslim edin.",
             "all_services": "Bütün Hizmetlerimiz",
             "services_items": {
                 "item_1_title": "OBEZİTE VE METABOLİK CERRAHİ MERKEZİ",

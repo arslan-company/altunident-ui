@@ -54,6 +54,7 @@ export default async function ServiceDetailPage({
 
   // --- SERVER DATA --- //
   const { service } = await fetchData(params);
+  const serviceImage = filenameToUrl(service?.image_url);
 
   // --- UTILS --- //
   const t = await getTranslations();
@@ -68,6 +69,7 @@ export default async function ServiceDetailPage({
           { label: t('common.our_services'), href: '/services' },
           { label: service?.name || '' },
         ]}
+        backgroundImage={serviceImage || undefined}
       />
       <main className="container tw-min-h-screen tw-py-12 tw-mx-auto tw-px-4">
         <div>
