@@ -48,6 +48,10 @@ export default function NavbarClient({ serverData }: NavbarClientProps) {
       href: `/corporate/${page?.id}/${page?.slug}`,
       label: page?.title,
     })),
+    {
+      href: '/corporate/human-resources',
+      label: 'İnsan Kaynakları',
+    },
   ];
 
   const handleAppointmentClick = () => {

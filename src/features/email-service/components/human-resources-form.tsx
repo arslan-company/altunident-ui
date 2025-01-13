@@ -20,15 +20,7 @@ import {
 } from '../schemas/human-resources-form.schema';
 
 import { useEmailServiceMutation } from '../hooks';
-
-const departments = [
-  { id: 1, name: 'Hemşirelik Hizmetleri' },
-  { id: 2, name: 'Hasta Hizmetleri' },
-  { id: 3, name: 'Laboratuvar' },
-  { id: 4, name: 'Radyoloji' },
-  { id: 5, name: 'İdari Birim' },
-  { id: 6, name: 'Engelli' },
-] as const;
+import generalInfo from '@/constants/general-info';
 
 interface HumanResourcesFormProps {
   readonly hideImage?: boolean;
@@ -47,17 +39,16 @@ export function HumanResourcesForm({ hideImage = false }: HumanResourcesFormProp
     handleSubmit,
     reset,
     setValue,
-    watch,
     formState: { errors },
   } = useForm<HumanResourcesFormData>({
     resolver: zodResolver(humanResourcesFormSchema),
     defaultValues: {
       name: '',
-      hospitalName: '',
-      department: '',
+      hospitalName: t('site.name') || '',
+      department: 'none',
       phone: '',
       email: '',
-      hospitalEmail: '',
+      hospitalEmail: generalInfo?.humanResourcesEmail || '',
     },
   });
 
@@ -95,9 +86,9 @@ export function HumanResourcesForm({ hideImage = false }: HumanResourcesFormProp
         body: formData,
         query: {
           name: data.name,
-          department: data.department,
+          department: data.department || '',
           email: data.email,
-          hospital: data.hospitalName,
+          hospital: data.hospitalName || '',
           target: data.hospitalEmail,
           phone_number: data.phone,
         },
@@ -210,56 +201,35 @@ export function HumanResourcesForm({ hideImage = false }: HumanResourcesFormProp
                     </div>
                   </div>
 
-                  <div>
-                    <Select
-                      options={[
-                        {
-                          value: '',
-                          label: t('cv_form_page.cv_form.form.hospitals_default_option_text'),
-                        },
-                        ...(hospitals?.map((hospital) => ({
-                          label: hospital?.name || '',
-                          value: String(hospital?.id) || '',
-                        })) || []),
-                      ]}
-                      placeholder={t('cv_form_page.cv_form.form.hospitals_placeholder_text')}
-                      value={selectedHospital}
-                      onChange={(value) => {
-                        const hospital = hospitals.find((h) => String(h.id) === value);
-                        setSelectedHospital(String(hospital?.id));
-                        setValue('hospitalName', hospital?.name || '');
-                        setValue('hospitalEmail', hospital?.human_resources_email || '');
-                      }}
-                    />
-                    {errors.hospitalName && (
-                      <p className="tw-text-red-500 tw-text-sm tw-mt-1">
-                        {errors.hospitalName.message}
-                      </p>
-                    )}
-                  </div>
-
-                  <div>
-                    <Select
-                      options={[
-                        {
-                          value: '',
-                          label: t('cv_form_page.cv_form.form.departments_default_option_text'),
-                        },
-                        ...departments.map((dept) => ({
-                          label: dept.name,
-                          value: dept.name,
-                        })),
-                      ]}
-                      placeholder={t('cv_form_page.cv_form.form.departments_placeholder_text')}
-                      value={watch('department')}
-                      onChange={(value) => setValue('department', value)}
-                    />
-                    {errors.department && (
-                      <p className="tw-text-red-500 tw-text-sm tw-mt-1">
-                        {errors.department.message}
-                      </p>
-                    )}
-                  </div>
+                  {hospitals.length > 0 ? (
+                    <div>
+                      <Select
+                        options={[
+                          {
+                            value: '',
+                            label: t('cv_form_page.cv_form.form.hospitals_default_option_text'),
+                          },
+                          ...(hospitals?.map((hospital) => ({
+                            label: hospital?.name || '',
+                            value: String(hospital?.id) || '',
+                          })) || []),
+                        ]}
+                        placeholder={t('cv_form_page.cv_form.form.hospitals_placeholder_text')}
+                        value={selectedHospital}
+                        onChange={(value) => {
+                          const hospital = hospitals.find((h) => String(h.id) === value);
+                          setSelectedHospital(String(hospital?.id));
+                          setValue('hospitalName', hospital?.name || '');
+                          setValue('hospitalEmail', hospital?.human_resources_email || '');
+                        }}
+                      />
+                      {errors.hospitalName && (
+                        <p className="tw-text-red-500 tw-text-sm tw-mt-1">
+                          {errors.hospitalName.message}
+                        </p>
+                      )}
+                    </div>
+                  ) : null}
 
                   <div>
                     <input
