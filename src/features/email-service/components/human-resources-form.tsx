@@ -39,7 +39,6 @@ export function HumanResourcesForm({ hideImage = false }: HumanResourcesFormProp
     handleSubmit,
     reset,
     setValue,
-    watch,
     formState: { errors },
   } = useForm<HumanResourcesFormData>({
     resolver: zodResolver(humanResourcesFormSchema),
