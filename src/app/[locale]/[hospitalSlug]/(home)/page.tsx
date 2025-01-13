@@ -7,7 +7,7 @@ import Navbar from '@/components/shared/navbar';
 import Footer from '@/components/shared/footer';
 import Section from '@/components/shared/section';
 
-import { servicesApi, ServicesCardList } from '@/features/services';
+import { servicesApi, ServiceSection } from '@/features/services';
 import { doctorsApi, DoctorSlider } from '@/features/doctors';
 import { departmentsApi } from '@/features/departments';
 import { Slider, slidersApi } from '@/features/slider';
@@ -106,15 +106,21 @@ export default async function HospitalHomePage({
         </Section>
 
         <Section
-          title={t('homepage.services.title')}
-          description={t('homepage.services.description')}
           container
           data-aos="fade-up"
           data-aos-delay="100"
           data-aos-duration="1200"
           className="tw-z-0"
         >
-          <ServicesCardList services={services?.items || []} />
+          <ServiceSection
+            services={services?.items.map((service) => ({
+              id: service.id,
+              title: service.name,
+              description: "Profesyonel ekibimizle, çürüklerden diş eti hastalıklarına kadar geniş bir yelpazede diş tedavileri sunuyoruz.",
+              icon_url: "img/shape/dental-care.svg",
+              slug: service.name.toLowerCase().replace(/\s+/g, '-'),
+            }))}
+          />
         </Section>
 
         <Section
