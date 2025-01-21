@@ -1,15 +1,15 @@
 'use client';
 
-import React from 'react';
 import Link from 'next/link';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Autoplay } from 'swiper';
 import { useTranslations } from 'next-intl';
+import React from 'react';
+import { Navigation, Autoplay } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
+import { Button } from '@/components/base/button';
 import { BlogCard, blogEndpoints } from '@/features/blog';
 import { filenameToUrl } from '@/features/files';
 
-import { Button } from '@/components/base/button';
 
 interface BlogSliderProps {
   readonly blogs: typeof blogEndpoints.getBlogs.response.items;

@@ -1,10 +1,10 @@
 'use server';
 
-import React from 'react';
 import { getTranslations } from 'next-intl/server';
+import React from 'react';
 
-import { DoctorCard } from '@/features/doctors/components/doctor-card';
 import { doctorsEndpoints } from '@/features/doctors';
+import { DoctorCard } from '@/features/doctors/components/doctor-card';
 import { filenameToUrl } from '@/features/files';
 
 interface DoctorListProps {

@@ -1,11 +1,11 @@
-import { Media } from '@/features/files';
-
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
 } from '@/components/base/tooltip';
+import { Media } from '@/features/files';
+
 
 import AppointmentAction from './appointment-action';
 import DoctorName from './doctor-name';

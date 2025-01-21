@@ -1,13 +1,13 @@
 'use client';
 
 import Link from 'next/link';
-import React, { useEffect, useState } from 'react';
-import { useLocale, useTranslations } from 'next-intl';
 import { useParams } from 'next/navigation';
-
-import slugify from '@/utils/slugify';
+import { useLocale, useTranslations } from 'next-intl';
+import React, { useEffect, useState } from 'react';
 
 import { Button } from '@/components/base/button';
+import slugify from '@/utils/slugify';
+
 
 import { useGeneralSearchQuery } from '../hooks';
 
@@ -84,7 +84,7 @@ export function GeneralSearch() {
     }, 400);
 
     return () => clearTimeout(timerId);
-  }, [searchText]);
+  }, [searchText, generalSearchResponse]);
 
   return (
     <div className="tw-relative tw-w-full tw-mx-auto">

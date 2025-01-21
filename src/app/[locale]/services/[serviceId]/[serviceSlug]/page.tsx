@@ -1,14 +1,13 @@
-import { getLocale, getTranslations } from 'next-intl/server';
 import { Metadata } from 'next';
+import { getLocale, getTranslations } from 'next-intl/server';
 
-import { servicesApi } from '@/features/services';
-import { filenameToUrl } from '@/features/files';
 
-import Footer from '@/components/shared/footer';
-import Navbar from '@/components/shared/navbar';
 import Breadcrumb from '@/components/shared/breadcrumb';
+import Footer from '@/components/shared/footer';
 import HTMLContent from '@/components/shared/html-content';
-
+import Navbar from '@/components/shared/navbar';
+import { filenameToUrl } from '@/features/files';
+import { servicesApi } from '@/features/services';
 import generateMeta from '@/utils/generate-meta';
 
 type ServiceDetailParams = {

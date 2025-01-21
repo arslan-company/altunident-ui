@@ -1,19 +1,17 @@
-import Link from 'next/link';
-import { Metadata } from 'next';
-import { getLocale, getTranslations } from 'next-intl/server';
-import { notFound } from 'next/navigation';
 import { ChevronRight } from 'lucide-react';
+import { Metadata } from 'next';
+import Link from 'next/link';
+import { notFound } from 'next/navigation';
+import { getLocale, getTranslations } from 'next-intl/server';
 
-import { DoctorList, doctorsApi } from '@/features/doctors';
-import { departmentsApi } from '@/features/departments';
-import { hospitalApi, HospitalCard } from '@/features/hospitals';
-import { filenameToUrl } from '@/features/files';
-
-import Footer from '@/components/shared/footer';
-import Navbar from '@/components/shared/navbar';
 import Breadcrumb from '@/components/shared/breadcrumb';
+import Footer from '@/components/shared/footer';
 import HTMLContent from '@/components/shared/html-content';
-
+import Navbar from '@/components/shared/navbar';
+import { departmentsApi } from '@/features/departments';
+import { DoctorList, doctorsApi } from '@/features/doctors';
+import { filenameToUrl } from '@/features/files';
+import { hospitalApi, HospitalCard } from '@/features/hospitals';
 import generateMeta from '@/utils/generate-meta';
 
 type DepartmentDetailParams = {

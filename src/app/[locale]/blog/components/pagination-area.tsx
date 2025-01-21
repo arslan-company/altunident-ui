@@ -1,10 +1,9 @@
 'use client';
 
-import React from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
+import React from 'react';
 
 import { Pagination } from '@/components/base/pagination';
-
 import { createSearchParams } from '@/utils/search-params';
 
 export default function PaginationArea({ totalPages }: { totalPages: number }) {

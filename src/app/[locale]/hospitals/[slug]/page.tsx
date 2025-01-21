@@ -1,26 +1,23 @@
-import { getLocale, getTranslations } from 'next-intl/server';
-import { Metadata } from 'next';
-import { notFound } from 'next/navigation';
-import Link from 'next/link';
-import Image from 'next/image';
-
 import { ChevronRight, Mail, MapPin, Phone } from 'lucide-react';
+import { Metadata } from 'next';
+import Image from 'next/image';
+import Link from 'next/link';
+import { notFound } from 'next/navigation';
+import { getLocale, getTranslations } from 'next-intl/server';
 
+import { Button } from '@/components/base/button';
 import Footer from '@/components/shared/footer';
-import Navbar from '@/components/shared/navbar';
 import HTMLContent from '@/components/shared/html-content';
+import Navbar from '@/components/shared/navbar';
 import Section from '@/components/shared/section';
-
+import { departmentsApi } from '@/features/departments';
+import { doctorsApi, DoctorCard } from '@/features/doctors';
+import { filenameToUrl } from '@/features/files';
+import { hospitalApi, HospitalBanner } from '@/features/hospitals';
+import { ServiceCard } from '@/features/services';
 import generateMeta from '@/utils/generate-meta';
 import slugify from '@/utils/slugify';
 
-import { hospitalApi, HospitalBanner } from '@/features/hospitals';
-import { doctorsApi, DoctorCard } from '@/features/doctors';
-import { departmentsApi } from '@/features/departments';
-import { filenameToUrl } from '@/features/files';
-import { ServiceCard } from '@/features/services';
-
-import { Button } from '@/components/base/button';
 
 interface HospitalsPageParams {
   slug: string;
@@ -171,7 +168,7 @@ export default async function HospitalsPage({
                 href={`/${hospital?.slug}/departments/${department?.id}/${slugify(department?.name)}`}
                 key={department?.id}
               >
-                <ServiceCard title={department?.name} />
+                <ServiceCard title={department?.name} id={department?.id} description={department?.description} />
               </Link>
             ))}
           </div>

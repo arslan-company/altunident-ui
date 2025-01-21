@@ -1,17 +1,16 @@
 'use client';
 
-import { useEffect, useState } from 'react';
-import { useTranslations } from 'next-intl';
 import { Search, X } from 'lucide-react';
 import { useRouter, useSearchParams } from 'next/navigation';
+import { useTranslations } from 'next-intl';
+import { useEffect, useState } from 'react';
 
-import { createSearchParams } from '@/utils/search-params';
 
-import { Select } from '@/components/base/select';
-import { Input } from '@/components/base/input';
 import { Button } from '@/components/base/button';
-
+import { Input } from '@/components/base/input';
+import { Select } from '@/components/base/select';
 import { departmentsEndpoints } from '@/features/departments';
+import { createSearchParams } from '@/utils/search-params';
 
 interface FilterOptionsProps {
   departments: typeof departmentsEndpoints.getDepartments.response.items;

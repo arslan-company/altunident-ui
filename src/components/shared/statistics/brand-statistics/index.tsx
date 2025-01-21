@@ -1,7 +1,8 @@
 'use server';
 
-import React from 'react';
+import Image from 'next/image';
 import { getTranslations } from 'next-intl/server';
+import React from 'react';
 
 import { doctorsEndpoints } from '@/features/doctors';
 
@@ -78,10 +79,10 @@ export default async function BrandStatistics({ doctors }: BrandStatisticsProps)
 
       <div className="shape-wrap">
         <div className="shape-1">
-          <img src="/img/shape/counter-shape.png" alt="shape1" />
+          <Image src="/img/shape/counter-shape.png" alt="shape1" width={200} height={200} />
         </div>
         <div className="shape-2">
-          <img src="/img/shape/counter-shape.png" alt="shape2" />
+          <Image src="/img/shape/counter-shape.png" alt="shape2" width={200} height={200} />
         </div>
       </div>
     </div>

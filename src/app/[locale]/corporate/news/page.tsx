@@ -1,15 +1,13 @@
-import { getLocale, getTranslations } from 'next-intl/server';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+import { getLocale, getTranslations } from 'next-intl/server';
 
+import Breadcrumb from '@/components/shared/breadcrumb';
 import Footer from '@/components/shared/footer';
 import Navbar from '@/components/shared/navbar';
-import Breadcrumb from '@/components/shared/breadcrumb';
-
 import { BlogCard } from '@/features/blog';
-import { filenameToUrl } from '@/features/files';
 import { corporateApi } from '@/features/corporate/api';
-
+import { filenameToUrl } from '@/features/files';
 import generateMeta from '@/utils/generate-meta';
 
 import PaginationArea from './components/pagination-area';

@@ -4,6 +4,7 @@ import { Dialog, Transition } from '@headlessui/react';
 import { Fragment } from 'react';
 
 import { useGeneralSearchStore } from '../store/use-general-search-store';
+
 import { GeneralSearch } from './general-search';
 
 export function GeneralSearchModal() {

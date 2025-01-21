@@ -1,14 +1,14 @@
 'use client';
 
-import { useEffect, useState } from 'react';
-import { useTranslations } from 'next-intl';
 import { Search, X } from 'lucide-react';
 import { useRouter, useSearchParams } from 'next/navigation';
+import { useTranslations } from 'next-intl';
+import { useEffect, useState } from 'react';
 
-import { createSearchParams } from '@/utils/search-params';
 
-import { Input } from '@/components/base/input';
 import { Button } from '@/components/base/button';
+import { Input } from '@/components/base/input';
+import { createSearchParams } from '@/utils/search-params';
 
 export default function FilterOptions() {
   // --- HOOKS / STATES --- //

@@ -1,17 +1,16 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { getLocale, getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
+import { getLocale, getTranslations } from 'next-intl/server';
 
-import { departmentsApi } from '@/features/departments';
-import { hospitalApi } from '@/features/hospitals';
-
-import slugify from '@/utils/slugify';
-import generateMeta from '@/utils/generate-meta';
-
+import Breadcrumb from '@/components/shared/breadcrumb';
 import Footer from '@/components/shared/footer';
 import Navbar from '@/components/shared/navbar';
-import Breadcrumb from '@/components/shared/breadcrumb';
+import { departmentsApi } from '@/features/departments';
+import { hospitalApi } from '@/features/hospitals';
+import generateMeta from '@/utils/generate-meta';
+import slugify from '@/utils/slugify';
+
 
 import FilterOptions from './components/filter-options';
 

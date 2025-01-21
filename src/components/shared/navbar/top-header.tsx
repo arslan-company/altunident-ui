@@ -2,10 +2,10 @@
 
 import Link from 'next/link';
 
+import generalInfo from '@/constants/general-info';
+import socialMediaLinks from '@/constants/social-media-links';
 import { useHospital } from '@/features/hospitals';
 
-import socialMediaLinks from '@/constants/social-media-links';
-import generalInfo from '@/constants/general-info';
 
 export default function TopHeader() {
   const { currentHospital } = useHospital();

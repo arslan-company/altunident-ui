@@ -1,15 +1,12 @@
 'use client';
 
-import React from 'react';
 import Link from 'next/link';
+import React from 'react';
 
 import Dialog from '@/components/base/dialog';
-
-import { filenameType, Media } from '@/features/files';
-
-import withImageUrl from '@/utils/with-image-url';
-
 import socialMediaLinks from '@/constants/social-media-links';
+import { filenameType, Media } from '@/features/files';
+import withImageUrl from '@/utils/with-image-url';
 
 import { useHospital } from '../hooks';
 

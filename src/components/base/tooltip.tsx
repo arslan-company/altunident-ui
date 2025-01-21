@@ -24,7 +24,7 @@ type TooltipContextType = {
 
 const TooltipContext = React.createContext<TooltipContextType>({
   isOpen: false,
-  setIsOpen: () => {},
+  setIsOpen: () => { },
   triggerRef: React.createRef<HTMLElement | null>(),
 });
 
@@ -72,7 +72,7 @@ export const TooltipContent = ({ children }: TooltipContentProps) => {
         left: triggerRect.left + (triggerRect.width - contentRect.width) / 2,
       });
     }
-  }, [isOpen]);
+  }, [isOpen, triggerRef]);
 
   if (!isOpen) return null;
 

@@ -1,10 +1,10 @@
 'use client';
 
-import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper';
-import { useTranslations } from 'next-intl';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import React from 'react';
+import { Autoplay } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 import { ServiceCard } from './service-card';
 

@@ -1,15 +1,13 @@
 import { Metadata } from 'next';
-import { getLocale, getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
+import { getLocale, getTranslations } from 'next-intl/server';
 
+import Breadcrumb from '@/components/shared/breadcrumb';
 import Footer from '@/components/shared/footer';
 import Navbar from '@/components/shared/navbar';
-import Breadcrumb from '@/components/shared/breadcrumb';
-
+import { ContactForm } from '@/features/email-service';
 import { filenameToUrl } from '@/features/files';
 import { hospitalApi, HospitalContactInformation } from '@/features/hospitals';
-import { ContactForm } from '@/features/email-service';
-
 import generateMeta from '@/utils/generate-meta';
 
 interface ContactPageParams {

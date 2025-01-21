@@ -1,23 +1,21 @@
-import React from 'react';
-import { getLocale, getTranslations } from 'next-intl/server';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+import { getLocale, getTranslations } from 'next-intl/server';
+import React from 'react';
 
-import Navbar from '@/components/shared/navbar';
 import Footer from '@/components/shared/footer';
-import Section from '@/components/shared/section';
+import Navbar from '@/components/shared/navbar';
 import References from '@/components/shared/references';
-
-import { servicesApi, ServiceSection } from '@/features/services';
-import { doctorsApi, DoctorSlider } from '@/features/doctors';
-import { departmentsApi } from '@/features/departments';
+import Section from '@/components/shared/section';
 import { blogApi, BlogSlider } from '@/features/blog';
-import { Slider, slidersApi } from '@/features/slider';
-import { GeneralSearch } from '@/features/general-search';
-import { hospitalApi, HospitalsList } from '@/features/hospitals';
+import { departmentsApi } from '@/features/departments';
+import { doctorsApi, DoctorSlider } from '@/features/doctors';
 import { ContactForm } from '@/features/email-service';
 import { filenameToUrl, Media } from '@/features/files';
-
+import { GeneralSearch } from '@/features/general-search';
+import { hospitalApi, HospitalsList } from '@/features/hospitals';
+import { servicesApi, ServiceSection } from '@/features/services';
+import { Slider, slidersApi } from '@/features/slider';
 import generateMeta from '@/utils/generate-meta';
 
 const fetchData = async () => {

@@ -1,13 +1,11 @@
 import { Metadata } from 'next';
 import { getLocale, getTranslations } from 'next-intl/server';
 
+import ServiceDetailPage from '@/app/[locale]/services/[serviceId]/[serviceSlug]/page';
+import { filenameToUrl } from '@/features/files';
 import { hospitalApi } from '@/features/hospitals';
 import { servicesApi } from '@/features/services';
-import { filenameToUrl } from '@/features/files';
-
 import generateMeta from '@/utils/generate-meta';
-
-import ServiceDetailPage from '@/app/[locale]/services/[serviceId]/[serviceSlug]/page';
 
 interface HospitalServiceDetailPageParams {
   hospitalSlug: string;

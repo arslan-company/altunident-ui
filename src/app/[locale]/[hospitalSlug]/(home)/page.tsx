@@ -1,22 +1,19 @@
-import React from 'react';
 import { Metadata } from 'next';
-import { getLocale, getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
+import { getLocale, getTranslations } from 'next-intl/server';
+import React from 'react';
 
-import Navbar from '@/components/shared/navbar';
 import Footer from '@/components/shared/footer';
+import Navbar from '@/components/shared/navbar';
 import Section from '@/components/shared/section';
-
-import { servicesApi, ServiceSection } from '@/features/services';
-import { doctorsApi, DoctorSlider } from '@/features/doctors';
 import { departmentsApi } from '@/features/departments';
-import { Slider, slidersApi } from '@/features/slider';
+import { doctorsApi, DoctorSlider } from '@/features/doctors';
+import { filenameToUrl } from '@/features/files';
 import { GeneralSearch } from '@/features/general-search';
 import { hospitalApi } from '@/features/hospitals';
-
+import { servicesApi, ServiceSection } from '@/features/services';
+import { Slider, slidersApi } from '@/features/slider';
 import generateMeta from '@/utils/generate-meta';
-
-import { filenameToUrl } from '@/features/files';
 
 interface HospitalHomePageParams {
   hospitalSlug: string;

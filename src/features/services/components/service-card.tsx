@@ -1,8 +1,8 @@
 'use client';
 
-import React from 'react';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
+import React from 'react';
 
 import { Media } from '@/features/files';
 
@@ -11,7 +11,7 @@ interface ServiceCardProps {
   title: string;
   description: string;
   icon_url?: string;
-  slug: string;
+  slug?: string;
 }
 
 export function ServiceCard({ title, description, icon_url, slug }: ServiceCardProps) {

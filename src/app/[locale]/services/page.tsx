@@ -1,15 +1,14 @@
+import { Metadata } from 'next';
 import Link from 'next/link';
 import { getLocale, getTranslations } from 'next-intl/server';
-import { Metadata } from 'next';
 
-import slugify from '@/utils/slugify';
-import generateMeta from '@/utils/generate-meta';
-
+import Breadcrumb from '@/components/shared/breadcrumb';
 import Footer from '@/components/shared/footer';
 import Navbar from '@/components/shared/navbar';
-import Breadcrumb from '@/components/shared/breadcrumb';
-
 import { ServiceCard, servicesApi } from '@/features/services';
+import generateMeta from '@/utils/generate-meta';
+import slugify from '@/utils/slugify';
+
 
 import FilterOptions from './components/filter-options';
 
@@ -105,7 +104,11 @@ export default async function ServicesPage({
                         href={`${hospitalSlug ? `/${hospitalSlug}` : ''}/services/${service?.id}/${slugify(service?.name)}`}
                         key={service?.id}
                       >
-                        <ServiceCard title={service?.name} />
+                        <ServiceCard
+                          id={service?.id}
+                          title={service?.name}
+                          description={service?.description || ''}
+                        />
                       </Link>
                     ))}
                   </div>
