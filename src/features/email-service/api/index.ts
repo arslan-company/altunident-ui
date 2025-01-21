@@ -1,5 +1,4 @@
 import { BASE_API_URL } from '@/constants/api-urls';
-
 import { createApi } from '@/helpers/create-api';
 
 import { emailServiceEndpoints } from './endpoints';

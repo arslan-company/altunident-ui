@@ -1,10 +1,8 @@
 import { MetadataRoute } from 'next';
 
-import { hospitalApi } from '@/features/hospitals';
-import { departmentsApi } from '@/features/departments';
-
 import websiteConfig from '@/config/website.config';
-
+import { departmentsApi } from '@/features/departments';
+import { hospitalApi } from '@/features/hospitals';
 import slugify from '@/utils/slugify';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {

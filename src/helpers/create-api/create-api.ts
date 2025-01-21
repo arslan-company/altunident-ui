@@ -1,4 +1,5 @@
 import axios from 'axios';
+
 import type { CreateApiConfig, Api, EndpointBuilder, RequestOptions } from './endpoints.type';
 
 export default function createApi<T extends Record<string, EndpointBuilder>>(

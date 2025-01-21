@@ -1,22 +1,21 @@
-import { getLocale, getTranslations } from 'next-intl/server';
 import { Metadata } from 'next';
-
 import { notFound } from 'next/navigation';
-import { filenameToUrl, Media } from '@/features/files';
-import { doctorsApi } from '@/features/doctors';
-import { departmentsApi } from '@/features/departments';
+import { getLocale, getTranslations } from 'next-intl/server';
 
-import translatedDaysOfWeek from '@/constants/days-of-week';
 
-import Footer from '@/components/shared/footer';
-import Navbar from '@/components/shared/navbar';
+
 import Breadcrumb from '@/components/shared/breadcrumb';
+import Footer from '@/components/shared/footer';
 import HTMLContent from '@/components/shared/html-content';
-
+import Navbar from '@/components/shared/navbar';
+import translatedDaysOfWeek from '@/constants/days-of-week';
+import { departmentsApi } from '@/features/departments';
+import { doctorsApi } from '@/features/doctors';
+import { filenameToUrl, Media } from '@/features/files';
+import { hospitalApi } from '@/features/hospitals';
 import generateMeta from '@/utils/generate-meta';
 
 import AppointmentArea from './components/appointment-area';
-import { hospitalApi } from '@/features/hospitals';
 
 type DoctorDetailParams = {
   doctorId: string;

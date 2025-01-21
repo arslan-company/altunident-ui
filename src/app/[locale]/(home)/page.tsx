@@ -1,23 +1,21 @@
-import React from 'react';
-import { getLocale, getTranslations } from 'next-intl/server';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+import { getLocale, getTranslations } from 'next-intl/server';
+import React from 'react';
 
-import Navbar from '@/components/shared/navbar';
 import Footer from '@/components/shared/footer';
-import Section from '@/components/shared/section';
+import Navbar from '@/components/shared/navbar';
 import References from '@/components/shared/references';
-
-import { servicesApi, ServicesCardList } from '@/features/services';
-import { doctorsApi, DoctorSlider } from '@/features/doctors';
-import { departmentsApi } from '@/features/departments';
+import Section from '@/components/shared/section';
 import { blogApi, BlogSlider } from '@/features/blog';
-import { Slider, slidersApi } from '@/features/slider';
+import { departmentsApi } from '@/features/departments';
+import { doctorsApi, DoctorSlider } from '@/features/doctors';
+import { ContactForm } from '@/features/email-service';
+import { filenameToUrl, Media } from '@/features/files';
 import { GeneralSearch } from '@/features/general-search';
 import { hospitalApi, HospitalsList } from '@/features/hospitals';
-import { ContactForm } from '@/features/email-service';
-import { Media } from '@/features/files';
-
+import { servicesApi, ServiceSection } from '@/features/services';
+import { Slider, slidersApi } from '@/features/slider';
 import generateMeta from '@/utils/generate-meta';
 
 const fetchData = async () => {
@@ -89,8 +87,8 @@ export default async function HomePage() {
         <Section
           container
           data-aos="fade-up"
-          data-aos-delay="100"
-          data-aos-duration="1200"
+          data-aos-delay="30"
+          data-aos-duration="600"
           className="tw-z-20"
         >
           <div className="tw-shadow-xl">
@@ -119,9 +117,14 @@ export default async function HomePage() {
             <div className="tw-w-full">
               <div className="tw-space-y-6">
                 <div>
-                  <span className="tw-text-primary tw-text-base tw-font-medium">
-                    {t('common.about_us')}
-                  </span>
+                  <div className="tw-flex tw-items-center tw-mb-5">
+                    <span className="tw-w-16 tw-h-16 tw-rounded-full tw-bg-primary/10 tw-flex tw-items-center tw-justify-center tw-mr-4">
+                      <i className="bi bi-info-circle tw-text-primary tw-text-xl" />
+                    </span>
+                    <h1 className="tw-text-primary tw-text-[20px] tw-font-medium">
+                      {t('common.about_us')}
+                    </h1>
+                  </div>
                   <h2 className="tw-text-3xl tw-font-bold tw-mt-2">
                     {t.rich('common.about_us_title', {
                       name: (chunks) => renderAboutUsTitle(chunks as any),
@@ -143,14 +146,20 @@ export default async function HomePage() {
 
         {servicesData.length > 0 && (
           <Section
-            title={t('common.our_services')}
-            description={t('homepage.services.description')}
             container
             data-aos="fade-up"
             data-aos-delay="100"
             data-aos-duration="1200"
           >
-            <ServicesCardList services={servicesData} />
+            <ServiceSection
+              services={servicesData.map((service) => ({
+                id: service.id,
+                title: service.name,
+                description: "Profesyonel ekibimizle, çürüklerden diş eti hastalıklarına kadar geniş bir yelpazede diş tedavileri sunuyoruz.",
+                icon_url: "img/shape/dental-care.svg",
+                slug: service.name.toLowerCase().replace(/\s+/g, '-'),
+              }))}
+            />
           </Section>
         )}
 
@@ -162,12 +171,18 @@ export default async function HomePage() {
             data-aos="fade-up"
             data-aos-delay="100"
             data-aos-duration="1200"
+            titleIcon={<i className="bi bi-people tw-text-primary tw-text-xl" />}
           >
             <DoctorSlider doctors={doctorsData} departments={departmentsData} />
           </Section>
         )}
 
-        <Section data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200">
+        <Section
+          data-aos="fade-up"
+          data-aos-delay="100"
+          data-aos-duration="1200"
+          titleIcon={<i className="bi bi-envelope tw-text-primary tw-text-xl" />}
+        >
           <ContactForm />
         </Section>
 

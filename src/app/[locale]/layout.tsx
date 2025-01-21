@@ -1,16 +1,14 @@
-import { notFound } from 'next/navigation';
 import { Inter } from 'next/font/google';
-
+import { notFound } from 'next/navigation';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 
-import { routing } from '@/i18n/routing';
-
-import StyleIntegrationsProvider from '@/providers/style-integrations-provider';
-import ReactQueryProvider from '@/providers/react-query-provider';
-import ModalsProvider from '@/providers/modals-provider';
-
 import HospitalStoreProvider from '@/features/hospitals/providers/hospital-store-provider';
+import { routing } from '@/i18n/routing';
+import ModalsProvider from '@/providers/modals-provider';
+import ReactQueryProvider from '@/providers/react-query-provider';
+import StyleIntegrationsProvider from '@/providers/style-integrations-provider';
+
 
 import '../globals.css';
 

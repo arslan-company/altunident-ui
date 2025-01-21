@@ -1,7 +1,7 @@
 'use client';
 
-import React, { useState } from 'react';
 import { useTranslations } from 'next-intl';
+import React, { useState } from 'react';
 
 import { Button } from '@/components/base/button';
 import { HospitalAppointmentDialog } from '@/features/hospitals';

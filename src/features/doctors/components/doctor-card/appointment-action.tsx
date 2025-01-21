@@ -1,11 +1,10 @@
 'use client';
 
-import React, { useState } from 'react';
 import { ClipboardPlus } from 'lucide-react';
 import { useTranslations } from 'next-intl';
+import React, { useState } from 'react';
 
 import { Button } from '@/components/base/button';
-
 import { HospitalAppointmentDialog } from '@/features/hospitals';
 
 import { type DoctorCardProps } from '.';

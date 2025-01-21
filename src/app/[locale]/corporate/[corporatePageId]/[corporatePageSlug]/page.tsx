@@ -1,16 +1,14 @@
 import { Metadata } from 'next';
-import { getLocale, getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
+import { getLocale, getTranslations } from 'next-intl/server';
 
-import Footer from '@/components/shared/footer';
-import Navbar from '@/components/shared/navbar';
 import Breadcrumb from '@/components/shared/breadcrumb';
+import Footer from '@/components/shared/footer';
 import HTMLContent from '@/components/shared/html-content';
-
-import { filenameToUrl, Media } from '@/features/files';
-
-import generateMeta from '@/utils/generate-meta';
+import Navbar from '@/components/shared/navbar';
 import { corporateApi } from '@/features/corporate/api';
+import { filenameToUrl, Media } from '@/features/files';
+import generateMeta from '@/utils/generate-meta';
 
 type CorporatePageParams = {
   corporatePageSlug: string;

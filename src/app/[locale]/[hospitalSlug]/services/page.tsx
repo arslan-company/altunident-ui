@@ -2,7 +2,6 @@ import { Metadata } from 'next';
 import { getLocale, getTranslations } from 'next-intl/server';
 
 import { hospitalApi } from '@/features/hospitals';
-
 import generateMeta from '@/utils/generate-meta';
 
 import ServicesPage from '../../services/page';

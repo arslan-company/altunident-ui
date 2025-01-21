@@ -1,14 +1,14 @@
 'use client';
 
-import React from 'react';
 import Link from 'next/link';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import React from 'react';
 import { Navigation, Autoplay } from 'swiper';
-
-import { slidersEndpoints } from '@/features/slider';
-import { filenameToUrl, filenameType, Media } from '@/features/files';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 import { Button } from '@/components/base/button';
+import { filenameToUrl, filenameType, Media } from '@/features/files';
+import { slidersEndpoints } from '@/features/slider';
+
 
 /**
  * ### CLIENT COMPONENT

@@ -1,9 +1,9 @@
-import { usePathname } from 'next/navigation';
+import { ChevronDownIcon } from '@heroicons/react/24/outline';
+import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 import { useLocale } from 'next-intl';
 import { tv } from 'tailwind-variants';
-import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
-import { ChevronDownIcon } from '@heroicons/react/24/outline';
 
 import { Button } from '@/components/base/button';
 
