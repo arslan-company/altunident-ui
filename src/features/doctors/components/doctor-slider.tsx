@@ -1,17 +1,16 @@
 'use client';
 
-import React from 'react';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import React from 'react';
 import { Navigation, Autoplay } from 'swiper';
-
-import { DoctorCard, doctorsEndpoints } from '@/features/doctors';
-import { useHospital } from '@/features/hospitals';
-import { departmentsEndpoints } from '@/features/departments';
-import { filenameToUrl } from '@/features/files';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 import { Button } from '@/components/base/button';
+import { departmentsEndpoints } from '@/features/departments';
+import { DoctorCard, doctorsEndpoints } from '@/features/doctors';
+import { filenameToUrl } from '@/features/files';
+import { useHospital } from '@/features/hospitals';
 
 interface DoctorListProps {
   readonly doctors: typeof doctorsEndpoints.getDoctors.response.items | undefined;

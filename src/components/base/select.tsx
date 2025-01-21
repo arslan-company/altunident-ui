@@ -1,9 +1,9 @@
 'use client';
 
-import { forwardRef, useState, useCallback } from 'react';
-import { Check, ChevronDown, Search } from 'lucide-react';
 import { cva, type VariantProps } from 'class-variance-authority';
+import { Check, ChevronDown, Search } from 'lucide-react';
 import { useTranslations } from 'next-intl';
+import { forwardRef, useState, useCallback } from 'react';
 
 import { cn } from '@/lib/cn';
 

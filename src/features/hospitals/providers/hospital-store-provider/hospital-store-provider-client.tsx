@@ -1,8 +1,8 @@
 'use client';
 
-import React, { createContext } from 'react';
 import { useParams, usePathname } from 'next/navigation';
 import { useLocale } from 'next-intl';
+import React, { createContext } from 'react';
 
 import { hospitalEndpoints } from '../../api';
 

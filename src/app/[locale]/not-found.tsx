@@ -3,9 +3,9 @@
 import Link from 'next/link';
 import { getTranslations } from 'next-intl/server';
 
-import Navbar from '@/components/shared/navbar';
-import Footer from '@/components/shared/footer';
 import { Button } from '@/components/base/button';
+import Footer from '@/components/shared/footer';
+import Navbar from '@/components/shared/navbar';
 
 export default async function NotFound() {
   const t = await getTranslations();

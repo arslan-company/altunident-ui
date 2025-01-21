@@ -1,12 +1,11 @@
 'use client';
 
+import { ChevronRight } from 'lucide-react';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
-import { ChevronRight } from 'lucide-react';
 
 import { Button } from '@/components/base/button';
-
 import { cn } from '@/lib/cn';
 
 import { HospitalBanner } from './hospital-banner';

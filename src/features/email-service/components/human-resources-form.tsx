@@ -1,26 +1,25 @@
 'use client';
 
-import React, { useState } from 'react';
-import { useTranslations } from 'next-intl';
-import Image from 'next/image';
-import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import Swal from 'sweetalert2';
 import { Download } from 'lucide-react';
+import Image from 'next/image';
+import { useTranslations } from 'next-intl';
+import React, { useState } from 'react';
+import { useForm } from 'react-hook-form';
+import Swal from 'sweetalert2';
 
 import { Button } from '@/components/base/button';
 import { Input } from '@/components/base/input';
 import { Select } from '@/components/base/select';
-
+import generalInfo from '@/constants/general-info';
 import { useHospital } from '@/features/hospitals';
 
+import { useEmailServiceMutation } from '../hooks';
 import {
   humanResourcesFormSchema,
   type HumanResourcesFormData,
 } from '../schemas/human-resources-form.schema';
 
-import { useEmailServiceMutation } from '../hooks';
-import generalInfo from '@/constants/general-info';
 
 interface HumanResourcesFormProps {
   readonly hideImage?: boolean;

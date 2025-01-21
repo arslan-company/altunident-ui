@@ -1,4 +1,5 @@
 import { z } from 'zod';
+
 import regex from '@/constants/regex';
 
 export const contactFormSchema = z.object({

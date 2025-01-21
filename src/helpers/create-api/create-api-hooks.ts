@@ -1,5 +1,5 @@
-import { RawAxiosRequestHeaders } from 'axios';
 import { useQuery, useMutation, UseQueryOptions, UseMutationOptions } from '@tanstack/react-query';
+import { RawAxiosRequestHeaders } from 'axios';
 
 import { Api, EndpointBuilder } from './endpoints.type';
 

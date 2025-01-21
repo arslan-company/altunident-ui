@@ -1,7 +1,8 @@
 import React from 'react';
 
-import HospitalStoreProviderClient from './hospital-store-provider-client';
 import { hospitalApi } from '../../api';
+
+import HospitalStoreProviderClient from './hospital-store-provider-client';
 
 const fetchData = async () => {
   try {

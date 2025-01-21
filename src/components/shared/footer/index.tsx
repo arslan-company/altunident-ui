@@ -1,17 +1,14 @@
 'use client';
 
-import React, { useState } from 'react';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
+import React, { useState } from 'react';
 
 import { Button } from '@/components/base/button';
-
-import dateHelper from '@/utils/dateHelper';
-
-import { HospitalAppointmentDialog, useHospital } from '@/features/hospitals';
-
-import socialMediaLinks from '@/constants/social-media-links';
 import generalInfo from '@/constants/general-info';
+import socialMediaLinks from '@/constants/social-media-links';
+import { HospitalAppointmentDialog, useHospital } from '@/features/hospitals';
+import dateHelper from '@/utils/dateHelper';
 
 import Logo from '../logo';
 

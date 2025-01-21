@@ -1,22 +1,21 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
-import Link from 'next/link';
-import { useTranslations } from 'next-intl';
 import { Transition } from '@headlessui/react';
+import Link from 'next/link';
 import { useParams } from 'next/navigation';
-
-import { HospitalAppointmentDialog, useHospital } from '@/features/hospitals';
-import { useGeneralSearchStore } from '@/features/general-search';
-import { corporateEndpoints } from '@/features/corporate/api';
-
-import { SwitchLanguage } from '@/components/shared/switch-language';
+import { useTranslations } from 'next-intl';
+import { useState, useEffect, useRef } from 'react';
 
 import { Button } from '@/components/base/button';
+import { SwitchLanguage } from '@/components/shared/switch-language';
+import { corporateEndpoints } from '@/features/corporate/api';
+import { useGeneralSearchStore } from '@/features/general-search';
+import { HospitalAppointmentDialog, useHospital } from '@/features/hospitals';
 
-import TopHeader from './top-header';
-import { MobileNavLink, NavLink } from './nav-link';
 import Logo from '../logo';
+
+import { MobileNavLink, NavLink } from './nav-link';
+import TopHeader from './top-header';
 
 interface NavbarClientProps {
   serverData: {

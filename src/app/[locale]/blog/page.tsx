@@ -1,17 +1,14 @@
-import { getLocale, getTranslations } from 'next-intl/server';
 import { Grid2x2, TableProperties } from 'lucide-react';
-import Link from 'next/link';
 import { Metadata } from 'next';
-
-import Footer from '@/components/shared/footer';
-import Navbar from '@/components/shared/navbar';
-import Breadcrumb from '@/components/shared/breadcrumb';
+import Link from 'next/link';
+import { getLocale, getTranslations } from 'next-intl/server';
 
 import { Button } from '@/components/base/button';
-
+import Breadcrumb from '@/components/shared/breadcrumb';
+import Footer from '@/components/shared/footer';
+import Navbar from '@/components/shared/navbar';
 import { blogApi, BlogCard, BlogSidebar } from '@/features/blog';
 import { filenameToUrl } from '@/features/files';
-
 import generateMeta from '@/utils/generate-meta';
 
 import PaginationArea from './components/pagination-area';

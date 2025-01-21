@@ -1,8 +1,8 @@
 'use client';
 
+import useMounted from '@/hooks/use-mounted';
 import { cn } from '@/lib/cn';
 
-import useMounted from '@/hooks/use-mounted';
 
 export default function Section({
   children,
@@ -11,6 +11,7 @@ export default function Section({
   container = false,
   variant = 'default',
   className,
+  titleIcon,
   ...props
 }: {
   children: React.ReactNode;
@@ -19,6 +20,7 @@ export default function Section({
   container?: boolean;
   className?: string;
   variant?: 'default' | 'darker';
+  titleIcon?: React.ReactNode;
 }) {
   const mounted = useMounted();
 
@@ -38,14 +40,21 @@ export default function Section({
       {title || description ? (
         <div className="container tw-text-center tw-mb-12">
           {!!title && (
-            <h2
-              className={cn(
-                'tw-text-3xl md:tw-text-4xl tw-font-bold tw-mb-4',
-                variant === 'darker' ? 'tw-text-white' : 'tw-text-gray-800',
+            <div className="tw-flex tw-items-center tw-justify-center tw-gap-4 tw-mb-4">
+              {titleIcon && (
+                <span className="tw-w-16 tw-h-16 tw-rounded-full tw-bg-primary/10 tw-flex tw-items-center tw-justify-center">
+                  {titleIcon}
+                </span>
               )}
-            >
-              {title}
-            </h2>
+              <h2
+                className={cn(
+                  'tw-text-3xl md:tw-text-4xl tw-font-bold',
+                  variant === 'darker' ? 'tw-text-white' : 'tw-text-gray-800',
+                )}
+              >
+                {title}
+              </h2>
+            </div>
           )}
           {!!description && (
             <p

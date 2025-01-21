@@ -1,19 +1,16 @@
-import { getLocale, getTranslations } from 'next-intl/server';
-import Link from 'next/link';
 import { Metadata } from 'next';
-
-import Footer from '@/components/shared/footer';
-import Navbar from '@/components/shared/navbar';
-import Breadcrumb from '@/components/shared/breadcrumb';
+import Link from 'next/link';
+import { getLocale, getTranslations } from 'next-intl/server';
 
 import { Button } from '@/components/base/button';
-
+import Breadcrumb from '@/components/shared/breadcrumb';
+import Footer from '@/components/shared/footer';
+import Navbar from '@/components/shared/navbar';
+import generalInfo from '@/constants/general-info';
+import { ContactForm } from '@/features/email-service';
 import { filenameToUrl } from '@/features/files';
 import { hospitalApi, HospitalBanner, HospitalContactInformation } from '@/features/hospitals';
-import { ContactForm } from '@/features/email-service';
-
 import generateMeta from '@/utils/generate-meta';
-import generalInfo from '@/constants/general-info';
 
 const fetchData = async () => {
   try {

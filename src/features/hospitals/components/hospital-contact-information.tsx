@@ -1,8 +1,7 @@
-import React from 'react';
 import { getTranslations } from 'next-intl/server';
+import React from 'react';
 
 import HTMLContent from '@/components/shared/html-content';
-
 import { HospitalBanner } from '@/features/hospitals';
 
 interface HospitalContactInformationProps {

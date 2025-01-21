@@ -1,12 +1,10 @@
-import { getTranslations } from 'next-intl/server';
 import { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 
+import Breadcrumb from '@/components/shared/breadcrumb';
 import Footer from '@/components/shared/footer';
 import Navbar from '@/components/shared/navbar';
-import Breadcrumb from '@/components/shared/breadcrumb';
-
 import { HumanResourcesForm } from '@/features/email-service';
-
 import generateMeta from '@/utils/generate-meta';
 
 export default async function HumanResourcesPage() {

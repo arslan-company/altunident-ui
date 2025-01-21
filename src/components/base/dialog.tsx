@@ -1,6 +1,7 @@
-import React from 'react';
 import { Dialog as HeadlessDialog } from '@headlessui/react';
 import { XMarkIcon } from '@heroicons/react/24/outline';
+import React from 'react';
+
 import { Button } from './button';
 
 export interface DialogProps {
