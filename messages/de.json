@@ -201,7 +201,8 @@
         "filter_by_department": "Abteilung filtern",
         "all": "Alle",
         "location": "Wegbeschreibung",
-        "data_not_found": "Keine Ergebnisse gefunden."
+        "data_not_found": "Keine Ergebnisse gefunden.",
+        "loading": "Lädt..."
     },
     "homepage": {
         "search_form": {

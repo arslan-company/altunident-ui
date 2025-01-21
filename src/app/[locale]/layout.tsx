@@ -9,7 +9,6 @@ import ModalsProvider from '@/providers/modals-provider';
 import ReactQueryProvider from '@/providers/react-query-provider';
 import StyleIntegrationsProvider from '@/providers/style-integrations-provider';
 
-
 import '../globals.css';
 
 const inter = Inter({
@@ -22,16 +21,14 @@ export default async function LocaleLayout({
   params,
 }: Readonly<{
   children: React.ReactNode;
-  params: Promise<{ locale: string }>;
+  params: { locale: string };
 }>) {
-  const { locale } = await params;
+  const { locale } = params;
 
   if (!routing.locales.includes(locale as any)) {
     notFound();
   }
 
-  // Providing all messages to the client
-  // side is the easiest way to get started
   const messages = await getMessages();
 
   return (

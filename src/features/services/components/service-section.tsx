@@ -1,18 +1,21 @@
 'use client';
 
 import Link from 'next/link';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import React from 'react';
 import { Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
+import getServicesPath from '@/utils/get-services-path';
 import slugify from '@/utils/slugify';
 
-import { ServiceCard } from './service-card';
 import { useServices } from '../hooks/use-services';
+
+import { ServiceCard } from './service-card';
 
 export function ServiceSection() {
     const t = useTranslations();
+    const locale = useLocale();
     const { services, isLoading } = useServices({ size: 6 });
 
     if (isLoading || !services) {
@@ -41,7 +44,7 @@ export function ServiceSection() {
                         </div>
                         <h2 className="tw-text-3xl tw-font-bold tw-text-gray-900 tw-tracking-tight tw-mb-6">{t('homepage.services.title')}</h2>
                         <p className="tw-mb-8">{t('homepage.services.description')}</p>
-                        <Link href="/services" className="tw-inline-flex tw-items-center tw-px-6 tw-py-3 tw-bg-gray-900 tw-text-white tw-rounded-full tw-font-semibold tw-transition hover:tw-bg-primary">
+                        <Link href={getServicesPath(locale)} className="tw-inline-flex tw-items-center tw-px-6 tw-py-3 tw-bg-gray-900 tw-text-white tw-rounded-full tw-font-semibold tw-transition hover:tw-bg-primary">
                             {t('homepage.services.all_services')}
                         </Link>
                     </div>

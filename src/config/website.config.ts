@@ -10,7 +10,7 @@ import createMiddleware from 'next-intl/middleware';
 
 const websiteConfig = {
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL,
-  locales: ['ar', 'de', 'en', 'fr', 'ru', 'tr'],
+  locales: ['de', 'en', 'fr', 'tr'],
   defaultLocale: 'tr',
   /**
    * This function is used to handle the next.js middleware.

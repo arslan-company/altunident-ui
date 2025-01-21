@@ -2,13 +2,15 @@
 
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { useCallback, useRef, useState } from 'react';
 
 import { useHospital } from '@/features/hospitals';
+import getServicesPath from '@/utils/get-services-path';
 import slugify from '@/utils/slugify';
 
 import { useServices } from '../hooks/use-services';
+import { ServiceResponse } from '../types';
 
 export function ServicesDropdown() {
     const [isOpen, setIsOpen] = useState(false);
@@ -17,6 +19,7 @@ export function ServicesDropdown() {
     const t = useTranslations();
     const { withBasePath } = useHospital();
     const params = useParams();
+    const locale = useLocale();
 
     const handleMouseEnter = useCallback(() => {
         if (timeoutRef.current) {
@@ -31,6 +34,10 @@ export function ServicesDropdown() {
         }, 100);
     }, []);
 
+    if (!services?.length) {
+        return null;
+    }
+
     return (
         <div
             className="tw-relative"
@@ -38,7 +45,7 @@ export function ServicesDropdown() {
             onMouseLeave={handleMouseLeave}
         >
             <Link
-                href={withBasePath('/services')}
+                href={withBasePath(getServicesPath(locale))}
                 className={`tw-inline-flex tw-items-center tw-px-3 tw-py-2 tw-text-sm tw-font-medium tw-text-gray-600 hover:tw-text-primary hover:tw-bg-gray-50 tw-rounded-md tw-transition-colors ${params?.serviceId ? 'tw-text-primary' : ''}`}
             >
                 {t('common.our_services')}
@@ -59,10 +66,10 @@ export function ServicesDropdown() {
                             {t('common.loading')}
                         </div>
                     ) : services && services.length > 0 ? (
-                        services.map((service) => (
+                        services.map((service: ServiceResponse) => (
                             <Link
                                 key={service.id}
-                                href={withBasePath(`/services/${service.id}/${slugify(service.name)}`)}
+                                href={withBasePath(`${getServicesPath(locale)}/${service.id}/${slugify(service.name)}`)}
                                 className="tw-block tw-px-4 tw-py-2 tw-text-sm tw-text-gray-700 hover:tw-bg-gray-50 hover:tw-text-primary"
                                 onClick={() => setIsOpen(false)}
                             >
