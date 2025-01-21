@@ -6,20 +6,26 @@ import React from 'react';
 import { Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
+import slugify from '@/utils/slugify';
+
 import { ServiceCard } from './service-card';
+import { useServices } from '../hooks/use-services';
 
-interface ServiceSectionProps {
-    services: Array<{
-        id: string | number;
-        title: string;
-        description: string;
-        icon_url?: string;
-        slug: string;
-    }>;
-}
-
-export function ServiceSection({ services }: ServiceSectionProps) {
+export function ServiceSection() {
     const t = useTranslations();
+    const { services, isLoading } = useServices({ size: 6 });
+
+    if (isLoading || !services) {
+        return null;
+    }
+
+    const mappedServices = services.map((service) => ({
+        id: service.id,
+        title: service.name,
+        description: "Profesyonel ekibimizle, çürüklerden diş eti hastalıklarına kadar geniş bir yelpazede diş tedavileri sunuyoruz.",
+        icon_url: "img/shape/dental-care.svg",
+        slug: slugify(service.name),
+    }));
 
     return (
         <div className="tw-rounded-lg lg:tw-rounded-none tw-pb-6 md:tw-py-[50px] tw-overflow-hidden tw-relative">
@@ -61,7 +67,7 @@ export function ServiceSection({ services }: ServiceSectionProps) {
                                 }}
                                 className="tw-pt-8 tw-pb-5"
                             >
-                                {services.map((service) => (
+                                {mappedServices.map((service) => (
                                     <SwiperSlide key={service.id}>
                                         <ServiceCard {...service} />
                                     </SwiperSlide>

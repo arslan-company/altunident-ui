@@ -151,15 +151,7 @@ export default async function HomePage() {
             data-aos-delay="100"
             data-aos-duration="1200"
           >
-            <ServiceSection
-              services={servicesData.map((service) => ({
-                id: service.id,
-                title: service.name,
-                description: "Profesyonel ekibimizle, çürüklerden diş eti hastalıklarına kadar geniş bir yelpazede diş tedavileri sunuyoruz.",
-                icon_url: "img/shape/dental-care.svg",
-                slug: service.name.toLowerCase().replace(/\s+/g, '-'),
-              }))}
-            />
+            <ServiceSection />
           </Section>
         )}
 
