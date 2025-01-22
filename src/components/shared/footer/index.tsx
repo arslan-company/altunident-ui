@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import React, { useState } from 'react';
 
 import { Button } from '@/components/base/button';
@@ -9,14 +9,16 @@ import generalInfo from '@/constants/general-info';
 import socialMediaLinks from '@/constants/social-media-links';
 import { HospitalAppointmentDialog, useHospital } from '@/features/hospitals';
 import dateHelper from '@/utils/dateHelper';
+import getServicesPath from '@/utils/get-services-path';
 
 import Logo from '../logo';
 
 function Footer() {
-  const { currentHospital } = useHospital();
+  const { currentHospital, withBasePath } = useHospital();
   const [appointmentDialogOpen, setAppointmentDialogOpen] = useState(false);
 
   const t = useTranslations();
+  const locale = useLocale();
 
   const getLastUpdateDate = () => {
     const date = new Date();
@@ -41,42 +43,83 @@ function Footer() {
     {
       id: 2,
       title: t('common.our_doctors'),
-      href: '/doctors/',
+      href: withBasePath('/doctors'),
     },
     {
       id: 3,
       title: t('common.our_departments'),
-      href: '/departments/',
+      href: withBasePath('/departments'),
     },
     {
       id: 4,
       title: t('common.our_services'),
-      href: '/services/',
+      href: withBasePath('/services'),
     },
     {
       id: 5,
       title: t('common.corporate'),
-      href: '/corporate/',
+      href: withBasePath('/corporate'),
     },
     {
       id: 6,
       title: t('common.blog'),
-      href: '/blog/',
+      href: withBasePath('/blog'),
     },
     {
       id: 7,
       title: t('common.contact'),
-      href: '/contact/',
+      href: withBasePath('/contact'),
     },
     {
       id: 8,
       title: 'KVKK',
-      href: '/kvkk-aydinlatma-metni/',
+      href: withBasePath('/kvkk-aydinlatma-metni'),
     },
     {
       id: 9,
       title: 'Çerez Politikası',
-      href: '/cookie-policy-page/',
+      href: withBasePath('/cookie-policy-page'),
+    },
+  ];
+
+  const links = [
+    {
+      title: t('common.about_us'),
+      items: [
+        {
+          label: t('common.about_us'),
+          href: withBasePath('/about'),
+        },
+        {
+          label: t('common.contact'),
+          href: withBasePath('/contact'),
+        },
+        {
+          label: 'KVKK',
+          href: withBasePath('/kvkk-aydinlatma-metni'),
+        },
+        {
+          label: 'Çerez Politikası',
+          href: withBasePath('/cookie-policy-page'),
+        },
+      ],
+    },
+    {
+      title: t('common.services'),
+      items: [
+        {
+          label: t('common.our_services'),
+          href: withBasePath(getServicesPath(locale)),
+        },
+        {
+          label: t('common.our_doctors'),
+          href: withBasePath('/doctors'),
+        },
+        {
+          label: t('common.our_departments'),
+          href: withBasePath('/departments'),
+        },
+      ],
     },
   ];
 

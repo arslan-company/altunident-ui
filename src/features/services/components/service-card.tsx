@@ -1,10 +1,11 @@
 'use client';
 
 import Link from 'next/link';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import React from 'react';
 
 import { Media } from '@/features/files';
+import getServicesPath from '@/utils/get-services-path';
 
 interface ServiceCardProps {
   id: string | number;
@@ -14,8 +15,9 @@ interface ServiceCardProps {
   slug?: string;
 }
 
-export function ServiceCard({ title, description, icon_url, slug }: ServiceCardProps) {
+export function ServiceCard({ id, title, description, icon_url, slug }: ServiceCardProps) {
   const t = useTranslations();
+  const locale = useLocale();
 
   return (
     <div className="tw-transition-all tw-duration-300">
@@ -40,7 +42,7 @@ export function ServiceCard({ title, description, icon_url, slug }: ServiceCardP
           <h3 className="tw-text-xl tw-font-bold tw-text-gray-900 tw-mb-2">{title}</h3>
           <p className="tw-text-gray-600 tw-mb-4">{description}</p>
           <Link
-            href={`/services/${slug}`}
+            href={`${getServicesPath(locale)}/${id}/${slug}`}
             className="tw-inline-flex tw-items-center tw-text-gray-900 tw-font-semibold group-hover:tw-text-primary"
           >
             <i className="bi bi-arrow-right-circle tw-text-xl tw-mr-2" />

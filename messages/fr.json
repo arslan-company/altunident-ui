@@ -201,7 +201,8 @@
         "filter_by_department": "Filtrer par Département",
         "all": "Tous",
         "location": "Emplacement",
-        "data_not_found": "Aucun résultat trouvé."
+        "data_not_found": "Aucun résultat trouvé.",
+        "loading": "Chargement..."
     },
     "homepage": {
         "search_form": {

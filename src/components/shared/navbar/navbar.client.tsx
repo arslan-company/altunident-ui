@@ -11,6 +11,7 @@ import { SwitchLanguage } from '@/components/shared/switch-language';
 import { corporateEndpoints } from '@/features/corporate/api';
 import { useGeneralSearchStore } from '@/features/general-search';
 import { HospitalAppointmentDialog, useHospital } from '@/features/hospitals';
+import { ServicesDropdown } from '@/features/services';
 
 import Logo from '../logo';
 
@@ -104,9 +105,8 @@ export default function NavbarClient({ serverData }: NavbarClientProps) {
         <TopHeader />
 
         <nav
-          className={`tw-bg-white tw-transition-all tw-duration-300 ${
-            isScrolled ? 'tw-shadow-xl' : 'tw-border-b tw-border-gray-100'
-          }`}
+          className={`tw-bg-white tw-transition-all tw-duration-300 ${isScrolled ? 'tw-shadow-xl' : 'tw-border-b tw-border-gray-100'
+            }`}
         >
           <div className="tw-container tw-mx-auto">
             <div className="tw-flex tw-justify-between tw-h-20">
@@ -142,12 +142,7 @@ export default function NavbarClient({ serverData }: NavbarClientProps) {
                   >
                     {t('common.our_doctors')}
                   </NavLink>
-                  <NavLink
-                    href={withBasePath('/services')}
-                    active={pathnameWithoutHospitalSlug.startsWith('/services')}
-                  >
-                    {t('common.our_services')}
-                  </NavLink>
+                  <ServicesDropdown />
                   <NavLink
                     href={withBasePath('/departments')}
                     active={pathnameWithoutHospitalSlug.startsWith('/departments')}
@@ -274,6 +269,9 @@ export default function NavbarClient({ serverData }: NavbarClientProps) {
                 >
                   {t('common.our_doctors')}
                 </MobileNavLink>
+                <div className="tw-px-2">
+                  <ServicesDropdown />
+                </div>
                 <MobileNavLink
                   href={withBasePath('/departments')}
                   active={pathnameWithoutHospitalSlug.startsWith('/departments')}
