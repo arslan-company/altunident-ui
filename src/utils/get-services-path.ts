@@ -7,4 +7,4 @@ const servicesPathByLocale: Record<string, string> = {
 
 export default function getServicesPath(locale: string) {
   return servicesPathByLocale[locale] || '/services';
-} 
+}

@@ -1,7 +1,7 @@
 import { ChevronDownIcon } from '@heroicons/react/24/outline';
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
 import Image from 'next/image';
-import { useRouter, usePathname } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import { useLocale } from 'next-intl';
 import { tv } from 'tailwind-variants';
 
@@ -55,14 +55,12 @@ const languages = [
 export function SwitchLanguage() {
   const locale = useLocale();
   const pathname = usePathname();
-  const router = useRouter();
 
-  const pathnameWithoutLocale = pathname.replace(`/${locale}`, '') || '/';
+  const pathnameWithoutLocale = (() => {
+    const path = pathname.replace(`/${locale}`, '');
 
-  const handleLanguageChange = (newLocale: string) => {
-    document.cookie = `NEXT_LOCALE=${newLocale}; path=/; max-age=31536000`;
-    router.push(`/${newLocale}${pathnameWithoutLocale}`);
-  };
+    return !path ? '/' : path;
+  })();
 
   return (
     <DropdownMenu.Root>
@@ -83,20 +81,18 @@ export function SwitchLanguage() {
 
       <DropdownMenu.Content className={content()} sideOffset={5} align="end" alignOffset={0}>
         {languages.map((language) => (
-          <DropdownMenu.Item
-            key={language.id}
-            className={item()}
-            onClick={() => handleLanguageChange(language.locale)}
-          >
-            <Image
-              className="tw-w-4 tw-h-4 tw-object-cover"
-              width={20}
-              height={20}
-              quality={60}
-              src={`/icons/languages/${language.locale}.png`}
-              alt={`${language.label.toLowerCase()} flag`}
-            />
-            <span className="tw-font-semibold">{language.label}</span>
+          <DropdownMenu.Item key={language.id} className={item()} asChild>
+            <a href={`/${language.locale}${pathnameWithoutLocale}`}>
+              <Image
+                className="tw-w-4 tw-h-4 tw-object-cover"
+                width={20}
+                height={20}
+                quality={60}
+                src={`/icons/languages/${language.locale}.png`}
+                alt={`${language.label.toLowerCase()} flag`}
+              />
+              <span className="tw-font-semibold">{language.label}</span>
+            </a>
           </DropdownMenu.Item>
         ))}
       </DropdownMenu.Content>
