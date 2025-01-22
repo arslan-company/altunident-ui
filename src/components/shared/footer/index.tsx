@@ -53,7 +53,7 @@ function Footer() {
     {
       id: 4,
       title: t('common.our_services'),
-      href: withBasePath(getServicesPath(locale)),
+      href: withBasePath('/services'),
     },
     {
       id: 5,
