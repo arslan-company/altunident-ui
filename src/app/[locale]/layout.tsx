@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, unstable_setRequestLocale } from 'next-intl/server';
 
+import websiteConfig from '@/config/website.config';
 import HospitalStoreProvider from '@/features/hospitals/providers/hospital-store-provider';
 import { routing } from '@/i18n/routing';
 import ModalsProvider from '@/providers/modals-provider';
@@ -10,7 +11,6 @@ import ReactQueryProvider from '@/providers/react-query-provider';
 import StyleIntegrationsProvider from '@/providers/style-integrations-provider';
 
 import '../globals.css';
-import websiteConfig from '@/config/website.config';
 
 const inter = Inter({
   subsets: ['latin'],

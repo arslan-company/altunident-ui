@@ -13,22 +13,36 @@ import { useServices } from '../hooks/use-services';
 
 import { ServiceCard } from './service-card';
 
-export function ServiceSection() {
+export interface ServiceSectionProps {
+    services?: Array<{
+        id: number;
+        title: string;
+        description: string;
+        icon_url: string;
+        slug: string;
+    }>;
+}
+
+export function ServiceSection({ services: propServices }: ServiceSectionProps) {
     const t = useTranslations();
     const locale = useLocale();
-    const { services, isLoading } = useServices({ size: 6 });
+    const { services: hookServices, isLoading } = useServices({ size: 6 });
 
-    if (isLoading || !services) {
+    if (isLoading || (!hookServices && !propServices)) {
         return null;
     }
 
-    const mappedServices = services.map((service) => ({
+    const mappedServices = propServices || hookServices?.map((service) => ({
         id: service.id,
         title: service.name,
         description: "Profesyonel ekibimizle, çürüklerden diş eti hastalıklarına kadar geniş bir yelpazede diş tedavileri sunuyoruz.",
         icon_url: "img/shape/dental-care.svg",
         slug: slugify(service.name),
     }));
+
+    if (!mappedServices) {
+        return null;
+    }
 
     return (
         <div className="tw-rounded-lg lg:tw-rounded-none tw-pb-6 md:tw-py-[50px] tw-overflow-hidden tw-relative">

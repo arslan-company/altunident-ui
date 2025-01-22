@@ -2,8 +2,7 @@ import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { getLocale } from 'next-intl/server';
 
-import { getSectionFromPath, PathKey } from '@/config/path-mappings';
-import pathMappings from '@/config/path-mappings';
+import pathMappings, { getSectionFromPath, PathKey } from '@/config/path-mappings';
 import websiteConfig from '@/config/website.config';
 
 // Import all base pages
