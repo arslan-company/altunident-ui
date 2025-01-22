@@ -50,16 +50,6 @@ const languages = [
     label: 'FRANÇAIS',
     locale: 'fr',
   },
-  {
-    id: 5,
-    label: 'РУССКИЙ',
-    locale: 'ru',
-  },
-  {
-    id: 6,
-    label: 'عربي',
-    locale: 'ar',
-  },
 ] as const;
 
 export function SwitchLanguage() {

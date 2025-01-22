@@ -6,6 +6,7 @@ import { filenameToUrl } from '@/features/files';
 import { hospitalApi } from '@/features/hospitals';
 import { servicesApi } from '@/features/services';
 import generateMeta from '@/utils/generate-meta';
+import getServicesPath from '@/utils/get-services-path';
 
 interface HospitalServiceDetailPageParams {
   hospitalSlug: string;
@@ -87,7 +88,7 @@ export async function generateMetadata({
       },
     },
     {
-      path: `/services/${serviceId}/${serviceSlug}`,
+      path: `${getServicesPath(locale)}/${serviceId}/${serviceSlug}`,
       hospitalSlug,
     },
   );

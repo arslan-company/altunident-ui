@@ -201,7 +201,8 @@
         "filter_by_department": "Bölüme Göre Filtrele",
         "all": "Hepsi",
         "location": "Yol Tarifi",
-        "data_not_found": "Veri bulunamadı"
+        "data_not_found": "Veri bulunamadı",
+        "loading": "Yükleniyor..."
     },
     "homepage": {
         "search_form": {

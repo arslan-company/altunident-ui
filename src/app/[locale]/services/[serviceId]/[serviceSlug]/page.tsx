@@ -1,7 +1,6 @@
 import { Metadata } from 'next';
 import { getLocale, getTranslations } from 'next-intl/server';
 
-
 import Breadcrumb from '@/components/shared/breadcrumb';
 import Footer from '@/components/shared/footer';
 import HTMLContent from '@/components/shared/html-content';
@@ -9,6 +8,7 @@ import Navbar from '@/components/shared/navbar';
 import { filenameToUrl } from '@/features/files';
 import { servicesApi } from '@/features/services';
 import generateMeta from '@/utils/generate-meta';
+import getServicesPath from '@/utils/get-services-path';
 
 type ServiceDetailParams = {
   serviceId: string;
@@ -57,6 +57,7 @@ export default async function ServiceDetailPage({
 
   // --- UTILS --- //
   const t = await getTranslations();
+  const locale = await getLocale();
 
   return (
     <>
@@ -65,7 +66,7 @@ export default async function ServiceDetailPage({
         title={service?.name || ''}
         items={[
           { label: t('site.name'), href: '/' },
-          { label: t('common.our_services'), href: '/services' },
+          { label: t('common.our_services'), href: getServicesPath(locale) },
           { label: service?.name || '' },
         ]}
         backgroundImage={serviceImage || undefined}
@@ -146,7 +147,7 @@ export async function generateMetadata({
       },
     },
     {
-      path: `/services/${serviceId}/${serviceSlug}`,
+      path: `${getServicesPath(locale)}/${serviceId}/${serviceSlug}`,
     },
   );
 }

@@ -3,75 +3,87 @@ import { MetadataRoute } from 'next';
 import websiteConfig from '@/config/website.config';
 import { departmentsApi } from '@/features/departments';
 import { hospitalApi } from '@/features/hospitals';
+import { servicesApi } from '@/features/services';
 import slugify from '@/utils/slugify';
 
+type ChangeFrequency = 'always' | 'hourly' | 'daily' | 'weekly' | 'monthly' | 'yearly' | 'never';
+
+const withLocale = (
+  path: string,
+  options: { priority?: number; changeFrequency?: ChangeFrequency } = {},
+) => {
+  const { priority = 0.5, changeFrequency = 'daily' } = options;
+
+  return websiteConfig.locales.map((locale) => ({
+    url: `${websiteConfig.siteUrl}/${locale}${path}`,
+    lastModified: new Date(),
+    changeFrequency,
+    priority,
+  }));
+};
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  // --- REQUESTS --- //
-  const hospitalsResponse = await hospitalApi.getHospitals({
-    query: {
-      size: 100,
-    },
-  });
-
-  const departmentsResponse = await departmentsApi.getDepartments({
-    query: {
-      size: 100,
-    },
-  });
-
-  const hospitals = hospitalsResponse?.items || [];
-  const departments = departmentsResponse?.items || [];
-
-  // --- UTILS --- //
-  const withRoot = (url: string) => `${websiteConfig.siteUrl}${url}`;
-
-  const withLocale = (
-    url: string,
-    override?: Partial<MetadataRoute.Sitemap[number]>,
-  ): MetadataRoute.Sitemap => {
-    return websiteConfig.locales.map((locale) => ({
-      url: withRoot(`/${locale}${url}`),
-      lastModified: new Date(),
-      changeFrequency: 'daily',
-      priority: 1,
-      ...override,
-    }));
-  };
-
-  // --- PAGES --- //
-  const staticPages: MetadataRoute.Sitemap = [
-    ...withLocale('', { priority: 1 }),
-    ...withLocale('/blog', { priority: 0.8, changeFrequency: 'weekly' }),
-    ...withLocale('/contact', { priority: 0.8, changeFrequency: 'weekly' }),
-    ...withLocale('/cookie-policy-page', { priority: 0.8, changeFrequency: 'monthly' }),
-    ...withLocale('/departments', { priority: 0.8 }),
-    ...withLocale('/doctors', { priority: 0.8 }),
-    ...withLocale('/hospitals', { priority: 0.8 }),
-    ...withLocale('/kvkk-aydinlatma-metni', { priority: 0.8, changeFrequency: 'monthly' }),
-    ...withLocale('/services', { priority: 0.8 }),
-  ];
-
-  const hospitalHomePages = hospitals.map((hospital) => [
-    ...withLocale(`/${hospital?.slug}/contact`, { priority: 0.7, changeFrequency: 'weekly' }),
-    ...withLocale(`/${hospital?.slug}/departments`, { priority: 0.7 }),
-    ...withLocale(`/${hospital?.slug}/doctors`, { priority: 0.7 }),
-    ...withLocale(`/${hospital?.slug}/services`, { priority: 0.7 }),
+  const [hospitals, services] = await Promise.all([
+    hospitalApi.getHospitals({
+      query: {
+        size: 100,
+      },
+    }),
+    servicesApi.getServices({
+      query: {
+        size: 100,
+      },
+    }),
   ]);
 
-  const hospitalsPages = hospitals.map((hospital) =>
-    withLocale(`/hospitals/${hospital?.slug}`, { priority: 0.7, changeFrequency: 'weekly' }),
-  );
+  const hospitalItems = hospitals?.items || [];
+  const serviceItems = services?.items || [];
 
-  const departmentsPages = departments.map((department) =>
-    withLocale(`/departments/${department?.id}/${slugify(department?.name)}`, {
-      priority: 0.7,
-    }),
-  );
+  const servicesUrls = websiteConfig.locales.flatMap((locale) => {
+    const servicesPath = locale === 'tr' ? '/hizmetlerimiz' : '/services';
+    return [
+      {
+        url: `${websiteConfig.siteUrl}/${locale}${servicesPath}`,
+        lastModified: new Date(),
+        changeFrequency: 'daily' as ChangeFrequency,
+        priority: 0.8,
+      },
+      ...serviceItems.map((service) => ({
+        url: `${websiteConfig.siteUrl}/${locale}${servicesPath}/${service.id}/${slugify(service.name)}`,
+        lastModified: new Date(),
+        changeFrequency: 'weekly' as ChangeFrequency,
+        priority: 0.6,
+      })),
+    ];
+  });
+
+  const hospitalUrls = hospitalItems.flatMap((hospital) => {
+    const basePath = `/${hospital.slug}`;
+    return [
+      ...withLocale(basePath, { priority: 0.9 }),
+      ...websiteConfig.locales.flatMap((locale) => {
+        const servicesPath = locale === 'tr' ? '/hizmetlerimiz' : '/services';
+        return [
+          {
+            url: `${websiteConfig.siteUrl}/${locale}${basePath}${servicesPath}`,
+            lastModified: new Date(),
+            changeFrequency: 'daily' as ChangeFrequency,
+            priority: 0.7,
+          },
+          ...serviceItems.map((service) => ({
+            url: `${websiteConfig.siteUrl}/${locale}${basePath}${servicesPath}/${service.id}/${slugify(service.name)}`,
+            lastModified: new Date(),
+            changeFrequency: 'weekly' as ChangeFrequency,
+            priority: 0.5,
+          })),
+        ];
+      }),
+    ];
+  });
 
   return [
-    ...staticPages,
-    ...hospitalHomePages.flat(),
-    ...hospitalsPages.flat(),
-    ...departmentsPages.flat(),
+    ...withLocale('/', { priority: 1.0 }),
+    ...servicesUrls,
+    ...hospitalUrls,
   ];
 }

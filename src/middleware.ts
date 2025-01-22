@@ -11,8 +11,8 @@ export const config = {
     // Enable a redirect to a matching locale at the root
     '/',
 
-    // All locale combinations
-    '/(ar|de|en|fr|ru|tr)/:path*',
+    // All supported locale combinations
+    '/(de|en|fr|tr)/:path*',
 
     // Enable redirects that add missing locales
     '/((?!_next|_vercel|.*\\..*).*)',

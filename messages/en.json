@@ -201,7 +201,8 @@
         "filter_by_department": "Filter by Department",
         "all": "All",
         "location": "Location",
-        "data_not_found": "No Results Found."
+        "data_not_found": "No Results Found.",
+        "loading": "Loading..."
     },
     "homepage": {
         "search_form": {
